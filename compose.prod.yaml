@@ -1,0 +1,77 @@
+# Production environment override.
+# docker compose --env-file .env --env-file .env.prod.local -f compose.yaml -f compose.prod.yaml up -d --wait
+
+x-app-prod: &app-prod
+  image: ${IMAGES_PREFIX:-}patchnotes-php-prod
+  build:
+    context: .
+    target: frankenphp_prod
+  env_file:
+    - path: .env.prod.local
+      required: true
+  logging:
+    driver: json-file
+    options:
+      max-size: "20m"
+      max-file: "5"
+
+services:
+  php:
+    <<: *app-prod
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2g
+  worker-sources:
+    <<: *app-prod
+    deploy:
+      resources:
+        limits:
+          memory: 768m
+  worker-pipeline:
+    <<: *app-prod
+    deploy:
+      resources:
+        limits:
+          memory: 768m
+  worker-git:
+    <<: *app-prod
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 1g
+  worker-ai:
+    <<: *app-prod
+    deploy:
+      replicas: ${WORKER_AI_REPLICAS:-2}
+      resources:
+        limits:
+          memory: 512m
+  worker-notify:
+    <<: *app-prod
+    deploy:
+      resources:
+        limits:
+          memory: 512m
+  scheduler:
+    <<: *app-prod
+    deploy:
+      resources:
+        limits:
+          memory: 256m
+
+  mysql:
+    deploy:
+      resources:
+        limits:
+          memory: 4g
+
+  meilisearch:
+    environment:
+      MEILI_ENV: production
+    deploy:
+      resources:
+        limits:
+          memory: 2g

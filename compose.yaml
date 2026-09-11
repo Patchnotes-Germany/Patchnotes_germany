@@ -1,0 +1,190 @@
+# Patchnotes — base Docker Compose definition (all environments).
+# Dev:  docker compose up -d --wait              (compose.override.yaml is applied automatically)
+# Prod: docker compose --env-file .env --env-file .env.prod.local -f compose.yaml -f compose.prod.yaml up -d --wait
+# Interpolation (${VAR}) reads only .env / --env-file; the app itself also reads .env.local (dev) or env_file (prod).
+
+x-app: &app
+  restart: unless-stopped
+  extra_hosts:
+    # Reach a local LLM (Ollama/LM Studio) running on the Docker host.
+    - host.docker.internal:host-gateway
+  volumes:
+    - repos:/app/var/repos
+    - storage:/app/var/storage
+
+x-worker: &worker
+  <<: *app
+  depends_on:
+    php:
+      condition: service_healthy
+  healthcheck:
+    test: ["CMD", "worker-healthcheck"]
+    interval: 30s
+    timeout: 5s
+    retries: 3
+    start_period: 60s
+
+services:
+  php:
+    <<: *app
+    environment:
+      APP_PRIMARY: "1"
+      CADDY_SERVER_NAME: ${SERVER_NAME:-localhost}, php:80
+      MERCURE_PUBLISHER_JWT_KEY: ${MERCURE_JWT_SECRET:-!ChangeThisMercureHubJWTSecretKey!}
+      MERCURE_SUBSCRIBER_JWT_KEY: ${MERCURE_JWT_SECRET:-!ChangeThisMercureHubJWTSecretKey!}
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+      - repos:/app/var/repos
+      - storage:/app/var/storage
+    ports:
+      - name: http
+        target: 80
+        published: ${HTTP_PORT:-80}
+        protocol: tcp
+      - name: https
+        target: 443
+        published: ${HTTPS_PORT:-443}
+        protocol: tcp
+      - name: http3
+        target: 443
+        published: ${HTTP3_PORT:-443}
+        protocol: udp
+    depends_on:
+      mysql:
+        condition: service_healthy
+      meilisearch:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "php", "-r", "exit(false === @file_get_contents('http://localhost:2019/metrics', context: stream_context_create(['http' => ['timeout' => 5]])) ? 1 : 0);"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      # The first start may run "composer install" and migrations.
+      start_period: 5m
+
+  worker-sources:
+    <<: *worker
+    command: ["php", "bin/console", "messenger:consume", "sources", "--time-limit=3600", "--memory-limit=384M"]
+
+  worker-pipeline:
+    <<: *worker
+    command: ["php", "bin/console", "messenger:consume", "pipeline", "--time-limit=3600", "--memory-limit=384M"]
+
+  worker-git:
+    <<: *worker
+    # All writes to the laws/content repositories are serialized: exactly one consumer.
+    command: ["php", "bin/console", "messenger:consume", "git", "--time-limit=3600", "--memory-limit=384M"]
+    deploy:
+      replicas: 1
+
+  worker-ai:
+    <<: *worker
+    command: ["php", "bin/console", "messenger:consume", "ai", "--time-limit=3600", "--memory-limit=384M"]
+    deploy:
+      replicas: ${WORKER_AI_REPLICAS:-2}
+
+  worker-notify:
+    <<: *worker
+    command: ["php", "bin/console", "messenger:consume", "notifications", "default", "--time-limit=3600", "--memory-limit=384M"]
+
+  scheduler:
+    <<: *worker
+    # Only redispatches RecurringMessages into the work transports; never runs long jobs itself.
+    command: ["php", "bin/console", "messenger:consume", "scheduler_default", "--time-limit=3600", "--memory-limit=256M"]
+
+  mysql:
+    image: mysql:8.4.11
+    restart: unless-stopped
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_0900_ai_ci
+    environment:
+      MYSQL_DATABASE: patchnotes
+      MYSQL_USER: patchnotes
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-patchnotes}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root}
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./docker/mysql/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p\"$$MYSQL_ROOT_PASSWORD\" --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 60s
+
+  meilisearch:
+    image: getmeili/meilisearch:v1.53.2
+    restart: unless-stopped
+    environment:
+      MEILI_MASTER_KEY: ${MEILI_MASTER_KEY:-!ChangeThisMeilisearchMasterKey!}
+      MEILI_ENV: ${MEILI_ENV:-development}
+      MEILI_NO_ANALYTICS: "true"
+    volumes:
+      - meili_data:/meili_data
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://127.0.0.1:7700/health"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+  backup:
+    image: mysql:8.4.11
+    restart: unless-stopped
+    entrypoint: ["/bin/bash", "/backup/backup.sh"]
+    command: ["loop"]
+    environment:
+      TZ: Europe/Berlin
+      MYSQL_HOST: mysql
+      MYSQL_DATABASE: patchnotes
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root}
+      BACKUP_TIME: ${BACKUP_TIME:-04:30}
+      BACKUP_RETENTION_DAYS: ${BACKUP_RETENTION_DAYS:-14}
+    volumes:
+      - ./docker/backup:/backup:ro
+      - backups:/backups
+      - storage:/storage:ro
+    depends_on:
+      mysql:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "/bin/bash", "/backup/backup.sh", "healthcheck"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  ollama:
+    image: ollama/ollama:0.34.0
+    profiles: ["local-llm"]
+    restart: unless-stopped
+    volumes:
+      - ollama_data:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    # GPU (NVIDIA): uncomment, requires the NVIDIA Container Toolkit on the host.
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+
+
+volumes:
+  caddy_data:
+  caddy_config:
+  mysql_data:
+  meili_data:
+  repos:
+  storage:
+  backups:
+  ollama_data:
+
