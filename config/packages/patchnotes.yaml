@@ -1,0 +1,204 @@
+# The single place where an installation is configured (SPEC.md § 24.19).
+# Values that must stay secret arrive through environment variables; see .env.
+patchnotes:
+    languages: [ru, uk, en, tr]
+    master_language: en
+    language_settings:
+        ru: { locale: ru_RU, dir: ltr }
+        uk: { locale: uk_UA, dir: ltr }
+        en: { locale: en_GB, dir: ltr }
+        tr: { locale: tr_TR, dir: ltr }
+    timezone: Europe/Berlin
+    donation_url: '%env(default::DONATION_URL)%'
+
+    repositories:
+        laws:
+            url: '%env(default::LAWS_REPO_URL)%'
+            default_branch: '%env(LAWS_REPO_BRANCH)%'
+            forge: '%env(LAWS_REPO_FORGE)%'
+            forge_api_url: '%env(default::LAWS_REPO_FORGE_API_URL)%'
+            forge_project: '%env(default::LAWS_REPO_PROJECT)%'
+            auth:
+                ssh_key_path: '%env(default::LAWS_REPO_SSH_KEY_PATH)%'
+                token: '%env(default::LAWS_REPO_TOKEN)%'
+            webhook_secret: '%env(default::LAWS_REPO_WEBHOOK_SECRET)%'
+            local_path: '%kernel.project_dir%/var/repos/laws'
+        content:
+            url: '%env(default::CONTENT_REPO_URL)%'
+            default_branch: '%env(CONTENT_REPO_BRANCH)%'
+            forge: '%env(CONTENT_REPO_FORGE)%'
+            forge_api_url: '%env(default::CONTENT_REPO_FORGE_API_URL)%'
+            forge_project: '%env(default::CONTENT_REPO_PROJECT)%'
+            auth:
+                ssh_key_path: '%env(default::CONTENT_REPO_SSH_KEY_PATH)%'
+                token: '%env(default::CONTENT_REPO_TOKEN)%'
+            webhook_secret: '%env(default::CONTENT_REPO_WEBHOOK_SECRET)%'
+            local_path: '%kernel.project_dir%/var/repos/content'
+
+    git:
+        bot_name: 'Patchnotes Bot'
+        bot_email: '%env(GIT_BOT_EMAIL)%'
+        push_enabled: '%env(bool:GIT_PUSH_ENABLED)%'
+        known_hosts: '%env(default::GIT_KNOWN_HOSTS)%'
+
+    sources:
+        crawler:
+            user_agent: 'PatchnotesBot/1.0 (+https://%env(SERVER_NAME)%/bot; %env(CRAWLER_CONTACT_EMAIL)%)'
+            max_rps_per_host: 1
+            timeout_seconds: 60
+        bund:
+            gii: { enabled: true }
+            neuris: { enabled: false }
+            bgbl: { enabled: true }
+            dip: { enabled: true, api_key: '%env(default::DIP_API_KEY)%' }
+        laender:
+            # States are switched on one by one in M11, in the priority order of SPEC.md § 6.3.
+            enabled: []
+            # Nightly slots, never inside 02:00-03:00 Europe/Berlin (DST), see SPEC.md § 24.16.
+            slots: { be: '00:30', nw: '00:50', by: '01:10', bw: '01:30', he: '03:10', ni: '03:30', hh: '03:50' }
+        repeal_confirmations: 3
+        safeguards:
+            max_law_deletion_ratio: 0.4
+            max_changed_laws_ratio: 0.3
+
+    features:
+        preview_prs:
+            bund: true
+            laender: false
+        translate_impact_zero: false
+        telegram_login: false
+        analytics: false
+        backfill: false
+
+    ai:
+        providers:
+            openai:
+                type: openai
+                api_key: '%env(default::OPENAI_API_KEY)%'
+                base_url: 'https://api.openai.com/v1'
+            anthropic:
+                type: anthropic
+                api_key: '%env(default::ANTHROPIC_API_KEY)%'
+            local:
+                type: openai_compatible
+                base_url: '%env(default::LOCAL_LLM_BASE_URL)%'
+                api_key: '%env(default::LOCAL_LLM_API_KEY)%'
+                execution: remote_worker
+        models:
+            large: '%env(default::AI_MODEL_LARGE)%'
+            medium: '%env(default::AI_MODEL_MEDIUM)%'
+            small: '%env(default::AI_MODEL_SMALL)%'
+            local_default: '%env(default::AI_MODEL_LOCAL)%'
+        tasks:
+            promulgation_extract: { chain: ['@large', '@medium'], temperature: 0 }
+            amendment_apply: { chain: ['@large'], temperature: 0 }
+            change_analyze: { chain: ['@large', '@medium'], temperature: 0 }
+            card_write: { chain: ['@large', '@medium'], temperature: 0.3 }
+            card_verify: { chain: ['@medium'], temperature: 0, prefer_different_provider_than: card_write }
+            card_translate: { chain: ['@medium', '@local_default'], temperature: 0.2, batch: bulk_only }
+            norm_translate: { chain: ['@medium', '@local_default'], temperature: 0.1, batch: bulk_only }
+            bill_summarize: { chain: ['@large', '@medium'], temperature: 0.2 }
+            digest_write: { chain: ['@medium'], temperature: 0.4 }
+            plenary_summarize: { chain: ['@large'], temperature: 0.2 }
+            law_topics: { chain: ['@small', '@local_default'], temperature: 0 }
+            glossary_suggest: { chain: ['@medium'], temperature: 0.2 }
+        budget:
+            monthly_limit_eur: '%env(float:AI_MONTHLY_BUDGET_EUR)%'
+            on_exceed: degrade
+            alert_thresholds: [0.8, 1.0]
+        # Prices per million tokens in the provider currency; filled in with the models in M4.
+        pricing: {}
+        fx:
+            usd_eur: '%env(float:AI_FX_USD_EUR)%'
+        cache: true
+        local_worker_fallback_after_minutes: 60
+        max_verify_score_single_provider: 0.85
+        pretranslate_laws:
+            - bund/aufenthg_2004
+            - bund/aufenthv
+            - bund/beschv
+            - bund/stag
+            - bund/asylvfg_1992
+            - bund/asylblg
+            - bund/intv
+            - bund/freizuegg_eu_2004
+            - bund/estg
+            - bund/sgb_1
+            - bund/sgb_2
+            - bund/sgb_3
+            - bund/sgb_5
+            - bund/sgb_6
+            - bund/sgb_11
+            - bund/sgb_12
+            - bund/bkgg_1996
+            - bund/beeg
+            - bund/muschg_2018
+            - bund/bafg
+            - bund/wogg
+            - bund/bgb
+            - bund/milog
+            - bund/tzbfg
+            - bund/kschg
+            - bund/burlg
+            - bund/entgfg
+            - bund/arbzg
+            - bund/stvo_2013
+            - bund/stvg
+            - bund/fev
+            - bund/bmg
+            - bund/rbeg
+            - bund/woeigg
+            - bund/agg
+            - bund/gg
+        on_demand_translation_limit_per_day:
+            user: 50
+            ip: 20
+
+    review:
+        auto_publish: true
+        min_verify_score: 0.8
+        require_human_for_impact: null
+        hold_alerts_minutes: 0
+        unreviewed_badge: true
+        settling_window_hours: 72
+
+    notifications:
+        instant_min_impact: 2
+        max_instant_per_day: 3
+        quiet_hours: { start: '22:00', end: '08:00' }
+        reminders_days_before: [14, 1]
+        digest: { day: sunday, generate_at: '15:00', send_at: '18:00' }
+        email:
+            from: '%env(MAILER_FROM)%'
+        telegram:
+            bot_token: '%env(default::TELEGRAM_BOT_TOKEN)%'
+            webhook_secret: '%env(default::TELEGRAM_WEBHOOK_SECRET)%'
+            admin_chat_id: '%env(default::TELEGRAM_ADMIN_CHAT_ID)%'
+            channels:
+                ru: '%env(default::TELEGRAM_CHANNEL_RU)%'
+                uk: '%env(default::TELEGRAM_CHANNEL_UK)%'
+                en: '%env(default::TELEGRAM_CHANNEL_EN)%'
+                tr: '%env(default::TELEGRAM_CHANNEL_TR)%'
+            channel_max_posts_per_day: 5
+        webpush:
+            public_key: '%env(default::VAPID_PUBLIC_KEY)%'
+            private_key: '%env(default::VAPID_PRIVATE_KEY)%'
+
+    alerts:
+        admin_email: '%env(default::ADMIN_ALERT_EMAIL)%'
+
+    billing:
+        enabled: false
+        stripe_secret: '%env(default::STRIPE_SECRET_KEY)%'
+        stripe_webhook_secret: '%env(default::STRIPE_WEBHOOK_SECRET)%'
+
+    legal:
+        operator:
+            name: '%env(default::LEGAL_OPERATOR_NAME)%'
+            address: '%env(default::LEGAL_OPERATOR_ADDRESS)%'
+            email: '%env(default::LEGAL_OPERATOR_EMAIL)%'
+
+    retention:
+        logs_days: 30
+        notification_details_days: 90
+        unconfirmed_accounts_days: 7

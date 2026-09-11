@@ -30,3 +30,4 @@ Numbers are sequential and never reused. A superseded ADR stays in place with it
 | [0002](0002-symfony-7-4-lts.md) | Symfony 7.4 LTS and library versions | accepted |
 | [0003](0003-docker-runtime-topology.md) | Docker runtime topology | accepted |
 | [0004](0004-own-thin-ai-adapters.md) | Own thin AI adapters instead of symfony/ai-platform | accepted |
+| [0005](0005-domain-model-and-persistence.md) | Domain model and persistence rules | accepted |

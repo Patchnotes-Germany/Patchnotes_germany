@@ -20,6 +20,18 @@ services:
     # this creates a service per class whose id is the fully-qualified class name
     App\:
         resource: '../src/'
+        exclude:
+            - '../src/Kernel.php'
+            - '../src/Core/PatchnotesBundle.php'
+            - '../src/**/Entity/'
+            - '../src/**/Message/'
+
+    # Typed access to the whole "patchnotes" configuration tree. Public, because commands, tests and
+    # the admin read it directly from the container (SPEC.md § 24.19).
+    App\Core\Config\PatchnotesConfig:
+        arguments:
+            $config: '%patchnotes.config%'
+        public: true
 
     # Touches the heartbeat file that the Docker healthcheck of every worker container reads
     # (frankenphp/worker-healthcheck.sh, ADR 0003).

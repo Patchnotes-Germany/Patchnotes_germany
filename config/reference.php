@@ -1150,6 +1150,184 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     intercept_redirects?: bool|Param, // Default: false
  *     excluded_ajax_paths?: scalar|Param|null, // Default: "^/((index|app(_[\\w]+)?)\\.php/)?_wdt"
  * }
+ * @psalm-type PatchnotesConfig = array{
+ *     languages?: list<scalar|Param|null>,
+ *     master_language?: scalar|Param|null, // The language AI writes first, directly from the German source; others are translated from it. // Default: "en"
+ *     language_settings?: array<string, array{ // Default: []
+ *         locale?: scalar|Param|null,
+ *         dir?: scalar|Param|null, // Default: "ltr"
+ *     }>,
+ *     timezone?: scalar|Param|null, // Default: "Europe/Berlin"
+ *     donation_url?: scalar|Param|null, // Default: null
+ *     repositories?: array{
+ *         laws?: array{
+ *             url?: scalar|Param|null, // Default: ""
+ *             default_branch?: scalar|Param|null, // Default: "main"
+ *             forge?: scalar|Param|null, // Default: "none"
+ *             forge_api_url?: scalar|Param|null, // Default: null
+ *             forge_project?: scalar|Param|null, // Default: null
+ *             auth?: array{
+ *                 ssh_key_path?: scalar|Param|null, // Default: null
+ *                 token?: scalar|Param|null, // Default: null
+ *             },
+ *             webhook_secret?: scalar|Param|null, // Default: null
+ *             local_path?: scalar|Param|null,
+ *         },
+ *         content?: array{
+ *             url?: scalar|Param|null, // Default: ""
+ *             default_branch?: scalar|Param|null, // Default: "main"
+ *             forge?: scalar|Param|null, // Default: "none"
+ *             forge_api_url?: scalar|Param|null, // Default: null
+ *             forge_project?: scalar|Param|null, // Default: null
+ *             auth?: array{
+ *                 ssh_key_path?: scalar|Param|null, // Default: null
+ *                 token?: scalar|Param|null, // Default: null
+ *             },
+ *             webhook_secret?: scalar|Param|null, // Default: null
+ *             local_path?: scalar|Param|null,
+ *         },
+ *     },
+ *     git?: array{
+ *         bot_name?: scalar|Param|null, // Default: "Patchnotes Bot"
+ *         bot_email?: scalar|Param|null, // Default: "bot@patchnotes.local"
+ *         push_enabled?: scalar|Param|null, // Default: false
+ *         known_hosts?: scalar|Param|null, // Default: null
+ *     },
+ *     sources?: array{
+ *         crawler?: array{
+ *             user_agent?: scalar|Param|null,
+ *             max_rps_per_host?: scalar|Param|null, // Default: 1
+ *             timeout_seconds?: scalar|Param|null, // Default: 60
+ *         },
+ *         bund?: array{
+ *             gii?: array{
+ *                 enabled?: scalar|Param|null, // Default: true
+ *             },
+ *             neuris?: array{
+ *                 enabled?: scalar|Param|null, // Default: false
+ *             },
+ *             bgbl?: array{
+ *                 enabled?: scalar|Param|null, // Default: true
+ *             },
+ *             dip?: array{
+ *                 enabled?: scalar|Param|null, // Default: true
+ *                 api_key?: scalar|Param|null, // Default: null
+ *             },
+ *         },
+ *         laender?: array{
+ *             enabled?: list<scalar|Param|null>,
+ *             slots?: array<string, scalar|Param|null>,
+ *         },
+ *         repeal_confirmations?: scalar|Param|null, // A law counts as repealed only after this many consecutive successful runs without it. // Default: 3
+ *         safeguards?: array{
+ *             max_law_deletion_ratio?: scalar|Param|null, // Default: 0.4
+ *             max_changed_laws_ratio?: scalar|Param|null, // Default: 0.3
+ *         },
+ *     },
+ *     features?: array{
+ *         preview_prs?: array{
+ *             bund?: scalar|Param|null, // Default: true
+ *             laender?: scalar|Param|null, // Default: false
+ *         },
+ *         translate_impact_zero?: scalar|Param|null, // Default: false
+ *         telegram_login?: scalar|Param|null, // Default: false
+ *         analytics?: scalar|Param|null, // Default: false
+ *         backfill?: scalar|Param|null, // Default: false
+ *     },
+ *     ai?: array{
+ *         providers?: array<string, array{ // Default: []
+ *             type?: scalar|Param|null,
+ *             api_key?: scalar|Param|null, // Default: null
+ *             base_url?: scalar|Param|null, // Default: null
+ *             execution?: scalar|Param|null, // Default: "direct"
+ *         }>,
+ *         models?: array<string, scalar|Param|null>,
+ *         tasks?: array<string, array{ // Default: []
+ *             chain?: list<scalar|Param|null>,
+ *             temperature?: float|Param, // Default: 0.0
+ *             batch?: scalar|Param|null, // Default: null
+ *             prefer_different_provider_than?: scalar|Param|null, // Default: null
+ *         }>,
+ *         budget?: array{
+ *             monthly_limit_eur?: scalar|Param|null, // Default: 0
+ *             on_exceed?: scalar|Param|null, // Default: "degrade"
+ *             alert_thresholds?: list<float|Param>,
+ *         },
+ *         pricing?: array<string, array{ // Default: []
+ *             input_per_mtok?: float|Param, // Default: 0
+ *             output_per_mtok?: float|Param, // Default: 0
+ *             cached_input_per_mtok?: float|Param, // Default: null
+ *             currency?: scalar|Param|null, // Default: "USD"
+ *         }>,
+ *         fx?: array{
+ *             usd_eur?: scalar|Param|null, // Default: 0.92
+ *         },
+ *         cache?: scalar|Param|null, // Default: true
+ *         local_worker_fallback_after_minutes?: scalar|Param|null, // Default: 60
+ *         max_verify_score_single_provider?: scalar|Param|null, // Default: 0.85
+ *         pretranslate_laws?: list<scalar|Param|null>,
+ *         on_demand_translation_limit_per_day?: array{
+ *             user?: int|Param, // Default: 50
+ *             ip?: int|Param, // Default: 20
+ *         },
+ *     },
+ *     review?: array{
+ *         auto_publish?: scalar|Param|null, // Default: true
+ *         min_verify_score?: float|Param, // Default: 0.8
+ *         require_human_for_impact?: scalar|Param|null, // Default: null
+ *         hold_alerts_minutes?: int|Param, // Default: 0
+ *         unreviewed_badge?: scalar|Param|null, // Default: true
+ *         settling_window_hours?: int|Param, // change_analyze starts when all target laws reflect the act, or after this window. // Default: 72
+ *     },
+ *     notifications?: array{
+ *         instant_min_impact?: int|Param, // Default: 2
+ *         max_instant_per_day?: int|Param, // Default: 3
+ *         quiet_hours?: array{
+ *             start?: scalar|Param|null, // Default: "22:00"
+ *             end?: scalar|Param|null, // Default: "08:00"
+ *         },
+ *         reminders_days_before?: list<int|Param>,
+ *         digest?: array{
+ *             day?: scalar|Param|null, // Default: "sunday"
+ *             generate_at?: scalar|Param|null, // Default: "15:00"
+ *             send_at?: scalar|Param|null, // Default: "18:00"
+ *         },
+ *         email?: array{
+ *             from?: scalar|Param|null, // Default: "noreply@patchnotes.local"
+ *         },
+ *         telegram?: array{
+ *             bot_token?: scalar|Param|null, // Default: null
+ *             webhook_secret?: scalar|Param|null, // Default: null
+ *             admin_chat_id?: scalar|Param|null, // Default: null
+ *             channels?: array<string, scalar|Param|null>,
+ *             channel_max_posts_per_day?: int|Param, // Default: 5
+ *         },
+ *         webpush?: array{
+ *             public_key?: scalar|Param|null, // Default: null
+ *             private_key?: scalar|Param|null, // Default: null
+ *         },
+ *     },
+ *     alerts?: array{
+ *         admin_email?: scalar|Param|null, // Default: null
+ *     },
+ *     billing?: array{
+ *         enabled?: scalar|Param|null, // Default: false
+ *         stripe_secret?: scalar|Param|null, // Default: null
+ *         stripe_webhook_secret?: scalar|Param|null, // Default: null
+ *     },
+ *     legal?: array{
+ *         operator?: array{
+ *             name?: scalar|Param|null, // Default: null
+ *             address?: scalar|Param|null, // Default: null
+ *             email?: scalar|Param|null, // Default: null
+ *         },
+ *     },
+ *     retention?: array{
+ *         logs_days?: int|Param, // Default: 30
+ *         notification_details_days?: int|Param, // Default: 90
+ *         unconfirmed_accounts_days?: int|Param, // Default: 7
+ *     },
+ * }
  * @psalm-type ConfigType = array{
  *     imports?: ImportsConfig,
  *     parameters?: ParametersConfig,
@@ -1160,6 +1338,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     doctrine_migrations?: DoctrineMigrationsConfig,
  *     twig?: TwigConfig,
  *     twig_extra?: TwigExtraConfig,
+ *     patchnotes?: PatchnotesConfig,
  *     "when@dev"?: array{
  *         imports?: ImportsConfig,
  *         parameters?: ParametersConfig,
@@ -1173,6 +1352,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         debug?: DebugConfig,
  *         maker?: MakerConfig,
  *         web_profiler?: WebProfilerConfig,
+ *         patchnotes?: PatchnotesConfig,
  *     },
  *     "when@prod"?: array{
  *         imports?: ImportsConfig,
@@ -1184,6 +1364,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         doctrine_migrations?: DoctrineMigrationsConfig,
  *         twig?: TwigConfig,
  *         twig_extra?: TwigExtraConfig,
+ *         patchnotes?: PatchnotesConfig,
  *     },
  *     "when@test"?: array{
  *         imports?: ImportsConfig,
@@ -1196,6 +1377,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         twig?: TwigConfig,
  *         twig_extra?: TwigExtraConfig,
  *         web_profiler?: WebProfilerConfig,
+ *         patchnotes?: PatchnotesConfig,
  *     },
  *     ...<string, ExtensionType|array{ // extra keys must follow the when@%env% pattern or match an extension alias
  *         imports?: ImportsConfig,

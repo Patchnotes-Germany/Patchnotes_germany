@@ -10,9 +10,14 @@ doctrine:
             # on the column level (SPEC.md § 17).
             collation: utf8mb4_0900_ai_ci
         profiling_collect_backtrace: '%kernel.debug%'
+        types:
+            # Sensitive profile data (residence status and other tags), encrypted with libsodium.
+            encrypted_json: App\User\Doctrine\EncryptedJsonType
 
     orm:
-        auto_mapping: true
+        # Entities live in src/<Domain>/Entity; PatchnotesBundle carries configuration only, so bundle
+        # auto-mapping would look for a non-existing src/Core/Entity directory.
+        auto_mapping: false
         # PHP 8.4 native lazy objects instead of generated proxy classes.
         enable_native_lazy_objects: true
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
