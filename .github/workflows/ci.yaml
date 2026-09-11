@@ -1,0 +1,120 @@
+---
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: ~
+  workflow_dispatch: ~
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  stack:
+    name: Stack, tests and static analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build application image
+        uses: docker/bake-action@v6
+        with:
+          pull: true
+          load: true
+          source: .
+          files: |
+            compose.yaml
+            compose.override.yaml
+          set: |
+            *.cache-from=type=gha,scope=${{ github.ref }}
+            *.cache-from=type=gha,scope=refs/heads/main
+            *.cache-to=type=gha,scope=${{ github.ref }},mode=max
+
+      - name: Start the stack
+        env:
+          HTTP_PORT: 8080
+          HTTPS_PORT: 8443
+          HTTP3_PORT: 8443
+        run: docker compose up --detach --wait --wait-timeout 900 --no-build
+
+      - name: Liveness probe (/healthz)
+        run: curl --fail-with-body --insecure --silent --show-error https://localhost:8443/healthz
+
+      - name: Readiness probe (/readyz)
+        run: curl --fail-with-body --insecure --silent --show-error https://localhost:8443/readyz
+
+      - name: Mercure hub reachable
+        run: curl --head --fail-with-body --insecure --silent --show-error "https://localhost:8443/.well-known/mercure?topic=test"
+
+      - name: Configuration check
+        run: docker compose exec -T php php bin/console patchnotes:config:check
+
+      - name: Database schema is in sync with the mapping
+        run: docker compose exec -T -e APP_ENV=test php php bin/console doctrine:schema:validate --skip-sync
+
+      - name: Tests
+        run: docker compose exec -T php vendor/bin/phpunit
+
+      - name: Coding standards
+        run: docker compose exec -T php vendor/bin/php-cs-fixer check --diff
+
+      - name: Static analysis
+        run: docker compose exec -T php vendor/bin/phpstan analyse --memory-limit=1G --no-progress
+
+      - name: Automated refactorings (dry run)
+        run: docker compose exec -T php vendor/bin/rector process --dry-run --no-progress-bar
+
+      - name: Lint configuration and templates
+        run: |
+          docker compose exec -T php php bin/console lint:yaml config src --parse-tags
+          docker compose exec -T php php bin/console lint:container
+
+      - name: Dependency audit
+        run: docker compose exec -T php composer audit
+
+      - name: Workers and scheduler are healthy
+        run: |
+          docker compose ps --format '{{.Service}} {{.Status}}'
+          test -z "$(docker compose ps --status exited --quiet)"
+
+      - name: Dump logs on failure
+        if: failure()
+        run: docker compose logs --tail=200
+
+  lint-files:
+    name: Lint non-PHP files
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Lint code base
+        uses: super-linter/super-linter/slim@v8
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_CHECKOV: false
+          VALIDATE_TRIVY: false
+          VALIDATE_PHP_PHPCS: false
+          VALIDATE_PHP_PSALM: false
+          VALIDATE_PHP_PHPSTAN: false
+          VALIDATE_JSCPD: false
+          VALIDATE_NATURAL_LANGUAGE: false
+          VALIDATE_MARKDOWN: false
