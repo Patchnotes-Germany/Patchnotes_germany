@@ -1,0 +1,34 @@
+# see https://symfony.com/doc/current/reference/configuration/framework.html
+framework:
+    secret: '%env(APP_SECRET)%'
+    handle_all_throwables: true
+
+    # Note that the session will be started ONLY if you read or write from it.
+    session:
+        cookie_secure: auto
+        cookie_samesite: lax
+        cookie_httponly: true
+
+    php_errors:
+        log: true
+
+    # Sources are crawled politely: a contact User-Agent, conservative timeouts and retries
+    # (SPEC.md § 6.1). Per-source throttling is added with the adapters in M3.
+    http_client:
+        default_options:
+            headers:
+                User-Agent: 'PatchnotesBot/1.0 (+https://%env(SERVER_NAME)%/bot; %env(CRAWLER_CONTACT_EMAIL)%)'
+            timeout: 30
+            max_duration: 120
+            max_redirects: 5
+            retry_failed:
+                max_retries: 3
+                delay: 1000
+                multiplier: 3
+                max_delay: 30000
+
+when@test:
+    framework:
+        test: true
+        session:
+            storage_factory_id: session.storage.factory.mock_file

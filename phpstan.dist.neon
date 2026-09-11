@@ -1,0 +1,8 @@
+# Extensions (symfony, doctrine, phpunit, deprecation rules) are wired by phpstan/extension-installer.
+parameters:
+    level: 8
+    paths:
+        - src
+        - tests
+    tmpDir: var/phpstan
+    treatPhpDocTypesAsCertain: false

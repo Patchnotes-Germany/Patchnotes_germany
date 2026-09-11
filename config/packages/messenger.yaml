@@ -1,0 +1,63 @@
+framework:
+    messenger:
+        failure_transport: failed
+
+        # One Doctrine/MySQL transport table, one queue per worker group (SPEC.md § 11.2).
+        # The table is created by a migration, therefore auto_setup is disabled in the DSN.
+        transports:
+            sources:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: sources
+                retry_strategy: { max_retries: 3, delay: 60000, multiplier: 4, max_delay: 3600000 }
+
+            git:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: git
+                retry_strategy: { max_retries: 5, delay: 10000, multiplier: 3, max_delay: 600000 }
+
+            ai:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: ai
+                retry_strategy: { max_retries: 3, delay: 30000, multiplier: 4, max_delay: 3600000 }
+
+            pipeline:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: pipeline
+                retry_strategy: { max_retries: 3, delay: 30000, multiplier: 4, max_delay: 3600000 }
+
+            notifications:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: notifications
+                retry_strategy: { max_retries: 5, delay: 30000, multiplier: 3, max_delay: 1800000 }
+
+            default:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: default
+                retry_strategy: { max_retries: 3, delay: 30000, multiplier: 3, max_delay: 600000 }
+
+            failed:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: failed
+
+        # Message routing is added by the milestones that introduce the messages
+        # (M3 sources, M4 ai, M5 pipeline, M9 notifications).
+        routing: {}
+
+when@test:
+    framework:
+        messenger:
+            transports:
+                sources: 'in-memory://'
+                git: 'in-memory://'
+                ai: 'in-memory://'
+                pipeline: 'in-memory://'
+                notifications: 'in-memory://'
+                default: 'in-memory://'
+                failed: 'in-memory://'

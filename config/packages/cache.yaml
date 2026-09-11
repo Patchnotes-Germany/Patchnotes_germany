@@ -1,0 +1,23 @@
+framework:
+    cache:
+        # The application cache is shared by the web container, all workers and the scheduler,
+        # so it must live in MySQL rather than in a per-container filesystem or APCu (ADR 0003).
+        app: cache.adapter.doctrine_dbal
+        system: cache.adapter.system
+        default_doctrine_dbal_provider: 'doctrine.dbal.default_connection'
+
+        pools:
+            # Scheduler state (last run of every recurring message) — SPEC.md § 11.1.
+            cache.scheduler:
+                adapter: cache.app
+
+            # Conditional GET metadata (ETag / Last-Modified) and robots.txt of the sources (M3+).
+            cache.http_source:
+                adapter: cache.app
+                default_lifetime: 86400
+
+when@test:
+    framework:
+        cache:
+            app: cache.adapter.array
+            system: cache.adapter.array
