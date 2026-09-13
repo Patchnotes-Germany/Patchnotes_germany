@@ -64,6 +64,12 @@ jobs:
       - name: Database schema is in sync with the mapping
         run: docker compose exec -T -e APP_ENV=test php php bin/console doctrine:schema:validate --skip-sync
 
+      # The integration tests write to the test database, so it needs the schema before they run.
+      - name: Prepare the test database
+        run: |
+          docker compose exec -T -e APP_ENV=test php php bin/console doctrine:database:create --if-not-exists --no-interaction
+          docker compose exec -T -e APP_ENV=test php php bin/console doctrine:migrations:migrate --no-interaction --all-or-nothing --allow-no-migration
+
       - name: Tests
         run: docker compose exec -T php vendor/bin/phpunit
 
