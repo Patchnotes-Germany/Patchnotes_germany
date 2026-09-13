@@ -1,0 +1,90 @@
+# Wording a card must never contain (SPEC.md § 7.4, check 7; § 8.5).
+#
+# Two rules of the project are enforced here rather than merely asked for in a prompt, because a
+# model will drift back to them sooner or later:
+#
+#   advice   — Patchnotes explains the law, it does not tell anyone what to do. "The law provides…",
+#              never "you must…". Someone acting on a wrong instruction about their residence permit
+#              or their taxes can be harmed by it; that is why a hit stops publication.
+#   opinion  — political neutrality. No judgement, no epithets, no forecasts.
+#
+# Matching is case-insensitive and looks for the phrase anywhere in a section. Keep the entries as
+# short as the phrase that is actually wrong, and prefer a few precise ones over many broad ones —
+# every false positive sends a correct card to a human for no reason.
+
+en:
+  advice:
+    - you must
+    - you have to
+    - you need to
+    - you should
+    - make sure you
+    - we recommend
+    - apply now
+  opinion:
+    - scandalous
+    - disastrous
+    - long overdue
+    - fortunately
+    - unfortunately
+    - obviously
+
+de:
+  advice:
+    - sie müssen
+    - sie sollten
+    - sie haben zu
+    - wir empfehlen
+    - stellen sie sicher
+  opinion:
+    - skandalös
+    - katastrophal
+    - längst überfällig
+    - zum glück
+    - leider
+
+ru:
+  advice:
+    - вы должны
+    - вам нужно
+    - вам следует
+    - вам необходимо
+    - обязательно подайте
+    - рекомендуем
+  opinion:
+    - скандальн
+    - катастрофическ
+    - давно пора
+    - к счастью
+    - к сожалению
+    - очевидно, что
+
+uk:
+  advice:
+    - ви повинні
+    - вам потрібно
+    - вам слід
+    - вам необхідно
+    - обов'язково подайте
+    - рекомендуємо
+  opinion:
+    - скандальн
+    - катастрофічн
+    - давно час
+    - на щастя
+    - на жаль
+    - очевидно, що
+
+tr:
+  advice:
+    - yapmalısınız
+    - zorundasınız
+    - başvurmalısınız
+    - emin olun
+    - tavsiye ederiz
+  opinion:
+    - skandal
+    - felaket
+    - çoktan gecikmiş
+    - neyse ki
+    - maalesef

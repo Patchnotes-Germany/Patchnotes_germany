@@ -13,7 +13,7 @@
         "sections": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["summary", "what_changes", "who_is_affected", "from_when", "what_to_do", "details"],
+            "required": ["summary", "what_changes", "who", "when", "what_to_do", "details"],
             "properties": {
                 "summary": {
                     "type": "string",
@@ -22,8 +22,14 @@
                     "description": "The whole change in one or two sentences. Never empty."
                 },
                 "what_changes": {"type": "string"},
-                "who_is_affected": {"type": "string"},
-                "from_when": {"type": "string"},
+                "who": {
+                    "type": "string",
+                    "description": "Who this concerns, in everyday words rather than tag names."
+                },
+                "when": {
+                    "type": "string",
+                    "description": "When it applies; a date placeholder, or the rule when no date is fixed yet."
+                },
                 "what_to_do": {
                     "type": "string",
                     "description": "Only where to read more and whom to ask. Never an instruction to the reader."

@@ -1,0 +1,35 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://patchnotes.example/schemas/card.frontmatter.schema.json",
+    "title": "Patchnotes card front matter",
+    "description": "The YAML block at the top of a card file (SPEC.md § 5.4). The body below it holds the fixed sections, each marked with its anchor: {#summary}, {#what_changes}, {#who}, {#when}, {#what_to_do}, {#details}.",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["lang"],
+    "properties": {
+        "lang": {
+            "type": "string",
+            "pattern": "^[a-z]{2}(-[A-Za-z0-9]+)?$",
+            "description": "One of patchnotes.languages; never hardcoded anywhere (§ 24.15)."
+        },
+        "master_hash": {
+            "type": ["string", "null"],
+            "pattern": "^[a-f0-9]{6,64}$",
+            "description": "Hash of the master card this translation was made from. When it no longer matches, the translation is stale and is re-queued (§ 5.4)."
+        },
+        "translation": {
+            "type": "string",
+            "enum": ["machine", "reviewed", "human"],
+            "description": "Machine translations carry a badge on the website; only the German law text is binding."
+        },
+        "translated_by": {
+            "type": ["string", "null"],
+            "description": "Model in \"provider:model-id\" form, or a person."
+        },
+        "reviewed_by": {"type": ["string", "null"]},
+        "title": {
+            "type": ["string", "null"],
+            "description": "Plain-language title in this language."
+        }
+    }
+}

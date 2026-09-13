@@ -12,7 +12,7 @@ A new session continues from here: read `docs/SPEC.md`, this file and `CLAUDE.md
 | M2 | Git layer and forge clients | ✅ |
 | M3 | Federal laws (gesetze-im-internet) | ✅ |
 | M4 | AI layer, providers, remote worker | ✅ |
-| M5 | Change pipeline and `content` repository | ⬜ |
+| M5 | Change pipeline and `content` repository | 🚧 |
 | M6 | BGBl, DIP, preview PRs | ⬜ |
 | M7 | Public website | ⬜ |
 | M8 | Users, onboarding, GDPR | ⬜ |
@@ -258,14 +258,87 @@ the remote worker claims and completes a job; when it is offline the cloud fallb
   is the form that works.
 - MySQL will not take a placeholder for `LIMIT`, which broke the claim query.
 
+## M5 — Change pipeline and the `content` repository 🚧 (started 2026-09-13)
+
+Acceptance (SPEC.md § 20): a law change from M3 runs the whole pipeline to a published card in four
+languages (on the `FakeLlmClient` in demo mode); a corrupted amount in an AI answer is caught by the
+fact check and goes to `needs_review`.
+
+**Done — the deterministic foundation** (everything that must not depend on a model)
+
+- [x] `EffectiveDateCalculator` (§ 24.5): "am Tag nach der Verkündung", "am ersten Tag des dritten
+      auf die Verkündung folgenden Kalendermonats", "drei Monate nach…", explicit dates. A rule it
+      does not understand returns null, so the card keeps the literal sentence and waits for a human
+- [x] `FactVerifier` (§ 7.4, check 1) — **the M5 acceptance case is covered**: every `source_quote`
+      must be findable in the German text, every amount inside its own quote, and a derived date
+      must agree with the calculator rather than with the model. Number spelling ("48 300",
+      "48.300", "48300", non-breaking spaces) is typography, not a factual difference
+- [x] `Placeholder` + `PlaceholderParser` (§ 24.13): four placeholder types, a canonical form for
+      comparing master and translation, and detection of figures written out by hand. Card content
+      is **never** given to Twig — `{{ app.request }}` is literal text here (SSTI)
+- [x] `CardFile` / `ParsedCard` (§ 5.4): headings are translated, anchors (`{#summary}`) are not;
+      text outside a section is dropped rather than published unchecked; `masterHash` ignores
+      headings so improving a German heading does not invalidate four translations
+- [x] `FactsFile` (§ 5.3): fixed key order, amounts sorted by key, unknown keys preserved — the same
+      facts always produce byte-identical YAML
+- [x] `TranslationChecker` (§ 7.4, checks 3–7): placeholders identical to the master, no bare
+      values, no missing sections, summary ≤ 280 characters, card ≤ `review.max_card_chars`,
+      language, glossary, forbidden wording
+- [x] `LanguageDetector` (§ 7.4, check 5) — script- and stopword-based, no dependency; it only has
+      to tell this project's five languages apart, and says nothing when unsure
+- [x] `ForbiddenWording` + `config/content/forbidden-wording.yml`: legal advice and political
+      judgement are stopped mechanically, not merely discouraged in a prompt
+- [x] `Taxonomy` / `TaxonomyFile` + `config/content/taxonomy.default.yml` (§ 9.1): the vocabulary
+      shared by profiles and audiences, ~90 tags in ten groups, topics and the sixteen states
+- [x] `Glossary` / `GlossaryFile` (§ 5.5), `ContentWriter` (the `changes/<year>/<change-id>/` layout)
+- [x] `schemas/facts.schema.json` and `schemas/card.frontmatter.schema.json`, copied into the
+      content repository by `patchnotes:bootstrap` — the repository's own CI validates every
+      contribution against the same documents the application uses
+
+**Remaining for M5**
+
+- [ ] The pipeline itself: messages, handlers and stages of § 7.1 on `Change.pipelineState`,
+      idempotent and resumable
+- [ ] `ChangeDetector`: turn merged `laws` pull requests into `Change` rows through the commit
+      trailers, with the settling window of § 24.4
+- [ ] The AI stages through `AiGateway`: `change_analyze` → `card_write` → `card_verify` (different
+      provider) → `card_translate`
+- [ ] `ContentImporter` (git → database: Change, Card, TaxonomyTag, GlossaryTerm) and the `content`
+      branch of `RepositoryUpdated`
+- [ ] Pull request into `content`, the review policy of § 5.6, publication and Meilisearch indexing
+- [ ] Stale translations via `master_hash`, the public corrections log
+- [ ] Initial glossaries and style guides generated with AI as a `needs-review` pull request
+- [ ] `make demo` (`patchnotes:demo:load`): fixtures + `FakeLlmClient`, no network and no API keys
+
+**Bugs found while building this part** (all fixed):
+
+- **My own inconsistency from M4:** the card schemas and prompts used `who_is_affected`/`from_when`,
+  but § 24.13 fixes the keys as `who`/`when`, and § 24 overrides earlier sections. Corrected in the
+  three card schemas and both prompt templates
+- The language check called a perfectly good Russian card "German": placeholders are Latin
+  identifiers (`{{ norm:bund/aufenthg_2004/p18g }}`) and outweighed the Cyrillic, after which an
+  umlaut in "Ausländerbehörde" decided it. Placeholders are now stripped before detection, and
+  umlauts alone no longer mean German — by the rules of this project every language keeps the
+  German terms
+- The "bare value" check never fired for "500 €", because `\b` cannot match after "€"
+
 ## Known issues / open points
 
-- **CI on GitHub is not confirmed green.** The workflow never created the schema in the test
-  database, so every database-backed test failed on a fresh runner. Reproduced locally by dropping
-  the schema (same `Base table or view not found: patchnotes_test.jurisdiction`), fixed by a
-  "Prepare the test database" step and pushed as `4be6aac`. This machine has neither `gh` nor a
-  token, so **someone has to look at the Actions tab** — including the three red Dependabot pull
-  requests, which should turn green with the same fix.
+- **CI: both jobs are fixed and verified, but the fix is only as good as the next run.** The story
+  is worth remembering because the first diagnosis was incomplete:
+  the workflow has *two* jobs. The missing test-database schema was real and made
+  "Stack, tests and static analysis" fail; that job has been green since `4be6aac`. The redness that
+  remained came from the second job, **super-linter**, which had never passed: it ran
+  `composer install` inside its own image (no ext-xml/gd/pdo/sodium/zip), then sqlfluff without a
+  dialect, four Prettier formatters, codespell on German text, and a dozen Python/JS linters for
+  files that are not part of the application. Turning them off one at a time failed twice, so the
+  job now uses an **allow-list** (`VALIDATE_YAML/JSON/XML/BASH/DOCKERFILE_HADOLINT/GITHUB_ACTIONS/
+  GITLEAKS/GIT_MERGE_CONFLICT_MARKERS`). Verified by running the very same image locally under
+  `--platform linux/amd64`: "All files and directories linted successfully".
+  Note for future sessions: this machine has no `gh` and no token, but the repository is public, so
+  run status is readable at
+  `https://api.github.com/repos/Patchnotes-Germany/Patchnotes_germany/actions/runs` — job **steps**
+  are public, job **logs** are not (403), which is why the reproduction has to be local.
 - `ai.pricing` is deliberately **empty**: prices change and inventing them would put wrong numbers on
   the cost dashboard. Fill them in from the provider's price page when the models are chosen — a
   model without an entry is counted as free, which is right for a local model and wrong for a cloud
@@ -293,12 +366,18 @@ the remote worker claims and completes a job; when it is offline the cloud fallb
 
 ## Next step
 
-**M5 — Change pipeline and the `content` repository.** The chain of § 7.1 as idempotent, resumable
-Messenger stages on `Change.pipelineState`: `ChangeDetected` → `change_analyze` → deterministic fact
-verification (§ 7.4: every amount, date and `source_quote` must be findable in the German text) →
-`card_write` (master language) → `card_verify` by a different model → `card_translate` into ru/uk/tr
-→ the checks of § 7.4 (placeholders, glossary, language detection, length, forbidden wording) →
-pull request into `content` → merge by the review policy → import + Meilisearch.
-Plus the files of § 5: `facts.yml` and its schema, the card format with its fixed sections and
-placeholders, `taxonomy.yml` (§ 9.1), the glossaries and style guides, and `make demo` with fixtures
-and the `FakeLlmClient`. The AI layer of M4 is the entry point: `AiGateway::run($task, $context)`.
+**Finish M5 — wire the pipeline.** The deterministic half is done and tested (see above): the file
+formats, the fact check, the quality checks, the vocabulary. What remains is the chain of § 7.1
+itself, as idempotent, resumable Messenger stages on `Change.pipelineState`:
+
+`ChangeDetected` (from the merged `laws` pull request, via the commit trailers and the settling
+window of § 24.4) → `change_analyze` → `FactVerifier` → `card_write` in the master language →
+`card_verify` on a different provider → `card_translate` into the other languages →
+`TranslationChecker` → pull request into `content` → merge by the review policy of § 5.6 →
+`ContentImporter` into the database → Meilisearch.
+
+Every AI stage goes through `AiGateway::run($task, $context, $subject)` from M4; every check that
+fails with an error moves the change to `needs_review` instead of publishing. Finish with
+`make demo` (`patchnotes:demo:load`) so the whole path can be run on fixtures and the
+`FakeLlmClient`, without a network or an API key — that is also how the M5 acceptance criterion is
+demonstrated.

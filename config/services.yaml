@@ -62,6 +62,12 @@ services:
             $config: '%patchnotes.config%'
         public: true
 
+    # How long a whole card may be is a policy decision, so it comes from configuration
+    # (SPEC.md § 7.4, check 6); the 280-character summary limit is fixed by the interface.
+    App\Content\Check\TranslationChecker:
+        arguments:
+            $maxCardChars: '%patchnotes.review.max_card_chars%'
+
     # Entry points of the AI layer. Public because the tests and `make demo` replace a provider with
     # the scripted one (LlmClientRegistry::override) and because nothing depends on the gateway until
     # the pipeline of M5 does — an unused private service would be removed from the container.

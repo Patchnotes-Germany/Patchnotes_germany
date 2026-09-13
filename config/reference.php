@@ -1279,6 +1279,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     review?: array{
  *         auto_publish?: scalar|Param|null, // Default: true
  *         min_verify_score?: float|Param, // Default: 0.8
+ *         max_card_chars?: int|Param, // Upper bound for a whole card (SPEC.md § 7.4, check 6); the summary limit is fixed at 280. // Default: 8000
  *         require_human_for_impact?: scalar|Param|null, // Default: null
  *         hold_alerts_minutes?: int|Param, // Default: 0
  *         unreviewed_badge?: scalar|Param|null, // Default: true

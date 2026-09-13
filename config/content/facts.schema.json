@@ -1,0 +1,190 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://patchnotes.example/schemas/facts.schema.json",
+    "title": "Patchnotes facts.yml",
+    "description": "The single source of truth for every number and date of a change (SPEC.md § 5.3). Card texts carry only placeholders; the values live here, which is why this file is validated strictly.",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "kind", "jurisdiction", "stage", "dates", "audience", "topics", "impact"],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "description": "The change id of SPEC.md § 24.1; also the directory name."
+        },
+        "kind": {
+            "type": "string",
+            "enum": ["amendment", "new_law", "repeal", "regulation", "bill"]
+        },
+        "jurisdiction": {
+            "type": "string",
+            "pattern": "^(bund|bw|by|be|bb|hb|hh|he|mv|ni|nw|rp|sl|sn|st|sh|th)$"
+        },
+        "lands": {
+            "type": "array",
+            "description": "Empty means the whole country. If jurisdiction is not bund, this is exactly [jurisdiction] (§ 24.8).",
+            "items": {
+                "type": "string",
+                "pattern": "^(bw|by|be|bb|hb|hh|he|mv|ni|nw|rp|sl|sn|st|sh|th)$"
+            }
+        },
+        "title_de": {"type": "string"},
+        "amending_act": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "properties": {
+                "citation": {"type": "string"},
+                "date": {"type": "string", "format": "date"},
+                "url": {"type": "string"}
+            }
+        },
+        "affected_laws": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["law"],
+                "properties": {
+                    "law": {"type": "string"},
+                    "norms": {"type": "array", "items": {"type": "string"}},
+                    "laws_repo_pr": {"type": ["string", "null"]}
+                }
+            }
+        },
+        "stage": {
+            "type": "string",
+            "description": "Only the legislative stage is stored; in_force is derived at runtime (§ 24.6).",
+            "enum": ["discussed", "adopted", "promulgated", "rejected", "withdrawn"]
+        },
+        "dates": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "promulgated": {"type": ["string", "null"], "format": "date"},
+                "effective": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {"type": ["string", "null"], "format": "date"},
+                            "rule_text": {
+                                "type": ["string", "null"],
+                                "description": "The rule quoted literally when the act names no fixed date (§ 24.5)."
+                            },
+                            "derived": {
+                                "type": "boolean",
+                                "description": "True when the date was computed from rule_text by the calculator, not read from the act."
+                            },
+                            "scope": {"type": ["string", "null"]},
+                            "norms": {"type": "array", "items": {"type": "string"}}
+                        }
+                    }
+                },
+                "deadlines": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "date": {"type": ["string", "null"], "format": "date"},
+                            "rule_text": {"type": ["string", "null"]},
+                            "description": {"type": "string"}
+                        }
+                    }
+                }
+            }
+        },
+        "amounts": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["key", "source_quote"],
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9_]+$",
+                        "description": "Referenced from cards as {{ amount:<key>.new }}."
+                    },
+                    "label": {
+                        "type": "object",
+                        "description": "Localized labels, keyed by language code (§ 24.13).",
+                        "additionalProperties": {"type": "string"}
+                    },
+                    "old": {"type": ["number", "null"]},
+                    "new": {"type": ["number", "null"]},
+                    "unit": {"type": "string"},
+                    "per": {"type": ["string", "null"], "enum": ["year", "month", "week", "day", "once", null]},
+                    "source_quote": {
+                        "type": "string",
+                        "minLength": 2,
+                        "description": "Literal quote from the German text; checked automatically (§ 7.4)."
+                    },
+                    "source_ref": {"type": ["string", "null"]}
+                }
+            }
+        },
+        "audience": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["general"],
+            "properties": {
+                "general": {"type": "boolean"},
+                "all_of": {"type": "array", "items": {"type": "string"}},
+                "any_of": {"type": "array", "items": {"type": "string"}},
+                "none_of": {"type": "array", "items": {"type": "string"}}
+            }
+        },
+        "topics": {"type": "array", "items": {"type": "string"}},
+        "impact": {"type": "integer", "minimum": 0, "maximum": 3},
+        "impact_rationale": {"type": ["string", "null"]},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "uncertainties": {"type": "array", "items": {"type": "string"}},
+        "review": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "state": {
+                    "type": "string",
+                    "enum": ["draft", "needs_review", "auto_published", "reviewed", "corrected"]
+                },
+                "reviewed_by": {"type": ["string", "null"]},
+                "reviewed_at": {"type": ["string", "null"]},
+                "verify_score": {"type": ["number", "null"], "minimum": 0, "maximum": 1}
+            }
+        },
+        "ai": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+                "analysis_model": {"type": ["string", "null"]},
+                "writer_model": {"type": ["string", "null"]},
+                "verifier_model": {"type": ["string", "null"]},
+                "prompt_versions": {
+                    "type": "object",
+                    "additionalProperties": {"type": "integer"}
+                },
+                "generated_at": {"type": ["string", "null"]}
+            }
+        },
+        "sources": {"type": "array", "items": {"type": "string"}},
+        "corrections": {
+            "type": "array",
+            "description": "Public log of corrections; entries are never removed.",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["date", "description"],
+                "properties": {
+                    "date": {"type": "string", "format": "date"},
+                    "description": {"type": "string"}
+                }
+            }
+        },
+        "mixed_attribution": {
+            "type": "boolean",
+            "description": "Several acts are reflected in one diff, so the card needs a human (§ 24.4)."
+        }
+    }
+}

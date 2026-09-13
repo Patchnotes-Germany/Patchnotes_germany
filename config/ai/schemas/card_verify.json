@@ -24,7 +24,7 @@
                     },
                     "section": {
                         "type": "string",
-                        "enum": ["title", "summary", "what_changes", "who_is_affected", "from_when", "what_to_do", "details", "whole_card"]
+                        "enum": ["title", "summary", "what_changes", "who", "when", "what_to_do", "details", "whole_card"]
                     },
                     "description": {"type": "string", "minLength": 5},
                     "quote": {

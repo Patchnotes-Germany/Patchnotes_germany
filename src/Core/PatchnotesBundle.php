@@ -80,6 +80,9 @@ final class PatchnotesBundle extends AbstractBundle
         /** @var array{repeal_confirmations: int} $sources */
         $sources = $config['sources'];
         $builder->setParameter('patchnotes.sources.repeal_confirmations', $sources['repeal_confirmations']);
+        /** @var array{max_card_chars: int} $review */
+        $review = $config['review'];
+        $builder->setParameter('patchnotes.review.max_card_chars', $review['max_card_chars']);
     }
 
     /**
@@ -378,6 +381,10 @@ final class PatchnotesBundle extends AbstractBundle
             ->children()
                 ->scalarNode('auto_publish')->defaultTrue()->end()
                 ->floatNode('min_verify_score')->defaultValue(0.8)->end()
+                ->integerNode('max_card_chars')
+                    ->info('Upper bound for a whole card (SPEC.md § 7.4, check 6); the summary limit is fixed at 280.')
+                    ->defaultValue(8000)
+                ->end()
                 ->scalarNode('require_human_for_impact')->defaultNull()->end()
                 ->integerNode('hold_alerts_minutes')->defaultValue(0)->end()
                 ->scalarNode('unreviewed_badge')->defaultTrue()->end()

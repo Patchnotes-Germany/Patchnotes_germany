@@ -6,18 +6,28 @@ namespace App\Git\Bootstrap;
 
 use App\Core\Config\PatchnotesConfig;
 use App\Git\Enum\RepositoryName;
+use Symfony\Component\DependencyInjection\Attribute\Autowire;
 
 /**
  * Initial structure of the `content` repository (SPEC.md § 5.1).
  *
  * Everything language-dependent — the CODEOWNERS entries, the glossary and style guide files — is
  * derived from patchnotes.languages, so adding a language stays a configuration change (§ 24.15).
- * The JSON schemas for facts and cards are written by M5, which defines their fields.
+ *
+ * The taxonomy and the JSON schemas are shipped as files under config/content/ rather than as
+ * strings in this class: they are data that people edit, and the application validates against the
+ * very same documents it publishes.
  */
 final readonly class ContentRepositoryLayout implements RepositoryLayout
 {
-    public function __construct(private PatchnotesConfig $config)
-    {
+    private string $resourceDir;
+
+    public function __construct(
+        private PatchnotesConfig $config,
+        #[Autowire('%kernel.project_dir%')]
+        ?string $projectDir = null,
+    ) {
+        $this->resourceDir = ($projectDir ?? \dirname(__DIR__, 3)).'/config/content';
     }
 
     public function repository(): RepositoryName
@@ -38,7 +48,11 @@ final readonly class ContentRepositoryLayout implements RepositoryLayout
             'bills/.gitkeep' => '',
             'digests/.gitkeep' => '',
             'plenary/.gitkeep' => '',
-            'schemas/.gitkeep' => '',
+            // The vocabulary shared by user profiles and change audiences (§ 9.1), and the schemas
+            // the repository's own CI validates every contribution against.
+            'taxonomy.yml' => $this->resource('taxonomy.default.yml'),
+            'schemas/facts.schema.json' => $this->resource('facts.schema.json'),
+            'schemas/card.frontmatter.schema.json' => $this->resource('card.frontmatter.schema.json'),
         ];
 
         foreach ($this->config->languages() as $language) {
@@ -47,6 +61,18 @@ final readonly class ContentRepositoryLayout implements RepositoryLayout
         }
 
         return $files;
+    }
+
+    /**
+     * A file shipped with the application and copied into the repository unchanged.
+     */
+    private function resource(string $name): string
+    {
+        $path = $this->resourceDir.'/'.$name;
+        $contents = is_file($path) ? file_get_contents($path) : false;
+
+        return false === $contents
+            ? throw new \RuntimeException(\sprintf('The content resource "%s" is missing.', $path)) : $contents;
     }
 
     private function readme(): string

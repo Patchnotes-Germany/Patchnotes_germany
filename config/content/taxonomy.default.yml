@@ -1,0 +1,254 @@
+# The shared vocabulary of Patchnotes (SPEC.md § 9.1).
+#
+# One dictionary serves two purposes: it is what a person picks in the onboarding questionnaire, and
+# it is the only set of tags the AI may use to describe who a change concerns. That is why a tag the
+# AI would like to invent goes to `suggested_tags` instead — a vocabulary both sides share is what
+# makes the matching of § 9.2 deterministic and explainable ("you see this because you said: Berlin,
+# child under 3").
+#
+# This file is copied into the `content` repository at bootstrap and is edited there by pull
+# request. Names are given in the master language only; the other languages of
+# `patchnotes.languages` are added by native speakers, because a wrong label here sends the wrong
+# alerts to the wrong people.
+#
+# `exclusive: true` marks a group where exactly one answer is possible.
+
+groups:
+  residence:
+    exclusive: true
+    names:
+      en: Residence status
+    tags:
+      german_citizen:
+        names: { en: German citizen }
+      eu_citizen:
+        names: { en: Citizen of an EU/EEA state or Switzerland }
+      niederlassungserlaubnis:
+        names: { en: Settlement permit (Niederlassungserlaubnis) }
+      daueraufenthalt_eu:
+        names: { en: EU long-term residence (Daueraufenthalt-EU) }
+      aufenthaltserlaubnis_work:
+        names: { en: Residence permit for employment }
+      blue_card:
+        names: { en: EU Blue Card }
+      chancenkarte:
+        names: { en: Opportunity card (Chancenkarte) }
+      student_visa:
+        names: { en: Student residence permit }
+      apprenticeship_visa:
+        names: { en: Residence permit for vocational training }
+      family_reunification:
+        names: { en: Residence permit for family reasons }
+      temporary_protection_24:
+        names: { en: Temporary protection (§ 24 AufenthG) }
+      refugee_recognized:
+        names: { en: Recognised refugee }
+      subsidiary_protection:
+        names: { en: Subsidiary protection }
+      asylum_procedure:
+        names: { en: Asylum procedure in progress (Aufenthaltsgestattung) }
+      duldung:
+        names: { en: Tolerated stay (Duldung) }
+      spaetaussiedler:
+        names: { en: Late repatriate (Spätaussiedler) }
+      other_residence:
+        names: { en: Another residence status }
+
+  residence_plans:
+    names:
+      en: Plans
+    tags:
+      planning_naturalization:
+        names: { en: Planning naturalisation }
+      planning_family_reunification:
+        names: { en: Planning to bring family }
+      planning_permanent_residence:
+        names: { en: Planning permanent residence }
+
+  work:
+    names:
+      en: Work and income
+    tags:
+      employee:
+        names: { en: Employee }
+      minijob:
+        names: { en: Minijob }
+      midijob:
+        names: { en: Midijob }
+      self_employed:
+        names: { en: Self-employed }
+      freelancer:
+        names: { en: Freelancer (Freiberufler) }
+      business_owner:
+        names: { en: Business owner }
+      civil_servant:
+        names: { en: Civil servant (Beamte) }
+      apprentice:
+        names: { en: Apprentice (Azubi) }
+      working_student:
+        names: { en: Working student }
+      job_seeker_alg1:
+        names: { en: Unemployment benefit (ALG I) }
+      buergergeld:
+        names: { en: Citizen's benefit (Bürgergeld) }
+      retired:
+        names: { en: Retired }
+      parental_leave:
+        names: { en: On parental leave }
+      not_working:
+        names: { en: Not working }
+
+  family:
+    names:
+      en: Family
+    tags:
+      married:
+        names: { en: Married }
+      registered_partnership:
+        names: { en: Registered partnership }
+      single_parent:
+        names: { en: Single parent }
+      pregnant:
+        names: { en: Pregnant }
+      children_under_3:
+        names: { en: Child under 3 }
+      children_3_6:
+        names: { en: Child aged 3 to 6 }
+      children_6_18:
+        names: { en: Child aged 6 to 18 }
+      children_18_25:
+        names: { en: Child aged 18 to 25 }
+      caring_for_relative:
+        names: { en: Caring for a relative }
+
+  housing:
+    names:
+      en: Housing
+    tags:
+      tenant:
+        names: { en: Tenant }
+      homeowner:
+        names: { en: Homeowner }
+      landlord:
+        names: { en: Landlord }
+      social_housing:
+        names: { en: Social housing }
+      wohngeld:
+        names: { en: Housing benefit (Wohngeld) }
+      shared_flat:
+        names: { en: Shared flat (WG) }
+
+  mobility:
+    names:
+      en: Mobility
+    tags:
+      car_owner:
+        names: { en: Car owner }
+      ev_owner:
+        names: { en: Electric car owner }
+      driver_license_foreign:
+        names: { en: Foreign driving licence }
+      public_transport:
+        names: { en: Public transport }
+      cyclist:
+        names: { en: Cyclist }
+
+  health:
+    names:
+      en: Health
+    tags:
+      gkv_insured:
+        names: { en: Statutory health insurance (GKV) }
+      pkv_insured:
+        names: { en: Private health insurance (PKV) }
+      disability:
+        names: { en: Disability }
+      long_term_care:
+        names: { en: Long-term care (Pflege) }
+
+  finance:
+    names:
+      en: Money and taxes
+    tags:
+      tax_return_filer:
+        names: { en: Files a tax return }
+      church_tax:
+        names: { en: Pays church tax }
+      investments:
+        names: { en: Investments }
+      crypto:
+        names: { en: Crypto assets }
+      private_pension:
+        names: { en: Private pension }
+      debts:
+        names: { en: Debts }
+
+  education:
+    names:
+      en: Education
+    tags:
+      school_children:
+        names: { en: Children at school }
+      university_student:
+        names: { en: University student }
+      integration_course:
+        names: { en: Integration course }
+      language_course:
+        names: { en: Language course }
+      foreign_degree_recognition:
+        names: { en: Recognition of a foreign qualification }
+
+  age:
+    exclusive: true
+    names:
+      en: Age
+    tags:
+      age_18_25:
+        names: { en: 18 to 25 }
+      age_26_45:
+        names: { en: 26 to 45 }
+      age_46_66:
+        names: { en: 46 to 66 }
+      age_67_plus:
+        names: { en: 67 and older }
+
+# Subject areas of a change; also what a person can follow without giving any personal details.
+topics:
+  - migration
+  - citizenship
+  - taxes
+  - social_benefits
+  - labor
+  - family
+  - housing
+  - energy
+  - mobility
+  - health
+  - education
+  - pensions
+  - business
+  - digital
+  - consumer
+  - criminal
+  - elections
+  - environment
+  - defense
+
+# ISO 3166-2:DE codes, lower case. An empty `lands` list on a change means the whole country.
+lands:
+  - bw
+  - by
+  - be
+  - bb
+  - hb
+  - hh
+  - he
+  - mv
+  - ni
+  - nw
+  - rp
+  - sl
+  - sn
+  - st
+  - sh
+  - th
