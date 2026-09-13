@@ -241,6 +241,28 @@ final readonly class RepositoryReader
         ));
     }
 
+    /**
+     * The files one commit touched, as repository-relative paths.
+     *
+     * This is how the pipeline learns which laws and norms a change actually covers: the commit
+     * carries the change id in its trailers, and its file list carries the norms (SPEC.md § 7.2).
+     *
+     * @return list<string>
+     */
+    public function filesChangedIn(string $commit): array
+    {
+        $result = $this->run(['show', '--name-only', '--format=', '--no-renames', $commit]);
+
+        if (!$result->isSuccessful()) {
+            return [];
+        }
+
+        return array_values(array_unique(array_filter(
+            preg_split('/\R/', $result->stdout) ?: [],
+            static fn (string $line): bool => '' !== trim($line),
+        )));
+    }
+
     public function trailersOf(string $commit): CommitTrailers
     {
         $result = $this->run(['show', '--no-patch', '--format=%B', $commit]);

@@ -295,12 +295,22 @@ fact check and goes to `needs_review`.
       content repository by `patchnotes:bootstrap` — the repository's own CI validates every
       contribution against the same documents the application uses
 
+- [x] **`ChangeDetector`** (§ 7.2): merged commits become `Change` rows through their `Change-Id`
+      trailer, with the norms they touched linked to their text before and after. The baseline
+      import is skipped — six thousand laws in one commit are not six thousand changes — and
+      rescanning the same range changes nothing. Wired into `RepositoryUpdated` *after* the law
+      import, because the norm rows have to exist before they can be linked
+- [x] The eight pipeline messages of § 7.1, routed per stage (analysis, writing and translation to
+      the `ai` queue, publication to `git`), plus `AdvanceSettledChangesHandler`: the analysis
+      starts only after `review.settling_window_hours`, because the same act reaches different laws
+      on different days and analysing the first arrival would describe half the change (§ 24.4)
+
 **Remaining for M5**
 
-- [ ] The pipeline itself: messages, handlers and stages of § 7.1 on `Change.pipelineState`,
-      idempotent and resumable
-- [ ] `ChangeDetector`: turn merged `laws` pull requests into `Change` rows through the commit
-      trailers, with the settling window of § 24.4
+- [ ] The stage handlers themselves, on `Change.pipelineState`, idempotent and resumable.
+      **Note for the next session:** `AdvanceSettledChanges` is deliberately *not* on the scheduler
+      yet. It dispatches `AnalyzeChange`, and until that handler exists a running scheduler would
+      quietly fill the failed transport. Add the schedule entry together with the analysis stage
 - [ ] The AI stages through `AiGateway`: `change_analyze` → `card_write` → `card_verify` (different
       provider) → `card_translate`
 - [ ] `ContentImporter` (git → database: Change, Card, TaxonomyTag, GlossaryTerm) and the `content`
@@ -324,8 +334,8 @@ fact check and goes to `needs_review`.
 
 ## Known issues / open points
 
-- **CI: both jobs are fixed and verified, but the fix is only as good as the next run.** The story
-  is worth remembering because the first diagnosis was incomplete:
+- **CI is green** — both jobs passed on `d91ef5a`, the first fully green run of the project. The
+  story is worth remembering because the first diagnosis was incomplete:
   the workflow has *two* jobs. The missing test-database schema was real and made
   "Stack, tests and static analysis" fail; that job has been green since `4be6aac`. The redness that
   remained came from the second job, **super-linter**, which had never passed: it ran

@@ -59,6 +59,17 @@ framework:
             'App\Source\Message\SynchroniseBundLaws': sources
             # Expired worker leases and the cloud fallback for an offline local model (SPEC.md § 8.3).
             'App\Ai\Message\FallbackStaleAiJobs': ai
+            # The change pipeline (SPEC.md § 7.1). Every stage is its own message, so a failure is
+            # retried at the stage that failed instead of replaying the whole chain.
+            'App\Pipeline\Message\ChangeDetected': pipeline
+            'App\Pipeline\Message\AdvanceSettledChanges': pipeline
+            'App\Pipeline\Message\AnalyzeChange': ai
+            'App\Pipeline\Message\VerifyChangeFacts': pipeline
+            'App\Pipeline\Message\WriteMasterCard': ai
+            'App\Pipeline\Message\VerifyMasterCard': ai
+            'App\Pipeline\Message\TranslateCards': ai
+            'App\Pipeline\Message\CheckTranslations': pipeline
+            'App\Pipeline\Message\PublishChange': git
 
 when@test:
     framework:
