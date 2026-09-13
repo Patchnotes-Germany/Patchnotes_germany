@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Core\Scheduler;
 
 use App\Core\Scheduler\Message\SchedulerHeartbeat;
+use App\Git\Message\SynchroniseAllRepositories;
 use Symfony\Component\DependencyInjection\Attribute\Autowire;
 use Symfony\Component\Lock\LockFactory;
 use Symfony\Component\Messenger\Message\RedispatchMessage;
@@ -40,6 +41,8 @@ final readonly class MainSchedule implements ScheduleProviderInterface
             ->add(
                 // Proof of life for the scheduler itself; /readyz and the admin dashboard read it.
                 RecurringMessage::every('15 minutes', new RedispatchMessage(new SchedulerHeartbeat(), 'default')),
+                // Fallback for missed forge webhooks (SPEC.md § 3.2).
+                RecurringMessage::every('10 minutes', new RedispatchMessage(new SynchroniseAllRepositories(), 'git')),
             )
             ->stateful($this->cache)
             ->lock($this->lockFactory->createLock('scheduler-default'))

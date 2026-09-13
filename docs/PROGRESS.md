@@ -9,7 +9,7 @@ A new session continues from here: read `docs/SPEC.md`, this file and `CLAUDE.md
 |---|---|---|
 | M0 | Skeleton: Symfony + Docker + Makefile + CI + docs | ✅ |
 | M1 | Domain model and configuration | ✅ |
-| M2 | Git layer and forge clients | ⬜ |
+| M2 | Git layer and forge clients | ✅ |
 | M3 | Federal laws (gesetze-im-internet) | ⬜ |
 | M4 | AI layer, providers, remote worker | ⬜ |
 | M5 | Change pipeline and `content` repository | ⬜ |
@@ -27,83 +27,98 @@ A new session continues from here: read `docs/SPEC.md`, this file and `CLAUDE.md
 
 Acceptance (SPEC.md § 20): `make up && make install` brings the stack up, `/healthz` answers 200, CI is green.
 
-- [x] Repository initialised, `.gitignore` / `.gitattributes` / `.editorconfig`
 - [x] `Dockerfile` (dev + prod targets) on FrankenPHP 1.12 / PHP 8.4.25 with intl, gd, gmp, sodium,
       pdo_mysql, pcntl, apcu, zip, opcache + git, openssh, poppler-utils, tesseract-ocr(+deu), Noto fonts
 - [x] `compose.yaml` + dev/prod overrides: php, worker-sources/pipeline/git/ai(×2)/notify, scheduler,
       mysql 8.4.11, meilisearch v1.53.2, backup, mailpit (dev), ollama (profile `local-llm`)
-- [x] Healthchecks for every service; workers report liveness through a heartbeat file written by
-      `App\Core\Messenger\WorkerHeartbeatSubscriber` (ADR 0003)
-- [x] Backup service: daily dump at 04:30 Europe/Berlin, 14-day rotation, additive storage mirror,
-      `make backup` / `make restore FILE=…`
-- [x] Symfony 7.4.18 skeleton + Doctrine ORM 3, Messenger, Scheduler, Lock, HttpClient, Twig,
-      AssetMapper, Translation, Monolog, Validator, UID, Process
-- [x] `/healthz` (liveness) and `/readyz` (database, Meilisearch, queue table)
-- [x] Messenger transports `sources`, `git`, `ai`, `pipeline`, `notifications`, `default`, `failed`
-      (Doctrine/MySQL, one queue each, retry strategies); `in-memory://` in the test environment
-- [x] Scheduler `default` (stateful cache + lock, `processOnlyLastMissedRun`) with a 15-minute heartbeat
-- [x] `patchnotes:secrets:generate` (APP_SECRET, APP_ENCRYPTION_KEY → `.env.local`), `patchnotes:config:check`
-- [x] `.env` with every variable from SPEC.md § 22 and § 24.20
-- [x] `Makefile` with all targets from SPEC.md § 18.2; GitHub Actions CI; Dependabot
-- [x] Quality tooling: PHPUnit 13 (suites unit/integration/e2e), PHPStan level 8, PHP-CS-Fixer
-      (`@Symfony` + `@PHP84Migration` + strict types), Rector (PHP 8.4, dead code, code quality, types)
-- [x] `CLAUDE.md`, `README.md`, `README.ru.md`, ADR template, ADR 0001–0004
-
-**Verified locally:** `make up` → 12 healthy containers; `make install`; `https://localhost/healthz`
-→ `200 {"status":"ok"}` (HTTP → HTTPS 308); `https://localhost/readyz` → `200 {"status":"ready"}`;
-`make test`, `make lint`, `make backup` all green.
+- [x] Healthchecks everywhere; workers report liveness through a heartbeat file (ADR 0003)
+- [x] Backup service: daily dump 04:30 Europe/Berlin, 14-day rotation, additive storage mirror
+- [x] Symfony 7.4.18 + Doctrine ORM 3, Messenger, Scheduler, Lock, HttpClient, Twig, AssetMapper,
+      Translation, Monolog, Validator, UID, Process
+- [x] `/healthz` and `/readyz`; 7 Messenger transports; stateful, locked scheduler
+- [x] `patchnotes:secrets:generate`, `patchnotes:config:check`, `.env` with all variables of § 22 / § 24.20
+- [x] `Makefile` (§ 18.2), GitHub Actions CI, Dependabot, quality tooling (PHPUnit, PHPStan 8, CS-Fixer, Rector)
 
 ## M1 — Domain model and configuration ✅ (2026-09-12)
 
-Acceptance (SPEC.md § 20): migrations apply on a clean database; `bin/console debug:config patchnotes`
-prints the full configuration.
+Acceptance: migrations apply on a clean database; `debug:config patchnotes` prints the full configuration.
 
-- [x] `App\Core\PatchnotesBundle` with the complete configuration tree of SPEC.md § 24.19
-      (languages, repositories, git, sources incl. federal-state slots, features, AI providers/models/
-      tasks/budget/pricing/fx, review policy, notifications, alerts, billing, legal, retention)
-- [x] `config/packages/patchnotes.yaml` wired to the environment variables of § 22; env-driven nodes
-      are scalars, validated at runtime (§ 24.18) by `ConfigurationChecker` / `patchnotes:config:check`
-- [x] `App\Core\Config\PatchnotesConfig` — typed, public service for the whole tree
-- [x] 34 entities in `src/<Domain>/Entity` + 26 enums, following § 17 and § 24:
-      - Laws: `Jurisdiction`, `Law`, `Norm`, `NormVersion`, `NormTranslation`
-      - Sources: `Source`, `SourceRun`, `SourceDocument`
-      - Content: `AmendingAct`, `Change` (table `law_change`), `ChangeNorm`, `Bill`, `Card`,
-        `Digest`, `PlenarySummary`, `GlossaryTerm`, `TaxonomyTag`
-      - Git: `ChangeRequest` (one change → many pull requests, § 24.4)
-      - Users: `User`, `UserProfile` (encrypted tags), `UserTranslatorLanguage`, `ConsentRecord`
-      - Notifications: `TelegramLink`, `NotificationPreference`, `PushSubscription`, `CalendarToken`,
-        `Notification` (unique idempotency key), `DeliveryIndex` (§ 24.9)
-      - AI: `AiJob` (remote worker leases), `AiUsage`, `WorkerToken`
-      - Core: `FeatureFlag`, `Setting`, `AuditLog`
-- [x] `encrypted_json` Doctrine type (libsodium secretbox) for profile tags, key injected at bundle boot
+- [x] `App\Core\PatchnotesBundle` with the complete configuration tree of § 24.19 and
+      `config/packages/patchnotes.yaml` wired to the environment variables of § 22
+- [x] `App\Core\Config\PatchnotesConfig` — typed, public access to the tree
+- [x] 34 entities + 26 enums (Laws, Source, Content, Git, User, Notification, Ai, Core) following
+      § 17 and § 24: natural keys, `law_change`, binary collations, UTC vs. legal dates,
+      generalised cards, one change → many pull requests
+- [x] `encrypted_json` Doctrine type (libsodium) for profile tags, key injected at bundle boot
 - [x] Migration `Version20260911230913`: 38 tables, `doctrine:schema:validate` clean
-- [x] ADR 0005 records the persistence rules (natural keys, collations, UTC vs. legal dates,
-      generalised cards, stage vs. runtime state, primary vs. derived data)
-- [x] Tests: configuration tree from the real files, AI task routing completeness, `PatchnotesConfig`,
-      `EncryptedJsonType` round-trip/nonce/wrong-key, pipeline stage ordering — 34 tests green
+- [x] ADR 0005 (persistence rules)
+
+## M2 — Git layer ✅ (2026-09-13)
+
+Acceptance (SPEC.md § 20): integration tests over local bare repositories and mocked forges —
+create branch → commit → pull request → merge → synchronise into the database.
+
+- [x] `GitCommandRunner`: system git through `symfony/process`, token redaction, no interactive prompts
+- [x] `GitRepository` (write side): clone/init, fetch, branches, **worktrees** per pull request branch,
+      commit with bot identity and provenance trailers, merge commits, push (skipped when
+      `GIT_PUSH_ENABLED=false`), branch cleanup, numstat statistics; every write under a Doctrine lock
+- [x] `RepositoryReader` (read side): all history, `show`, `ls-tree`, `log`, `blame`, `diff`, `numstat`
+      answered from the **bare mirror** `var/repos/<name>.mirror.git` — web processes never touch a
+      working tree (§ 24.10)
+- [x] Provenance trailers (`Source`, `Source-Url`, `Amending-Act`, `Amending-Act-Url`, `Change-Id`)
+      written and parsed back; `commitsForChange()` finds every commit of a change
+- [x] `ForgeClientInterface` + GitHub, GitLab, Gitea/Forgejo and `none`; labels, comments, merge,
+      close, status; self-hosted instances via `forge_api_url`
+- [x] Webhooks `POST /webhooks/forge/{repo}` with signature verification (GitHub HMAC, GitLab token,
+      Gitea HMAC) — unsigned or tampered payloads are rejected with 401 and dispatch nothing
+- [x] Messages on the `git` queue: `SynchroniseRepository`, `SynchroniseAllRepositories`,
+      `RefreshChangeRequestStatus`; `RepositoryUpdated` (pipeline queue) is the hand-over point to M3/M5
+- [x] Ten-minute `SynchroniseAllRepositories` schedule as the fallback for missed webhooks
+- [x] `ChangeRequestManager`: branch + commit + pull request + labels + comment + merge/close,
+      persisted as `ChangeRequest`; **returns null when nothing changed**, so a repeated run opens
+      no pull request
+- [x] `patchnotes:bootstrap` creates the structure of both repositories (README, LICENSE,
+      CONTRIBUTING, schemas, CI workflow, CODEOWNERS derived from `patchnotes.languages`), idempotent
+- [x] ADR 0006 (git layer topology)
+
+**Verified locally:** `patchnotes:bootstrap` initialised `laws` and `content` with real commits and
+mirrors, a second run reported "already up to date"; 82 tests / 263 assertions green, including the
+full branch → commit → pull request → merge → database path on real repositories, blame/diff/history
+from the mirror, forge APIs against recorded responses, and webhook signature verification for all
+three forges. `make lint` (PHP-CS-Fixer, PHPStan level 8, Rector, `lint:yaml`, `lint:container`,
+`lint:twig`) is clean.
+
+**Bug found by the tests:** merges were created without the bot identity — the containers have no
+global git configuration, so `git merge` would have failed in production as well. Fixed by passing
+`-c user.name/-c user.email` to every committing command.
 
 ## Known issues / open points
 
-- **CI is unverified:** there is no git remote yet, so the GitHub Actions workflow has never run. The same
-  commands are green locally. Check on the first push.
-- **Billing entities** (`Plan`, `Subscription`) are intentionally not created yet: the feature is off by
-  default and belongs to M12, so the schema stays free of unused tables (ADR 0005).
-- **Frontend toolchain** (Tailwind, Symfony UX) is deferred to M7 together with the website;
-  `make install` will gain the asset build step there.
-- Security interfaces on `User` (`UserInterface`, `PasswordAuthenticatedUserInterface`) are added in M8
-  when the authentication system arrives; the mapping does not change.
-- **Development machine note:** Docker Desktop's credential helper can hang in non-interactive shells,
-  which makes `docker pull`/`build` appear to freeze. Workaround: a `DOCKER_CONFIG` directory without
-  `credsStore` (with a symlink to `~/.docker/cli-plugins`, otherwise BuildKit is not used).
+- **CI is unverified:** there is no git remote yet, so the GitHub Actions workflow has never run.
+  The same commands are green locally. Check on the first push.
+- The `content` repository schemas (`facts.schema.json`, `card.frontmatter.schema.json`,
+  `bill.schema.json`) and `taxonomy.yml` are written in M5, which defines their fields; the bootstrap
+  creates the directories and the language-dependent placeholders already.
+- Pull request **checks** themselves (safeguards of § 4.6, quality checks of § 7.4) arrive with the
+  content that they validate: M3 for law diffs, M5 for cards. The git layer already carries the
+  report to the forge (`ChangeRequestManager::comment()`) and stores it on `ChangeRequest.checks`.
+- **Billing entities** (`Plan`, `Subscription`) are deliberately deferred to M12 (ADR 0005).
+- **Frontend toolchain** (Tailwind, Symfony UX) is deferred to M7.
+- Security interfaces on `User` are added in M8; the mapping does not change.
+- **Development machine note:** Docker Desktop's credential helper can hang in non-interactive
+  shells, which makes `docker pull`/`build` appear to freeze. Workaround: a `DOCKER_CONFIG` directory
+  without `credsStore` (with a symlink to `~/.docker/cli-plugins`, otherwise BuildKit is not used).
 - EasyAdmin version (spec says 4, current major is 5) is decided in M10 with its own ADR.
 
 ## Next step
 
-**M2 — Git layer.** `GitRepository` service (system git through `symfony/process`, serialized writes via
-the `git` queue and `symfony/lock`, worktrees for branches, read-only bare mirror for blame/diff per
-§ 24.10), `ForgeClientInterface` with GitHub/GitLab/Gitea/none implementations, signed webhooks
-(`POST /webhooks/forge/{repo}`) with the 10-minute `git fetch` fallback, and the bootstrap of the
-`laws` and `content` repository structure (README, LICENSE, CONTRIBUTING, schemas, CI workflow,
-CODEOWNERS derived from `patchnotes.languages`).
-Acceptance: integration tests over local bare repositories and mocked forges — create branch → commit →
-pull request → merge → synchronise into the database.
+**M3 — Federal laws (gesetze-im-internet).** `SourceAdapterInterface` + the GII adapter
+(`gii-toc.xml`, per-law `xml.zip`, conditional GET, polite crawling, raw documents in
+`var/storage/raw/…`), the deterministic `GiiXmlNormalizer` (one sentence per line, German
+abbreviation-aware sentence splitting, escaping per § 24.2, tables, footnotes) with golden tests on
+≥ 20 real laws, `_law.yml` writing, the initial import via `patchnotes:bootstrap`, the daily
+synchronisation, grouping by amending act into one pull request per act (§ 4.5, change ids per
+§ 24.1), auto-merge with the safeguards of § 4.6, repeal handling (§ 24.3) and the import of
+`Law`/`Norm`/`NormVersion` into the database on `RepositoryUpdated`.
+Acceptance: `make bootstrap` imports the federal norms; a rerun without source changes creates no
+commits; a modified fixture produces a correct pull request that merges and appears in the database.

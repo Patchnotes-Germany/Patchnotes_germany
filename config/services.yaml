@@ -7,6 +7,14 @@ parameters:
     default_worker_heartbeat_file: '/tmp/messenger-worker.heartbeat'
 
 services:
+    _instanceof:
+        # One implementation per forge; the locator picks by configuration (SPEC.md § 3.1).
+        App\Git\Forge\ForgeClientInterface:
+            tags: ['app.forge_client']
+        # Initial structure of the laws and content repositories.
+        App\Git\Bootstrap\RepositoryLayout:
+            tags: ['app.repository_layout']
+
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
@@ -24,7 +32,16 @@ services:
             - '../src/Kernel.php'
             - '../src/Core/PatchnotesBundle.php'
             - '../src/**/Entity/'
+            - '../src/**/Enum/'
+            - '../src/**/Exception/'
             - '../src/**/Message/'
+            - '../src/**/Value/'
+            - '../src/Git/Webhook/WebhookEvent.php'
+            # Built per repository by the RepositoryRegistry, not by the container.
+            - '../src/Git/GitRepository.php'
+            - '../src/Git/RepositoryReader.php'
+            - '../src/Git/RepositoryConfig.php'
+            - '../src/Git/Worktree.php'
 
     # Typed access to the whole "patchnotes" configuration tree. Public, because commands, tests and
     # the admin read it directly from the container (SPEC.md § 24.19).

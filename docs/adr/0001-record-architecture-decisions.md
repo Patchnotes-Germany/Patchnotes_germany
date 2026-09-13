@@ -31,3 +31,4 @@ Numbers are sequential and never reused. A superseded ADR stays in place with it
 | [0003](0003-docker-runtime-topology.md) | Docker runtime topology | accepted |
 | [0004](0004-own-thin-ai-adapters.md) | Own thin AI adapters instead of symfony/ai-platform | accepted |
 | [0005](0005-domain-model-and-persistence.md) | Domain model and persistence rules | accepted |
+| [0006](0006-git-layer-topology.md) | Git layer topology | accepted |

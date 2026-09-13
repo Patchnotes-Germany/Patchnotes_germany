@@ -46,9 +46,15 @@ framework:
                 options:
                     queue_name: failed
 
-        # Message routing is added by the milestones that introduce the messages
+        # Further routing is added by the milestones that introduce the messages
         # (M3 sources, M4 ai, M5 pipeline, M9 notifications).
-        routing: {}
+        routing:
+            # All repository writes and fetches are serialized on the single "git" consumer.
+            'App\Git\Message\SynchroniseRepository': git
+            'App\Git\Message\SynchroniseAllRepositories': git
+            'App\Git\Message\RefreshChangeRequestStatus': git
+            # Importing the new content into the database is pipeline work, not git work.
+            'App\Git\Message\RepositoryUpdated': pipeline
 
 when@test:
     framework:
