@@ -116,11 +116,24 @@ jobs:
         uses: super-linter/super-linter/slim@v8
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATE_CHECKOV: false
-          VALIDATE_TRIVY: false
-          VALIDATE_PHP_PHPCS: false
-          VALIDATE_PHP_PSALM: false
-          VALIDATE_PHP_PHPSTAN: false
-          VALIDATE_JSCPD: false
-          VALIDATE_NATURAL_LANGUAGE: false
-          VALIDATE_MARKDOWN: false
+          # An allow-list, not a deny-list: setting any VALIDATE_* to true makes super-linter run
+          # only what is listed here. The image ships dozens of linters and formatters for
+          # languages this repository does not use, and turning them off one by one is a race
+          # nobody wins — this job exists to check the files the other job does not.
+          #
+          # Deliberately absent:
+          #   PHP           — covered by PHP-CS-Fixer, PHPStan and Rector in the job above. Leaving
+          #                   any PHP linter on also makes super-linter run "composer install"
+          #                   inside its own image, which lacks ext-xml/gd/pdo/sodium/zip.
+          #   *_PRETTIER, BIOME, SHFMT, PYTHON_*  — formatters and tooling for languages that are
+          #                   not part of the application (one fixture script, a few shell helpers).
+          #   SPELL_CODESPELL — this project quotes German on every second line ("bund", "ist",
+          #                   "Januar"), so an English spell checker reports only false positives.
+          VALIDATE_YAML: true
+          VALIDATE_JSON: true
+          VALIDATE_XML: true
+          VALIDATE_BASH: true
+          VALIDATE_DOCKERFILE_HADOLINT: true
+          VALIDATE_GITHUB_ACTIONS: true
+          VALIDATE_GITLEAKS: true
+          VALIDATE_GIT_MERGE_CONFLICT_MARKERS: true
