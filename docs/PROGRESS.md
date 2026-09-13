@@ -128,13 +128,32 @@ appears in the database.
       …) with committed expected output, plus determinism, key-safety and no-timestamp checks
       (`tests/Fixtures/gii/build-fixtures.py` rebuilds the fixtures from the source)
 
+- [x] **`BundLawSynchroniser`** — two phases: *compare* (fetch conditionally, convert, diff against
+      the repository, write nothing) and *publish* (group by amending act, run the safeguards, open
+      one pull request per act, merge only on a clean report)
+- [x] `AmendingActGrouper` + `LawChangeGroup`: one act → one branch `sync/{jurisdiction}/{date}/{change-id}`,
+      one pull request, labels `official-sync`, `jurisdiction:bund`, `amending-act`, `auto-merge`
+      or `needs-review`; laws without an identifiable act use the fallback id of § 24.1
+- [x] `SafeguardEvaluator` (§ 4.6): deletion ratio per law, share of changed laws, UTF-8 and control
+      characters, HTML allow list, determinism — with the report posted into the pull request
+- [x] `MissingLawTracker`: a law counts as repealed only after three consecutive runs without it
+      **and** a 404 (§ 24.3)
+- [x] `patchnotes:sync:bund` (`make sync-bund`), `SynchroniseBundLaws` on the `sources` queue,
+      scheduler entries at 03:00 and 15:00 Europe/Berlin (§ 11.1, § 24.16)
+- [x] **Acceptance test** on a real repository: first run imports the law through a merged pull
+      request, a rerun with unchanged content moves nothing, a changed law produces a pull request
+      for its act, a suspicious deletion is opened but *not* merged, a broken document does not stop
+      the run
+
+**Bugs the tests caught** (all in the production code, all fixed): merges were created without the
+bot identity; a synchronisation of an empty repository crashed on the unborn default branch; the
+comparison "repository vs. conversion" was order-sensitive, so unchanged laws looked changed; a
+rerun on the same day tried to open a second pull request for the same branch.
+
 **Remaining**
 
-- [ ] `BundLawSynchroniser`: detect changed laws, group by amending act into one pull request per act
-      (§ 4.5), safeguards before auto-merge (§ 4.6), repeal handling with three confirmations (§ 24.3)
 - [ ] Import of `Law`/`Norm`/`NormVersion` into the database on `RepositoryUpdated`
-- [ ] `patchnotes:sync:bund`, extension of `patchnotes:bootstrap` with the baseline import (§ 4.7)
-- [ ] Scheduler entries: daily 03:00 and 15:00 (SPEC.md § 11.1)
+- [ ] Baseline import in `patchnotes:bootstrap` (§ 4.7): all current laws in one commit, no cards
 
 ## Known issues / open points
 

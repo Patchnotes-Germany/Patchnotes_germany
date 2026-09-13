@@ -6,6 +6,7 @@ namespace App\Core\Scheduler;
 
 use App\Core\Scheduler\Message\SchedulerHeartbeat;
 use App\Git\Message\SynchroniseAllRepositories;
+use App\Source\Message\SynchroniseBundLaws;
 use Symfony\Component\DependencyInjection\Attribute\Autowire;
 use Symfony\Component\Lock\LockFactory;
 use Symfony\Component\Messenger\Message\RedispatchMessage;
@@ -28,6 +29,9 @@ use Symfony\Contracts\Cache\CacheInterface;
 #[AsSchedule('default')]
 final readonly class MainSchedule implements ScheduleProviderInterface
 {
+    /** All schedules are expressed in the legal time zone of Germany (SPEC.md § 24.16). */
+    private const string TIMEZONE = 'Europe/Berlin';
+
     public function __construct(
         #[Autowire(service: 'cache.scheduler')]
         private CacheInterface $cache,
@@ -43,6 +47,10 @@ final readonly class MainSchedule implements ScheduleProviderInterface
                 RecurringMessage::every('15 minutes', new RedispatchMessage(new SchedulerHeartbeat(), 'default')),
                 // Fallback for missed forge webhooks (SPEC.md § 3.2).
                 RecurringMessage::every('10 minutes', new RedispatchMessage(new SynchroniseAllRepositories(), 'git')),
+                // Federal consolidated laws: nightly, with a second pass in the afternoon
+                // (SPEC.md § 11.1). Never inside 02:00-03:00, which does not exist twice a year.
+                RecurringMessage::cron('0 3 * * *', new RedispatchMessage(new SynchroniseBundLaws(), 'sources'), self::TIMEZONE),
+                RecurringMessage::cron('0 15 * * *', new RedispatchMessage(new SynchroniseBundLaws(), 'sources'), self::TIMEZONE),
             )
             ->stateful($this->cache)
             ->lock($this->lockFactory->createLock('scheduler-default'))

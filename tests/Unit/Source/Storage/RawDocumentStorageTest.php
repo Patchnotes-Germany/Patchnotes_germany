@@ -43,8 +43,8 @@ final class RawDocumentStorageTest extends TestCase
             'bund.gii/2026/06/10/'.$document->contentHash.'.xml',
             $stored->storagePath,
         );
-        self::assertTrue($this->storage->exists((string) $stored->storagePath));
-        self::assertSame('<dokumente/>', $this->storage->read((string) $stored->storagePath));
+        self::assertTrue($this->storage->exists($stored->storagePath));
+        self::assertSame('<dokumente/>', $this->storage->read($stored->storagePath));
     }
 
     public function testIdenticalContentIsStoredOnlyOnce(): void

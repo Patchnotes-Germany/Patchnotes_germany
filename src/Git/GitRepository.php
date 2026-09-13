@@ -126,6 +126,7 @@ final readonly class GitRepository
     public function commitOnBranch(string $branch, CommitRequest $commit, callable $work, ?string $base = null): ?string
     {
         return $this->withLock(function () use ($branch, $commit, $work, $base): ?string {
+            $this->ensureRootCommit();
             $worktree = $this->openWorktree($branch, $base);
 
             try {
@@ -278,6 +279,25 @@ final readonly class GitRepository
         }
 
         $this->git(['checkout', $this->config->defaultBranch], $this->config->localPath);
+    }
+
+    /**
+     * A freshly initialised repository sits on an unborn default branch: there is no commit, so no
+     * branch can be created from it. The first pull request in such a repository therefore starts
+     * from an empty root commit instead of failing with "invalid reference".
+     */
+    private function ensureRootCommit(): void
+    {
+        if (null !== $this->resolve('HEAD') || $this->branchExists($this->config->defaultBranch)) {
+            return;
+        }
+
+        $this->logger->info('Creating the root commit', ['repository' => $this->config->name->value]);
+        $this->git(
+            [...$this->identity(), 'commit', '--allow-empty', '--no-verify', '-m', 'Initialise repository'],
+            $this->config->localPath,
+        );
+        $this->syncMirror();
     }
 
     private function openWorktree(string $branch, ?string $base): Worktree

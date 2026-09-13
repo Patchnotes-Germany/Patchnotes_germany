@@ -7,7 +7,6 @@ namespace App\Source\Storage;
 use App\Source\Entity\Source;
 use App\Source\Entity\SourceDocument;
 use App\Source\Value\RawDocument;
-use Doctrine\DBAL\Connection;
 use Doctrine\ORM\EntityManagerInterface;
 
 /**
@@ -30,7 +29,6 @@ final readonly class DocumentFingerprintStore
      */
     public function forSource(string $sourceKey): array
     {
-        /** @var Connection $connection */
         $connection = $this->entityManager->getConnection();
 
         /** @var list<array{url_hash: string, content_hash: string, etag: ?string, last_modified: ?string}> $rows */

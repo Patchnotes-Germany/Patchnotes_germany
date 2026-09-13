@@ -50,6 +50,13 @@ services:
             $config: '%patchnotes.config%'
         public: true
 
+    # The federal synchronisation is wired to the gesetze-im-internet adapter; the service itself
+    # only knows the interface, which is what lets the integration tests drive it from fixtures.
+    App\Laws\Sync\BundLawSynchroniser:
+        arguments:
+            $adapter: '@App\Source\Adapter\Bund\GiiSourceAdapter'
+            $repealConfirmations: '%patchnotes.sources.repeal_confirmations%'
+
     # Touches the heartbeat file that the Docker healthcheck of every worker container reads
     # (frankenphp/worker-healthcheck.sh, ADR 0003).
     App\Core\Messenger\WorkerHeartbeatSubscriber:

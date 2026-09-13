@@ -26,26 +26,40 @@ final readonly class LawWriter
     }
 
     /**
+     * Renders the whole law without touching the file system, so a synchronisation can compare the
+     * result with what the repository already contains before it decides to open a pull request.
+     *
+     * @return array<string, string> path relative to the repository root => file content
+     */
+    public function renderFiles(NormalizedLaw $law): array
+    {
+        $directory = $this->directoryFor($law);
+
+        $files = [
+            $directory.'/_law.yml' => $this->renderLawYaml($law),
+            $directory.'/README.md' => $this->renderReadme($law),
+        ];
+
+        foreach ($law->norms as $norm) {
+            $files[$directory.'/'.$norm->fileName()] = $this->renderNorm($law, $norm);
+        }
+
+        return $files;
+    }
+
+    /**
      * @return list<string> the paths written, relative to the repository root
      */
     public function write(Worktree $worktree, NormalizedLaw $law): array
     {
-        $directory = $this->directoryFor($law);
-        $written = [];
+        $files = $this->renderFiles($law);
 
-        $worktree->writeFile($directory.'/_law.yml', $this->renderLawYaml($law));
-        $written[] = $directory.'/_law.yml';
-
-        $worktree->writeFile($directory.'/README.md', $this->renderReadme($law));
-        $written[] = $directory.'/README.md';
-
-        foreach ($law->norms as $norm) {
-            $path = $directory.'/'.$norm->fileName();
-            $worktree->writeFile($path, $this->renderNorm($law, $norm));
-            $written[] = $path;
+        foreach ($files as $path => $content) {
+            $worktree->writeFile($path, $content);
         }
 
-        $this->removeVanishedNorms($worktree, $directory, $law, $written);
+        $written = array_keys($files);
+        $this->removeVanishedNorms($worktree, $this->directoryFor($law), $written);
 
         return $written;
     }
@@ -189,7 +203,7 @@ final readonly class LawWriter
      *
      * @param list<string> $written
      */
-    private function removeVanishedNorms(Worktree $worktree, string $directory, NormalizedLaw $law, array $written): void
+    private function removeVanishedNorms(Worktree $worktree, string $directory, array $written): void
     {
         $keep = array_flip($written);
 

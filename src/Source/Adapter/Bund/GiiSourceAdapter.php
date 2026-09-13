@@ -191,7 +191,7 @@ final class GiiSourceAdapter implements SourceAdapterInterface
                 }
 
                 if ('title' === $reader->name) {
-                    $title = trim((string) $reader->readString());
+                    $title = trim($reader->readString());
                     continue;
                 }
 
@@ -199,7 +199,7 @@ final class GiiSourceAdapter implements SourceAdapterInterface
                     continue;
                 }
 
-                $slug = self::slugFromLink(trim((string) $reader->readString()));
+                $slug = self::slugFromLink(trim($reader->readString()));
                 if (null !== $slug) {
                     yield $slug => $title ?? $slug;
                 }

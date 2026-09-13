@@ -55,6 +55,8 @@ framework:
             'App\Git\Message\RefreshChangeRequestStatus': git
             # Importing the new content into the database is pipeline work, not git work.
             'App\Git\Message\RepositoryUpdated': pipeline
+            # Source synchronisations run on their own workers (SPEC.md § 11.2).
+            'App\Source\Message\SynchroniseBundLaws': sources
 
 when@test:
     framework:

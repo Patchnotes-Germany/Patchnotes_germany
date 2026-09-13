@@ -157,13 +157,7 @@ final readonly class GiiXmlNormalizer implements LawNormalizerInterface
      */
     private function hasDesignation(array $elements, string $designation): bool
     {
-        foreach ($elements as $element) {
-            if ($designation === $this->text($element, 'metadaten/enbez')) {
-                return true;
-            }
-        }
-
-        return false;
+        return array_any($elements, fn (\DOMElement $element): bool => $designation === $this->text($element, 'metadaten/enbez'));
     }
 
     /**
@@ -383,7 +377,7 @@ final readonly class GiiXmlNormalizer implements LawNormalizerInterface
     private function paragraph(string $text): string
     {
         $lines = array_map(
-            fn (string $sentence): string => $this->escaper->escapeLine($sentence),
+            $this->escaper->escapeLine(...),
             $this->sentences->split($text),
         );
 
@@ -396,7 +390,6 @@ final readonly class GiiXmlNormalizer implements LawNormalizerInterface
      */
     private function renderList(\DOMElement $list, string $assetBase, int $depth): string
     {
-        $indent = str_repeat('  ', $depth);
         $lines = [];
         $marker = null;
 
@@ -451,7 +444,7 @@ final readonly class GiiXmlNormalizer implements LawNormalizerInterface
         }
 
         $sentences = $this->sentences->split($buffer);
-        $text = array_map(fn (string $s): string => $this->escaper->escapeLine($s), $sentences);
+        $text = array_map($this->escaper->escapeLine(...), $sentences);
 
         $first = array_shift($text) ?? '';
         $label = null !== $marker && '' !== $marker ? $marker.' ' : '';

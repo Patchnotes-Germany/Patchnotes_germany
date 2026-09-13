@@ -47,7 +47,7 @@ final readonly class InlineTextRenderer
         $text = $this->renderChildren($node, $assetBase, "\n");
 
         $lines = array_map(
-            fn (string $line): string => $this->collapse($line),
+            $this->collapse(...),
             preg_split('/\n/', $text) ?: [],
         );
 

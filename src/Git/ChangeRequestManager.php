@@ -68,6 +68,22 @@ final readonly class ChangeRequestManager
 
         $git->push($draft->branch);
 
+        // A rerun for the same act on the same day updates the existing pull request instead of
+        // opening a second one for the same branch.
+        $existing = $this->findByBranch($repository, $draft->branch);
+        if ($existing instanceof ChangeRequest) {
+            $existing->setLabels(array_values(array_unique([...$existing->labels(), ...$draft->labels])));
+            $this->entityManager->flush();
+
+            $this->logger->info('Change request updated', [
+                'repository' => $repository->value,
+                'branch' => $draft->branch,
+                'commit' => $hash,
+            ]);
+
+            return $existing;
+        }
+
         $forgeChangeRequest = $this->forges->for($config)->createChangeRequest($config, $draft);
 
         $changeRequest = new ChangeRequest($repository, $draft->branch, $kind);

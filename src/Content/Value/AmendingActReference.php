@@ -41,7 +41,7 @@ final readonly class AmendingActReference
     public function changeId(string $jurisdiction = 'bund'): string
     {
         $gazette = 'bgbl-'.strtolower($this->part);
-        $identifier = null !== $this->number ? (string) $this->number : 's'.(string) $this->page;
+        $identifier = null !== $this->number ? (string) $this->number : 's'.$this->page;
 
         return \sprintf('%d-%s-%s-%s', (int) $this->date->format('Y'), $jurisdiction, $gazette, $identifier);
     }

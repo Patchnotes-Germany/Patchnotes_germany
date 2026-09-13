@@ -77,6 +77,9 @@ final class PatchnotesBundle extends AbstractBundle
         $builder->setParameter('patchnotes.languages', $config['languages']);
         $builder->setParameter('patchnotes.master_language', $config['master_language']);
         $builder->setParameter('patchnotes.timezone', $config['timezone']);
+        /** @var array{repeal_confirmations: int} $sources */
+        $sources = $config['sources'];
+        $builder->setParameter('patchnotes.sources.repeal_confirmations', $sources['repeal_confirmations']);
     }
 
     /**
