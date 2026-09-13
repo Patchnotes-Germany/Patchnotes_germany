@@ -48,6 +48,11 @@ final class GiiSourceAdapter implements SourceAdapterInterface
         return self::KEY;
     }
 
+    public function title(): string
+    {
+        return 'gesetze-im-internet.de (konsolidierte Bundesgesetze)';
+    }
+
     public function jurisdiction(): string
     {
         return 'bund';

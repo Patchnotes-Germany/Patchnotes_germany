@@ -24,12 +24,8 @@ use App\Laws\Sync\MissingLawTracker;
 use App\Laws\Sync\Safeguard\SafeguardEvaluator;
 use App\Laws\Sync\SyncOutcome;
 use App\Laws\Sync\SyncReport;
-use App\Source\Adapter\SourceAdapterInterface;
-use App\Source\Adapter\SourceCapability;
-use App\Source\Value\DocumentRef;
-use App\Source\Value\RawDocument;
-use App\Source\Value\SourceHealth;
 use App\Source\Value\SyncContext;
+use App\Tests\Support\FakeSourceAdapter;
 use Doctrine\ORM\EntityManagerInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use Psr\Log\NullLogger;
@@ -47,7 +43,7 @@ final class BundLawSynchroniserTest extends KernelTestCase
 {
     private EntityManagerInterface $entityManager;
     private RepositoryRegistry $repositories;
-    private FakeGiiAdapter $adapter;
+    private FakeSourceAdapter $adapter;
     private BundLawSynchroniser $synchroniser;
     private string $root;
 
@@ -73,7 +69,7 @@ final class BundLawSynchroniserTest extends KernelTestCase
 
         $escaper = new MarkdownEscaper();
         $inline = new InlineTextRenderer($escaper);
-        $this->adapter = new FakeGiiAdapter();
+        $this->adapter = new FakeSourceAdapter();
 
         $this->synchroniser = new BundLawSynchroniser(
             $this->adapter,
@@ -295,61 +291,5 @@ final class BundLawSynchroniserTest extends KernelTestCase
             'billing' => ['enabled' => false],
             'legal' => ['operator' => []],
         ]);
-    }
-}
-
-/**
- * Serves fixture documents instead of talking to gesetze-im-internet — the test suite never uses
- * the network (SPEC.md § 19).
- */
-final class FakeGiiAdapter implements SourceAdapterInterface
-{
-    /** @var array<string, string> slug => XML */
-    private array $documents = [];
-
-    public function serve(string $slug, string $xml): void
-    {
-        $this->documents[$slug] = $xml;
-    }
-
-    public function key(): string
-    {
-        return 'bund.gii';
-    }
-
-    public function jurisdiction(): string
-    {
-        return 'bund';
-    }
-
-    public function capabilities(): array
-    {
-        return [SourceCapability::ConsolidatedLaws];
-    }
-
-    public function listDocuments(SyncContext $context): iterable
-    {
-        foreach ($this->documents as $slug => $xml) {
-            yield new DocumentRef($slug, 'https://www.gesetze-im-internet.de/'.$slug.'/xml.zip');
-        }
-    }
-
-    public function fetch(DocumentRef $ref, SyncContext $context): RawDocument
-    {
-        $xml = $this->documents[$ref->id] ?? throw new \RuntimeException('Unknown document '.$ref->id);
-
-        return new RawDocument(
-            $ref,
-            $xml,
-            hash('sha256', $xml),
-            'application/xml',
-            200,
-            new \DateTimeImmutable('2026-09-13 03:00:00'),
-        );
-    }
-
-    public function health(): SourceHealth
-    {
-        return SourceHealth::healthy();
     }
 }

@@ -21,8 +21,14 @@ interface SourceAdapterInterface
     /** Stable key, e.g. "bund.gii", "bund.bgbl", "be.landesrecht". */
     public function key(): string;
 
+    /** Human-readable name, shown in the admin and on the public /status page. */
+    public function title(): string;
+
     /** "bund" or a federal state code. */
     public function jurisdiction(): string;
+
+    /** Whether the adapter is switched on in the configuration (SPEC.md § 6.1 feature flags). */
+    public function isEnabled(): bool;
 
     /**
      * @return list<SourceCapability>

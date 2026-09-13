@@ -14,6 +14,9 @@ services:
         # Initial structure of the laws and content repositories.
         App\Git\Bootstrap\RepositoryLayout:
             tags: ['app.repository_layout']
+        # Every data source, so it can be registered and monitored (SPEC.md § 6.1).
+        App\Source\Adapter\SourceAdapterInterface:
+            tags: ['app.source_adapter']
 
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
@@ -56,6 +59,11 @@ services:
         arguments:
             $adapter: '@App\Source\Adapter\Bund\GiiSourceAdapter'
             $repealConfirmations: '%patchnotes.sources.repeal_confirmations%'
+
+    # The first import of a jurisdiction reads from the same adapter (SPEC.md § 4.7).
+    App\Laws\Sync\BaselineImporter:
+        arguments:
+            $adapter: '@App\Source\Adapter\Bund\GiiSourceAdapter'
 
     # Touches the heartbeat file that the Docker healthcheck of every worker container reads
     # (frankenphp/worker-healthcheck.sh, ADR 0003).

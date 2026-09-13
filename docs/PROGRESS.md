@@ -10,7 +10,7 @@ A new session continues from here: read `docs/SPEC.md`, this file and `CLAUDE.md
 | M0 | Skeleton: Symfony + Docker + Makefile + CI + docs | ✅ |
 | M1 | Domain model and configuration | ✅ |
 | M2 | Git layer and forge clients | ✅ |
-| M3 | Federal laws (gesetze-im-internet) | 🚧 |
+| M3 | Federal laws (gesetze-im-internet) | ✅ |
 | M4 | AI layer, providers, remote worker | ⬜ |
 | M5 | Change pipeline and `content` repository | ⬜ |
 | M6 | BGBl, DIP, preview PRs | ⬜ |
@@ -92,7 +92,7 @@ three forges. `make lint` (PHP-CS-Fixer, PHPStan level 8, Rector, `lint:yaml`, `
 global git configuration, so `git merge` would have failed in production as well. Fixed by passing
 `-c user.name/-c user.email` to every committing command.
 
-## M3 — Federal laws (gesetze-im-internet) 🚧
+## M3 — Federal laws (gesetze-im-internet) ✅ (2026-09-13)
 
 Acceptance (SPEC.md § 20): `make bootstrap` imports the federal norms; a rerun without source
 changes creates no commits; a modified fixture produces a correct pull request that merges and
@@ -158,10 +158,21 @@ rerun on the same day tried to open a second pull request for the same branch.
       database by itself
 - [x] `JurisdictionSeeder`: the federation and the 16 states, seeded by `patchnotes:bootstrap`
 
-**Remaining**
+- [x] **`BaselineImporter`** (§ 4.7): the first import of a jurisdiction writes every current law
+      into **one** commit (`Initial import: bund (N laws)`) carrying a `Baseline: true` trailer, then
+      fills the database. Laws are streamed into the worktree instead of being held in memory, one
+      broken document does not abort the run, and a marker makes the operation a one-time event —
+      rewriting history is out of the question (§ 24.12). `patchnotes:bootstrap` runs it
+      (`--no-import` skips it, `--limit` shortens it for a trial)
 
-- [ ] Baseline import in `patchnotes:bootstrap` (§ 4.7): all current laws in one commit per
-      jurisdiction, marked as baseline so it produces no change cards and no notifications
+- [x] `SourceRegistrar`: every configured adapter becomes a `Source` row before anything is
+      fetched — raw documents hang off it, and the admin, the health monitoring and `/status`
+      read it. Health recorded by a real run survives a re-registration
+
+**Verified against the real source:** `patchnotes:bootstrap --limit=2` downloaded two federal
+laws from gesetze-im-internet at one request per second, converted them, committed them as
+`Initial import: bund (2 laws)` and imported them into the database (2 laws, 65 norms, 65 norm
+versions, 2 raw documents). A rerun reports the baseline as already done.
 
 ## Known issues / open points
 
@@ -183,13 +194,11 @@ rerun on the same day tried to open a second pull request for the same branch.
 
 ## Next step
 
-**M3 — Federal laws (gesetze-im-internet).** `SourceAdapterInterface` + the GII adapter
-(`gii-toc.xml`, per-law `xml.zip`, conditional GET, polite crawling, raw documents in
-`var/storage/raw/…`), the deterministic `GiiXmlNormalizer` (one sentence per line, German
-abbreviation-aware sentence splitting, escaping per § 24.2, tables, footnotes) with golden tests on
-≥ 20 real laws, `_law.yml` writing, the initial import via `patchnotes:bootstrap`, the daily
-synchronisation, grouping by amending act into one pull request per act (§ 4.5, change ids per
-§ 24.1), auto-merge with the safeguards of § 4.6, repeal handling (§ 24.3) and the import of
-`Law`/`Norm`/`NormVersion` into the database on `RepositoryUpdated`.
-Acceptance: `make bootstrap` imports the federal norms; a rerun without source changes creates no
-commits; a modified fixture produces a correct pull request that merges and appears in the database.
+**M4 — AI layer.** Three provider types behind `LlmClientInterface` (OpenAI, Anthropic, any
+OpenAI-compatible server such as Ollama or LM Studio), task routing with fallback chains and JSON
+schema validation (§ 8.2), response cache, cost accounting and the monthly budget with degrade/pause,
+batch mode for bulk work only (§ 24.14), a `FakeLlmClient` for tests and `make demo`, the remote AI
+worker (claim/complete API, `bin/console patchnotes:ai-worker`, `compose.ai-worker.yaml`, fallback
+when the worker is offline), versioned prompt templates for every task of § 8.4 and `docs/local-ai.md`.
+Acceptance: the same task runs through OpenAI, Anthropic and Ollama (manual contract test); the
+remote worker claims and completes a job; when it is offline the cloud fallback takes over.
