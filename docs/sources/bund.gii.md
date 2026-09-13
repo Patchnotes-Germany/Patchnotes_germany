@@ -1,0 +1,111 @@
+# Source `bund.gii` — gesetze-im-internet.de
+
+Primary source for the **consolidated federal law texts** that make up `main` in the `laws`
+repository (SPEC.md § 6.2 A).
+
+| | |
+|---|---|
+| Key | `bund.gii` |
+| Jurisdiction | `bund` |
+| Capabilities | `consolidated_laws` |
+| Operator | Bundesministerium der Justiz, technically run by juris GmbH |
+| Home | <https://www.gesetze-im-internet.de/> |
+| Last checked | 2026-09-13 |
+
+## Endpoints
+
+| Purpose | URL |
+|---|---|
+| Table of contents | `https://www.gesetze-im-internet.de/gii-toc.xml` |
+| One law (XML, zipped) | `https://www.gesetze-im-internet.de/<slug>/xml.zip` |
+| DTD | `https://www.gesetze-im-internet.de/dtd/1.01/gii-norm.dtd` |
+| Human-readable norm | `https://www.gesetze-im-internet.de/<slug>/__<norm>.html` |
+
+Observed on 2026-09-13:
+
+- `gii-toc.xml` — 1.29 MB, **6130 laws**, `content-type: application/xml`, `last-modified` and
+  `etag` present (`last-modified: Sun, 13 Sep 2026 01:01:42 GMT`), so **conditional GET works** for
+  the table of contents and for every `xml.zip`.
+- The toc lists `<item><title>…</title><link>http://…/<slug>/xml.zip</link></item>`; the links use
+  `http://`, we request `https://`.
+- One zip contains exactly one XML file named after the document number, e.g.
+  `BJNR195010004.xml` for `aufenthg_2004` (166 KB zipped, 830 KB raw).
+
+## Terms of use and robots
+
+- `robots.txt` (checked 2026-09-13) is `User-agent: *` / `Disallow:` — **crawling is allowed**, no
+  path is excluded, no crawl-delay is declared.
+- The texts are *amtliche Werke* (§ 5 UrhG) and therefore not protected by copyright. The site
+  states that the presentation is provided by the BMJ together with juris GmbH; we keep the
+  attribution in `_law.yml` and in every commit trailer.
+- We still crawl politely: ≤ 1 request/second (`patchnotes.sources.crawler.max_rps_per_host`),
+  identifying `User-Agent`, conditional GET, and only the documents that actually changed.
+
+## Format (DTD 1.01, `gii-norm.dtd`)
+
+```
+dokumente[builddate, doknr]
+  └── norm[builddate, doknr]        one per norm; the FIRST norm is the law header
+        ├── metadaten
+        │     ├── jurabk+           "AufenthG 2004", "AufenthG"
+        │     ├── amtabk?           official abbreviation, e.g. "AufenthG"
+        │     ├── ausfertigung-datum?  date of issue (law header only)
+        │     ├── fundstelle*       [typ=amtlich] periodikum "BGBl I" + zitstelle "2004, 1950"
+        │     ├── kurzue? / langue? short and long title (law header only)
+        │     ├── gliederungseinheit?  gliederungskennzahl + gliederungsbez + gliederungstitel
+        │     ├── enbez?            "§ 18g", "Anlage", "Inhaltsübersicht" …
+        │     ├── titel?            heading of the norm ("Blaue Karte EU")
+        │     └── standangabe*      standtyp + standkommentar (see below)
+        └── textdaten
+              ├── text[format]      (TOC | Content)?, Footnotes?
+              └── fussnoten         same structure, used for the source's own notes
+```
+
+Inline/structural elements inside `Content`: `P`, `BR`, `DL`/`DT`/`DD`/`LA` (lists), `table`
+(**CALS**: `tgroup`/`colspec`/`thead`/`tbody`/`row`/`entry` with `morerows`, `namest`, `nameend`),
+`Ident`, `Title`, `Subtitle`, `TOC`, `Revision`, `Citation`, `FnR`/`FnArea`/`Footnotes`, `pre`,
+`IMG`/`FILE`, `kommentar[typ]`, `SUP`/`SUB`/`B`/`I`/`U`/`F`/`SP`/`small`/`NB`, `QuoteL`/`QuoteR`.
+
+### `standangabe` — the amendment signal
+
+| `standtyp` | Meaning | Use |
+|---|---|---|
+| `Stand` | "zuletzt geändert durch Art. 1 G v. 21.7.2026 I Nr. 221" | parsed into the change id of § 24.1 and into `_law.yml: last_amending_act` |
+| `Neuf` | "Neugefasst durch Bek. v. 25.2.2008 I 162;" | `_law.yml: status_note` |
+| `Hinweis` | "Änderung durch Art. 3 G v. 22.7.2026 I Nr. 222 textlich nachgewiesen, dokumentarisch noch nicht abschließend bearbeitet" | **upcoming change not yet incorporated** — the signal for preview pull requests (§ 4.5) |
+
+## Parsing notes (input for `GiiXmlNormalizer`)
+
+- **The first `norm` carries the law metadata** (`jurabk`, `amtabk`, `kurzue`, `langue`,
+  `ausfertigung-datum`, `fundstelle`, `standangabe`) and usually the Eingangsformel as its text.
+- **Norm keys** (§ 24.1) come from `enbez`: `§ 18g` → `p18g`, `Art 3` → `art3`, `Anlage 1` → `anl1`.
+  In AufenthG 230 norms produce 203 `enbez` values; the remaining **27 norms have no `enbez`** —
+  these are Kapitel/Abschnitt headers (they carry `gliederungseinheit` only) and Schlussformel-like
+  blocks. They become `n-{doknr}` or are folded into the structure tree.
+- `Inhaltsübersicht` is a generated table of contents: it is **not** stored as a norm; our own
+  README per law is generated from `_law.yml`.
+- `gliederungseinheit` builds the `structure:` tree in `_law.yml`; `gliederungskennzahl` is the sort
+  key (norms inherit the last preceding heading).
+- Lists: `DL` + `DT` (the printed number, e.g. "1.", "a)") + `DD`/`LA` (the text). The original
+  numbering is preserved as escaped text (§ 24.2), never re-generated by the renderer.
+- Tables: CALS. Simple tables become GFM tables; tables with `morerows`/`namest` spans become
+  sanitised HTML `<table>` (SPEC.md § 4.2).
+- Footnotes (`fussnoten`, `Footnotes`, `FnR`) are appended under `## Fußnoten`.
+- `IMG`/`FILE` reference binaries on the source; we link to the original instead of storing them.
+- Character data contains typographic spaces (` `, ` `) that are normalised, except inside
+  `§ 1`-style references.
+
+## Known issues
+
+- Every `norm` element carries a `fussnoten` child even when empty — emptiness must be checked on
+  content, not on presence.
+- `doknr` values change when a law is re-published (`Neuf`), so they are stored as a source
+  attribute but are **not** the identity of a norm (§ 24.1).
+- The zip is regenerated даily even when the content is unchanged, so the **content hash of the XML**,
+  not the HTTP metadata alone, decides whether anything really changed.
+
+## Fixtures
+
+Golden-test fixtures live in `tests/Fixtures/gii/` and are trimmed excerpts of real laws
+(AufenthG, EStG, BGB, GG, StVO, SGB II/V, laws with Anlagen and tables …), each with the expected
+Markdown next to it.

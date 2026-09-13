@@ -10,7 +10,7 @@ A new session continues from here: read `docs/SPEC.md`, this file and `CLAUDE.md
 | M0 | Skeleton: Symfony + Docker + Makefile + CI + docs | ✅ |
 | M1 | Domain model and configuration | ✅ |
 | M2 | Git layer and forge clients | ✅ |
-| M3 | Federal laws (gesetze-im-internet) | ⬜ |
+| M3 | Federal laws (gesetze-im-internet) | 🚧 |
 | M4 | AI layer, providers, remote worker | ⬜ |
 | M5 | Change pipeline and `content` repository | ⬜ |
 | M6 | BGBl, DIP, preview PRs | ⬜ |
@@ -91,6 +91,50 @@ three forges. `make lint` (PHP-CS-Fixer, PHPStan level 8, Rector, `lint:yaml`, `
 **Bug found by the tests:** merges were created without the bot identity — the containers have no
 global git configuration, so `git merge` would have failed in production as well. Fixed by passing
 `-c user.name/-c user.email` to every committing command.
+
+## M3 — Federal laws (gesetze-im-internet) 🚧
+
+Acceptance (SPEC.md § 20): `make bootstrap` imports the federal norms; a rerun without source
+changes creates no commits; a modified fixture produces a correct pull request that merges and
+appears in the database.
+
+**Done**
+
+- [x] Source analysed and documented in `docs/sources/bund.gii.md`: endpoints, DTD 1.01 structure,
+      `standangabe` semantics, robots.txt (checked 2026-09-13: crawling allowed), conditional GET,
+      6130 laws in the table of contents
+- [x] Source contracts: `SourceAdapterInterface`, `SourceCapability`, `DocumentRef`, `RawDocument`,
+      `SyncContext`, `SourceHealth`, `LawNormalizerInterface`, `NormalizedLaw`, `NormalizedNorm`
+- [x] `PoliteHttpClient`: identifying User-Agent, ≤ 1 request/second per host, robots.txt honoured
+      (RFC 9309: 4xx allows, 5xx disallows) and cached for a day, conditional GET
+- [x] `RawDocumentStorage`: content-addressed `var/storage/raw/{source}/{Y}/{m}/{d}/{hash}.{ext}`,
+      identical bytes stored once, every changed version kept
+- [x] `GiiSourceAdapter`: streams the table of contents (XMLReader), conditional GET per law, treats
+      a re-generated but unchanged zip as unchanged (content hash), records `SourceDocument` rows
+      through `DocumentFingerprintStore`
+- [x] **`GiiXmlNormalizer`** — deterministic, AI-free conversion: law metadata, structure tree from
+      `gliederungskennzahl`, norm keys per § 24.1, one sentence per line, escaping per § 24.2,
+      DL/nested lists with the original numbering, CALS tables (GFM, HTML on merged cells),
+      footnotes, images linked to the source, repealed norms, announced-but-not-incorporated
+      amendments (`pending_amendments`)
+- [x] `SentenceSplitter` (German abbreviations, dates, ordinals, references, brackets),
+      `MarkdownEscaper`, `NormKeyFactory`, `InlineTextRenderer`, `CalsTableRenderer`, `StructureBuilder`
+- [x] `LawWriter`: `_law.yml`, one file per norm with front matter, generated `README.md`,
+      `_repealed/` move, deletion of norms the source no longer delivers, no timestamps anywhere
+- [x] `AmendingActCitationParser`: change ids per § 24.1 from the real notes of the source, both the
+      electronic gazette ("I Nr. 221") and the printed one ("I 1762"), articles, regulations,
+      re-publications; the same act always yields the same id
+- [x] **Golden tests on 35 real federal laws** (AufenthG, EStG, BGB, GG, StVO, SGB I/II/III/V/VI/XI/XII,
+      …) with committed expected output, plus determinism, key-safety and no-timestamp checks
+      (`tests/Fixtures/gii/build-fixtures.py` rebuilds the fixtures from the source)
+
+**Remaining**
+
+- [ ] `BundLawSynchroniser`: detect changed laws, group by amending act into one pull request per act
+      (§ 4.5), safeguards before auto-merge (§ 4.6), repeal handling with three confirmations (§ 24.3)
+- [ ] Import of `Law`/`Norm`/`NormVersion` into the database on `RepositoryUpdated`
+- [ ] `patchnotes:sync:bund`, extension of `patchnotes:bootstrap` with the baseline import (§ 4.7)
+- [ ] Scheduler entries: daily 03:00 and 15:00 (SPEC.md § 11.1)
 
 ## Known issues / open points
 

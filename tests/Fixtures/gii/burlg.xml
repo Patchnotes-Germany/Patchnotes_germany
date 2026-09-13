@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20201006212503" doknr="BJNR000020963">
+<norm builddate="20201006212503" doknr="BJNR000020963">
+<metadaten>
+<jurabk>BUrlG</jurabk>
+<ausfertigung-datum manuell="ja">1963-01-08</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>BGBl I</periodikum>
+<zitstelle>1963, 2</zitstelle>
+</fundstelle>
+<kurzue>Bundesurlaubsgesetz</kurzue>
+<langue>Mindesturlaubsgesetz für Arbeitnehmer</langue>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>Zuletzt geändert durch Art. 3 Abs. 3 G v. 20.4.2013 I 868</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis Geltung ab: 1.11.1974 +++)<BR />(+++ Zur Anwendung vgl. § 421a SGB 3 +++)<BR />(+++ Maßgaben aufgrund EinigVtr nicht mehr anzuwenden gem. Art. 20 <BR />     G v. 6.6.1994 I 1170 mWv 1.1.1995 und Art. 109 Nr. 3 Buchst. a<BR />     DBuchst. cc G v. 8.12.2010 I 1864 mWv 15.12.2010 +++)<BR />
+<BR />
+</pre>
+</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20201006212503" doknr="BJNR000020963BJNE000200314">
+<metadaten>
+<jurabk>BUrlG</jurabk>
+<enbez>§ 1</enbez>
+<titel format="parat">Urlaubsanspruch</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Jeder Arbeitnehmer hat in jedem Kalenderjahr Anspruch auf bezahlten Erholungsurlaub.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20201006212503" doknr="BJNR000020963BJNE000300314">
+<metadaten>
+<jurabk>BUrlG</jurabk>
+<enbez>§ 2</enbez>
+<titel format="parat">Geltungsbereich</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Arbeitnehmer im Sinne des Gesetzes sind Arbeiter und Angestellte sowie die zu ihrer Berufsausbildung Beschäftigten. Als Arbeitnehmer gelten auch Personen, die wegen ihrer wirtschaftlichen Unselbständigkeit als arbeitnehmerähnliche Personen anzusehen sind; für den Bereich der Heimarbeit gilt § 12.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20201006212503" doknr="BJNR000020963BJNE000401308">
+<metadaten>
+<jurabk>BUrlG</jurabk>
+<enbez>§ 3</enbez>
+<titel format="parat">Dauer des Urlaubs</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Der Urlaub beträgt jährlich mindestens 24 Werktage.</P>
+<P>(2) Als Werktage gelten alle Kalendertage, die nicht Sonn- oder gesetzliche Feiertage sind.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20201006212503" doknr="BJNR000020963BJNE000500314">
+<metadaten>
+<jurabk>BUrlG</jurabk>
+<enbez>§ 4</enbez>
+<titel format="parat">Wartezeit</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Der volle Urlaubsanspruch wird erstmalig nach sechsmonatigem Bestehen des Arbeitsverhältnisses erworben.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20201006212503" doknr="BJNR000020963BJNE000600314">
+<metadaten>
+<jurabk>BUrlG</jurabk>
+<enbez>§ 5</enbez>
+<titel format="parat">Teilurlaub</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Anspruch auf ein Zwölftel des Jahresurlaubs für jeden vollen Monat des Bestehens des Arbeitsverhältnisses hat der Arbeitnehmer <DL Font="normal" Type="arabic">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">für Zeiten eines Kalenderjahrs, für die er wegen Nichterfüllung der Wartezeit in diesem Kalenderjahr keinen vollen Urlaubsanspruch erwirbt;</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">wenn er vor erfüllter Wartezeit aus dem Arbeitsverhältnis ausscheidet;</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">wenn er nach erfüllter Wartezeit in der ersten Hälfte eines Kalenderjahrs aus dem Arbeitsverhältnis ausscheidet.</LA>
+</DD>
+</DL>
+</P>
+<P>(2) Bruchteile von Urlaubstagen, die mindestens einen halben Tag ergeben, sind auf volle Urlaubstage aufzurunden.</P>
+<P>(3) Hat der Arbeitnehmer im Falle des Absatzes 1 Buchstabe c bereits Urlaub über den ihm zustehenden Umfang hinaus erhalten, so kann das dafür gezahlte Urlaubsentgelt nicht zurückgefordert werden.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20201006212503" doknr="BJNR000020963BJNE000700314">
+<metadaten>
+<jurabk>BUrlG</jurabk>
+<enbez>§ 6</enbez>
+<titel format="parat">Ausschluß von Doppelansprüchen</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Der Anspruch auf Urlaub besteht nicht, soweit dem Arbeitnehmer für das laufende Kalenderjahr bereits von einem früheren Arbeitgeber Urlaub gewährt worden ist.</P>
+<P>(2) Der Arbeitgeber ist verpflichtet, bei Beendigung des Arbeitsverhältnisses dem Arbeitnehmer eine Bescheinigung über den im laufenden Kalenderjahr gewährten oder abgegoltenen Urlaub auszuhändigen.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20201006212503" doknr="BJNR000020963BJNE000801308">
+<metadaten>
+<jurabk>BUrlG</jurabk>
+<enbez>§ 7</enbez>
+<titel format="parat">Zeitpunkt, Übertragbarkeit und Abgeltung des Urlaubs</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Bei der zeitlichen Festlegung des Urlaubs sind die Urlaubswünsche des Arbeitnehmers zu berücksichtigen, es sei denn, daß ihrer Berücksichtigung dringende betriebliche Belange oder Urlaubswünsche anderer Arbeitnehmer, die unter sozialen Gesichtspunkten den Vorrang verdienen, entgegenstehen. Der Urlaub ist zu gewähren, wenn der Arbeitnehmer dies im Anschluß an eine Maßnahme der medizinischen Vorsorge oder Rehabilitation verlangt.</P>
+<P>(2) Der Urlaub ist zusammenhängend zu gewähren, es sei denn, daß dringende betriebliche oder in der Person des Arbeitnehmers liegende Gründe eine Teilung des Urlaubs erforderlich machen. Kann der Urlaub aus diesen Gründen nicht zusammenhängend gewährt werden, und hat der Arbeitnehmer Anspruch auf Urlaub von mehr als zwölf Werktagen, so muß einer der Urlaubsteile mindestens zwölf aufeinanderfolgende Werktage umfassen.</P>
+<P>(3) Der Urlaub muß im laufenden Kalenderjahr gewährt und genommen werden. Eine Übertragung des Urlaubs auf das nächste Kalenderjahr ist nur statthaft, wenn dringende betriebliche oder in der Person des Arbeitnehmers liegende Gründe dies rechtfertigen. Im Fall der Übertragung muß der Urlaub in den ersten drei Monaten des folgenden Kalenderjahrs gewährt und genommen werden. Auf Verlangen des Arbeitnehmers ist ein nach § 5 Abs. 1 Buchstabe a entstehender Teilurlaub jedoch auf das nächste Kalenderjahr zu übertragen.</P>
+<P>(4) Kann der Urlaub wegen Beendigung des Arbeitsverhältnisses ganz oder teilweise nicht mehr gewährt werden, so ist er abzugelten.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20201006212503" doknr="BJNR000020963BJNE000900314">
+<metadaten>
+<jurabk>BUrlG</jurabk>
+<enbez>§ 8</enbez>
+<titel format="parat">Erwerbstätigkeit während des Urlaubs</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Während des Urlaubs darf der Arbeitnehmer keine dem Urlaubszweck widersprechende Erwerbstätigkeit leisten.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+</dokumente>

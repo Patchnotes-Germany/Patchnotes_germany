@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20260731215517" doknr="BJNR302300003">
+<norm builddate="20260731215517" doknr="BJNR302300003">
+<metadaten>
+<jurabk>SGB 12</jurabk>
+<ausfertigung-datum manuell="ja">2003-12-27</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>BGBl I</periodikum>
+<zitstelle>2003, 3022, 3023</zitstelle>
+</fundstelle>
+<langue>Sozialgesetzbuch (SGB) Zwölftes Buch (XII) - Sozialhilfe - (Artikel 1 des Gesetzes vom 27. Dezember 2003, BGBl. I S. 3022)</langue>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>Zuletzt geändert durch Art. 2d G v. 24.7.2026 I Nr. 228</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis ab: 1.1.2005 +++)<BR />
+<BR />(+++ Zur Nichtanwendung d. § 30 Abs. 1 Nr. 2 vgl. § 42b Abs. 3 Satz 3 +++)<BR />(+++ Zur Nichtanwendung d. § 31 Abs. 2 Satz 2 vgl. § 27b Abs. 2 +++)<BR />(+++ Zur Nichtanwendung d. § 42a Abs. 3 u. 4 vgl. § 133b ab F. 2016-12-22 +++)<BR />(+++ Zur Anwendung d. § 42b Abs. 2 vgl. § 30 Abs. 8 ab F. 2016-12-23 +++)<BR />(+++ Zur Anwendung d. § 42b Abs. 3 vgl. § 30 Abs. 4 ab F. 2016-12-23 +++)<BR />(+++ Zur Anwendung d. § 64b Abs. 2 vgl. § 65 Satz 2 ab F. 2016-12-23 +++)<BR />(+++ Zur Anwendung d. § 82 Abs. 4 u. 5 vgl. § 90 Abs. 2 Nr. 2 +++)<BR />(+++ Zur Nichtanwendung d. § 82 vgl. § 88 Abs. 2 Satz 2 +++)<BR />
+<BR />
+</pre>Das G wurde als Artikel 1 d. G v. 27.12.2003 I 3022 vom Bundestag mit Zustimmung des Bundesrates beschlossen. Es tritt gem. Art. 70 Abs. 1 dieses G mWv 1.1.2005 in Kraft. Abweichend hiervon treten gem. § 70 Abs. 2 die §§ 40, 133 Abs. 2 am 31.12.2003, die §§ 24, 132, 133 Abs. 1 am 1.1.2004, die §§ 57, 61 Abs. 2 Satz 3 und 4 am 1.7.2004 und § 97 Abs. 3 am 1.1.2007 in Kraft.</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260731215517" doknr="BJNR302300003BJNE000199126">
+<metadaten>
+<jurabk>SGB 12</jurabk>
+<enbez>Inhaltsverzeichnis</enbez>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>
+<table frame="none" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="2" colsep="0" rowsep="0">
+<colspec colname="col1" colnum="1" colwidth="9.09*" />
+<colspec colname="col2" colnum="2" colwidth="90.91*" />
+<tbody valign="top">
+<row>
+<entry VJ="1" nameend="col2" namest="col1">Erstes Kapitel</entry>
+</row>
+<row>
+<entry VJ="1" nameend="col2" namest="col1">Allgemeine Vorschriften</entry>
+</row>
+<row>
+<entry VJ="1">§ 1</entry>
+<entry VJ="1">Aufgabe der Sozialhilfe</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<BR />
+<BR />Anlage zu § 28</P>
+<P>Anlage zu § 34</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260731215517" doknr="BJNR302300003BJNG000100000">
+<metadaten>
+<jurabk>SGB 12</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010</gliederungskennzahl>
+<gliederungsbez>Erstes Kapitel</gliederungsbez>
+<gliederungstitel>Allgemeine Vorschriften</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260731215517" doknr="BJNR302300003BJNE000200000">
+<metadaten>
+<jurabk>SGB 12</jurabk>
+<enbez>§ 1</enbez>
+<titel format="parat">Aufgabe der Sozialhilfe</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Aufgabe der Sozialhilfe ist es, den Leistungsberechtigten die Führung eines Lebens zu ermöglichen, das der Würde des Menschen entspricht. Die Leistung soll sie so weit wie möglich befähigen, unabhängig von ihr zu leben; darauf haben auch die Leistungsberechtigten nach ihren Kräften hinzuarbeiten. Zur Erreichung dieser Ziele haben die Leistungsberechtigten und die Träger der Sozialhilfe im Rahmen ihrer Rechte und Pflichten zusammenzuwirken.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260731215517" doknr="BJNR302300003BJNG000200000">
+<metadaten>
+<jurabk>SGB 12</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>020</gliederungskennzahl>
+<gliederungsbez>Zweites Kapitel</gliederungsbez>
+<gliederungstitel>Leistungen der Sozialhilfe</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260731215517" doknr="BJNR302300003BJNE000905119">
+<metadaten>
+<jurabk>SGB 12</jurabk>
+<enbez>§ 8</enbez>
+<titel format="XML">Leistungen</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Die Sozialhilfe umfasst: <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">Hilfe zum Lebensunterhalt (§§ 27 bis 40),</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">Grundsicherung im Alter und bei Erwerbsminderung (§§ 41 bis 46b),</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">Hilfen zur Gesundheit (§§ 47 bis 52),</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">Hilfe zur Pflege (§§ 61 bis 66a),</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">Hilfe zur Überwindung besonderer sozialer Schwierigkeiten (§§ 67 bis 69),</LA>
+</DD>
+<DT>6.</DT>
+<DD Font="normal">
+<LA Size="normal">Hilfe in anderen Lebenslagen (§§ 70 bis 74)</LA>
+</DD>
+</DL>sowie die jeweils gebotene Beratung und Unterstützung.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260731215517" doknr="BJNR302300003BJNE001501360">
+<metadaten>
+<jurabk>SGB 12</jurabk>
+<enbez>§ 14</enbez>
+<titel format="XML">(weggefallen)</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content />
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260731215517" doknr="BJNR302300003BJNE014204126">
+<metadaten>
+<jurabk>SGB 12</jurabk>
+<enbez>§ 28a</enbez>
+<titel format="XML">Fortschreibung der Regelbedarfsstufen</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Für Jahre bis zur nächsten Neuermittlung nach § 28 werden die Regelbedarfsstufen jeweils zum 1. Januar nach den Absätzen 2 bis 5 fortgeschrieben.</P>
+<P>(2) Zum 1. Januar 2023 werden die Eurobeträge der zum 1. Januar 2022 fortgeschriebenen Regelbedarfsstufen zuerst mit der sich nach Absatz 3 ergebenden Veränderungsrate fortgeschrieben (Basisfortschreibung) und das Ergebnis mit der sich nach Absatz 4 ergebenden Veränderungsrate fortgeschrieben (ergänzende Fortschreibung). Für nachfolgende Fortschreibungen ab dem Jahr 2024 sind jeweils die nicht gerundeten Eurobeträge, die sich aus der Basisfortschreibung des Vorjahres nach Absatz 3 ergeben haben, erneut nach Absatz 3 fortzuschreiben und die sich daraus ergebenden Eurobeträge mit der Veränderungsrate der ergänzenden Fortschreibung nach Absatz 4 fortzuschreiben.</P>
+<P>(3) Die Veränderungsrate für die Basisfortschreibung ergibt sich aus der bundesdurchschnittlichen Entwicklung der Preise für regelbedarfsrelevante Güter und Dienstleistungen sowie der bundesdurchschnittlichen Entwicklung der Nettolöhne und -gehälter je beschäftigten Arbeitnehmer nach der Volkswirtschaftlichen Gesamtrechnung (Mischindex). Für die Ermittlung der jährlichen Veränderungsrate des Mischindexes wird die sich aus der Entwicklung der Preise aller regelbedarfsrelevanten Güter und Dienstleistungen ergebende Veränderungsrate mit einem Anteil von 70 Prozent und die sich aus der Entwicklung der Nettolöhne und -gehälter je beschäftigten Arbeitnehmer ergebende Veränderungsrate mit einem Anteil von 30 Prozent berücksichtigt. Maßgeblich ist jeweils die Veränderungsrate, die sich aus der Veränderung in dem Zwölfmonatszeitraum, der mit dem 1. Juli des Vorvorjahres beginnt und mit dem 30. Juni des Vorjahres endet, gegenüber dem davorliegenden Zwölfmonatszeitraum ergibt.</P>
+<P>(4) Maßgeblich für die Veränderungsrate der ergänzenden Fortschreibung der sich nach Absatz 3 ergebenden nicht gerundeten Eurobeträge der Regelbedarfsstufen ist jeweils die bundesdurchschnittliche Entwicklung der Preise für regelbedarfsrelevante Güter und Dienstleistungen in dem Dreimonatszeitraum vom 1. April bis zum 30. Juni des Vorjahres gegenüber dem gleich abgegrenzten Dreimonatszeitraum des Vorvorjahres. § 28 Absatz 5 Satz 3 gilt entsprechend.</P>
+<P>(5) Ergeben sich aus der Fortschreibung nach den Absätzen 2 bis 4 für die Regelbedarfsstufen Eurobeträge, die niedriger als die im Vorjahr geltenden Eurobeträge sind, gelten die für das Vorjahr bestimmten Eurobeträge solange weiter, bis sich aus einer nachfolgenden Fortschreibung höhere Eurobeträge ergeben.</P>
+<P>(6) Das Bundesministerium für Arbeit und Soziales beauftragt das Statistische Bundesamt mit der Ermittlung der jährlichen Veränderungsrate <DL Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA>für den Zeitraum nach Absatz 3 für <DL Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA>die Preise aller regelbedarfsrelevanten Güter und Dienstleistungen und</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA>die durchschnittliche Nettolohn- und -gehaltssumme je durchschnittlich beschäftigten Arbeitnehmer,</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA>für den Zeitraum nach Absatz 4 für die Preise aller regelbedarfsrelevanten Güter und Dienstleistungen.</LA>
+</DD>
+</DL>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260731215517" doknr="BJNR302300003BJNE014918130">
+<metadaten>
+<jurabk>SGB 12</jurabk>
+<enbez>Anlage</enbez>
+<titel format="XML">(zu § 28)<BR />Regelbedarfsstufen nach § 28 in Euro</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>
+<table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="7">
+<colspec align="center" colname="col1" colnum="1" colwidth="12*" />
+<colspec align="center" colname="col2" colnum="2" colwidth="10.00*" />
+<colspec align="center" colname="col3" colnum="3" colwidth="10.00*" />
+<colspec align="center" colname="col4" colnum="4" colwidth="10.00*" />
+<colspec align="center" colname="col5" colnum="5" colwidth="10.00*" />
+<colspec align="center" colname="col6" colnum="6" colwidth="10.00*" />
+<colspec align="center" colname="col7" colnum="7" colwidth="10.00*" />
+<thead valign="bottom">
+<row>
+<entry VJ="1" align="center" colname="col1" valign="middle">gültig ab</entry>
+<entry VJ="1" align="center" colname="col2" valign="middle">Regel-<BR /> bedarfsstufe 1</entry>
+<entry VJ="1" align="center" colname="col3" valign="middle">Regel-<BR /> bedarfsstufe 2</entry>
+<entry VJ="1" align="center" colname="col4" valign="middle">Regel-<BR /> bedarfsstufe 3</entry>
+<entry VJ="1" align="center" colname="col5" valign="middle">Regel-<BR /> bedarfsstufe 4</entry>
+<entry VJ="1" align="center" colname="col6" valign="middle">Regel-<BR /> bedarfsstufe 5</entry>
+<entry VJ="1" align="center" colname="col7" valign="middle">Regel-<BR /> bedarfsstufe 6</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" align="center" colname="col1">1. Januar 2011</entry>
+<entry VJ="1" align="center" colname="col2">364</entry>
+<entry VJ="1" align="center" colname="col3">328</entry>
+<entry VJ="1" align="center" colname="col4">291</entry>
+<entry VJ="1" align="center" colname="col5">287</entry>
+<entry VJ="1" align="center" colname="col6">251</entry>
+<entry VJ="1" align="center" colname="col7">215</entry>
+</row>
+<row>
+<entry VJ="1">1. Januar 2012</entry>
+<entry VJ="1">374</entry>
+<entry VJ="1">337</entry>
+<entry VJ="1">299</entry>
+<entry VJ="1">287</entry>
+<entry VJ="1">251</entry>
+<entry VJ="1">219</entry>
+</row>
+<row>
+<entry VJ="1">1. Januar 2013</entry>
+<entry VJ="1">382</entry>
+<entry VJ="1">345</entry>
+<entry VJ="1">306</entry>
+<entry VJ="1">289</entry>
+<entry VJ="1">255</entry>
+<entry VJ="1">224</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<BR />
+<BR />
+</P>
+<P>Regelbedarfsstufe 1:<BR />Für jede erwachsene Person, die in einer Wohnung nach § 42a Absatz 2 Satz 2 lebt und für die nicht Regelbedarfsstufe 2 gilt.<BR />
+<BR />Regelbedarfsstufe 2:<BR />Für jede erwachsene Person, wenn sie <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">in einer Wohnung nach § 42a Absatz 2 Satz 2 mit einem Ehegatten oder Lebenspartner oder in eheähnlicher oder lebenspartnerschaftsähnlicher Gemeinschaft mit einem Partner zusammenlebt oder</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">nicht in einer Wohnung lebt, weil ihr allein oder mit einer weiteren Person ein persönlicher Wohnraum und mit weiteren Personen zusätzliche Räumlichkeiten nach § 42a Absatz 2 Satz 3 zur gemeinschaftlichen Nutzung überlassen sind.</LA>
+</DD>
+</DL>
+<BR />
+<BR />Regelbedarfsstufe 3:<BR />Für eine erwachsene Person, deren notwendiger Lebensunterhalt sich nach § 27b bestimmt.<BR />
+<BR />Regelbedarfsstufe 4:<BR />Für eine Jugendliche oder einen Jugendlichen vom Beginn des 15. bis zur Vollendung des 18. Lebensjahres.<BR />
+<BR />Regelbedarfsstufe 5:<BR />Für ein Kind vom Beginn des siebten bis zur Vollendung des 14. Lebensjahres.<BR />
+<BR />Regelbedarfsstufe 6:<BR />Für ein Kind bis zur Vollendung des sechsten Lebensjahres.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+</dokumente>

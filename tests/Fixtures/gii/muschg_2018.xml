@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20260506174606" doknr="BJNR122810017">
+<norm builddate="20260506174606" doknr="BJNR122810017">
+<metadaten>
+<jurabk>MuSchG 2018</jurabk>
+<amtabk>MuSchG</amtabk>
+<ausfertigung-datum manuell="ja">2017-05-23</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>BGBl I</periodikum>
+<zitstelle>2017, 1228</zitstelle>
+</fundstelle>
+<kurzue>Mutterschutzgesetz</kurzue>
+<langue>Gesetz zum Schutz von Müttern bei der Arbeit, in der Ausbildung und im Studium</langue>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>Zuletzt geändert durch Art. 13 G v. 22.12.2025 I Nr. 371</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis ab: 1.1.2018 +++)<BR />(+++ Zur Anwendung vgl. § 1 Abs. 2 Nr. 3, 6, 7 u. 8 +++)<BR />
+<BR />
+</pre>Das G wurde als Art. 1 des G v. 23.5.2017 I 1228 vom Bundestag mit Zustimmung des Bundesrates beschlossen. Es ist gem. Art. 10 Abs. 1 Satz 1 dieses G am 1.1.2018 in Kraft getreten. § 32 Abs. 1 Nummer 6 tritt gem. Art. 10 Abs. 1 Satz 3 dieses G am 1.1.2019 in Kraft.</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260506174606" doknr="BJNR122810017BJNG000100000">
+<metadaten>
+<jurabk>MuSchG 2018</jurabk>
+<jurabk>MuSchG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010</gliederungskennzahl>
+<gliederungsbez>Abschnitt 1</gliederungsbez>
+<gliederungstitel>Allgemeine Vorschriften</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten />
+</norm>
+<norm builddate="20260506174606" doknr="BJNR122810017BJNE000200000">
+<metadaten>
+<jurabk>MuSchG 2018</jurabk>
+<jurabk>MuSchG</jurabk>
+<enbez>§ 1</enbez>
+<titel format="XML">Anwendungsbereich, Ziel des Mutterschutzes</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Dieses Gesetz schützt die Gesundheit der Frau und ihres Kindes am Arbeits-, Ausbildungs- und Studienplatz während der Schwangerschaft, nach der Entbindung und in der Stillzeit. Das Gesetz ermöglicht es der Frau, ihre Beschäftigung oder sonstige Tätigkeit in dieser Zeit ohne Gefährdung ihrer Gesundheit oder der ihres Kindes fortzusetzen und wirkt Benachteiligungen während der Schwangerschaft, nach der Entbindung und in der Stillzeit entgegen. Regelungen in anderen Arbeitsschutzgesetzen bleiben unberührt.</P>
+<P>(2) Dieses Gesetz gilt für Frauen in einer Beschäftigung im Sinne von § 7 Absatz 1 des Vierten Buches Sozialgesetzbuch. Unabhängig davon, ob ein solches Beschäftigungsverhältnis vorliegt, gilt dieses Gesetz auch für <DL Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA>Frauen in betrieblicher Berufsbildung und Praktikantinnen im Sinne von § 26 des Berufsbildungsgesetzes,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA>Frauen mit Behinderung, die in einer Werkstatt für behinderte Menschen beschäftigt sind,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA>Frauen, die als Entwicklungshelferinnen im Sinne des Entwicklungshelfer-Gesetzes tätig sind, jedoch mit der Maßgabe, dass die §§ 18 bis 22 auf sie nicht anzuwenden sind,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA>Frauen, die als Freiwillige im Sinne des Jugendfreiwilligendienstegesetzes oder des Bundesfreiwilligendienstgesetzes tätig sind,</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA>Frauen, die als Mitglieder einer geistlichen Genossenschaft, Diakonissen oder Angehörige einer ähnlichen Gemeinschaft auf einer Planstelle oder aufgrund eines Gestellungsvertrages für diese tätig werden, auch während der Zeit ihrer dortigen außerschulischen Ausbildung,</LA>
+</DD>
+<DT>6.</DT>
+<DD Font="normal">
+<LA>Frauen, die in Heimarbeit beschäftigt sind, und ihnen Gleichgestellte im Sinne von § 1 Absatz 1 und 2 des Heimarbeitsgesetzes, soweit sie am Stück mitarbeiten, jedoch mit der Maßgabe, dass die §§ 10 und 14 auf sie nicht anzuwenden sind und § 9 Absatz 1 bis 5 auf sie entsprechend anzuwenden ist,</LA>
+</DD>
+<DT>7.</DT>
+<DD Font="normal">
+<LA>Frauen, die wegen ihrer wirtschaftlichen Unselbstständigkeit als arbeitnehmerähnliche Person anzusehen sind, jedoch mit der Maßgabe, dass die §§ 18, 19 Absatz 2 und § 20 auf sie nicht anzuwenden sind, und</LA>
+</DD>
+<DT>8.</DT>
+<DD Font="normal">
+<LA>Schülerinnen und Studentinnen, soweit die Ausbildungsstelle Ort, Zeit und Ablauf der Ausbildungsveranstaltung verpflichtend vorgibt oder die ein im Rahmen der schulischen oder hochschulischen Ausbildung verpflichtend vorgegebenes Praktikum ableisten, jedoch mit der Maßgabe, dass die §§ 17 bis 24 auf sie nicht anzuwenden sind.</LA>
+</DD>
+</DL>
+</P>
+<P>(3) Das Gesetz gilt nicht für Beamtinnen und Richterinnen. Das Gesetz gilt ebenso nicht für Soldatinnen, auch soweit die Voraussetzungen des Absatzes 2 erfüllt sind, es sei denn, sie werden aufgrund dienstlicher Anordnung oder Gestattung außerhalb des Geschäftsbereiches des Bundesministeriums der Verteidigung tätig.</P>
+<P>(4) Dieses Gesetz gilt für jede Person, die schwanger ist, ein Kind geboren hat oder stillt. Die Absätze 2 und 3 gelten entsprechend.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260506174606" doknr="BJNR122810017BJNE000301129">
+<metadaten>
+<jurabk>MuSchG 2018</jurabk>
+<jurabk>MuSchG</jurabk>
+<enbez>§ 2</enbez>
+<titel format="XML">Begriffsbestimmungen</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Arbeitgeber im Sinne dieses Gesetzes ist die natürliche oder juristische Person oder die rechtsfähige Personengesellschaft, die Personen nach § 1 Absatz 2 Satz 1 beschäftigt. Dem Arbeitgeber stehen gleich: <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">die natürliche oder juristische Person oder die rechtsfähige Personengesellschaft, die Frauen im Fall von § 1 Absatz 2 Satz 2 Nummer 1 ausbildet oder für die Praktikantinnen im Fall von § 1 Absatz 2 Satz 2 Nummer 1 tätig sind,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">der Träger der Werkstatt für behinderte Menschen im Fall von § 1 Absatz 2 Satz 2 Nummer 2,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">der Träger des Entwicklungsdienstes im Fall von § 1 Absatz 2 Satz 2 Nummer 3,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">die Einrichtung, in der der Freiwilligendienst nach dem Jugendfreiwilligendienstegesetz oder nach dem Bundesfreiwilligendienstgesetz im Fall von § 1 Absatz 2 Satz 2 Nummer 4 geleistet wird,</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">die geistliche Genossenschaft und ähnliche Gemeinschaft im Fall von § 1 Absatz 2 Satz 2 Nummer 5,</LA>
+</DD>
+<DT>6.</DT>
+<DD Font="normal">
+<LA Size="normal">der Auftraggeber und der Zwischenmeister von Frauen im Fall von § 1 Absatz 2 Satz 2 Nummer 6,</LA>
+</DD>
+<DT>7.</DT>
+<DD Font="normal">
+<LA Size="normal">die natürliche oder juristische Person oder die rechtsfähige Personengesellschaft, für die Frauen im Sinne von § 1 Absatz 2 Satz 2 Nummer 7 tätig sind, und</LA>
+</DD>
+<DT>8.</DT>
+<DD Font="normal">
+<LA Size="normal">die natürliche oder juristische Person oder die rechtsfähige Personengesellschaft, mit der das Ausbildungs- oder Praktikumsverhältnis im Fall von § 1 Absatz 2 Satz 2 Nummer 8 besteht (Ausbildungsstelle).</LA>
+</DD>
+</DL>
+</P>
+<P>(2) Eine Beschäftigung im Sinne der nachfolgenden Vorschriften erfasst jede Form der Betätigung, die eine Frau im Rahmen eines Beschäftigungsverhältnisses nach § 1 Absatz 2 Satz 1 oder die eine Frau im Sinne von § 1 Absatz 2 Satz 2 im Rahmen ihres Rechtsverhältnisses zu ihrem Arbeitgeber nach § 2 Absatz 1 Satz 2 ausübt.</P>
+<P>(3) Ein Beschäftigungsverbot im Sinne dieses Gesetzes ist nur ein Beschäftigungsverbot nach den §§ 3 bis 6, 10 Absatz 3, § 13 Absatz 1 Nummer 3 und § 16. Für eine in Heimarbeit beschäftigte Frau und eine ihr Gleichgestellte tritt an die Stelle des Beschäftigungsverbots das Verbot der Ausgabe von Heimarbeit nach den §§ 3, 8, 13 Absatz 2 und § 16. Für eine Frau, die wegen ihrer wirtschaftlichen Unselbstständigkeit als arbeitnehmerähnliche Person anzusehen ist, tritt an die Stelle des Beschäftigungsverbots nach Satz 1 die Befreiung von der vertraglich vereinbarten Leistungspflicht; die Frau kann sich jedoch gegenüber der dem Arbeitgeber gleichgestellten Person oder Gesellschaft im Sinne von Absatz 1 Satz 2 Nummer 7 dazu bereit erklären, die vertraglich vereinbarte Leistung zu erbringen.</P>
+<P>(4) Alleinarbeit im Sinne dieses Gesetzes liegt vor, wenn der Arbeitgeber eine Frau an einem Arbeitsplatz in seinem räumlichen Verantwortungsbereich beschäftigt, ohne dass gewährleistet ist, dass sie jederzeit den Arbeitsplatz verlassen oder Hilfe erreichen kann.</P>
+<P>(5) Arbeitsentgelt im Sinne dieses Gesetzes ist das Arbeitsentgelt, das nach § 14 des Vierten Buches Sozialgesetzbuch in Verbindung mit einer aufgrund des § 17 des Vierten Buches Sozialgesetzbuch erlassenen Verordnung bestimmt wird. Für Frauen im Sinne von § 1 Absatz 2 Satz 2 gilt als Arbeitsentgelt ihre jeweilige Vergütung.</P>
+<P>(6) Eine Entbindung ist eine Lebend- oder eine Totgeburt. Die Regelungen zur Entbindung finden im Falle einer Fehlgeburt ab der 13. Schwangerschaftswoche entsprechende Anwendung, soweit nicht in diesem oder einem anderen Gesetz Abweichendes geregelt ist.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260506174606" doknr="BJNR122810017BJNG000200000">
+<metadaten>
+<jurabk>MuSchG 2018</jurabk>
+<jurabk>MuSchG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>020</gliederungskennzahl>
+<gliederungsbez>Abschnitt 2</gliederungsbez>
+<gliederungstitel>Gesundheitsschutz</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten />
+</norm>
+<norm builddate="20260506174606" doknr="BJNR122810017BJNE000401129">
+<metadaten>
+<jurabk>MuSchG 2018</jurabk>
+<jurabk>MuSchG</jurabk>
+<enbez>§ 3</enbez>
+<titel format="XML">Schutzfristen vor und nach der Entbindung</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Der Arbeitgeber darf eine schwangere Frau in den letzten sechs Wochen vor der Entbindung nicht beschäftigen (Schutzfrist vor der Entbindung), soweit sie sich nicht zur Arbeitsleistung ausdrücklich bereit erklärt. Sie kann die Erklärung nach Satz 1 jederzeit mit Wirkung für die Zukunft widerrufen. Für die Berechnung der Schutzfrist vor der Entbindung ist der voraussichtliche Tag der Entbindung maßgeblich, wie er sich aus dem ärztlichen Zeugnis oder dem Zeugnis einer Hebamme oder eines Entbindungspflegers ergibt. Entbindet eine Frau nicht am voraussichtlichen Tag, verkürzt oder verlängert sich die Schutzfrist vor der Entbindung entsprechend.</P>
+<P>(2) Der Arbeitgeber darf eine Frau bis zum Ablauf von acht Wochen nach der Entbindung nicht beschäftigen (Schutzfrist nach der Entbindung). Die Schutzfrist nach der Entbindung verlängert sich auf zwölf Wochen <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">bei Frühgeburten,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">bei Mehrlingsgeburten und,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">wenn vor Ablauf von acht Wochen nach der Entbindung bei dem Kind eine Behinderung im Sinne von § 2 Absatz 1 Satz 1 des Neunten Buches Sozialgesetzbuch ärztlich festgestellt wird.</LA>
+</DD>
+</DL>Bei vorzeitiger Entbindung verlängert sich die Schutzfrist nach der Entbindung nach Satz 1 oder nach Satz 2 um den Zeitraum der Verkürzung der Schutzfrist vor der Entbindung nach Absatz 1 Satz 4. Nach Satz 2 Nummer 3 verlängert sich die Schutzfrist nach der Entbindung nur, wenn die Frau dies beantragt. Satz 2 gilt nicht bei einer Totgeburt.</P>
+<P>(3) Die Ausbildungsstelle darf eine Frau im Sinne von § 1 Absatz 2 Satz 2 Nummer 8 bereits in der Schutzfrist nach der Entbindung im Rahmen der schulischen oder hochschulischen Ausbildung tätig werden lassen, wenn die Frau dies ausdrücklich gegenüber ihrer Ausbildungsstelle verlangt. Die Frau kann ihre Erklärung jederzeit mit Wirkung für die Zukunft widerrufen.</P>
+<P>(4) Der Arbeitgeber darf eine Frau nach dem Tod ihres Kindes bereits nach Ablauf der ersten zwei Wochen nach der Entbindung beschäftigen, wenn <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">die Frau dies ausdrücklich verlangt und</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">nach ärztlichem Zeugnis nichts dagegen spricht.</LA>
+</DD>
+</DL>Sie kann ihre Erklärung nach Satz 1 Nummer 1 jederzeit mit Wirkung für die Zukunft widerrufen.</P>
+<P>(5) Bei einer Fehlgeburt darf der Arbeitgeber eine Frau nicht beschäftigen, soweit sie sich nicht zur Arbeitsleistung ausdrücklich bereit erklärt, <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">bis zum Ablauf von zwei Wochen bei einer Fehlgeburt ab der 13. Schwangerschaftswoche oder</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">bis zum Ablauf von sechs Wochen bei einer Fehlgeburt ab der 17. Schwangerschaftswoche oder</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">bis zum Ablauf von acht Wochen bei einer Fehlgeburt ab der 20. Schwangerschaftswoche.</LA>
+</DD>
+</DL>Sie kann ihre Erklärung nach Satz 1 jederzeit mit Wirkung für die Zukunft widerrufen. Die Absätze 1 bis 3 gelten nicht.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260506174606" doknr="BJNR122810017BJNE000500000">
+<metadaten>
+<jurabk>MuSchG 2018</jurabk>
+<jurabk>MuSchG</jurabk>
+<enbez>§ 4</enbez>
+<titel format="XML">Verbot der Mehrarbeit; Ruhezeit</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Der Arbeitgeber darf eine schwangere oder stillende Frau, die 18 Jahre oder älter ist, nicht mit einer Arbeit beschäftigen, die die Frau über achteinhalb Stunden täglich oder über 90 Stunden in der Doppelwoche hinaus zu leisten hat. Eine schwangere oder stillende Frau unter 18 Jahren darf der Arbeitgeber nicht mit einer Arbeit beschäftigen, die die Frau über acht Stunden täglich oder über 80 Stunden in der Doppelwoche hinaus zu leisten hat. In die Doppelwoche werden die Sonntage eingerechnet. Der Arbeitgeber darf eine schwangere oder stillende Frau nicht in einem Umfang beschäftigen, der die vertraglich vereinbarte wöchentliche Arbeitszeit im Durchschnitt des Monats übersteigt. Bei mehreren Arbeitgebern sind die Arbeitszeiten zusammenzurechnen.</P>
+<P>(2) Der Arbeitgeber muss der schwangeren oder stillenden Frau nach Beendigung der täglichen Arbeitszeit eine ununterbrochene Ruhezeit von mindestens elf Stunden gewähren.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260506174606" doknr="BJNR122810017BJNE000600000">
+<metadaten>
+<jurabk>MuSchG 2018</jurabk>
+<jurabk>MuSchG</jurabk>
+<enbez>§ 5</enbez>
+<titel format="XML">Verbot der Nachtarbeit</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Der Arbeitgeber darf eine schwangere oder stillende Frau nicht zwischen 20 Uhr und 6 Uhr beschäftigen. Er darf sie bis 22 Uhr beschäftigen, wenn die Voraussetzungen des § 28 erfüllt sind.</P>
+<P>(2) Die Ausbildungsstelle darf eine schwangere oder stillende Frau im Sinne von § 1 Absatz 2 Satz 2 Nummer 8 nicht zwischen 20 Uhr und 6 Uhr im Rahmen der schulischen oder hochschulischen Ausbildung tätig werden lassen. Die Ausbildungsstelle darf sie an Ausbildungsveranstaltungen bis 22 Uhr teilnehmen lassen, wenn <DL Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA>sich die Frau dazu ausdrücklich bereit erklärt,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA>die Teilnahme zu Ausbildungszwecken zu dieser Zeit erforderlich ist und</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA>insbesondere eine unverantwortbare Gefährdung für die schwangere Frau oder ihr Kind durch Alleinarbeit ausgeschlossen ist.</LA>
+</DD>
+</DL>Die schwangere oder stillende Frau kann ihre Erklärung nach Satz 2 Nummer 1 jederzeit mit Wirkung für die Zukunft widerrufen.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260506174606" doknr="BJNR122810017BJNE001101126">
+<metadaten>
+<jurabk>MuSchG 2018</jurabk>
+<jurabk>MuSchG</jurabk>
+<enbez>§ 10</enbez>
+<titel format="XML">Beurteilung der Arbeitsbedingungen; Schutzmaßnahmen</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Im Rahmen der Beurteilung der Arbeitsbedingungen nach § 5 des Arbeitsschutzgesetzes hat der Arbeitgeber für jede Tätigkeit <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">die Gefährdungen nach Art, Ausmaß und Dauer zu beurteilen, denen eine schwangere oder stillende Frau oder ihr Kind ausgesetzt ist oder sein kann, und</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">unter Berücksichtigung des Ergebnisses der Beurteilung der Gefährdung nach Nummer 1 zu ermitteln, ob für eine schwangere oder stillende Frau oder ihr Kind voraussichtlich <DL Font="normal" Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">keine Schutzmaßnahmen erforderlich sein werden,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">eine Umgestaltung der Arbeitsbedingungen nach § 13 Absatz 1 Nummer 1 erforderlich sein wird oder</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">eine Fortführung der Tätigkeit der Frau an diesem Arbeitsplatz nicht möglich sein wird.</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+</DL>Bei gleichartigen Arbeitsbedingungen ist die Beurteilung eines Arbeitsplatzes oder einer Tätigkeit ausreichend. Die Verpflichtung des Arbeitgebers nach Satz 1 entfällt, wenn gemäß einer zu diesem Zweck nach § 30 Absatz 4 veröffentlichten Regel oder Erkenntnis des Ausschusses für Mutterschutz eine schwangere oder stillende Frau die Tätigkeit nicht ausüben oder einer Arbeitsbedingung nicht ausgesetzt sein darf.</P>
+<P>(2) Sobald eine Frau dem Arbeitgeber mitgeteilt hat, dass sie schwanger ist oder stillt, hat der Arbeitgeber unverzüglich die nach Maßgabe der Gefährdungsbeurteilung nach Absatz 1 oder nach Maßgabe des § 13 erforderlichen Schutzmaßnahmen festzulegen. Zusätzlich hat der Arbeitgeber der Frau ein Gespräch über weitere Anpassungen ihrer Arbeitsbedingungen anzubieten.</P>
+<P>(3) Der Arbeitgeber darf eine schwangere oder stillende Frau nur diejenigen Tätigkeiten ausüben lassen, für die er die erforderlichen Schutzmaßnahmen nach Absatz 2 Satz 1 getroffen hat.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+</dokumente>

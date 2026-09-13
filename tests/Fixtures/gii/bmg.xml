@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20260825220005" doknr="BJNR108410013">
+<norm builddate="20260825220005" doknr="BJNR108410013">
+<metadaten>
+<jurabk>BMG</jurabk>
+<amtabk>BMG</amtabk>
+<ausfertigung-datum manuell="ja">2013-05-03</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>BGBl I</periodikum>
+<zitstelle>2013, 1084</zitstelle>
+</fundstelle>
+<langue>Bundesmeldegesetz</langue>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>Zuletzt geändert durch Art. 5 G v. 3.7.2026 I Nr. 199</standkommentar>
+</standangabe>
+<standangabe checked="ja">
+<standtyp>Hinweis</standtyp>
+<standkommentar>Änderung durch Art. 10 G v. 22.7.2026 I Nr. 222 textlich nachgewiesen, dokumentarisch noch nicht abschließend bearbeitet</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis ab: 1.11.2015 +++)<BR />
+<BR />
+</pre>Das G wurde als Artikel 1 G v. 3.5.2013 I 1084 vom Bundestag mit Zustimmung des  Bundesrates beschlossen. Es tritt gem. Art. 4 Satz 1 idF d. Art. 1 Nr. 3 G v. 20.11.2014 I 1738 am 1.11.2015 in Kraft, abweichend hiervon treten die §§ 55 bis 57 des G gem. Art. 4 Satz 2 idF d. Art. 1 Nr. 3 G v. 20.11.2014 I 1738 am 26.11.2014 in Kraft.</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260825220005" doknr="BJNR108410013BJNG000101116">
+<metadaten>
+<jurabk>BMG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010</gliederungskennzahl>
+<gliederungsbez>Abschnitt 1</gliederungsbez>
+<gliederungstitel>Allgemeine Bestimmungen</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten />
+</norm>
+<norm builddate="20260825220005" doknr="BJNR108410013BJNE000201116">
+<metadaten>
+<jurabk>BMG</jurabk>
+<enbez>§ 1</enbez>
+<titel format="XML">Meldebehörden</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Meldebehörden sind die durch Landesrecht dazu bestimmten Behörden.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260825220005" doknr="BJNR108410013BJNE000302116">
+<metadaten>
+<jurabk>BMG</jurabk>
+<enbez>§ 2</enbez>
+<titel format="XML">Aufgaben und Befugnisse der Meldebehörden</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Die Meldebehörden haben die in ihrem Zuständigkeitsbereich wohnhaften Personen (Einwohner) zu registrieren, um deren Identität und deren Wohnungen feststellen und nachweisen zu können.</P>
+<P>(2) Die Meldebehörden führen zur Erfüllung ihrer Aufgaben Melderegister. Diese enthalten Daten, die bei der betroffenen Person erhoben, von öffentlichen Stellen übermittelt oder sonst amtlich bekannt werden.</P>
+<P>(3) Die Meldebehörden erteilen Melderegisterauskünfte, wirken nach Maßgabe dieses Gesetzes oder sonstiger Rechtsvorschriften bei der Durchführung von Aufgaben anderer öffentlicher Stellen mit und übermitteln Daten.</P>
+<P>(4) Die Meldebehörden dürfen personenbezogene Daten, die im Melderegister gespeichert werden, nur nach Maßgabe dieses Gesetzes oder sonstiger Rechtsvorschriften verarbeiten. Daten nicht meldepflichtiger Personen dürfen nur verarbeitet werden, wenn die betroffene Person in die Datenverarbeitung eingewilligt hat.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260825220005" doknr="BJNR108410013BJNE000421130">
+<metadaten>
+<jurabk>BMG</jurabk>
+<enbez>§ 3</enbez>
+<titel format="XML">Speicherung von Daten</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Zur Erfüllung ihrer Aufgaben nach § 2 Absatz 1 und 3 speichern die Meldebehörden folgende Daten sowie die zum Nachweis ihrer Richtigkeit erforderlichen Hinweise im Melderegister: <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">Familienname,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">frühere Namen,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">Vornamen unter Kennzeichnung des gebräuchlichen Vornamens,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">Doktorgrad,</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">Ordensname, Künstlername,</LA>
+</DD>
+<DT>6.</DT>
+<DD Font="normal">
+<LA Size="normal">Geburtsdatum und Geburtsort sowie bei Geburt im Ausland auch den Staat,</LA>
+</DD>
+<DT>7.</DT>
+<DD Font="normal">
+<LA Size="normal">Geschlecht,</LA>
+</DD>
+<DT>8.</DT>
+<DD Font="normal">
+<LA Size="normal">die Identifikationsnummer nach § 139b der Abgabenordnung,</LA>
+</DD>
+<DT>9.</DT>
+<DD Font="normal">
+<LA Size="normal">zum gesetzlichen Vertreter <DL Font="normal" Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">Familienname,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">Vornamen,</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">Doktorgrad,</LA>
+</DD>
+<DT>d)</DT>
+<DD Font="normal">
+<LA Size="normal">Anschrift,</LA>
+</DD>
+<DT>e)</DT>
+<DD Font="normal">
+<LA Size="normal">Geburtsdatum,</LA>
+</DD>
+<DT>f)</DT>
+<DD Font="normal">
+<LA Size="normal">Geschlecht,</LA>
+</DD>
+<DT>g)</DT>
+<DD Font="normal">
+<LA Size="normal">Sterbedatum,</LA>
+</DD>
+<DT>h)</DT>
+<DD Font="normal">
+<LA Size="normal">Auskunftssperren nach § 51 und bedingte Sperrvermerke nach § 52 sowie</LA>
+</DD>
+<DT>i)</DT>
+<DD Font="normal">
+<LA Size="normal">die Identifikationsnummer nach § 139b der Abgabenordnung,</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>10.</DT>
+<DD Font="normal">
+<LA Size="normal">derzeitige Staatsangehörigkeiten,</LA>
+</DD>
+<DT>11.</DT>
+<DD Font="normal">
+<LA Size="normal">rechtliche Zugehörigkeit zu einer öffentlich-rechtlichen Religionsgesellschaft,</LA>
+</DD>
+<DT>12.</DT>
+<DD Font="normal">
+<LA Size="normal">derzeitige Anschriften, frühere Anschriften im Zuständigkeitsbereich der Meldebehörde sowie Anschrift der letzten alleinigen Wohnung oder Hauptwohnung und der letzten Nebenwohnungen außerhalb des Zuständigkeitsbereichs der Meldebehörde, gekennzeichnet nach Haupt- und Nebenwohnung, bei Zuzug aus dem Ausland auch den Staat und die letzte Anschrift im Inland, bei Wegzug in das Ausland auch die Zuzugsanschrift im Ausland und den Staat,</LA>
+</DD>
+<DT>13.</DT>
+<DD Font="normal">
+<LA Size="normal">Einzugsdatum, Auszugsdatum, Datum des letzten Wegzugs aus einer Wohnung im Inland sowie Datum des letzten Zuzugs aus dem Ausland,</LA>
+</DD>
+<DT>14.</DT>
+<DD Font="normal">
+<LA Size="normal">Familienstand, bei Verheirateten oder Lebenspartnern zusätzlich Datum und Ort der Eheschließung oder der Begründung der Lebenspartnerschaft sowie bei Eheschließung oder Begründung der Lebenspartnerschaft im Ausland auch den Staat,</LA>
+</DD>
+<DT>15.</DT>
+<DD Font="normal">
+<LA Size="normal">zum Ehegatten oder Lebenspartner <DL Font="normal" Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">Familienname,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">Vornamen,</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">Geburtsname,</LA>
+</DD>
+<DT>d)</DT>
+<DD Font="normal">
+<LA Size="normal">Doktorgrad,</LA>
+</DD>
+<DT>e)</DT>
+<DD Font="normal">
+<LA Size="normal">Geburtsdatum,</LA>
+</DD>
+<DT>f)</DT>
+<DD Font="normal">
+<LA Size="normal">Geschlecht,</LA>
+</DD>
+<DT>g)</DT>
+<DD Font="normal">
+<LA Size="normal">derzeitige Anschriften im Zuständigkeitsbereich der Meldebehörde sowie Anschrift der letzten alleinigen Wohnung oder Hauptwohnung außerhalb des Zuständigkeitsbereichs der Meldebehörde,</LA>
+</DD>
+<DT>h)</DT>
+<DD Font="normal">
+<LA Size="normal">Sterbedatum,</LA>
+</DD>
+<DT>i)</DT>
+<DD Font="normal">
+<LA Size="normal">Auskunftssperren nach § 51 und bedingte Sperrvermerke nach § 52 sowie</LA>
+</DD>
+<DT>j)</DT>
+<DD Font="normal">
+<LA Size="normal">die Identifikationsnummer nach § 139b der Abgabenordnung,</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>16.</DT>
+<DD Font="normal">
+<LA Size="normal">zu minderjährigen Kindern <DL Font="normal" Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">Familienname,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">Vornamen,</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">Geburtsdatum,</LA>
+</DD>
+<DT>d)</DT>
+<DD Font="normal">
+<LA Size="normal">Geschlecht,</LA>
+</DD>
+<DT>e)</DT>
+<DD Font="normal">
+<LA Size="normal">Anschrift im Inland,</LA>
+</DD>
+<DT>f)</DT>
+<DD Font="normal">
+<LA Size="normal">Sterbedatum,</LA>
+</DD>
+<DT>g)</DT>
+<DD Font="normal">
+<LA Size="normal">Auskunftssperren nach § 51 und bedingte Sperrvermerke nach § 52 sowie</LA>
+</DD>
+<DT>h)</DT>
+<DD Font="normal">
+<LA Size="normal">die Identifikationsnummer nach § 139b der Abgabenordnung,</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>17.</DT>
+<DD Font="normal">
+<LA Size="normal">Ausstellungsbehörde, Ausstellungsdatum, letzter Tag der Gültigkeitsdauer und Seriennummer des Personalausweises, vorläufigen Personalausweises oder Ersatz-Personalausweises, des anerkannten Passes oder Passersatzpapiers, Ausstellungsbehörde, letzter Tag der Gültigkeitsdauer und Seriennummer der eID-Karte sowie Sperrkennwort und Sperrsumme des Personalausweises und der eID-Karte,</LA>
+</DD>
+<DT>17a.</DT>
+<DD Font="normal">
+<LA Size="normal">die AZR-Nummer in den Fällen und nach Maßgabe des § 10 Absatz 4 Satz 1 und 2 Nummer 4 des AZR-Gesetzes,</LA>
+</DD>
+<DT>18.</DT>
+<DD Font="normal">
+<LA Size="normal">Auskunfts- und Übermittlungssperren,</LA>
+</DD>
+<DT>19.</DT>
+<DD Font="normal">
+<LA Size="normal">Sterbedatum und Sterbeort sowie bei Versterben im Ausland auch den Staat.</LA>
+</DD>
+</DL>
+</P>
+<P>(2) Über die in Absatz 1 genannten Daten hinaus speichern die Meldebehörden folgende Daten sowie die zum Nachweis ihrer Richtigkeit erforderlichen Hinweise im Melderegister: <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">für die Vorbereitung und Durchführung von Wahlen und Abstimmungen auf staatlicher und kommunaler Ebene die Tatsache, dass die betroffene Person <DL Font="normal" Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">von der Wahlberechtigung oder der Wählbarkeit ausgeschlossen ist,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">als Unionsbürger (§ 6 Absatz 3 Satz 1 des Europawahlgesetzes) bei der Wahl des Europäischen Parlaments von Amts wegen in ein Wählerverzeichnis im Inland einzutragen ist; ebenfalls zu speichern ist die Gebietskörperschaft oder der Wahlkreis im Herkunftsmitgliedstaat, wo die betroffene Person zuletzt in ein Wählerverzeichnis eingetragen war,</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">(weggefallen)</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">für das Verfahren zur Bildung und Anwendung der elektronischen Lohnsteuerabzugsmerkmale nach § 39e Absatz 2 Satz 2 und 3 des Einkommensteuergesetzes <DL Font="normal" Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">die Zugehörigkeit zu einer steuererhebenden Religionsgesellschaft sowie das Datum des Eintritts und Austritts,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">den Familienstand sowie</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">das Datum der Begründung oder Auflösung der Ehe oder Lebenspartnerschaft,</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">für Zwecke der Vergabe der Identifikationsnummer nach § 139b der Abgabenordnung bis zu deren Speicherung im Melderegister das Vorläufige Bearbeitungsmerkmal nach § 139b Absatz 6 Satz 2 der Abgabenordnung,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">für die Ausstellung von Pässen und Ausweisen<BR /> die Tatsache, dass Passversagungsgründe vorliegen, ein Pass versagt oder entzogen oder eine Anordnung nach § 6 Absatz 7, § 6a Absatz 1 oder § 6a Absatz 2 des Personalausweisgesetzes getroffen worden ist,</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">für staatsangehörigkeitsrechtliche Verfahren</LA>
+<LA Size="normal">die Tatsache, dass die deutsche Staatsangehörigkeit nach § 4 Absatz 3 oder § 40b des Staatsangehörigkeitsgesetzes erworben wurde und nach § 29 des Staatsangehörigkeitsgesetzes ein Verlust der deutschen Staatsangehörigkeit eintreten kann,</LA>
+</DD>
+<DT>6.</DT>
+<DD Font="normal">
+<LA Size="normal">für Zwecke der Suchdienste</LA>
+<LA Size="normal">die Anschrift vom 1. September 1939 derjenigen Einwohner, die aus den in § 1 Absatz 2 Nummer 3 des Bundesvertriebenengesetzes bezeichneten Gebieten stammen,</LA>
+</DD>
+<DT>7.</DT>
+<DD Font="normal">
+<LA Size="normal">für waffenrechtliche Verfahren</LA>
+<LA Size="normal">die Tatsache, dass eine waffenrechtliche Erlaubnis erteilt oder ein Waffenbesitzverbot erlassen worden ist, sowie die jeweilige Behörde, die diese Tatsache mitteilt, mit Angabe des Datums, an dem die waffenrechtliche Erlaubnis erstmals erteilt oder das Waffenbesitzverbot erlassen worden ist,</LA>
+</DD>
+<DT>8.</DT>
+<DD Font="normal">
+<LA Size="normal">für sprengstoffrechtliche Verfahren</LA>
+<LA Size="normal">die Tatsache, dass eine sprengstoffrechtliche Erlaubnis oder ein Befähigungsschein nach § 20 des Sprengstoffgesetzes erteilt worden ist, sowie die Behörde, die diese Tatsache mitteilt, mit Angabe des Datums der erstmaligen Erteilung,</LA>
+</DD>
+<DT>9.</DT>
+<DD Font="normal">
+<LA Size="normal">zur Beantwortung von Aufenthaltsanfragen anderer Behörden und sonstiger öffentlicher Stellen, wenn der Einwohner die Wohnung aufgegeben hat und der Meldebehörde eine neue Wohnung nicht bekannt ist,</LA>
+<LA Size="normal">das Ersuchen um Datenübermittlung mit dem Datum der Anfrage und der Angabe der anfragenden Stelle für die Dauer von bis zu zwei Jahren,</LA>
+</DD>
+<DT>10.</DT>
+<DD Font="normal">
+<LA Size="normal">für die Prüfung, ob die von der meldepflichtigen Person gemachten Angaben richtig sind, und zur Gewährleistung der Auskunftsrechte in § 19 Absatz 1 Satz 3 und § 50 Absatz 4</LA>
+<LA Size="normal">den Namen und die Anschrift des Eigentümers der Wohnung und, wenn dieser nicht selbst Wohnungsgeber ist, den Namen des Eigentümers der Wohnung sowie den Namen und die Anschrift des Wohnungsgebers.</LA>
+</DD>
+</DL>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260825220005" doknr="BJNR108410013BJNE000502116">
+<metadaten>
+<jurabk>BMG</jurabk>
+<enbez>§ 4</enbez>
+<titel format="XML">Ordnungsmerkmale</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Die Meldebehörden dürfen ihre Register mit Hilfe von Ordnungsmerkmalen führen. Die Ordnungsmerkmale können aus den in § 3 Absatz 1 Nummer 6 und 7 genannten Daten gebildet werden. Durch geeignete technische Maßnahmen nach den Artikeln 24, 25 und 32 der Verordnung (EU) 2016/679 des Europäischen Parlaments und des Rates vom 27. April 2016 zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten, zum freien Datenverkehr und zur Aufhebung der Richtlinie 95/46/EG (Datenschutz-Grundverordnung) (ABl. L 119 vom 4.5.2016, S. 1; L 314 vom 22.11.2016, S. 72; L 127 vom 23.5.2018, S. 2) in der jeweils geltenden Fassung sind die Ordnungsmerkmale vor Verwechslungen zu schützen.</P>
+<P>(2) Soweit von den Meldebehörden bereits Ordnungsmerkmale verarbeitet werden, die andere als die in § 3 Absatz 1 Nummer 6 und 7 genannten Daten enthalten, dürfen diese noch für eine Übergangsfrist von sechs Jahren nach Inkrafttreten dieses Gesetzes verarbeitet werden.</P>
+<P>(3) Ordnungsmerkmale dürfen im Rahmen von Datenübermittlungen an öffentliche Stellen und öffentlich-rechtliche Religionsgesellschaften übermittelt werden. Der Empfänger der Daten darf die Ordnungsmerkmale nur im Verkehr mit der jeweiligen Meldebehörde verarbeiten, eine Weiterübermittlung ist unzulässig. Soweit Ordnungsmerkmale personenbezogene Daten enthalten, dürfen sie nur übermittelt werden, wenn dem Empfänger auch die im Ordnungsmerkmal enthaltenen personenbezogenen Daten übermittelt werden dürfen.</P>
+<P>(4) Absatz 3 Satz 2 und 3 gilt entsprechend für die Weitergabe von Ordnungsmerkmalen innerhalb der Verwaltungseinheit, der die Meldebehörde angehört.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260825220005" doknr="BJNR108410013BJNE000604116">
+<metadaten>
+<jurabk>BMG</jurabk>
+<enbez>§ 5</enbez>
+<titel format="XML">Zweckbindung der Daten</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Die Meldebehörde darf die Daten, die nach § 3 Absatz 1 Nummer 17a gespeichert sind, nur noch im Verkehr mit der Registerbehörde für das Ausländerzentralregister nutzen, sobald sie von der Ausländerbehörde nach § 90a Absatz 1 Satz 3 des Aufenthaltsgesetzes unterrichtet wurde.</P>
+<P>(2) Die Meldebehörden dürfen die in § 3 Absatz 2 bezeichneten Daten nur für die dort genannten Zwecke verarbeiten. Sie haben durch technische und organisatorische Maßnahmen nach den Artikeln 24, 25 und 32 der Verordnung (EU) 2016/679 sicherzustellen, dass diese Daten nur nach Maßgabe des Satzes 1 verarbeitet werden.</P>
+<P>(3) Die in § 3 Absatz 2 bezeichneten Daten dürfen nur insoweit zusammen mit den in § 3 Absatz 1 bezeichneten Daten verarbeitet werden, als dies zur Erfüllung der jeweiligen Aufgabe erforderlich ist. § 34 Absatz 3 und 4 bleibt unberührt mit der Maßgabe, dass <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">die in § 3 Absatz 2 Nummer 1 genannten Daten nur an die Stellen übermittelt werden dürfen, die für die Vorbereitung und Durchführung der dort genannten Wahlen und Abstimmungen zuständig sind, und</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">die in § 3 Absatz 2 Nummer 2 und 3 genannten Daten nur an das Bundeszentralamt für Steuern übermittelt werden dürfen. Das in § 3 Absatz 2 Nummer 2 Buchstabe c genannte Datum zur Auflösung der Ehe oder Lebenspartnerschaft darf auch an die amtliche Statistik übermittelt werden.</LA>
+</DD>
+</DL>Die in Satz 2 Nummer 1 und 2 genannten Daten dürfen nach § 33 auch an die Meldebehörden übermittelt werden.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260825220005" doknr="BJNR108410013BJNG000201116">
+<metadaten>
+<jurabk>BMG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>020</gliederungskennzahl>
+<gliederungsbez>Abschnitt 2</gliederungsbez>
+<gliederungstitel>Schutzrechte</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten />
+</norm>
+<norm builddate="20260825220005" doknr="BJNR108410013BJNE001002116">
+<metadaten>
+<jurabk>BMG</jurabk>
+<enbez>§ 9</enbez>
+<titel format="XML">(weggefallen)</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+</dokumente>

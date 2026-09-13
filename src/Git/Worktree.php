@@ -65,6 +65,37 @@ final readonly class Worktree
         return is_dir($this->absolute($relativePath));
     }
 
+    /**
+     * Files below a directory, as paths relative to the worktree root. Used to detect files the
+     * source no longer delivers, so a law never keeps orphaned norms.
+     *
+     * @return list<string>
+     */
+    public function listFiles(string $relativeDirectory = ''): array
+    {
+        $absolute = $this->absolute($relativeDirectory);
+        if (!is_dir($absolute)) {
+            return [];
+        }
+
+        $prefix = '' === trim($relativeDirectory, '/') ? '' : trim($relativeDirectory, '/').'/';
+        $files = [];
+
+        $iterator = new \RecursiveIteratorIterator(
+            new \RecursiveDirectoryIterator($absolute, \FilesystemIterator::SKIP_DOTS),
+        );
+        foreach ($iterator as $file) {
+            if ($file instanceof \SplFileInfo && $file->isFile()) {
+                $relative = substr($file->getPathname(), \strlen($absolute) + 1);
+                $files[] = $prefix.str_replace(\DIRECTORY_SEPARATOR, '/', $relative);
+            }
+        }
+
+        sort($files);
+
+        return $files;
+    }
+
     private function absolute(string $relativePath): string
     {
         $relativePath = ltrim($relativePath, '/');

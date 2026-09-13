@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20260506175609" doknr="BJNR196610000">
+<norm builddate="20260506175609" doknr="BJNR196610000">
+<metadaten>
+<jurabk>TzBfG</jurabk>
+<amtabk>TzBfG</amtabk>
+<ausfertigung-datum manuell="ja">2000-12-21</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>BGBl I</periodikum>
+<zitstelle>2000, 1966</zitstelle>
+</fundstelle>
+<kurzue>Teilzeit- und Befristungsgesetz</kurzue>
+<langue>Gesetz über Teilzeitarbeit und befristete Arbeitsverträge</langue>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>Zuletzt geändert durch Art. 7 G v. 20.7.2022 I 1174</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>
+<noindex>Dieses Gesetz dient der Umsetzung - der Richtlinie 97/81/EG des Rates vom 15. Dezember 1997 zu der von UNICE, CEEP und EGB geschlossenen Rahmenvereinbarung über Teilzeitarbeit (ABl. EG 1998 Nr. L 14 S. 9) und - der Richtlinie 1999/70/EG des Rates vom 28. Juni 1999 zu der EGB-UNICE-CEEP-Rahmenvereinbarung über befristete Arbeitsverträge (ABl. EG 1999 Nr. L 175 S. 43).</noindex>
+</P>
+</Content>
+</text>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis ab: 1.1.2001 +++)<BR />(+++ Zur Anwendung vgl. § 9a +++)<BR />(+++ Amtliche Hinweise des Normgebers auf EG-Recht:<BR />     Umsetzung der<BR />       EGRL 81/97   (CELEX Nr: 397L0081)<BR />       EGRL 70/99   (CELEX Nr: 399L0070) +++)<BR />
+<BR />
+</pre>Das G wurde als Artikel 1 des G v. 21.12.2000 I 1966 vom Bundestag beschlossen. Es ist gem. Art. 4 dieses G mWv 1.1.2001 in Kraft getreten.</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260506175609" doknr="BJNR196610000BJNG000100305">
+<metadaten>
+<jurabk>TzBfG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010</gliederungskennzahl>
+<gliederungsbez>Erster Abschnitt</gliederungsbez>
+<gliederungstitel>Allgemeine Vorschriften</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260506175609" doknr="BJNR196610000BJNE000500305">
+<metadaten>
+<jurabk>TzBfG</jurabk>
+<enbez>§ 1</enbez>
+<titel format="parat">Zielsetzung</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Ziel des Gesetzes ist, Teilzeitarbeit zu fördern, die Voraussetzungen für die Zulässigkeit befristeter Arbeitsverträge festzulegen und die Diskriminierung von teilzeitbeschäftigten und befristet beschäftigten Arbeitnehmern zu verhindern.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260506175609" doknr="BJNR196610000BJNE000600305">
+<metadaten>
+<jurabk>TzBfG</jurabk>
+<enbez>§ 2</enbez>
+<titel format="parat">Begriff des teilzeitbeschäftigten Arbeitnehmers</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Teilzeitbeschäftigt ist ein Arbeitnehmer, dessen regelmäßige Wochenarbeitszeit kürzer ist als die eines vergleichbaren vollzeitbeschäftigten Arbeitnehmers. Ist eine regelmäßige Wochenarbeitszeit nicht vereinbart, so ist ein Arbeitnehmer teilzeitbeschäftigt, wenn seine regelmäßige Arbeitszeit im Durchschnitt eines bis zu einem Jahr reichenden Beschäftigungszeitraums unter der eines vergleichbaren vollzeitbeschäftigten Arbeitnehmers liegt. Vergleichbar ist ein vollzeitbeschäftigter Arbeitnehmer des Betriebes mit derselben Art des Arbeitsverhältnisses und der gleichen oder einer ähnlichen Tätigkeit. Gibt es im Betrieb keinen vergleichbaren vollzeitbeschäftigten Arbeitnehmer, so ist der vergleichbare vollzeitbeschäftigte Arbeitnehmer auf Grund des anwendbaren Tarifvertrages zu bestimmen; in allen anderen Fällen ist darauf abzustellen, wer im jeweiligen Wirtschaftszweig üblicherweise als vergleichbarer vollzeitbeschäftigter Arbeitnehmer anzusehen ist.</P>
+<P>(2) Teilzeitbeschäftigt ist auch ein Arbeitnehmer, der eine geringfügige Beschäftigung nach § 8 Abs. 1 Nr. 1 des Vierten Buches Sozialgesetzbuch ausübt.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260506175609" doknr="BJNR196610000BJNE000700305">
+<metadaten>
+<jurabk>TzBfG</jurabk>
+<enbez>§ 3</enbez>
+<titel format="parat">Begriff des befristet beschäftigten Arbeitnehmers</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Befristet beschäftigt ist ein Arbeitnehmer mit einem auf bestimmte Zeit geschlossenen Arbeitsvertrag. Ein auf bestimmte Zeit geschlossener Arbeitsvertrag (befristeter Arbeitsvertrag) liegt vor, wenn seine Dauer kalendermäßig bestimmt ist (kalendermäßig befristeter Arbeitsvertrag) oder sich aus Art, Zweck oder Beschaffenheit der Arbeitsleistung ergibt (zweckbefristeter Arbeitsvertrag).</P>
+<P>(2) Vergleichbar ist ein unbefristet beschäftigter Arbeitnehmer des Betriebes mit der gleichen oder einer ähnlichen Tätigkeit. Gibt es im Betrieb keinen vergleichbaren unbefristet beschäftigten Arbeitnehmer, so ist der vergleichbare unbefristet beschäftigte Arbeitnehmer auf Grund des anwendbaren Tarifvertrages zu bestimmen; in allen anderen Fällen ist darauf abzustellen, wer im jeweiligen Wirtschaftszweig üblicherweise als vergleichbarer unbefristet beschäftigter Arbeitnehmer anzusehen ist.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260506175609" doknr="BJNR196610000BJNE000800305">
+<metadaten>
+<jurabk>TzBfG</jurabk>
+<enbez>§ 4</enbez>
+<titel format="parat">Verbot der Diskriminierung</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Ein teilzeitbeschäftigter Arbeitnehmer darf wegen der Teilzeitarbeit nicht schlechter behandelt werden als ein vergleichbarer vollzeitbeschäftigter Arbeitnehmer, es sei denn, dass sachliche Gründe eine unterschiedliche Behandlung rechtfertigen. Einem teilzeitbeschäftigten Arbeitnehmer ist Arbeitsentgelt oder eine andere teilbare geldwerte Leistung mindestens in dem Umfang zu gewähren, der dem Anteil seiner Arbeitszeit an der Arbeitszeit eines vergleichbaren vollzeitbeschäftigten Arbeitnehmers entspricht.</P>
+<P>(2) Ein befristet beschäftigter Arbeitnehmer darf wegen der Befristung des Arbeitsvertrages nicht schlechter behandelt werden, als ein vergleichbarer unbefristet beschäftigter Arbeitnehmer, es sei denn, dass sachliche Gründe eine unterschiedliche Behandlung rechtfertigen. Einem befristet beschäftigten Arbeitnehmer ist Arbeitsentgelt oder eine andere teilbare geldwerte Leistung, die für einen bestimmten Bemessungszeitraum gewährt wird, mindestens in dem Umfang zu gewähren, der dem Anteil seiner Beschäftigungsdauer am Bemessungszeitraum entspricht. Sind bestimmte Beschäftigungsbedingungen von der Dauer des Bestehens des Arbeitsverhältnisses in demselben Betrieb oder Unternehmen abhängig, so sind für befristet beschäftigte Arbeitnehmer dieselben Zeiten zu berücksichtigen wie für unbefristet beschäftigte Arbeitnehmer, es sei denn, dass eine unterschiedliche Berücksichtigung aus sachlichen Gründen gerechtfertigt ist.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260506175609" doknr="BJNR196610000BJNE000900305">
+<metadaten>
+<jurabk>TzBfG</jurabk>
+<enbez>§ 5</enbez>
+<titel format="parat">Benachteiligungsverbot</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Der Arbeitgeber darf einen Arbeitnehmer nicht wegen der Inanspruchnahme von Rechten nach diesem Gesetz benachteiligen.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260506175609" doknr="BJNR196610000BJNG000200305">
+<metadaten>
+<jurabk>TzBfG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>020</gliederungskennzahl>
+<gliederungsbez>Zweiter Abschnitt</gliederungsbez>
+<gliederungstitel>Teilzeitarbeit</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260506175609" doknr="BJNR196610000BJNE001301126">
+<metadaten>
+<jurabk>TzBfG</jurabk>
+<enbez>§ 9</enbez>
+<titel format="XML">Verlängerung der Arbeitszeit</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Der Arbeitgeber hat einen teilzeitbeschäftigten Arbeitnehmer, der ihm in Textform den Wunsch nach einer Verlängerung seiner vertraglich vereinbarten Arbeitszeit angezeigt hat, bei der Besetzung eines Arbeitsplatzes bevorzugt zu berücksichtigen, es sei denn, dass <DL Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA>es sich dabei nicht um einen entsprechenden freien Arbeitsplatz handelt oder</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA>der teilzeitbeschäftigte Arbeitnehmer nicht mindestens gleich geeignet ist wie ein anderer vom Arbeitgeber bevorzugter Bewerber oder</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA>Arbeitszeitwünsche anderer teilzeitbeschäftigter Arbeitnehmer oder</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA>dringende betriebliche Gründe entgegenstehen.</LA>
+</DD>
+</DL>
+</P>
+<P>Ein freier zu besetzender Arbeitsplatz liegt vor, wenn der Arbeitgeber die Organisationsentscheidung getroffen hat, diesen zu schaffen oder einen unbesetzten Arbeitsplatz neu zu besetzen.</P>
+</Content>
+</text>
+<fussnoten>
+<Content>
+<P>(+++ § 9: zur Nichtanwendung vgl. § 9a Abs. 4 +++)</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+</dokumente>

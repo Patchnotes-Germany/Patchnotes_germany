@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20241231222246" doknr="BJNR117100994">
+<norm builddate="20241231222246" doknr="BJNR117100994">
+<metadaten>
+<jurabk>ArbZG</jurabk>
+<amtabk>ArbZG</amtabk>
+<ausfertigung-datum manuell="ja">1994-06-06</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>BGBl I</periodikum>
+<zitstelle>1994, 1170, 1171</zitstelle>
+</fundstelle>
+<langue>Arbeitszeitgesetz</langue>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>Zuletzt geändert durch Art. 52 G v. 23.10.2024 I Nr. 323</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis ab: 1.7.1994 +++)<BR />(+++ Umsetzung der<BR />       EGRL 104/93    (CELEX Nr: 393L0104)<BR />       vgl. Art. 4b G v. 24.12.2003 I 3002 +++)<BR />
+<BR />
+</pre>Das G wurde als Artikel 1 G v. 6.6.1994 I 1170 (ArbZRG) vom Bundestag beschlossen. Es ist gem. Art. 21 Satz 2 dieses G am 1.7.1994 in Kraft getreten.</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20241231222246" doknr="BJNR117100994BJNG000100307">
+<metadaten>
+<jurabk>ArbZG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010</gliederungskennzahl>
+<gliederungsbez>Erster Abschnitt</gliederungsbez>
+<gliederungstitel>Allgemeine Vorschriften</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20241231222246" doknr="BJNR117100994BJNE000901377">
+<metadaten>
+<jurabk>ArbZG</jurabk>
+<enbez>§ 1</enbez>
+<titel format="XML">Zweck des Gesetzes</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Zweck des Gesetzes ist es, <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">die Sicherheit und den Gesundheitsschutz der Arbeitnehmer in der Bundesrepublik Deutschland und in der ausschließlichen Wirtschaftszone bei der Arbeitszeitgestaltung zu gewährleisten und die Rahmenbedingungen für flexible Arbeitszeiten zu verbessern sowie</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">den Sonntag und die staatlich anerkannten Feiertage als Tage der Arbeitsruhe und der seelischen Erhebung der Arbeitnehmer zu schützen.</LA>
+</DD>
+</DL>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20241231222246" doknr="BJNR117100994BJNE001001308">
+<metadaten>
+<jurabk>ArbZG</jurabk>
+<enbez>§ 2</enbez>
+<titel format="parat">Begriffsbestimmungen</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Arbeitszeit im Sinne dieses Gesetzes ist die Zeit vom Beginn bis zum Ende der Arbeit ohne die Ruhepausen; Arbeitszeiten bei mehreren Arbeitgebern sind zusammenzurechnen. Im Bergbau unter Tage zählen die Ruhepausen zur Arbeitszeit.</P>
+<P>(2) Arbeitnehmer im Sinne dieses Gesetzes sind Arbeiter und Angestellte sowie die zu ihrer Berufsbildung Beschäftigten.</P>
+<P>(3) Nachtzeit im Sinne dieses Gesetzes ist die Zeit von 23 bis 6 Uhr, in Bäckereien und Konditoreien die Zeit von 22 bis 5 Uhr.</P>
+<P>(4) Nachtarbeit im Sinne dieses Gesetzes ist jede Arbeit, die mehr als zwei Stunden der Nachtzeit umfaßt.</P>
+<P>(5) Nachtarbeitnehmer im Sinne dieses Gesetzes sind Arbeitnehmer, die <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">auf Grund ihrer Arbeitszeitgestaltung normalerweise Nachtarbeit in Wechselschicht zu leisten haben oder</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">Nachtarbeit an mindestens 48 Tagen im Kalenderjahr leisten.</LA>
+</DD>
+</DL>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20241231222246" doknr="BJNR117100994BJNG000200307">
+<metadaten>
+<jurabk>ArbZG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>020</gliederungskennzahl>
+<gliederungsbez>Zweiter Abschnitt</gliederungsbez>
+<gliederungstitel>Werktägliche Arbeitszeit
+und arbeitsfreie Zeiten</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20241231222246" doknr="BJNR117100994BJNE001100307">
+<metadaten>
+<jurabk>ArbZG</jurabk>
+<enbez>§ 3</enbez>
+<titel format="parat">Arbeitszeit der Arbeitnehmer</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Die werktägliche Arbeitszeit der Arbeitnehmer darf acht Stunden nicht überschreiten. Sie kann auf bis zu zehn Stunden nur verlängert werden, wenn innerhalb von sechs Kalendermonaten oder innerhalb von 24 Wochen im Durchschnitt acht Stunden werktäglich nicht überschritten werden.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20241231222246" doknr="BJNR117100994BJNE001200307">
+<metadaten>
+<jurabk>ArbZG</jurabk>
+<enbez>§ 4</enbez>
+<titel format="parat">Ruhepausen</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Die Arbeit ist durch im voraus feststehende Ruhepausen von mindestens 30 Minuten bei einer Arbeitszeit von mehr als sechs bis zu neun Stunden und 45 Minuten bei einer Arbeitszeit von mehr als neun Stunden insgesamt zu unterbrechen. Die Ruhepausen nach Satz 1 können in Zeitabschnitte von jeweils mindestens 15 Minuten aufgeteilt werden. Länger als sechs Stunden hintereinander dürfen Arbeitnehmer nicht ohne Ruhepause beschäftigt werden.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20241231222246" doknr="BJNR117100994BJNE001302308">
+<metadaten>
+<jurabk>ArbZG</jurabk>
+<enbez>§ 5</enbez>
+<titel format="parat">Ruhezeit</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Die Arbeitnehmer müssen nach Beendigung der täglichen Arbeitszeit eine ununterbrochene Ruhezeit von mindestens elf Stunden haben.</P>
+<P>(2) Die Dauer der Ruhezeit des Absatzes 1 kann in Krankenhäusern und anderen Einrichtungen zur Behandlung, Pflege und Betreuung von Personen, in Gaststätten und anderen Einrichtungen zur Bewirtung und Beherbergung, in Verkehrsbetrieben, beim Rundfunk sowie in der Landwirtschaft und in der Tierhaltung um bis zu eine Stunde verkürzt werden, wenn jede Verkürzung der Ruhezeit innerhalb eines Kalendermonats oder innerhalb von vier Wochen durch Verlängerung einer anderen Ruhezeit auf mindestens zwölf Stunden ausgeglichen wird.</P>
+<P>(3) Abweichend von Absatz 1 können in Krankenhäusern und anderen Einrichtungen zur Behandlung, Pflege und Betreuung von Personen Kürzungen der Ruhezeit durch Inanspruchnahmen während der Rufbereitschaft, die nicht mehr als die Hälfte der Ruhezeit betragen, zu anderen Zeiten ausgeglichen werden.</P>
+<P>(4) (weggefallen)</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20241231222246" doknr="BJNR117100994BJNE001501308">
+<metadaten>
+<jurabk>ArbZG</jurabk>
+<enbez>§ 7</enbez>
+<titel format="parat">Abweichende Regelungen</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) In einem Tarifvertrag oder auf Grund eines Tarifvertrags in einer Betriebs- oder Dienstvereinbarung kann zugelassen werden, <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">abweichend von § 3<DL Font="normal" Type="arabic">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">die Arbeitszeit über zehn Stunden werktäglich zu verlängern, wenn in die Arbeitszeit regelmäßig und in erheblichem Umfang Arbeitsbereitschaft oder Bereitschaftsdienst fällt,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">einen anderen Ausgleichszeitraum festzulegen,</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">(weggefallen)</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">abweichend von § 4 Satz 2 die Gesamtdauer der Ruhepausen in Schichtbetrieben und Verkehrsbetrieben auf Kurzpausen von angemessener Dauer aufzuteilen,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">abweichend von § 5 Abs. 1 die Ruhezeit um bis zu zwei Stunden zu kürzen, wenn die Art der Arbeit dies erfordert und die Kürzung der Ruhezeit innerhalb eines festzulegenden Ausgleichszeitraums ausgeglichen wird,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">abweichend von § 6 Abs. 2<DL Font="normal" Type="arabic">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">die Arbeitszeit über zehn Stunden werktäglich hinaus zu verlängern, wenn in die Arbeitszeit regelmäßig und in erheblichem Umfang Arbeitsbereitschaft oder Bereitschaftsdienst fällt,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">einen anderen Ausgleichszeitraum festzulegen,</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">den Beginn des siebenstündigen Nachtzeitraums des § 2 Abs. 3 auf die Zeit zwischen 22 und 24 Uhr festzulegen.</LA>
+</DD>
+</DL>
+</P>
+<P>(2) Sofern der Gesundheitsschutz der Arbeitnehmer durch einen entsprechenden Zeitausgleich gewährleistet wird, kann in einem Tarifvertrag oder auf Grund eines Tarifvertrags in einer Betriebs- oder Dienstvereinbarung ferner zugelassen werden, <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">abweichend von § 5 Abs. 1 die Ruhezeiten bei Rufbereitschaft den Besonderheiten dieses Dienstes anzupassen, insbesondere Kürzungen der Ruhezeit infolge von Inanspruchnahmen während dieses Dienstes zu anderen Zeiten auszugleichen,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">die Regelungen der §§ 3, 5 Abs. 1 und § 6 Abs. 2 in der Landwirtschaft der Bestellungs- und Erntezeit sowie den Witterungseinflüssen anzupassen,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">die Regelungen der §§ 3, 4, 5 Abs. 1 und § 6 Abs. 2 bei der Behandlung, Pflege und Betreuung von Personen der Eigenart dieser Tätigkeit und dem Wohl dieser Personen entsprechend anzupassen,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">die Regelungen der §§ 3, 4, 5 Abs. 1 und § 6 Abs. 2 bei Verwaltungen und Betrieben des Bundes, der Länder, der Gemeinden und sonstigen Körperschaften, Anstalten und Stiftungen des öffentlichen Rechts sowie bei anderen Arbeitgebern, die der Tarifbindung eines für den öffentlichen Dienst geltenden oder eines im wesentlichen inhaltsgleichen Tarifvertrags unterliegen, der Eigenart der Tätigkeit bei diesen Stellen anzupassen.</LA>
+</DD>
+</DL>
+</P>
+<P>(2a) In einem Tarifvertrag oder auf Grund eines Tarifvertrags in einer Betriebs- oder Dienstvereinbarung kann abweichend von den §§ 3, 5 Abs. 1 und § 6 Abs. 2 zugelassen werden, die werktägliche Arbeitszeit auch ohne Ausgleich über acht Stunden zu verlängern, wenn in die Arbeitszeit regelmäßig und in erheblichem Umfang Arbeitsbereitschaft oder Bereitschaftsdienst fällt und durch besondere Regelungen sichergestellt wird, dass die Gesundheit der Arbeitnehmer nicht gefährdet wird.</P>
+<P>(3) Im Geltungsbereich eines Tarifvertrags nach Absatz 1, 2 oder 2a können abweichende tarifvertragliche Regelungen im Betrieb eines nicht tarifgebundenen Arbeitgebers durch Betriebs- oder Dienstvereinbarung oder, wenn ein Betriebs- oder Personalrat nicht besteht, durch schriftliche Vereinbarung zwischen dem Arbeitgeber und dem Arbeitnehmer übernommen werden. Können auf Grund eines solchen Tarifvertrags abweichende Regelungen in einer Betriebs- oder Dienstvereinbarung getroffen werden, kann auch in Betrieben eines nicht tarifgebundenen Arbeitgebers davon Gebrauch gemacht werden. Eine nach Absatz 2 Nr. 4 getroffene abweichende tarifvertragliche Regelung hat zwischen nicht tarifgebundenen Arbeitgebern und Arbeitnehmern Geltung, wenn zwischen ihnen die Anwendung der für den öffentlichen Dienst geltenden tarifvertraglichen Bestimmungen vereinbart ist und die Arbeitgeber die Kosten des Betriebs überwiegend mit Zuwendungen im Sinne des Haushaltsrechts decken.</P>
+<P>(4) Die Kirchen und die öffentlich-rechtlichen Religionsgesellschaften können die in Absatz 1, 2 oder 2a genannten Abweichungen in ihren Regelungen vorsehen.</P>
+<P>(5) In einem Bereich, in dem Regelungen durch Tarifvertrag üblicherweise nicht getroffen werden, können Ausnahmen im Rahmen des Absatzes 1, 2 oder 2a durch die Aufsichtsbehörde bewilligt werden, wenn dies aus betrieblichen Gründen erforderlich ist und die Gesundheit der Arbeitnehmer nicht gefährdet wird.</P>
+<P>(6) Die Bundesregierung kann durch Rechtsverordnung mit Zustimmung des Bundesrates Ausnahmen im Rahmen des Absatzes 1 oder 2 zulassen, sofern dies aus betrieblichen Gründen erforderlich ist und die Gesundheit der Arbeitnehmer nicht gefährdet wird.</P>
+<P>(7) Auf Grund einer Regelung nach Absatz 2a oder den Absätzen 3 bis 5 jeweils in Verbindung mit Absatz 2a darf die Arbeitszeit nur verlängert werden, wenn der Arbeitnehmer schriftlich eingewilligt hat. Der Arbeitnehmer kann die Einwilligung mit einer Frist von sechs Monaten schriftlich widerrufen. Der Arbeitgeber darf einen Arbeitnehmer nicht benachteiligen, weil dieser die Einwilligung zur Verlängerung der Arbeitszeit nicht erklärt oder die Einwilligung widerrufen hat.</P>
+<P>(8) Werden Regelungen nach Absatz 1 Nr. 1 und 4, Absatz 2 Nr. 2 bis 4 oder solche Regelungen auf Grund der Absätze 3 und 4 zugelassen, darf die Arbeitszeit 48 Stunden wöchentlich im Durchschnitt von zwölf Kalendermonaten nicht überschreiten. Erfolgt die Zulassung auf Grund des Absatzes 5, darf die Arbeitszeit 48 Stunden wöchentlich im Durchschnitt von sechs Kalendermonaten oder 24 Wochen nicht überschreiten.</P>
+<P>(9) Wird die werktägliche Arbeitszeit über zwölf Stunden hinaus verlängert, muss im unmittelbaren Anschluss an die Beendigung der Arbeitszeit eine Ruhezeit von mindestens elf Stunden gewährt werden.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+</dokumente>

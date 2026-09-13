@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20260804215509" doknr="BJNR010050934">
+<norm builddate="20260804215509" doknr="BJNR010050934">
+<metadaten>
+<jurabk>EStG</jurabk>
+<amtabk>EStG</amtabk>
+<ausfertigung-datum manuell="ja">1934-10-16</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>RGBl I</periodikum>
+<zitstelle>1934, 1005</zitstelle>
+</fundstelle>
+<langue>Einkommensteuergesetz</langue>
+<standangabe checked="ja">
+<standtyp>Neuf</standtyp>
+<standkommentar>Neugefasst durch Bek. v. 8.10.2009 I 3366, 3862;</standkommentar>
+</standangabe>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>zuletzt geändert durch Art. 7 G v. 29.6.2026 I Nr. 197</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis Geltung ab: 30.12.1981 +++)<BR />(+++ Zur Anwendung vgl. § 4, § 4j, § 9, § 10, § 10a, § 13a, 13b, 19a, <BR />     § 20, § 22, § 32b, § 33, § 37, § 40a, § 45e, §§ 52 ff. u.<BR />     § 92a +++)<BR />(+++ Zur Anwendung vgl. § 19 InvStG +++)<BR />(+++ Zur Anwendung d. § 34c vgl. § 26 KStG 1977 +++)<BR />(+++ Zur Anwendung vgl. §§ 6, 16, 19, 30, 31, 34, 38, 41, 42, 43, 45, 47, 49,  <BR />      50 u. 53 InvStG 2018 +++)<BR />(+++ EU-Vollzitate: vgl. Liste EU-Rechtsakte G v. 22.12.2025 I Nr. 363 +++) <BR />
+<BR />
+</pre>Überschrift: IdF d. Art. 1 Nr. 1 G v. 16.5.2003 I 660 mWv 21.5.2003</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260804215509" doknr="BJNR010050934BJNG000108140">
+<metadaten>
+<jurabk>EStG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010</gliederungskennzahl>
+<gliederungsbez>I.</gliederungsbez>
+<gliederungstitel>Steuerpflicht</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260804215509" doknr="BJNR010050934BJNE003619116">
+<metadaten>
+<jurabk>EStG</jurabk>
+<enbez>§ 1</enbez>
+<titel format="XML">Steuerpflicht</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) <SUP class="Rec">1</SUP>Natürliche Personen, die im Inland einen Wohnsitz oder ihren gewöhnlichen Aufenthalt haben, sind unbeschränkt einkommensteuerpflichtig. <SUP class="Rec">2</SUP>Zum Inland im Sinne dieses Gesetzes gehört auch der der Bundesrepublik Deutschland zustehende Anteil <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">an der ausschließlichen Wirtschaftszone, soweit dort <DL Font="normal" Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">die lebenden und nicht lebenden natürlichen Ressourcen der Gewässer über dem Meeresboden, des Meeresbodens und seines Untergrunds erforscht, ausgebeutet, erhalten oder bewirtschaftet werden,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">andere Tätigkeiten zur wirtschaftlichen Erforschung oder Ausbeutung der ausschließlichen Wirtschaftszone ausgeübt werden, wie beispielsweise die Energieerzeugung aus Wasser, Strömung und Wind oder</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">künstliche Inseln errichtet oder genutzt werden und Anlagen und Bauwerke für die in den Buchstaben a und b genannten Zwecke errichtet oder genutzt werden, und</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">am Festlandsockel, soweit dort <DL Font="normal" Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">dessen natürliche Ressourcen erforscht oder ausgebeutet werden; natürliche Ressourcen in diesem Sinne sind die mineralischen und sonstigen nicht lebenden Ressourcen des Meeresbodens und seines Untergrunds sowie die zu den sesshaften Arten gehörenden Lebewesen, die im nutzbaren Stadium entweder unbeweglich auf oder unter dem Meeresboden verbleiben oder sich nur in ständigem körperlichen Kontakt mit dem Meeresboden oder seinem Untergrund fortbewegen können; oder</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">künstliche Inseln errichtet oder genutzt werden und Anlagen und Bauwerke für die in Buchstabe a genannten Zwecke errichtet oder genutzt werden.</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+</DL>
+</P>
+<P>(2) <SUP class="Rec">1</SUP>Unbeschränkt einkommensteuerpflichtig sind auch deutsche Staatsangehörige, die <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">im Inland weder einen Wohnsitz noch ihren gewöhnlichen Aufenthalt haben und</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">zu einer inländischen juristischen Person des öffentlichen Rechts in einem Dienstverhältnis stehen und dafür Arbeitslohn aus einer inländischen öffentlichen Kasse beziehen,</LA>
+</DD>
+</DL>sowie zu ihrem Haushalt gehörende Angehörige, die die deutsche Staatsangehörigkeit besitzen oder keine Einkünfte oder nur Einkünfte beziehen, die ausschließlich im Inland einkommensteuerpflichtig sind. <SUP class="Rec">2</SUP>Dies gilt nur für natürliche Personen, die in dem Staat, in dem sie ihren Wohnsitz oder ihren gewöhnlichen Aufenthalt haben, lediglich in einem der beschränkten Einkommensteuerpflicht ähnlichen Umfang zu einer Steuer vom Einkommen herangezogen werden.</P>
+<P>(3) <SUP class="Rec">1</SUP>Auf Antrag werden auch natürliche Personen als unbeschränkt einkommensteuerpflichtig behandelt, die im Inland weder einen Wohnsitz noch ihren gewöhnlichen Aufenthalt haben, soweit sie inländische Einkünfte im Sinne des § 49 haben. <SUP class="Rec">2</SUP>Dies gilt nur, wenn ihre Einkünfte im Kalenderjahr mindestens zu 90 Prozent der deutschen Einkommensteuer unterliegen oder die nicht der deutschen Einkommensteuer unterliegenden Einkünfte den Grundfreibetrag nach § 32a Absatz 1 Satz 2 Nummer 1 nicht übersteigen; dieser Betrag ist zu kürzen, soweit es nach den Verhältnissen im Wohnsitzstaat des Steuerpflichtigen notwendig und angemessen ist. <SUP class="Rec">3</SUP>Inländische Einkünfte, die nach einem Abkommen zur Vermeidung der Doppelbesteuerung nur der Höhe nach beschränkt besteuert werden dürfen, gelten hierbei als nicht der deutschen Einkommensteuer unterliegend. <SUP class="Rec">4</SUP>Unberücksichtigt bleiben bei der Ermittlung der Einkünfte nach Satz 2 nicht der deutschen Einkommensteuer unterliegende Einkünfte, die im Ausland nicht besteuert werden, soweit vergleichbare Einkünfte im Inland steuerfrei sind. <SUP class="Rec">5</SUP>Weitere Voraussetzung ist, dass die Höhe der nicht der deutschen Einkommensteuer unterliegenden Einkünfte durch eine Bescheinigung der zuständigen ausländischen Steuerbehörde nachgewiesen wird. <SUP class="Rec">6</SUP>Der Steuerabzug nach § 50a ist ungeachtet der Sätze 1 bis 4 vorzunehmen.</P>
+<P>(4) Natürliche Personen, die im Inland weder einen Wohnsitz noch ihren gewöhnlichen Aufenthalt haben, sind vorbehaltlich der Absätze 2 und 3 und des § 1a beschränkt einkommensteuerpflichtig, wenn sie inländische Einkünfte im Sinne des § 49 haben.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260804215509" doknr="BJNR010050934BJNE023113123">
+<metadaten>
+<jurabk>EStG</jurabk>
+<enbez>§ 1a</enbez>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Für Staatsangehörige eines Mitgliedstaates der Europäischen Union oder eines Staates, auf den das Abkommen über den Europäischen Wirtschaftsraum anwendbar ist, die nach § 1 Absatz 1 unbeschränkt einkommensteuerpflichtig sind oder die nach § 1 Absatz 3 als unbeschränkt einkommensteuerpflichtig zu behandeln sind, gilt bei Anwendung von § 10 Absatz 1a und § 26 Absatz 1 Satz 1 Folgendes: <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA>Aufwendungen im Sinne des § 10 Absatz 1a sind auch dann als Sonderausgaben abziehbar, wenn der Empfänger der Leistung oder Zahlung nicht unbeschränkt einkommensteuerpflichtig ist. <SUP class="Rec">2</SUP>Voraussetzung ist, dass <DL Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA>der Empfänger seinen Wohnsitz oder gewöhnlichen Aufenthalt im Hoheitsgebiet eines anderen Mitgliedstaates der Europäischen Union oder eines Staates hat, auf den das Abkommen über den Europäischen Wirtschaftsraum Anwendung findet und</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA>die Besteuerung der nach § 10 Absatz 1a zu berücksichtigenden Leistung oder Zahlung beim Empfänger durch eine Bescheinigung der zuständigen ausländischen Steuerbehörde nachgewiesen wird;</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>1a.</DT>
+<DD Font="normal">
+<LA Size="normal">(weggefallen)</LA>
+</DD>
+<DT>1b.</DT>
+<DD Font="normal">
+<LA Size="normal">(weggefallen)</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">der nicht dauernd getrennt lebende Ehegatte ohne Wohnsitz oder gewöhnlichen Aufenthalt im Inland wird auf Antrag für die Anwendung des § 26 Absatz 1 Satz 1 als unbeschränkt einkommensteuerpflichtig behandelt. <SUP class="Rec">2</SUP>Nummer 1 Satz 2 Buchstabe a gilt entsprechend. <SUP class="Rec">3</SUP>Bei Anwendung des § 1 Absatz 3 Satz 2 ist auf die Einkünfte beider Ehegatten abzustellen und der Grundfreibetrag nach § 32a Absatz 1 Satz 2 Nummer 1 zu verdoppeln.</LA>
+</DD>
+</DL>
+</P>
+<P>(2) Für unbeschränkt einkommensteuerpflichtige Personen im Sinne des § 1 Absatz 2, die die Voraussetzungen des § 1 Absatz 3 Satz 2 bis 5 erfüllen, und für unbeschränkt einkommensteuerpflichtige Personen im Sinne des § 1 Absatz 3, die die Voraussetzungen des § 1 Absatz 2 Satz 1 Nummer 1 und 2 erfüllen und an einem ausländischen Dienstort tätig sind, gilt die Regelung des Absatzes 1 Nummer 2 entsprechend mit der Maßgabe, dass auf Wohnsitz oder gewöhnlichen Aufenthalt im Staat des ausländischen Dienstortes abzustellen ist.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260804215509" doknr="BJNR010050934BJNG000208140">
+<metadaten>
+<jurabk>EStG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>020</gliederungskennzahl>
+<gliederungsbez>II.</gliederungsbez>
+<gliederungstitel>Einkommen</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260804215509" doknr="BJNR010050934BJNE003735123">
+<metadaten>
+<jurabk>EStG</jurabk>
+<enbez>§ 2</enbez>
+<titel format="XML">Umfang der Besteuerung, Begriffsbestimmungen</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) <SUP class="Rec">1</SUP>Der Einkommensteuer unterliegen <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">Einkünfte aus Land- und Forstwirtschaft,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">Einkünfte aus Gewerbebetrieb,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">Einkünfte aus selbständiger Arbeit,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">Einkünfte aus nichtselbständiger Arbeit,</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">Einkünfte aus Kapitalvermögen,</LA>
+</DD>
+<DT>6.</DT>
+<DD Font="normal">
+<LA Size="normal">Einkünfte aus Vermietung und Verpachtung,</LA>
+</DD>
+<DT>7.</DT>
+<DD Font="normal">
+<LA Size="normal">sonstige Einkünfte im Sinne des § 22,</LA>
+</DD>
+</DL>die der Steuerpflichtige während seiner unbeschränkten Einkommensteuerpflicht oder als inländische Einkünfte während seiner beschränkten Einkommensteuerpflicht erzielt. <SUP class="Rec">2</SUP>Zu welcher Einkunftsart die Einkünfte im einzelnen Fall gehören, bestimmt sich nach den §§ 13 bis 24.</P>
+<P>(2) <SUP class="Rec">1</SUP>Einkünfte sind <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">bei Land- und Forstwirtschaft, Gewerbebetrieb und selbständiger Arbeit der Gewinn (§§ 4 bis 7k und 13a),</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">bei den anderen Einkunftsarten der Überschuss der Einnahmen über die Werbungskosten (§§ 8 bis 9a).</LA>
+</DD>
+</DL>
+<SUP class="Rec">2</SUP>Bei Einkünften aus Kapitalvermögen tritt § 20 Absatz 9 vorbehaltlich der Regelung in § 32d Absatz 2 an die Stelle der §§ 9 und 9a.</P>
+<P>(3) Die Summe der Einkünfte, vermindert um den Altersentlastungsbetrag, den Entlastungsbetrag für Alleinerziehende und den Abzug nach § 13 Absatz 3, ist der Gesamtbetrag der Einkünfte.</P>
+<P>(4) Der Gesamtbetrag der Einkünfte, vermindert um die Sonderausgaben und die außergewöhnlichen Belastungen, ist das Einkommen.</P>
+<P>(5) <SUP class="Rec">1</SUP>Das Einkommen, vermindert um die Freibeträge nach § 32 Absatz 6 und um die sonstigen vom Einkommen abzuziehenden Beträge, ist das zu versteuernde Einkommen; dieses bildet die Bemessungsgrundlage für die tarifliche Einkommensteuer. <SUP class="Rec">2</SUP>Knüpfen andere Gesetze an den Begriff des zu versteuernden Einkommens an, ist für deren Zweck das Einkommen in allen Fällen des § 32 um die Freibeträge nach § 32 Absatz 6 zu vermindern.</P>
+<P>(5a) <SUP class="Rec">1</SUP>Knüpfen außersteuerliche Rechtsnormen an die in den vorstehenden Absätzen definierten Begriffe (Einkünfte, Summe der Einkünfte, Gesamtbetrag der Einkünfte, Einkommen, zu versteuerndes Einkommen) an, erhöhen sich für deren Zwecke diese Größen um die nach § 32d Absatz 1 und nach § 43 Absatz 5 zu besteuernden Beträge sowie um die nach § 3 Nummer 40 steuerfreien Beträge und mindern sich um die nach § 3c Absatz 2 nicht abziehbaren Beträge. <SUP class="Rec">2</SUP>Knüpfen außersteuerliche Rechtsnormen an die in den Absätzen 1 bis 3 genannten Begriffe (Einkünfte, Summe der Einkünfte, Gesamtbetrag der Einkünfte) an, mindern sich für deren Zwecke diese Größen um die nach § 10 Absatz 1 Nummer 5 abziehbaren Kinderbetreuungskosten.</P>
+<P>(5b) Soweit Rechtsnormen dieses Gesetzes an die in den vorstehenden Absätzen definierten Begriffe (Einkünfte, Summe der Einkünfte, Gesamtbetrag der Einkünfte, Einkommen, zu versteuerndes Einkommen) anknüpfen, sind Kapitalerträge nach § 32d Absatz 1 und § 43 Absatz 5 nicht einzubeziehen.</P>
+<P>(6) <SUP class="Rec">1</SUP>Die tarifliche Einkommensteuer, vermindert um den Unterschiedsbetrag nach § 32c Absatz 1 Satz 2, die anzurechnenden ausländischen Steuern und die Steuerermäßigungen, vermehrt um die Steuer nach § 32d Absatz 3 und 4, die Steuer nach § 34c Absatz 5 und den Zuschlag nach § 3 Absatz 4 Satz 2 des Forstschäden-Ausgleichsgesetzes in der Fassung der Bekanntmachung vom 26. August 1985 (BGBl. I S. 1756), das zuletzt durch Artikel 412 der Verordnung vom 31. August 2015 (BGBl. I S. 1474) geändert worden ist, in der jeweils geltenden Fassung, ist die festzusetzende Einkommensteuer. <SUP class="Rec">2</SUP>Wurde der Gesamtbetrag der Einkünfte in den Fällen des § 10a Absatz 2 um Sonderausgaben nach § 10a Absatz 1 gemindert, ist für die Ermittlung der festzusetzenden Einkommensteuer der Anspruch auf Zulage nach Abschnitt XI der tariflichen Einkommensteuer hinzuzurechnen; bei der Ermittlung der dem Steuerpflichtigen zustehenden Zulage bleibt die Erhöhung der Grundzulage nach § 84 Satz 2 außer Betracht. <SUP class="Rec">3</SUP>Wird das Einkommen in den Fällen des § 31 um die Freibeträge nach § 32 Absatz 6 gemindert, ist der Anspruch auf Kindergeld nach Abschnitt X der tariflichen Einkommensteuer hinzuzurechnen; nicht jedoch für Kalendermonate, in denen durch Bescheid der Familienkasse ein Anspruch auf Kindergeld festgesetzt, aber wegen § 70 Absatz 1 Satz 2 nicht ausgezahlt wurde.</P>
+<P>(7)<SUP class="Rec">1</SUP> Die Einkommensteuer ist eine Jahressteuer. <SUP class="Rec">2</SUP>Die Grundlagen für ihre Festsetzung sind jeweils für ein Kalenderjahr zu ermitteln. <SUP class="Rec">3</SUP>Besteht während eines Kalenderjahres sowohl unbeschränkte als auch beschränkte Einkommensteuerpflicht, so sind die während der beschränkten Einkommensteuerpflicht erzielten inländischen Einkünfte in eine Veranlagung zur unbeschränkten Einkommensteuerpflicht einzubeziehen.</P>
+<P>(8) Die Regelungen dieses Gesetzes zu Ehegatten und Ehen sind auch auf Lebenspartner und Lebenspartnerschaften anzuwenden.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260804215509" doknr="BJNR010050934BJNE039603123">
+<metadaten>
+<jurabk>EStG</jurabk>
+<enbez>§ 4j</enbez>
+<titel format="XML">(weggefallen)</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content />
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260804215509" doknr="BJNR010050934BJNE026313123">
+<metadaten>
+<jurabk>EStG</jurabk>
+<enbez>§ 5a</enbez>
+<titel format="XML">Gewinnermittlung bei Handelsschiffen im internationalen Verkehr</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) <SUP class="Rec">1</SUP>Anstelle der Ermittlung des Gewinns nach § 4 Absatz 1 oder § 5 ist bei einem Gewerbebetrieb mit Geschäftsleitung im Inland der Gewinn, soweit er auf den Betrieb von Handelsschiffen im internationalen Verkehr entfällt, auf unwiderruflichen Antrag des Steuerpflichtigen nach der in seinem Betrieb geführten Tonnage zu ermitteln, wenn die Bereederung dieser Handelsschiffe im Inland durchgeführt wird. <SUP class="Rec">2</SUP>Der im Wirtschaftsjahr erzielte Gewinn beträgt pro Tag des Betriebs für jedes im internationalen Verkehr betriebene Handelsschiff für jeweils volle 100 Nettotonnen (Nettoraumzahl) <table frame="none" pgwide="0" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="2" colsep="0" rowsep="0">
+<colspec colname="col1" colnum="1" colwidth="0.80*" />
+<colspec colname="col2" colnum="2" colwidth="3.5*" />
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">0,92 Euro</entry>
+<entry VJ="1" colname="col2">bei einer Tonnage bis zu 1 000 Nettotonnen,</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">0,69 Euro</entry>
+<entry VJ="1" colname="col2">für die 1 000 Nettotonnen übersteigende Tonnage bis zu 10 000 Nettotonnen,</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">0,46 Euro</entry>
+<entry VJ="1" colname="col2">für die 10 000 Nettotonnen übersteigende Tonnage bis zu 25 000 Nettotonnen,</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>(2) <SUP class="Rec">1</SUP>Handelsschiffe werden im internationalen Verkehr betrieben, wenn eigene oder gecharterte Seeschiffe, die im Wirtschaftsjahr überwiegend in einem inländischen Seeschiffsregister eingetragen sind, in diesem Wirtschaftsjahr überwiegend zur Beförderung von Personen oder Gütern im Verkehr mit oder zwischen ausländischen Häfen, innerhalb eines ausländischen Hafens oder zwischen einem ausländischen Hafen und der Hohen See eingesetzt werden. <SUP class="Rec">2</SUP>Zum Betrieb von Handelsschiffen im internationalen Verkehr gehören auch ihre Vercharterung, wenn sie vom Vercharterer ausgerüstet worden sind, und die unmittelbar mit ihrem Einsatz oder ihrer Vercharterung zusammenhängenden Neben- und Hilfsgeschäfte einschließlich der Veräußerung der Handelsschiffe und der unmittelbar ihrem Betrieb dienenden Wirtschaftsgüter. <SUP class="Rec">3</SUP>Der Einsatz und die Vercharterung von gecharterten Handelsschiffen gilt nur dann als Betrieb von Handelsschiffen im internationalen Verkehr, wenn gleichzeitig eigene oder ausgerüstete Handelsschiffe im internationalen Verkehr betrieben werden. <SUP class="Rec">4</SUP>Sind gecharterte Handelsschiffe nicht in einem inländischen Seeschiffsregister eingetragen, gilt Satz 3 unter der weiteren Voraussetzung, dass im Wirtschaftsjahr die Nettotonnage der gecharterten Handelsschiffe das Dreifache der nach den Sätzen 1 und 2 im internationalen Verkehr betriebenen Handelsschiffe nicht übersteigt; für die Berechnung der Nettotonnage sind jeweils die Nettotonnen pro Schiff mit der Anzahl der Betriebstage nach Absatz 1 zu vervielfältigen. <SUP class="Rec">5</SUP>Dem Betrieb von Handelsschiffen im internationalen Verkehr ist gleichgestellt, wenn Seeschiffe, die im Wirtschaftsjahr überwiegend in einem inländischen Seeschiffsregister eingetragen sind, in diesem Wirtschaftsjahr überwiegend außerhalb der deutschen Hoheitsgewässer zum Schleppen, Bergen oder zur Aufsuchung von Bodenschätzen eingesetzt werden; die Sätze 2 bis 4 sind sinngemäß anzuwenden.</P>
+<P>(3) <SUP class="Rec">1</SUP>Der Antrag auf Anwendung der Gewinnermittlung nach Absatz 1 ist im Wirtschaftsjahr der Anschaffung oder Herstellung des Handelsschiffs (Indienststellung) mit Wirkung ab Beginn dieses Wirtschaftsjahres zu stellen. <SUP class="Rec">2</SUP>Vor Indienststellung des Handelsschiffs durch den Betrieb von Handelsschiffen im internationalen Verkehr erwirtschaftete Gewinne sind in diesem Fall nicht zu besteuern; Verluste sind weder ausgleichsfähig noch verrechenbar. <SUP class="Rec">3</SUP>Bereits erlassene Steuerbescheide sind insoweit zu ändern. <SUP class="Rec">4</SUP>Das gilt auch dann, wenn der Steuerbescheid unanfechtbar geworden ist; die Festsetzungsfrist endet insoweit nicht, bevor die Festsetzungsfrist für den Veranlagungszeitraum abgelaufen ist, in dem der Gewinn erstmals nach Absatz 1 ermittelt wird. <SUP class="Rec">5</SUP>Wird der Antrag auf Anwendung der Gewinnermittlung nach Absatz 1 nicht nach Satz 1 im Wirtschaftsjahr der Anschaffung oder Herstellung des Handelsschiffs (Indienststellung) gestellt, kann er erstmals in dem Wirtschaftsjahr gestellt werden, das jeweils nach Ablauf eines Zeitraumes von zehn Jahren, vom Beginn des Jahres der Indienststellung gerechnet, endet. <SUP class="Rec">6</SUP>Die Sätze 2 bis 4 sind insoweit nicht anwendbar. <SUP class="Rec">7</SUP>Der Steuerpflichtige ist an die Gewinnermittlung nach Absatz 1 vom Beginn des Wirtschaftsjahres an, in dem er den Antrag stellt, zehn Jahre gebunden. <SUP class="Rec">8</SUP>Nach Ablauf dieses Zeitraumes kann er den Antrag mit Wirkung für den Beginn jedes folgenden Wirtschaftsjahres bis zum Ende des Jahres unwiderruflich zurücknehmen. <SUP class="Rec">9</SUP>An die Gewinnermittlung nach allgemeinen Vorschriften ist der Steuerpflichtige ab dem Beginn des Wirtschaftsjahres, in dem er den Antrag zurücknimmt, zehn Jahre gebunden.</P>
+<P>(4) <SUP class="Rec">1</SUP>Zum Schluss des Wirtschaftsjahres, das der erstmaligen Anwendung des Absatzes 1 vorangeht (Übergangsjahr), ist für jedes Wirtschaftsgut, das unmittelbar dem Betrieb von Handelsschiffen im internationalen Verkehr dient, der Unterschiedsbetrag zwischen Buchwert und Teilwert in ein besonderes Verzeichnis aufzunehmen. <SUP class="Rec">2</SUP>Der Unterschiedsbetrag ist gesondert und bei Gesellschaften im Sinne des § 15 Absatz 1 Satz 1 Nummer 2 einheitlich festzustellen. <SUP class="Rec">3</SUP>Der Unterschiedsbetrag nach Satz 1 ist dem Gewinn hinzuzurechnen: <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">in den dem letzten Jahr der Anwendung des Absatzes 1 folgenden fünf Wirtschaftsjahren jeweils in Höhe von mindestens einem Fünftel,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">in dem Jahr, in dem das Wirtschaftsgut aus dem Betriebsvermögen ausscheidet oder in dem es nicht mehr unmittelbar dem Betrieb von Handelsschiffen im internationalen Verkehr dient,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">in dem Jahr des Ausscheidens eines Mitunternehmers hinsichtlich des auf ihn entfallenden Unterschiedsbetrags; mindert sich die Beteiligung des Mitunternehmers, ohne dass er aus der Mitunternehmerschaft ausscheidet, erfolgt eine Hinzurechnung entsprechend der Minderung der Beteiligung.</LA>
+</DD>
+</DL>
+<SUP class="Rec">4</SUP>Satz 3 Nummer 3 gilt auch in den Fällen der §§ 20 und 24 des Umwandlungssteuergesetzes. <SUP class="Rec">5</SUP>Wird ein Betrieb, Teilbetrieb oder Anteil eines Mitunternehmers an einem Betrieb auf einen Rechtsnachfolger zum Buchwert nach § 6 Absatz 3 übertragen, geht der Unterschiedsbetrag insoweit auf den Rechtsnachfolger über. <SUP class="Rec">6</SUP>§ 182 Absatz 2 der Abgabenordnung gilt sinngemäß. <SUP class="Rec">7</SUP>Die Sätze 1 bis 6 sind entsprechend anzuwenden, wenn der Steuerpflichtige Wirtschaftsgüter des Betriebsvermögens dem Betrieb von Handelsschiffen im internationalen Verkehr zuführt.</P>
+<P>(4a) <SUP class="Rec">1</SUP>Bei Gesellschaften im Sinne des § 15 Absatz 1 Satz 1 Nummer 2 tritt für die Zwecke dieser Vorschrift an die Stelle des Steuerpflichtigen die Gesellschaft. <SUP class="Rec">2</SUP>Der nach Absatz 1 ermittelte Gewinn ist den Gesellschaftern entsprechend ihrem Anteil am Gesellschaftsvermögen zuzurechnen. <SUP class="Rec">3</SUP>Vergütungen im Sinne des § 15 Absatz 1 Satz 1 Nummer 2 und Satz 2 sind hinzuzurechnen.</P>
+<P>(5) <SUP class="Rec">1</SUP>Gewinne nach Absatz 1 umfassen auch Einkünfte nach § 16. <SUP class="Rec">2</SUP>§§ 34, 34c Absatz 1 bis 3 und § 35 sind nicht anzuwenden. <SUP class="Rec">3</SUP>Rücklagen nach den §§ 6b und 6d sind beim Übergang zur Gewinnermittlung nach Absatz 1 dem Gewinn im Erstjahr hinzuzurechnen; bis zum Übergang in Anspruch genommene Investitionsabzugsbeträge nach § 7g Absatz 1 sind nach Maßgabe des § 7g Absatz 3 rückgängig zu machen. <SUP class="Rec">4</SUP>Für die Anwendung des § 15a ist der nach § 4 Absatz 1 oder § 5 ermittelte Gewinn zugrunde zu legen.</P>
+<P>(6) <SUP class="Rec">1</SUP>In der Bilanz zum Schluss des Wirtschaftsjahres, in dem Absatz 1 letztmalig angewendet wird, ist für jedes Wirtschaftsgut, das unmittelbar dem Betrieb von Handelsschiffen im internationalen Verkehr dient, der Teilwert anzusetzen. <SUP class="Rec">2</SUP>Für Wirtschaftsgüter des abnutzbaren Anlagevermögens sind den weiteren Absetzungen für Abnutzung unverändert die ursprünglichen Anschaffungs- oder Herstellungskosten zugrunde zu legen.</P>
+</Content>
+</text>
+<fussnoten>
+<Content>
+<P>(+++ § 5a: Zur Anwendung vgl. § 52 +++)</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260804215510" doknr="BJNR010050934BJNE016808140">
+<metadaten>
+<jurabk>EStG</jurabk>
+<enbez>Anlage 1</enbez>
+<titel format="XML">(zu § 4d Absatz 1)<BR />Tabelle für die Errechnung des Deckungskapitals für lebenslänglich laufende Leistungen von Unterstützungskassen</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>
+<noindex>
+<kommentar typ="Fundstelle">(Fundstelle: BGBl. I 2009, 3530)</kommentar>
+</noindex>
+</P>
+<BR />
+<BR />
+<table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="4">
+<colspec colname="COLSPEC0" colnum="1" colwidth="0.30*" />
+<colspec align="left" colname="col1" colnum="2" colwidth="2.02*" />
+<colspec align="center" colname="col2" colnum="3" colwidth="1.34*" />
+<colspec align="center" colname="col3" colnum="4" colwidth="1.34*" />
+<thead valign="bottom">
+<row>
+<entry VJ="1" align="center" colsep="1" morerows="1" nameend="col1" namest="COLSPEC0" rowsep="1" valign="middle">Erreichtes Alter<BR /> des Leistungs-<BR /> empfängers (Jahre)</entry>
+<entry VJ="1" align="center" nameend="col3" namest="col2">Die Jahresbeiträge der<BR /> laufenden Leistungen sind zu<BR /> vervielfachen bei Leistungen</entry>
+</row>
+<row>
+<entry VJ="1" align="center" colname="col2">an männliche<BR /> Leistungs-<BR /> empfänger mit</entry>
+<entry VJ="1" align="center" colname="col3">an weibliche<BR /> Leistungs-<BR /> empfänger mit</entry>
+</row>
+<row>
+<entry VJ="1" align="center" colsep="1" nameend="col1" namest="COLSPEC0" valign="middle">1</entry>
+<entry VJ="1" align="center" colname="col2" valign="middle">2</entry>
+<entry VJ="1" align="center" colname="col3" valign="middle">3</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colsep="0">bis</entry>
+<entry VJ="1" colname="col1" colsep="1">26</entry>
+<entry VJ="1" colname="col2">11</entry>
+<entry VJ="1" colname="col3">17</entry>
+</row>
+<row>
+<entry VJ="1" colsep="0" />
+<entry VJ="1" colname="col1" colsep="1">27 bis 29</entry>
+<entry VJ="1" colname="col2">12</entry>
+<entry VJ="1" colname="col3">17</entry>
+</row>
+<row>
+<entry VJ="1" colsep="0" />
+<entry VJ="1" colname="col1" colsep="1">30</entry>
+<entry VJ="1" colname="col2">13</entry>
+<entry VJ="1" colname="col3">17</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+</dokumente>

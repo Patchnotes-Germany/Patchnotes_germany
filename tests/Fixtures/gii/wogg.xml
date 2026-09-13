@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20260630215553" doknr="BJNR185610008">
+<norm builddate="20260630215553" doknr="BJNR185610008">
+<metadaten>
+<jurabk>WoGG</jurabk>
+<amtabk>WoGG</amtabk>
+<ausfertigung-datum manuell="ja">2008-09-24</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>BGBl I</periodikum>
+<zitstelle>2008, 1856</zitstelle>
+</fundstelle>
+<langue>Wohngeldgesetz</langue>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>Zuletzt geändert durch Art. 11 Abs. 8 G v. 16.4.2026 I Nr. 107</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis ab: 1.1.2009 +++)<BR />(+++ EU-Vollzitate: vgl. Liste EU-Rechtsakte G v. 4.2.2026 I Nr. 33 +++)<BR />
+<BR />
+</pre>Das G wurde als Artikel 1 G v. 24.9.2008 I 1856 vom Bundestag mit Zustimmung des Bundesrates beschlossen. Es tritt gem. Art. 6 Abs. 1 Satz 1 mWv 1.1.2009 in  Kraft. § 12 Abs. 2 bis 5 und § 38 treten gem. Art. 6 Abs. 2 Satz 1 am 1.10.2008 in Kraft.</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260630215553" doknr="BJNR185610008BJNG000100000">
+<metadaten>
+<jurabk>WoGG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010</gliederungskennzahl>
+<gliederungsbez>Teil 1</gliederungsbez>
+<gliederungstitel>Zweck des Wohngeldes und Wohngeldberechtigung</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten />
+</norm>
+<norm builddate="20260630215553" doknr="BJNR185610008BJNE000200000">
+<metadaten>
+<jurabk>WoGG</jurabk>
+<enbez>§ 1</enbez>
+<titel format="XML">Zweck des Wohngeldes</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Das Wohngeld dient der wirtschaftlichen Sicherung angemessenen und familiengerechten Wohnens.</P>
+<P>(2) Das Wohngeld wird als Zuschuss zur Miete (Mietzuschuss) oder zur Belastung (Lastenzuschuss) für den selbst genutzten Wohnraum geleistet.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260630215553" doknr="BJNR185610008BJNE000300000">
+<metadaten>
+<jurabk>WoGG</jurabk>
+<enbez>§ 2</enbez>
+<titel format="XML">Wohnraum</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Wohnraum sind Räume, die vom Verfügungsberechtigten zum Wohnen bestimmt und hierfür nach ihrer baulichen Anlage und Ausstattung tatsächlich geeignet sind.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260630215553" doknr="BJNR185610008BJNE004902126">
+<metadaten>
+<jurabk>WoGG</jurabk>
+<enbez>§ 3</enbez>
+<titel format="XML">Wohngeldberechtigung</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Wohngeldberechtigte Person ist für den Mietzuschuss jede natürliche Person, die Wohnraum gemietet hat und diesen selbst nutzt. Ihr gleichgestellt sind <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">die nutzungsberechtigte Person des Wohnraums bei einem dem Mietverhältnis ähnlichen Nutzungsverhältnis (zur mietähnlichen Nutzung berechtigte Person), insbesondere die Person, die ein mietähnliches Dauerwohnrecht hat,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">die Person, die Wohnraum im eigenen Haus, das mehr als zwei Wohnungen hat, bewohnt, und</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">die Person, die in einem Heim im Sinne des Heimgesetzes oder entsprechender Gesetze der Länder nicht nur vorübergehend aufgenommen ist.</LA>
+</DD>
+</DL>
+</P>
+<P>(2) Wohngeldberechtigte Person ist für den Lastenzuschuss jede natürliche Person, die Eigentum an selbst genutztem Wohnraum hat. Ihr gleichgestellt sind <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">die erbbauberechtigte Person,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">die Person, die ein eigentumsähnliches Dauerwohnrecht, ein Wohnungsrecht oder einen Nießbrauch innehat, und</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">die Person, die einen Anspruch auf Bestellung oder Übertragung des Eigentums, des Erbbaurechts, des eigentumsähnlichen Dauerwohnrechts, des Wohnungsrechts oder des Nießbrauchs hat.</LA>
+</DD>
+</DL>Die Sätze 1 und 2 gelten nicht im Fall des Absatzes 1 Satz 2 Nr. 2.</P>
+<P>(3) Erfüllen mehrere Personen für denselben Wohnraum die Voraussetzungen des Absatzes 1 oder des Absatzes 2 und sind sie zugleich Haushaltsmitglieder (§ 5), ist nur eine dieser Personen wohngeldberechtigt. In diesem Fall bestimmen diese Personen die wohngeldberechtigte Person.</P>
+<P>(4) Wohngeldberechtigt ist nach Maßgabe der Absätze 1 bis 3 auch, wer zwar nach den §§ 7 und 8 Abs. 1 vom Wohngeld ausgeschlossen ist, aber mit mindestens einem zu berücksichtigenden Haushaltsmitglied (§ 6) Wohnraum gemeinsam bewohnt.</P>
+<P>(5) Ausländer im Sinne des § 2 Abs. 1 des Aufenthaltsgesetzes (ausländische Personen) sind nach Maßgabe der Absätze 1 bis 4 nur wohngeldberechtigt, wenn sie sich im Bundesgebiet tatsächlich aufhalten und <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">ein Aufenthaltsrecht nach dem Freizügigkeitsgesetz/EU haben,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">einen Aufenthaltstitel oder eine Duldung nach dem Aufenthaltsgesetz haben,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">ein Recht auf Aufenthalt nach einem völkerrechtlichen Abkommen haben,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">eine Aufenthaltsgestattung nach dem Asylgesetz haben,</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">die Rechtsstellung eines heimatlosen Ausländers im Sinne des Gesetzes über die Rechtsstellung heimatloser Ausländer im Bundesgebiet haben oder</LA>
+</DD>
+<DT>6.</DT>
+<DD Font="normal">
+<LA Size="normal">auf Grund einer Rechtsverordnung vom Erfordernis eines Aufenthaltstitels befreit sind.</LA>
+</DD>
+</DL>Nicht wohngeldberechtigt sind ausländische Personen, die durch eine völkerrechtliche Vereinbarung von der Anwendung deutscher Vorschriften auf dem Gebiet der sozialen Sicherheit befreit sind. In der Regel nicht wohngeldberechtigt sind Ausländer, die im Besitz eines Aufenthaltstitels zur Ausbildungsplatzsuche nach § 17 Absatz 1 des Aufenthaltsgesetzes, zur Arbeitsplatzsuche im Anschluss an Aufenthalte im Bundesgebiet nach § 20 des Aufenthaltsgesetzes, aufgrund einer Chancenkarte nach § 20a des Aufenthaltsgesetzes, für ein studienbezogenes Praktikum nach § 16e des Aufenthaltsgesetzes oder zur Teilnahme am europäischen Freiwilligendienst nach § 19e des Aufenthaltsgesetzes sind.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260630215553" doknr="BJNR185610008BJNG000200000">
+<metadaten>
+<jurabk>WoGG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>020</gliederungskennzahl>
+<gliederungsbez>Teil 2</gliederungsbez>
+<gliederungstitel>Berechnung und Höhe des Wohngeldes</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten />
+</norm>
+<norm builddate="20260630215553" doknr="BJNR185610008BJNE000813126">
+<metadaten>
+<jurabk>WoGG</jurabk>
+<enbez>§ 7</enbez>
+<titel format="XML">Ausschluss vom Wohngeld</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Vom Wohngeld ausgeschlossen sind Empfänger und Empfängerinnen von <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">Grundsicherungsgeld nach dem Zweiten Buch Sozialgesetzbuch, auch in den Fällen des § 25 des Zweiten Buches Sozialgesetzbuch,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">Leistungen für Auszubildende nach § 27 Absatz 3 des Zweiten Buches Sozialgesetzbuch, die als Zuschuss erbracht werden,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">(weggefallen)</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">Verletztengeld in Höhe des Betrages des Grundsicherungsgeldes nach § 19 Absatz 1 Satz 1 des Zweiten Buches Sozialgesetzbuch nach § 47 Abs. 2 des Siebten Buches Sozialgesetzbuch,</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">Grundsicherung im Alter und bei Erwerbsminderung nach dem Zwölften Buch Sozialgesetzbuch,</LA>
+</DD>
+<DT>6.</DT>
+<DD Font="normal">
+<LA Size="normal">Hilfe zum Lebensunterhalt nach dem Zwölften Buch Sozialgesetzbuch,</LA>
+</DD>
+<DT>7.</DT>
+<DD Font="normal">
+<LA Size="normal">
+<DL Font="normal" Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">Leistungen zum Lebensunterhalt oder</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">anderen Leistungen in einer stationären Einrichtung, die den Lebensunterhalt umfassen,</LA>
+</DD>
+</DL>nach dem Vierzehnten Buch Sozialgesetzbuch oder nach einem Gesetz, das dieses für anwendbar erklärt,</LA>
+</DD>
+<DT>8.</DT>
+<DD Font="normal">
+<LA Size="normal">Leistungen in besonderen Fällen und Grundleistungen nach dem Asylbewerberleistungsgesetz oder</LA>
+</DD>
+<DT>9.</DT>
+<DD Font="normal">
+<LA Size="normal">Leistungen nach dem Achten Buch Sozialgesetzbuch in Haushalten, zu denen ausschließlich Personen gehören, die diese Leistungen empfangen,</LA>
+</DD>
+</DL>wenn bei deren Berechnung Kosten der Unterkunft berücksichtigt worden sind (Leistungen). Der Ausschluss besteht im Fall des Satzes 1 Nummer 4, wenn bei der Berechnung des Grundsicherungsgeldes nach § 19 Absatz 1 Satz 1 des Zweiten Buches Sozialgesetzbuch Kosten der Unterkunft berücksichtigt worden sind. Der Ausschluss besteht nicht, wenn <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">die Leistungen nach den Sätzen 1 und 2 ausschließlich als Darlehen gewährt werden oder</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">durch Wohngeld die Hilfebedürftigkeit im Sinne des § 9 des Zweiten Buches Sozialgesetzbuch, des § 19 Abs. 1 und 2 des Zwölften Buches Sozialgesetzbuch oder des § 93 des Vierzehnten Buches Sozialgesetzbuch vermieden oder beseitigt werden kann und <DL Font="normal" Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">die Leistungen nach Satz 1 Nr. 1 bis 7 während der Dauer des Verwaltungsverfahrens zur Feststellung von Grund und Höhe dieser Leistungen noch nicht erbracht worden sind oder</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">der zuständige Träger eine der in Satz 1 Nr. 1 bis 7 genannten Leistungen als nachrangig verpflichteter Leistungsträger nach § 104 des Zehnten Buches Sozialgesetzbuch erbringt.</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+</DL>
+</P>
+<P>(2) Ausgeschlossen sind auch Haushaltsmitglieder, die keine Empfänger der in Absatz 1 Satz 1 genannten Leistungen sind und <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">die in § 7 Absatz 3 des Zweiten Buches Sozialgesetzbuch, auch in den Fällen des Übergangs- oder Verletztengeldes nach Absatz 1 Satz 1 Nummer 3 und 4 genannt und deren Einkommen und Vermögen bei der Ermittlung der Leistungen eines anderen Haushaltsmitglieds nach Absatz 1 Satz 1 Nummer 1, 3 oder 4 berücksichtigt worden sind,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">deren Einkommen und Vermögen nach § 43 Absatz 1 Satz 2 des Zwölften Buches Sozialgesetzbuch bei der Ermittlung der Leistung eines anderen Haushaltsmitglieds nach Absatz 1 Satz 1 Nummer 5 berücksichtigt worden sind,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">deren Einkommen und Vermögen nach § 27 Absatz 2 Satz 2 oder 3 des Zwölften Buches Sozialgesetzbuch bei der Ermittlung der Leistung eines anderen Haushaltsmitglieds nach Absatz 1 Satz 1 Nummer 6 berücksichtigt worden sind,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">deren Einkommen und Vermögen nach § 93 des Vierzehnten Buches Sozialgesetzbuch in Verbindung mit § 27 Absatz 2 Satz 2 oder 3 des Zwölften Buches Sozialgesetzbuch bei der Ermittlung der Leistung eines anderen Haushaltsmitglieds nach Absatz 1 Satz 1 Nummer 7 berücksichtigt worden sind, oder</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">deren Einkommen und Vermögen nach § 7 Absatz 1 des Asylbewerberleistungsgesetzes bei der Ermittlung der Leistung eines anderen Haushaltsmitglieds nach Absatz 1 Satz 1 Nummer 8 berücksichtigt worden sind.</LA>
+</DD>
+</DL>Der Ausschluss besteht nicht, wenn <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">die Leistungen nach Absatz 1 Satz 1 und 2 ausschließlich als Darlehen gewährt werden oder</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">die Voraussetzungen des Absatzes 1 Satz 3 Nr. 2 vorliegen.</LA>
+</DD>
+</DL>
+</P>
+<P>(3) (weggefallen)</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260630215553" doknr="BJNR185610008BJNE001307126">
+<metadaten>
+<jurabk>WoGG</jurabk>
+<enbez>§ 12</enbez>
+<titel format="XML">Höchstbeträge für Miete und Belastung sowie Entlastung bei den Heizkosten und die Klimakomponente</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Die monatlichen Höchstbeträge für Miete und Belastung sind vorbehaltlich des § 11 Absatz 3 nach der Anzahl der zu berücksichtigenden Haushaltsmitglieder und nach der Mietenstufe zu berücksichtigen. Sie ergeben sich aus Anlage 1.</P>
+<P>(2) Die Zugehörigkeit einer Gemeinde zu einer Mietenstufe richtet sich nach dem Mietenniveau von Wohnraum der Hauptmieter und Hauptmieterinnen sowie der gleichzustellenden zur mietähnlichen Nutzung berechtigten Personen, für den Mietzuschuss geleistet wird. Das Mietenniveau ist die durchschnittliche prozentuale Abweichung der Quadratmetermieten von Wohnraum in Gemeinden vom Durchschnitt der Quadratmetermieten des Wohnraums im Bundesgebiet. Zu berücksichtigen sind nur Quadratmetermieten von Wohnraum im Sinne des Satzes 1.</P>
+<P>(3) Das Mietenniveau ist vom Statistischen Bundesamt festzustellen für Gemeinden mit <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">einer Einwohnerzahl von 10 000 und mehr gesondert,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">einer Einwohnerzahl von weniger als 10 000 und gemeindefreie Gebiete nach Kreisen zusammengefasst.</LA>
+</DD>
+</DL>Maßgebend für die Zuordnung nach Satz 1 ist die Einwohnerzahl, die auf der Grundlage von § 5 des Bevölkerungsstatistikgesetzes fortgeschrieben wurde.</P>
+<P>(4) Das Mietenniveau wird vom Statistischen Bundesamt bei einer Anpassung der Höchstbeträge nach Absatz 1 oder einer entsprechenden strukturellen Änderung der höchstens zu berücksichtigenden Miete oder Belastung auf der Grundlage von zwei aufeinanderfolgenden Ergebnissen der jährlichen Wohngeldstatistik für Dezember (§ 36 Absatz 1 Satz 2 Nummer 2) festgestellt. Es ist ein bundesweit einheitlicher Stichtag für die Ergebnisse der Bevölkerungsstatistik zu Grunde zu legen.</P>
+<P>(4a) Für die Gemeinden Baltrum, Borkum (Stadt), Juist, Langeoog, Norderney (Stadt), Spiekeroog, Wangerooge (Nordseebad), Nebel, Norddorf auf Amrum, Wittdün auf Amrum, Alkersum, Borgsum, Dunsum, Midlum, Nieblum, Oevenum, Oldsum, Süderende, Utersum, Witsum, Wrixum, Wyk auf Föhr (Stadt), Helgoland, Gröde, Hallig Hooge, Langeneß, Pellworm und Insel Hiddensee, die auf Inseln ohne Festlandanschluss liegen, wird ein gemeinsames Mietenniveau festgestellt. Sie erhalten eine eigene gemeinsame Mietenstufenzuordnung und für die Anlage zu § 1 Absatz 3 der Wohngeldverordnung die Bezeichnung Inseln ohne Festlandanschluss. Abweichend von Absatz 4 wird das Statistische Bundesamt nach den Absätzen 2 und 3 einmalig ausschließlich das gemeinsame Mietenniveau dieser Gemeinden und das jeweilige Mietenniveau der von dieser Änderung betroffenen Kreise vor der nächsten Anpassung der Höchstbeträge nach Absatz 1 feststellen. Diese Feststellung erfolgt auf der Grundlage der Ergebnisse der Wohngeldstatistiken für Dezember 2016 und Dezember 2017 (§ 36 Absatz 1 Satz 2 Nummer 2). Die Anlage zu § 1 Absatz 3 der Wohngeldverordnung kann vor der nächsten Anpassung der Höchstbeträge entsprechend angepasst werden.</P>
+<P>(5) Den Mietenstufen nach Absatz 1 sind folgende Mietenniveaus zugeordnet: <BR />
+<BR />
+<table colsep="1" frame="all" pgwide="1" tabstyle="Mieten" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="2">
+<colspec align="center" colname="col1" colwidth="22*" />
+<colspec align="center" colname="col2" colwidth="58*" />
+<thead valign="bottom">
+<row rowsep="1">
+<entry VJ="1" colname="col1" valign="middle">Mietenstufe</entry>
+<entry VJ="1" colname="col2" valign="middle">Mietenniveau</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">I</entry>
+<entry VJ="1" colname="col2">niedriger als minus 15 Prozent</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">II</entry>
+<entry VJ="1" colname="col2">minus 15 Prozent bis<BR /> niedriger als minus 5 Prozent</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">III</entry>
+<entry VJ="1" colname="col2">minus 5 Prozent bis<BR /> niedriger als 5 Prozent</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<BR />
+<BR />
+</P>
+<P>(6) Der folgende monatliche Gesamtbetrag zur Entlastung bei den Heizkosten als Summe aus dem Betrag zur Entlastung bei den Heizkosten auf Grund der CO<SUB>2</SUB>-Bepreisung und dem Betrag der dauerhaften Heizkostenkomponente ist vorbehaltlich des § 11 Absatz 3 nach der Anzahl der zu berücksichtigenden Haushaltsmitglieder zu berücksichtigen: <BR />
+<BR />
+<table colsep="1" frame="all" pgwide="0" rowsep="1" tabstyle="haushalt" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="4">
+<colspec align="center" colname="col1" colwidth="27*" />
+<colspec align="center" colname="col2" colwidth="25*" />
+<colspec align="center" colname="col3" colwidth="23*" />
+<colspec align="center" colname="col4" colwidth="25*" />
+<thead valign="bottom">
+<row valign="bottom">
+<entry VJ="1" colname="col1">Anzahl<BR />der zu<BR />berücksichtigenden Haushaltsmit-<BR />glieder</entry>
+<entry VJ="1" colname="col2">Betrag zur Entlastung bei den Heizkosten auf Grund der CO<SUB>2</SUB>-Bepreisung in Euro</entry>
+<entry VJ="1" colname="col3">Betrag<BR /> der dauerhaften Heiz-kostenkomponente in Euro</entry>
+<entry VJ="1" colname="col4">Gesamtbetrag zur Entlastung bei den Heizkosten in Euro</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">1</entry>
+<entry VJ="1" colname="col2">14,40</entry>
+<entry VJ="1" colname="col3"> 96</entry>
+<entry VJ="1" colname="col4">110,40</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">2</entry>
+<entry VJ="1" colname="col2">18,60</entry>
+<entry VJ="1" colname="col3">124</entry>
+<entry VJ="1" colname="col4">142,60</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">3</entry>
+<entry VJ="1" colname="col2">22,20</entry>
+<entry VJ="1" colname="col3">148</entry>
+<entry VJ="1" colname="col4">170,20</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>(7) Der folgende monatliche Betrag ist vorbehaltlich des § 11 Absatz 3 nach der Anzahl der zu berücksichtigenden Haushaltsmitglieder als Klimakomponente zu berücksichtigen: <BR />
+<BR />
+<table colsep="1" frame="all" pgwide="0" rowsep="1" tabstyle="haushalt1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="2">
+<colspec align="center" colname="col1" colwidth="50*" />
+<colspec align="center" colname="col2" colwidth="50*" />
+<thead valign="bottom">
+<row valign="bottom">
+<entry VJ="1" colname="col1">Anzahl der zu<BR /> berücksichtigenden<BR /> Haushaltsmitglieder</entry>
+<entry VJ="1" colname="col2">Als Klimakomponente<BR /> zu berücksichtigender Zuschlag zu den<BR /> Höchstbeträgen nach<BR /> § 12 Absatz 1 in Euro</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">1</entry>
+<entry VJ="1" colname="col2">19,20</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">2</entry>
+<entry VJ="1" colname="col2">24,80</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">3</entry>
+<entry VJ="1" colname="col2">29,60</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260630215553" doknr="BJNR185610008BJNE005101126">
+<metadaten>
+<jurabk>WoGG</jurabk>
+<enbez>Anlage 1</enbez>
+<titel format="XML">(zu § 12 Absatz 1)</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>
+<noindex>
+<kommentar typ="Fundstelle">(Fundstelle: BGBl. 2024 I Nr. 314, S. 1 – 2)</kommentar>
+</noindex>
+</P>
+<BR />
+<BR />
+<table colsep="1" frame="all" pgwide="1" rowsep="0" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="3">
+<colspec align="center" colname="col1" colwidth="40*" />
+<colspec align="center" colname="col2" colwidth="45*" />
+<colspec align="center" colname="col3" colwidth="25*" />
+<thead valign="bottom">
+<row rowsep="1" valign="middle">
+<entry VJ="1" colname="col1">Anzahl<BR /> der zu berücksichtigenden<BR /> Haushaltsmitglieder</entry>
+<entry VJ="1" colname="col2">Mietenstufe</entry>
+<entry VJ="1" colname="col3">Höchstbetrag in Euro</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1" morerows="6" rowsep="1">1</entry>
+<entry VJ="1" colname="col2">I</entry>
+<entry VJ="1" colname="col3">  361</entry>
+</row>
+<row>
+<entry VJ="1" colname="col2">II</entry>
+<entry VJ="1" colname="col3">  408</entry>
+</row>
+<row>
+<entry VJ="1" colname="col2">III</entry>
+<entry VJ="1" colname="col3">  456</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</Content>
+</text>
+<fussnoten>
+<Content>
+<P>(+++ Hinweis: Höchstbeträge für Miete und Belastung für die Zeit ab 1.1.2022 vgl. § 23 WoGV idF d. Art. 1 Nr. 2 V v. 3.6.2021 I 1369 (1. WoGFV) +++)</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+</dokumente>

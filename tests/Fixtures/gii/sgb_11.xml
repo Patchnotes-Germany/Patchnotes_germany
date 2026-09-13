@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20260804215520" doknr="BJNR101500994">
+<norm builddate="20260804215520" doknr="BJNR101500994">
+<metadaten>
+<jurabk>SGB 11</jurabk>
+<ausfertigung-datum manuell="ja">1994-05-26</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>BGBl I</periodikum>
+<zitstelle>1994, 1014, 1015</zitstelle>
+</fundstelle>
+<langue>Sozialgesetzbuch (SGB) - Elftes Buch (XI) - Soziale Pflegeversicherung (Artikel 1 des Gesetzes vom 26. Mai 1994, BGBl. I S. 1014)</langue>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>Zuletzt geändert durch Art. 2c G v. 24.7.2026 I Nr. 228</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis ab: 1.6.1994 +++)<BR />
+<BR />
+</pre>Die Regelungen über den Zugang zur gesetzlichen Pflegeversicherung sind nach Maßgabe der Entscheidungsformel mit dem GG unvereinbar; vgl. BVerfGE v. 3.4.2001 I 774 - 1 BvR 81/98 -. Zur Umsetzung der Anforderungen des BVerfG vgl. G v. 14.12.2001 I 3728 mWv 1.1.2002.</P>
+<P>
+<BR /> Das G wurde vom Bundestag mit Zustimmung des Bundesrates beschlossen. Es ist gem. Art. 68 Abs. 1 G v. 26.5.1994 I 1014 (PflegeVG) am 1.1.1995 in Kraft getreten, soweit in den Absätzen 2 bis 4 und in Art. 69 nichts Abweichendes bestimmt ist.</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260804215520" doknr="BJNR101500994BJNE004154130">
+<metadaten>
+<jurabk>SGB 11</jurabk>
+<enbez>Inhaltsübersicht</enbez>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>
+<table frame="none" pgwide="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="2" colsep="0" rowsep="0">
+<colspec colname="col1" colnum="1" colwidth="9.83*" />
+<colspec colname="col2" colnum="2" colwidth="90.17*" />
+<tbody valign="top">
+<row>
+<entry VJ="1" align="center" nameend="col2" namest="col1">Erstes Kapitel</entry>
+</row>
+<row>
+<entry VJ="1" align="center" nameend="col2" namest="col1">Allgemeine Vorschriften</entry>
+</row>
+<row>
+<entry VJ="1">§ 1</entry>
+<entry VJ="1">Soziale Pflegeversicherung</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>
+<DL Font="normal" Type="arabic">
+<DT>Anlage 1</DT>
+<DD Font="normal">
+<LA Size="normal">  (zu § 15) Einzelpunkte der Module 1 bis 6; Bildung der Summe der Einzelpunkte in jedem Modul</LA>
+</DD>
+<DT>Anlage 2</DT>
+<DD Font="normal">
+<LA Size="normal">  (zu § 15) Bewertungssystematik (Summe der Punkte und gewichtete Punkte)</LA>
+</DD>
+</DL>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260804215520" doknr="BJNR101500994BJNG000100307">
+<metadaten>
+<jurabk>SGB 11</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010</gliederungskennzahl>
+<gliederungsbez>Erstes Kapitel</gliederungsbez>
+<gliederungstitel>Allgemeine Vorschriften</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260804215520" doknr="BJNR101500994BJNE004304126">
+<metadaten>
+<jurabk>SGB 11</jurabk>
+<enbez>§ 1</enbez>
+<titel format="XML">Soziale Pflegeversicherung</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Zur sozialen Absicherung des Risikos der Pflegebedürftigkeit wird als neuer eigenständiger Zweig der Sozialversicherung eine soziale Pflegeversicherung geschaffen.</P>
+<P>(2) In den Schutz der sozialen Pflegeversicherung sind kraft Gesetzes alle einbezogen, die in der gesetzlichen Krankenversicherung versichert sind. Wer gegen Krankheit bei einem privaten Krankenversicherungsunternehmen versichert ist, muß eine private Pflegeversicherung abschließen.</P>
+<P>(3) Träger der sozialen Pflegeversicherung sind die Pflegekassen; ihre Aufgaben werden von den Krankenkassen (§ 4 des Fünften Buches) wahrgenommen.</P>
+<P>(4) Die Pflegeversicherung hat die Aufgabe, Pflegebedürftigen Hilfe zu leisten, die wegen der Schwere der Pflegebedürftigkeit auf solidarische Unterstützung angewiesen sind.</P>
+<P>(5) In der Pflegeversicherung sollen geschlechtsspezifische Unterschiede bezüglich der Pflegebedürftigkeit von Männern und Frauen und ihrer Bedarfe an Leistungen berücksichtigt und den Bedürfnissen nach einer kultursensiblen Pflege nach Möglichkeit Rechnung getragen werden.</P>
+<P>(6) Die Ausgaben der Pflegeversicherung werden durch Beiträge der Mitglieder und der Arbeitgeber finanziert. Die Beiträge richten sich nach den beitragspflichtigen Einnahmen der Mitglieder. Für versicherte Familienangehörige und eingetragene Lebenspartner (Lebenspartner) werden Beiträge nicht erhoben.</P>
+<P>(7) Ein Lebenspartner einer eingetragenen Lebenspartnerschaft gilt im Sinne dieses Buches als Familienangehöriger des anderen Lebenspartners, sofern nicht ausdrücklich etwas anderes bestimmt ist.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260804215520" doknr="BJNR101500994BJNE004402301">
+<metadaten>
+<jurabk>SGB 11</jurabk>
+<enbez>§ 2</enbez>
+<titel format="XML">Selbstbestimmung</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Die Leistungen der Pflegeversicherung sollen den Pflegebedürftigen helfen, trotz ihres Hilfebedarfs ein möglichst selbständiges und selbstbestimmtes Leben zu führen, das der Würde des Menschen entspricht. Die Hilfen sind darauf auszurichten, die körperlichen, geistigen und seelischen Kräfte der Pflegebedürftigen, auch in Form der aktivierenden Pflege, wiederzugewinnen oder zu erhalten.</P>
+<P>(2) Die Pflegebedürftigen können zwischen Einrichtungen und Diensten verschiedener Träger wählen. Ihren Wünschen zur Gestaltung der Hilfe soll, soweit sie angemessen sind, im Rahmen des Leistungsrechts entsprochen werden. Wünsche der Pflegebedürftigen nach gleichgeschlechtlicher Pflege haben nach Möglichkeit Berücksichtigung zu finden.</P>
+<P>(3) Auf die religiösen Bedürfnisse der Pflegebedürftigen ist Rücksicht zu nehmen. Auf ihren Wunsch hin sollen sie stationäre Leistungen in einer Einrichtung erhalten, in der sie durch Geistliche ihres Bekenntnisses betreut werden können.</P>
+<P>(4) Die Pflegebedürftigen sind auf die Rechte nach den Absätzen 2 und 3 hinzuweisen.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260804215521" doknr="BJNR101500994BJNG000201126">
+<metadaten>
+<jurabk>SGB 11</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>020</gliederungskennzahl>
+<gliederungsbez>Zweites Kapitel</gliederungsbez>
+<gliederungstitel>Leistungsberechtigter Personenkreis, Verfahren zur Feststellung der Pflegebedürftigkeit und Berichtspflichten, Begriff der Pflegeperson</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260804215521" doknr="BJNR101500994BJNE005601301">
+<metadaten>
+<jurabk>SGB 11</jurabk>
+<enbez>§ 14</enbez>
+<titel format="XML">Begriff der Pflegebedürftigkeit</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Pflegebedürftig im Sinne dieses Buches sind Personen, die gesundheitlich bedingte Beeinträchtigungen der Selbständigkeit oder der Fähigkeiten aufweisen und deshalb der Hilfe durch andere bedürfen. Es muss sich um Personen handeln, die körperliche, kognitive oder psychische Beeinträchtigungen oder gesundheitlich bedingte Belastungen oder Anforderungen nicht selbständig kompensieren oder bewältigen können. Die Pflegebedürftigkeit muss auf Dauer, voraussichtlich für mindestens sechs Monate, und mit mindestens der in § 15 festgelegten Schwere bestehen.</P>
+<P>(2) Maßgeblich für das Vorliegen von gesundheitlich bedingten Beeinträchtigungen der Selbständigkeit oder der Fähigkeiten sind die in den folgenden sechs Bereichen genannten pflegefachlich begründeten Kriterien: <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">Mobilität: Positionswechsel im Bett, Halten einer stabilen Sitzposition, Umsetzen, Fortbewegen innerhalb des Wohnbereichs, Treppensteigen;</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">kognitive und kommunikative Fähigkeiten: Erkennen von Personen aus dem näheren Umfeld, örtliche Orientierung, zeitliche Orientierung, Erinnern an wesentliche Ereignisse oder Beobachtungen, Steuern von mehrschrittigen Alltagshandlungen, Treffen von Entscheidungen im Alltagsleben, Verstehen von Sachverhalten und Informationen, Erkennen von Risiken und Gefahren, Mitteilen von elementaren Bedürfnissen, Verstehen von Aufforderungen, Beteiligen an einem Gespräch;</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">Verhaltensweisen und psychische Problemlagen: motorisch geprägte Verhaltensauffälligkeiten, nächtliche Unruhe, selbstschädigendes und autoaggressives Verhalten, Beschädigen von Gegenständen, physisch aggressives Verhalten gegenüber anderen Personen, verbale Aggression, andere pflegerelevante vokale Auffälligkeiten, Abwehr pflegerischer und anderer unterstützender Maßnahmen, Wahnvorstellungen, Ängste, Antriebslosigkeit bei depressiver Stimmungslage, sozial inadäquate Verhaltensweisen, sonstige pflegerelevante inadäquate Handlungen;</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">Selbstversorgung: Waschen des vorderen Oberkörpers, Körperpflege im Bereich des Kopfes, Waschen des Intimbereichs, Duschen und Baden einschließlich Waschen der Haare, An- und Auskleiden des Oberkörpers, An- und Auskleiden des Unterkörpers, mundgerechtes Zubereiten der Nahrung und Eingießen von Getränken, Essen, Trinken, Benutzen einer Toilette oder eines Toilettenstuhls, Bewältigen der Folgen einer Harninkontinenz und Umgang mit Dauerkatheter und Urostoma, Bewältigen der Folgen einer Stuhlinkontinenz und Umgang mit Stoma, Ernährung parenteral oder über Sonde, Bestehen gravierender Probleme bei der Nahrungsaufnahme bei Kindern bis zu 18 Monaten, die einen außergewöhnlich pflegeintensiven Hilfebedarf auslösen;</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">Bewältigung von und selbständiger Umgang mit krankheits- oder therapiebedingten Anforderungen und Belastungen: <DL Font="normal" Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">in Bezug auf Medikation, Injektionen, Versorgung intravenöser Zugänge, Absaugen und Sauerstoffgabe, Einreibungen sowie Kälte- und Wärmeanwendungen, Messung und Deutung von Körperzuständen, körpernahe Hilfsmittel,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">in Bezug auf Verbandswechsel und Wundversorgung, Versorgung mit Stoma, regelmäßige Einmalkatheterisierung und Nutzung von Abführmethoden, Therapiemaßnahmen in häuslicher Umgebung,</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">in Bezug auf zeit- und technikintensive Maßnahmen in häuslicher Umgebung, Arztbesuche, Besuche anderer medizinischer oder therapeutischer Einrichtungen, zeitlich ausgedehnte Besuche medizinischer oder therapeutischer Einrichtungen, Besuch von Einrichtungen zur Frühförderung bei Kindern sowie</LA>
+</DD>
+<DT>d)</DT>
+<DD Font="normal">
+<LA Size="normal">in Bezug auf das Einhalten einer Diät oder anderer krankheits- oder therapiebedingter Verhaltensvorschriften;</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>6.</DT>
+<DD Font="normal">
+<LA Size="normal">Gestaltung des Alltagslebens und sozialer Kontakte: Gestaltung des Tagesablaufs und Anpassung an Veränderungen, Ruhen und Schlafen, Sichbeschäftigen, Vornehmen von in die Zukunft gerichteten Planungen, Interaktion mit Personen im direkten Kontakt, Kontaktpflege zu Personen außerhalb des direkten Umfelds.</LA>
+</DD>
+</DL>
+</P>
+<P>(3) Beeinträchtigungen der Selbständigkeit oder der Fähigkeiten, die dazu führen, dass die Haushaltsführung nicht mehr ohne Hilfe bewältigt werden kann, werden bei den Kriterien der in Absatz 2 genannten Bereiche berücksichtigt.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260804215521" doknr="BJNR101500994BJNE012805308">
+<metadaten>
+<jurabk>SGB 11</jurabk>
+<enbez>§ 80</enbez>
+<titel format="XML">(weggefallen)</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>-</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260804215521" doknr="BJNR101500994BJNE024401360">
+<metadaten>
+<jurabk>SGB 11</jurabk>
+<enbez>Anlage 1</enbez>
+<titel format="XML">(zu § 15)<BR />Einzelpunkte der Module 1 bis 6; Bildung der Summe der Einzelpunkte in jedem Modul</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>
+<B>Modul 1: Einzelpunkte im Bereich der Mobilität</B>
+</P>
+<P>Das Modul umfasst fünf Kriterien, deren Ausprägungen in den folgenden Kategorien mit den nachstehenden Einzelpunkten gewertet werden: <table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="6">
+<colspec colname="col1" colwidth="8*" />
+<colspec colname="col2" colwidth="50*" />
+<colspec align="center" colname="col3" colwidth="18*" />
+<colspec align="center" colname="col4" colwidth="18*" />
+<colspec align="center" colname="col5" colwidth="18*" />
+<colspec align="center" colname="col6" colwidth="18*" />
+<thead valign="bottom">
+<row valign="middle">
+<entry VJ="1" align="center" colname="col1">Ziffer</entry>
+<entry VJ="1" align="center" colname="col2">Kriterien</entry>
+<entry VJ="1" align="center" colname="col3">selbständig</entry>
+<entry VJ="1" align="center" colname="col4">überwiegend<BR /> selbständig</entry>
+<entry VJ="1" align="center" colname="col5">überwiegend<BR /> unselbständig</entry>
+<entry VJ="1" align="center" colname="col6">unselbständig</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">1.1</entry>
+<entry VJ="1" colname="col2">Positionswechsel im Bett</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4">1</entry>
+<entry VJ="1" colname="col5">2</entry>
+<entry VJ="1" colname="col6">3</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">1.2</entry>
+<entry VJ="1" colname="col2">Halten einer stabilen Sitzposition</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4">1</entry>
+<entry VJ="1" colname="col5">2</entry>
+<entry VJ="1" colname="col6">3</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">1.3</entry>
+<entry VJ="1" colname="col2">Umsetzen</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4">1</entry>
+<entry VJ="1" colname="col5">2</entry>
+<entry VJ="1" colname="col6">3</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>
+<B>Modul 2: Einzelpunkte im Bereich der kognitiven und kommunikativen Fähigkeiten</B>
+</P>
+<P>Das Modul umfasst elf Kriterien, deren Ausprägungen in den folgenden Kategorien mit den nachstehenden Einzelpunkten gewertet werden: <table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="6">
+<colspec colname="col1" colwidth="8*" />
+<colspec colname="col2" colwidth="50*" />
+<colspec align="center" colname="col3" colwidth="18*" />
+<colspec align="center" colname="col4" colwidth="18*" />
+<colspec align="center" colname="col5" colwidth="18*" />
+<colspec align="center" colname="col6" colwidth="18*" />
+<thead valign="bottom">
+<row valign="middle">
+<entry VJ="1" align="center" colname="col1">Ziffer</entry>
+<entry VJ="1" align="center" colname="col2">Kriterien</entry>
+<entry VJ="1" align="center" colname="col3">Fähigkeit<BR /> vorhanden/<BR /> unbeeinträchtigt</entry>
+<entry VJ="1" align="center" colname="col4">Fähigkeit<BR /> größtenteils<BR /> vorhanden</entry>
+<entry VJ="1" align="center" colname="col5">Fähigkeit<BR /> in geringem<BR /> Maße<BR /> vorhanden</entry>
+<entry VJ="1" align="center" colname="col6">Fähigkeit<BR /> nicht<BR /> vorhanden</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">2.1</entry>
+<entry VJ="1" colname="col2">Erkennen von Personen aus dem näheren Umfeld</entry>
+<entry VJ="1" colname="col3" valign="middle">0</entry>
+<entry VJ="1" colname="col4" valign="middle">1</entry>
+<entry VJ="1" colname="col5" valign="middle">2</entry>
+<entry VJ="1" colname="col6" valign="middle">3</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">2.2</entry>
+<entry VJ="1" colname="col2">Örtliche Orientierung</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4">1</entry>
+<entry VJ="1" colname="col5">2</entry>
+<entry VJ="1" colname="col6">3</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">2.3</entry>
+<entry VJ="1" colname="col2">Zeitliche Orientierung</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4">1</entry>
+<entry VJ="1" colname="col5">2</entry>
+<entry VJ="1" colname="col6">3</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>
+<B>Modul 3: Einzelpunkte im Bereich der Verhaltensweisen und psychische Problemlagen</B>
+</P>
+<P>Das Modul umfasst dreizehn Kriterien, deren Häufigkeit des Auftretens in den folgenden Kategorien mit den nachstehenden Einzelpunkten gewertet wird: <table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="6">
+<colspec colname="col1" colwidth="8*" />
+<colspec colname="col2" colwidth="50*" />
+<colspec align="center" colname="col3" colwidth="18*" />
+<colspec align="center" colname="col4" colwidth="18*" />
+<colspec align="center" colname="col5" colwidth="18*" />
+<colspec align="center" colname="col6" colwidth="18*" />
+<thead valign="bottom">
+<row valign="middle">
+<entry VJ="1" align="center" colname="col1">Ziffer</entry>
+<entry VJ="1" align="center" colname="col2">Kriterien</entry>
+<entry VJ="1" colname="col3">nie oder<BR /> sehr selten</entry>
+<entry VJ="1" colname="col4">selten<BR /> (ein- bis dreimal innerhalb von zwei Wochen)</entry>
+<entry VJ="1" colname="col5">häufig<BR /> (zweimal<BR /> bis mehrmals<BR /> wöchentlich,<BR /> aber nicht<BR /> täglich)</entry>
+<entry VJ="1" colname="col6">täglich</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">3.1</entry>
+<entry VJ="1" colname="col2">Motorisch geprägte<BR /> Verhaltensauffälligkeiten</entry>
+<entry VJ="1" colname="col3" valign="middle">0</entry>
+<entry VJ="1" colname="col4" valign="middle">1</entry>
+<entry VJ="1" colname="col5" valign="middle">3</entry>
+<entry VJ="1" colname="col6" valign="middle">5</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">3.2</entry>
+<entry VJ="1" colname="col2">Nächtliche Unruhe</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4">1</entry>
+<entry VJ="1" colname="col5">3</entry>
+<entry VJ="1" colname="col6">5</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">3.3</entry>
+<entry VJ="1" colname="col2">Selbstschädigendes und<BR /> autoaggressives Verhalten</entry>
+<entry VJ="1" colname="col3" valign="middle">0</entry>
+<entry VJ="1" colname="col4" valign="middle">1</entry>
+<entry VJ="1" colname="col5" valign="middle">3</entry>
+<entry VJ="1" colname="col6" valign="middle">5</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>
+<B>Modul 4: Einzelpunkte im Bereich der Selbstversorgung</B>
+</P>
+<P>Das Modul umfasst dreizehn Kriterien:</P>
+<P>
+<U>Einzelpunkte für die Kriterien der Ziffern 4.1 bis 4.12</U>
+</P>
+<P>Die Ausprägungen der Kriterien 4.1 bis 4.12 werden in den folgenden Kategorien mit den nachstehenden Punkten gewertet: <table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="6">
+<colspec colname="col1" colwidth="8*" />
+<colspec colname="col2" colwidth="50*" />
+<colspec align="center" colname="col3" colwidth="18*" />
+<colspec align="center" colname="col4" colwidth="18*" />
+<colspec align="center" colname="col5" colwidth="18*" />
+<colspec align="center" colname="col6" colwidth="18*" />
+<thead valign="bottom">
+<row valign="middle">
+<entry VJ="1" align="center" colname="col1">Ziffer</entry>
+<entry VJ="1" align="center" colname="col2">Kriterien</entry>
+<entry VJ="1" align="center" colname="col3">selbständig</entry>
+<entry VJ="1" align="center" colname="col4">überwiegend<BR /> selbständig</entry>
+<entry VJ="1" align="center" colname="col5">überwiegend<BR /> unselbständig</entry>
+<entry VJ="1" align="center" colname="col6">unselbständig</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">4.1</entry>
+<entry VJ="1" colname="col2">Waschen des vorderen Oberkörpers</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4">1</entry>
+<entry VJ="1" colname="col5">2</entry>
+<entry VJ="1" colname="col6">3</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">4.2</entry>
+<entry VJ="1" colname="col2">Körperpflege im Bereich des Kopfes (Kämmen, Zahnpflege/Prothesenreinigung, Rasieren)</entry>
+<entry VJ="1" colname="col3" valign="middle">0</entry>
+<entry VJ="1" colname="col4" valign="middle">1</entry>
+<entry VJ="1" colname="col5" valign="middle">2</entry>
+<entry VJ="1" colname="col6" valign="middle">3</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">4.3</entry>
+<entry VJ="1" colname="col2">Waschen des Intimbereichs</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4">1</entry>
+<entry VJ="1" colname="col5">2</entry>
+<entry VJ="1" colname="col6">3</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>Die Ausprägungen des Kriteriums der Ziffer 4.8 sowie die Ausprägung der Kriterien der Ziffern 4.9 und 4.10 werden wegen ihrer besonderen Bedeutung für die pflegerische Versorgung stärker gewichtet.</P>
+<P>Die Einzelpunkte für die Kriterien der Ziffern 4.11 und 4.12 gehen in die Berechnung nur ein, wenn bei der Begutachtung beim Versicherten darüber hinaus die Feststellung „überwiegend inkontinent“ oder „vollständig inkontinent“ getroffen wird oder eine künstliche Ableitung von Stuhl oder Harn erfolgt.</P>
+<P>
+<U>Einzelpunkte für das Kriterium der Ziffer 4.13</U>
+</P>
+<P>Die Ausprägungen des Kriteriums der Ziffer 4.13 werden in den folgenden Kategorien mit den nachstehenden Einzelpunkten gewertet: <table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="5">
+<colspec colname="col1" colwidth="8*" />
+<colspec colname="col2" colwidth="68*" />
+<colspec align="center" colname="col3" colwidth="18*" />
+<colspec align="center" colname="col4" colwidth="18*" />
+<colspec align="center" colname="col5" colwidth="18*" />
+<thead valign="bottom">
+<row>
+<entry VJ="1" align="center" colname="col1" valign="middle">Ziffer</entry>
+<entry VJ="1" align="center" colname="col2" valign="middle">Kriterium</entry>
+<entry VJ="1" align="center" colname="col3" valign="middle">entfällt</entry>
+<entry VJ="1" align="center" colname="col4" valign="middle">teilweise</entry>
+<entry VJ="1" align="center" colname="col5" valign="middle">vollständig</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" align="left" colsep="1" rowsep="1">4.13</entry>
+<entry VJ="1" align="left" colname="col2" rowsep="1">Ernährung parental oder über Sonde</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4">6</entry>
+<entry VJ="1" colname="col5">3</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>Das Kriterium ist mit „entfällt“ (0 Punkte) zu bewerten, wenn eine regelmäßige und tägliche parenterale Ernährung oder Sondenernährung auf Dauer, voraussichtlich für mindestens sechs Monate, nicht erforderlich ist. Kann die parenterale Ernährung oder Sondenernährung ohne Hilfe durch andere selbständig durchgeführt werden, werden ebenfalls keine Punkte vergeben.</P>
+<P>Das Kriterium ist mit „teilweise“ (6 Punkte) zu bewerten, wenn eine parenterale Ernährung oder Sondenernährung zur Vermeidung von Mangelernährung mit Hilfe täglich und zusätzlich zur oralen Aufnahme von Nahrung oder Flüssigkeit erfolgt.</P>
+<P>Das Kriterium ist mit „vollständig“ (3 Punkte) zu bewerten, wenn die Aufnahme von Nahrung oder Flüssigkeit ausschließlich oder nahezu ausschließlich parenteral oder über eine Sonde erfolgt.</P>
+<P>Bei einer vollständigen parenteralen Ernährung oder Sondenernährung werden weniger Punkte vergeben als bei einer teilweisen parenteralen Ernährung oder Sondenernährung, da der oft hohe Aufwand zur Unterstützung bei der oralen Nahrungsaufnahme im Fall ausschließlich parenteraler oder Sondenernährung weitgehend entfällt.</P>
+<P>
+<U>Einzelpunkte für das Kriterium der Ziffer 4.K</U>
+</P>
+<P>Bei Kindern im Alter bis 18 Monate werden die Kriterien der Ziffern 4.1 bis 4.13 durch das Kriterium 4.K ersetzt und wie folgt gewertet: <table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="3">
+<colspec colname="col1" colwidth="8*" />
+<colspec colname="col2" colwidth="104*" />
+<colspec align="center" colname="col3" colwidth="18*" />
+<thead valign="bottom">
+<row>
+<entry VJ="1" align="center" colname="col1" valign="middle">Ziffer</entry>
+<entry VJ="1" align="center" colname="col2" valign="middle">Kriterium</entry>
+<entry VJ="1" align="center" colname="col3" valign="middle">Einzelpunkte</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" align="left" colname="col1" rowsep="1">4.K</entry>
+<entry VJ="1" colname="col2">Bestehen gravierender Probleme bei der Nahrungsaufnahme bei Kindern bis zu<BR /> 18 Monaten, die einen außergewöhnlich pflegeintensiven Hilfebedarf auslösen</entry>
+<entry VJ="1" colname="col3">20</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>
+<B>Modul 5: Einzelpunkte im Bereich der Bewältigung von und des selbständigen Umgangs mit krankheits- oder therapiebedingten Anforderungen und Belastungen</B>
+</P>
+<P>Das Modul umfasst sechzehn Kriterien.</P>
+<P>
+<U>Einzelpunkte für die Kriterien der Ziffern 5.1 bis 5.7</U>
+</P>
+<P>Die durchschnittliche Häufigkeit der Maßnahmen pro Tag bei den Kriterien der Ziffern 5.1 bis 5.7 wird in den folgenden Kategorien mit den nachstehenden Einzelpunkten gewertet: <table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="6">
+<colspec colname="col1" colwidth="8*" />
+<colspec colname="col2" colwidth="50*" />
+<colspec align="center" colname="col3" colwidth="18*" />
+<colspec align="center" colname="col4" colwidth="18*" />
+<colspec align="center" colname="col5" colwidth="18*" />
+<colspec align="center" colname="col6" colwidth="18*" />
+<thead valign="bottom">
+<row valign="middle">
+<entry VJ="1" align="center" colname="col1" morerows="1">Ziffer</entry>
+<entry VJ="1" align="center" colname="col2" morerows="1">Kriterien in Bezug auf</entry>
+<entry VJ="1" align="center" colname="col3" morerows="1">entfällt oder selbständig</entry>
+<entry VJ="1" align="center" nameend="col6" namest="col4">Anzahl der Maßnahmen</entry>
+</row>
+<row valign="middle">
+<entry VJ="1" align="center" colname="col4">pro Tag</entry>
+<entry VJ="1" align="center" colname="col5">pro Woche</entry>
+<entry VJ="1" align="center" colname="col6">pro Monat</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">5.1</entry>
+<entry VJ="1" colname="col2">Medikation</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4" />
+<entry VJ="1" colname="col5" />
+<entry VJ="1" colname="col6" />
+</row>
+<row>
+<entry VJ="1" colname="col1">5.2</entry>
+<entry VJ="1" colname="col2">Injektionen (subcutan oder intramuskulär)</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4" />
+<entry VJ="1" colname="col5" />
+<entry VJ="1" colname="col6" />
+</row>
+<row>
+<entry VJ="1" colname="col1">5.3</entry>
+<entry VJ="1" colname="col2">Versorgung intravenöser Zugänge (Port)</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4" />
+<entry VJ="1" colname="col5" />
+<entry VJ="1" colname="col6" />
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>
+<table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="5">
+<colspec colname="col1" colwidth="58*" />
+<colspec colname="col2" colwidth="18*" />
+<colspec colname="col3" colwidth="18*" />
+<colspec colname="col4" colwidth="18*" />
+<colspec colname="col5" colwidth="18*" />
+<thead valign="bottom">
+<row>
+<entry VJ="1" align="center" nameend="col5" namest="col1" valign="middle">Einzelpunkte für die Kriterien der Ziffern 5.1 bis 5.7</entry>
+</row>
+<row>
+<entry VJ="1" align="center" colname="col1" valign="middle">Maßnahme pro Tag</entry>
+<entry VJ="1" align="center" colname="col2" valign="middle">keine oder<BR /> seltener als<BR /> einmal täglich</entry>
+<entry VJ="1" align="center" colname="col3" valign="middle">mindestens einmal bis maximal<BR /> dreimal<BR /> täglich</entry>
+<entry VJ="1" align="center" colname="col4" valign="middle">mehr als<BR /> dreimal bis<BR /> maximal achtmal<BR /> täglich</entry>
+<entry VJ="1" align="center" colname="col5" valign="middle">mehr als achtmal<BR /> täglich</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" align="left" colname="col1" rowsep="1">Einzelpunkte</entry>
+<entry VJ="1" align="center" colname="col2">0</entry>
+<entry VJ="1" align="center" colname="col3">1</entry>
+<entry VJ="1" align="center" colname="col4">2</entry>
+<entry VJ="1" align="center" colname="col5">3</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>Für jedes der Kriterien 5.1 bis 5.7 wird zunächst die Anzahl der durchschnittlich durchgeführten Maßnahmen, die täglich und auf Dauer, voraussichtlich für mindestens sechs Monate, vorkommen, in der Spalte pro Tag, die Maßnahmen, die wöchentlich und auf Dauer, voraussichtlich für mindestens sechs Monate, vorkommen, in der Spalte pro Woche und die Maßnahmen, die monatlich und auf Dauer, voraussichtlich für mindestens sechs Monate, vorkommen, in der Spalte pro Monat erfasst. Berücksichtigt werden nur Maßnahmen, die vom Versicherten nicht selbständig durchgeführt werden können.</P>
+<P>Die Zahl der durchschnittlich durchgeführten täglichen, wöchentlichen und monatlichen Maßnahmen wird für die Kriterien 5.1 bis 5.7 summiert (erfolgt zum Beispiel täglich dreimal eine Medikamentengabe – Kriterium 5.1 – und einmal Blutzuckermessen – Kriterium 5.6 –, entspricht dies vier Maßnahmen pro Tag). Diese Häufigkeit wird umgerechnet in einen Durchschnittswert pro Tag. Für die Umrechnung der Maßnahmen pro Monat in Maßnahmen pro Tag wird die Summe der Maßnahmen pro Monat durch 30 geteilt. Für die Umrechnung der Maßnahmen pro Woche in Maßnahmen pro Tag wird die Summe der Maßnahmen pro Woche durch 7 geteilt.</P>
+<P>
+<U>Einzelpunkte für die Kriterien der Ziffern 5.8 bis 5.11</U>
+</P>
+<P>Die durchschnittliche Häufigkeit der Maßnahmen pro Tag bei den Kriterien der Ziffern 5.8 bis 5.11 wird in den folgenden Kategorien mit den nachstehenden Einzelpunkten gewertet: <table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="6">
+<colspec colname="col1" colwidth="8*" />
+<colspec colname="col2" colwidth="50*" />
+<colspec align="center" colname="col3" colwidth="18*" />
+<colspec align="center" colname="col4" colwidth="18*" />
+<colspec align="center" colname="col5" colwidth="18*" />
+<colspec align="center" colname="col6" colwidth="18*" />
+<thead valign="bottom">
+<row valign="middle">
+<entry VJ="1" align="center" colname="col1" morerows="1">Ziffer</entry>
+<entry VJ="1" align="center" colname="col2" morerows="1">Kriterien in Bezug auf</entry>
+<entry VJ="1" align="center" colname="col3" morerows="1">entfällt oder<BR /> selbständig</entry>
+<entry VJ="1" align="center" nameend="col6" namest="col4">Anzahl der Maßnahmen</entry>
+</row>
+<row valign="middle">
+<entry VJ="1" align="center" colname="col4">pro Tag</entry>
+<entry VJ="1" align="center" colname="col5">pro Woche</entry>
+<entry VJ="1" align="center" colname="col6">pro Monat</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">5.8</entry>
+<entry VJ="1" colname="col2">Verbandswechsel und Wundversorgung</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4" />
+<entry VJ="1" colname="col5" />
+<entry VJ="1" colname="col6" />
+</row>
+<row>
+<entry VJ="1" colname="col1">5.9</entry>
+<entry VJ="1" colname="col2">Versorgung mit Stoma</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4" />
+<entry VJ="1" colname="col5" />
+<entry VJ="1" colname="col6" />
+</row>
+<row>
+<entry VJ="1" colname="col1">5.10</entry>
+<entry VJ="1" colname="col2">Regelmäßige Einmalkatheterisierung<BR /> und Nutzung von Abführmethoden</entry>
+<entry VJ="1" colname="col3" valign="middle">0</entry>
+<entry VJ="1" colname="col4" />
+<entry VJ="1" colname="col5" />
+<entry VJ="1" colname="col6" />
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>
+<table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="5">
+<colspec colname="col1" colwidth="58*" />
+<colspec colname="col2" colwidth="18*" />
+<colspec colname="col3" colwidth="18*" />
+<colspec colname="col4" colwidth="18*" />
+<colspec colname="col5" colwidth="18*" />
+<thead valign="bottom">
+<row valign="middle">
+<entry VJ="1" align="center" nameend="col5" namest="col1">Einzelpunkte für die Kriterien der Ziffern 5.8 bis 5.11</entry>
+</row>
+<row>
+<entry VJ="1" align="center" colname="col1" valign="middle">Maßnahme pro Tag</entry>
+<entry VJ="1" align="center" colname="col2" valign="middle">keine oder seltener als<BR />einmal<BR /> wöchentlich</entry>
+<entry VJ="1" align="center" colname="col3" valign="middle">ein- bis<BR /> mehrmals wöchentlich</entry>
+<entry VJ="1" align="center" colname="col4" valign="middle">ein- bis unter<BR /> dreimal<BR /> täglich</entry>
+<entry VJ="1" align="center" colname="col5" valign="middle">mindestens dreimal<BR /> täglich</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" align="left" colname="col1" rowsep="1">Einzelpunkte</entry>
+<entry VJ="1" align="center" colname="col2">0</entry>
+<entry VJ="1" align="center" colname="col3">1</entry>
+<entry VJ="1" align="center" colname="col4">2</entry>
+<entry VJ="1" align="center" colname="col5">3</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>Für jedes der Kriterien 5.8 bis 5.11 wird zunächst die Anzahl der durchschnittlich durchgeführten Maßnahmen, die täglich und auf Dauer, voraussichtlich für mindestens sechs Monate, vorkommen, in der Spalte pro Tag, die Maßnahmen, die wöchentlich und auf Dauer, voraussichtlich für mindestens sechs Monate, vorkommen, in der Spalte pro Woche und die Maßnahmen, die monatlich und auf Dauer, voraussichtlich für mindestens sechs Monate, vorkommen, in der Spalte pro Monat erfasst. Berücksichtigt werden nur Maßnahmen, die vom Versicherten nicht selbständig durchgeführt werden können.</P>
+<P>Die Zahl der durchschnittlich durchgeführten täglichen, wöchentlichen und monatlichen Maßnahmen wird für die Kriterien 5.8 bis 5.11 summiert. Diese Häufigkeit wird umgerechnet in einen Durchschnittswert pro Tag. Für die Umrechnung der Maßnahmen pro Monat in Maßnahmen pro Tag wird die Summe der Maßnahmen pro Monat durch 30 geteilt. Für die Umrechnung der Maßnahmen pro Woche in Maßnahmen pro Tag wird die Summe der Maßnahmen pro Woche durch 7 geteilt.</P>
+<P>
+<U>Einzelpunkte für die Kriterien der Ziffern 5.12 bis 5.K</U>
+</P>
+<P>Die durchschnittliche wöchentliche oder monatliche Häufigkeit von zeit- und technikintensiven Maßnahmen in häuslicher Umgebung, die auf Dauer, voraussichtlich für mindestens sechs Monate, vorkommen, wird in den folgenden Kategorien mit den nachstehenden Einzelpunkten gewertet: <table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="6">
+<colspec colname="col1" colwidth="8*" />
+<colspec colname="col2" colwidth="50*" />
+<colspec align="center" colname="col3" colwidth="18*" />
+<colspec align="center" colname="col4" colwidth="18*" />
+<colspec align="center" colname="col5" colwidth="18*" />
+<colspec align="center" colname="col6" colwidth="18*" />
+<thead valign="bottom">
+<row valign="middle">
+<entry VJ="1" align="center" colsep="1" rowsep="1">Ziffer</entry>
+<entry VJ="1" align="center" colname="col2">Kriterium in Bezug auf</entry>
+<entry VJ="1" align="center" colname="col3">entfällt oder<BR /> selbständig</entry>
+<entry VJ="1" align="center" colname="col4">täglich</entry>
+<entry VJ="1" align="center" colname="col5">wöchentliche Häufigkeit<BR /> multipliziert mit</entry>
+<entry VJ="1" align="center" colname="col6">monatliche Häufigkeit<BR /> multipliziert mit</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" align="left" colsep="1" rowsep="1">5.12</entry>
+<entry VJ="1" align="left" colname="col2" rowsep="1">Zeit- und technikintensive Maßnahmen<BR /> in häuslicher Umgebung</entry>
+<entry VJ="1" colname="col3" valign="middle">0</entry>
+<entry VJ="1" colname="col4" valign="middle">60</entry>
+<entry VJ="1" colname="col5" valign="middle">8,6</entry>
+<entry VJ="1" colname="col6" valign="middle">2</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>Für das Kriterium der Ziffer 5.12 wird zunächst die Anzahl der regelmäßig und mit durchschnittlicher Häufigkeit durchgeführten Maßnahmen, die wöchentlich vorkommen, und die Anzahl der regelmäßig und mit durchschnittlicher Häufigkeit durchgeführten Maßnahmen, die monatlich vorkommen, erfasst. Kommen Maßnahmen regelmäßig täglich vor, werden 60 Punkte vergeben.</P>
+<P>Jede regelmäßige wöchentliche Maßnahme wird mit 8,6 Punkten gewertet. Jede regelmäßige monatliche Maßnahme wird mit zwei Punkten gewertet.</P>
+<P>Die durchschnittliche wöchentliche oder monatliche Häufigkeit der Kriterien der Ziffern 5.13 bis 5.K wird wie folgt erhoben und mit den nachstehenden Punkten gewertet: <table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="5">
+<colspec colname="col1" colwidth="8*" />
+<colspec colname="col2" colwidth="68*" />
+<colspec align="center" colname="col3" colwidth="18*" />
+<colspec align="center" colname="col4" colwidth="18*" />
+<colspec align="center" colname="col5" colwidth="18*" />
+<thead valign="bottom">
+<row valign="middle">
+<entry VJ="1" align="center" colname="col1">Ziffer</entry>
+<entry VJ="1" align="center" colname="col2">Kriterien</entry>
+<entry VJ="1" colname="col3">entfällt oder<BR /> selbständig</entry>
+<entry VJ="1" colname="col4">wöchentliche<BR /> Häufigkeit<BR /> multipliziert mit</entry>
+<entry VJ="1" colname="col5">monatliche<BR /> Häufigkeit<BR /> multipliziert mit</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">5.13</entry>
+<entry VJ="1" colname="col2">Arztbesuche</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4">4,3</entry>
+<entry VJ="1" colname="col5">1</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">5.14</entry>
+<entry VJ="1" colname="col2">Besuch anderer medizinischer oder therapeutischer<BR /> Einrichtungen (bis zu drei Stunden)</entry>
+<entry VJ="1" colname="col3" valign="middle">0</entry>
+<entry VJ="1" colname="col4" valign="middle">4,3</entry>
+<entry VJ="1" colname="col5" valign="middle">1</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">5.15</entry>
+<entry VJ="1" colname="col2">Zeitlich ausgedehnte Besuche anderer medizinischer oder therapeutischer Einrichtungen (länger als drei<BR /> Stunden)</entry>
+<entry VJ="1" colname="col3" valign="middle">0</entry>
+<entry VJ="1" colname="col4" valign="middle">8,6</entry>
+<entry VJ="1" colname="col5" valign="middle">2</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>Für jedes der Kriterien der Ziffern 5.13 bis 5.K wird zunächst die Anzahl der regelmäßig und mit durchschnittlicher Häufigkeit durchgeführten Besuche, die wöchentlich und auf Dauer, voraussichtlich für mindestens sechs Monate, vorkommen, und die Anzahl der regelmäßig und mit durchschnittlicher Häufigkeit durchgeführten Besuche, die monatlich und auf Dauer, voraussichtlich für mindestens sechs Monate, vorkommen, erfasst. Jeder regelmäßige monatliche Besuch wird mit einem Punkt gewertet. Jeder regelmäßige wöchentliche Besuch wird mit 4,3 Punkten gewertet. Handelt es sich um zeitlich ausgedehnte Arztbesuche oder Besuche von anderen medizinischen oder therapeutischen Einrichtungen, werden sie doppelt gewertet.</P>
+<P>Die Punkte der Kriterien 5.12 bis 5.15 – bei Kindern bis 5.K – werden addiert. Die Kriterien der Ziffern 5.12 bis 5.15 – bei Kindern bis 5.K – werden anhand der Summe der so erreichten Punkte mit den nachstehenden Einzelpunkten gewertet: <table colsep="0" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="4">
+<colspec colname="col1" colwidth="18*" />
+<colspec colname="col2" colwidth="18*" />
+<colspec colname="col3" colsep="1" colwidth="76*" />
+<colspec align="center" colname="col4" colwidth="18*" />
+<thead valign="bottom">
+<row>
+<entry VJ="1" colsep="1" nameend="col3" namest="col1">Summe</entry>
+<entry VJ="1" colname="col4">Einzelpunkte</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">0</entry>
+<entry VJ="1" colname="col2">bis unter</entry>
+<entry VJ="1" colname="col3">4,3</entry>
+<entry VJ="1" colname="col4">0</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">4,3</entry>
+<entry VJ="1" colname="col2">bis unter</entry>
+<entry VJ="1" colname="col3">8,6</entry>
+<entry VJ="1" colname="col4">1</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">8,6</entry>
+<entry VJ="1" colname="col2">bis unter</entry>
+<entry VJ="1" colname="col3">12,9</entry>
+<entry VJ="1" colname="col4">2</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>
+<U>Einzelpunkte für das Kriterium der Ziffer 5.16</U>
+</P>
+<P>Die Ausprägungen des Kriteriums der Ziffer 5.16 werden in den folgenden Kategorien mit den nachstehenden Einzelpunkten gewertet: <table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="6">
+<colspec colname="col1" colwidth="8*" />
+<colspec colname="col2" colwidth="50*" />
+<colspec align="center" colname="col3" colwidth="18*" />
+<colspec align="center" colname="col4" colwidth="18*" />
+<colspec align="center" colname="col5" colwidth="18*" />
+<colspec align="center" colname="col6" colwidth="18*" />
+<thead valign="bottom">
+<row valign="middle">
+<entry VJ="1" align="center" colname="col1" colsep="1" rowsep="1">Ziffer</entry>
+<entry VJ="1" align="center" colname="col2" colsep="1" rowsep="1">Kriterien</entry>
+<entry VJ="1" colname="col3">entfällt oder<BR /> selbständig</entry>
+<entry VJ="1" colname="col4">überwiegend<BR /> selbständig</entry>
+<entry VJ="1" colname="col5">überwiegend<BR /> unselbständig</entry>
+<entry VJ="1" colname="col6">unselbständig</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" align="left" colname="col1" colsep="1" rowsep="1">5.16</entry>
+<entry VJ="1" align="left" colname="col2" colsep="1" rowsep="1">Einhaltung einer Diät und anderer<BR /> krankheits- oder therapiebedingter<BR /> Verhaltensvorschriften</entry>
+<entry VJ="1" colname="col3" rowsep="1" valign="middle">0</entry>
+<entry VJ="1" colname="col4" valign="middle">1</entry>
+<entry VJ="1" colname="col5" valign="middle">2</entry>
+<entry VJ="1" colname="col6" valign="middle">3</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+<P>
+<B>Modul 6: Einzelpunkte im Bereich der Gestaltung des Alltagslebens und sozialer Kontakte</B>
+</P>
+<P>Das Modul umfasst sechs Kriterien, deren Ausprägungen in den folgenden Kategorien mit den nachstehenden Punkten gewertet werden:</P>
+<P>
+<table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="6">
+<colspec colname="col1" colwidth="8*" />
+<colspec colname="col2" colwidth="50*" />
+<colspec align="center" colname="col3" colwidth="18*" />
+<colspec align="center" colname="col4" colwidth="18*" />
+<colspec align="center" colname="col5" colwidth="18*" />
+<colspec align="center" colname="col6" colwidth="18*" />
+<thead valign="bottom">
+<row valign="middle">
+<entry VJ="1" align="center" colname="col1">Ziffer</entry>
+<entry VJ="1" align="center" colname="col2">Kriterien</entry>
+<entry VJ="1" colname="col3">selbständig</entry>
+<entry VJ="1" colname="col4">überwiegend<BR /> selbständig</entry>
+<entry VJ="1" colname="col5">überwiegend<BR /> unselbständig</entry>
+<entry VJ="1" colname="col6">unselbständig</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">6.1</entry>
+<entry VJ="1" colname="col2">Gestaltung des Tagesablaufs und<BR /> Anpassung an Veränderungen</entry>
+<entry VJ="1" colname="col3" valign="middle">0</entry>
+<entry VJ="1" colname="col4" valign="middle">1</entry>
+<entry VJ="1" colname="col5" valign="middle">2</entry>
+<entry VJ="1" colname="col6" valign="middle">3</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">6.2</entry>
+<entry VJ="1" colname="col2">Ruhen und Schlafen</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4">1</entry>
+<entry VJ="1" colname="col5">2</entry>
+<entry VJ="1" colname="col6">3</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">6.3</entry>
+<entry VJ="1" colname="col2">Sichbeschäftigen</entry>
+<entry VJ="1" colname="col3">0</entry>
+<entry VJ="1" colname="col4">1</entry>
+<entry VJ="1" colname="col5">2</entry>
+<entry VJ="1" colname="col6">3</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+</dokumente>

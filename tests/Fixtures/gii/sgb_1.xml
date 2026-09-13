@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20260728215525" doknr="BJNR030150975">
+<norm builddate="20260728215525" doknr="BJNR030150975">
+<metadaten>
+<jurabk>SGB 1</jurabk>
+<ausfertigung-datum manuell="ja">1975-12-11</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>BGBl I</periodikum>
+<zitstelle>1975, 3015</zitstelle>
+</fundstelle>
+<langue>Sozialgesetzbuch (SGB) Erstes Buch (I) - Allgemeiner Teil - (Artikel I des Gesetzes vom 11. Dezember 1975, BGBl. I S. 3015)</langue>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>Zuletzt geändert durch Art. 3 G v. 22.7.2026 I Nr. 223</standkommentar>
+</standangabe>
+<standangabe checked="ja">
+<standtyp>Sonst</standtyp>
+<standkommentar>Mittelbare Änderung durch Art. 154a Nr. 3 Buchst. a G v. 20.11.2019 I 1626 ist nicht ausführbar, da das geänderte G v. 21.6.2019 I 846 zum Zeitpunkt des Inkrafttretens des mittelbaren Änderungsgesetzes bereits zum 1.11.2019 in Kraft getreten war</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis Geltung ab: 1.1.1982 +++)<BR />
+<BR />(+++ Maßgaben aufgrund EinigVtr nicht mehr anzuwenden gem. Art. 109<BR />Nr. 3 Buchst. d DBuchst. aa G v. 8.12.2010 I 1864 mWv 15.12.2010 +++)<BR />
+<BR />(+++ EU-Vollzitate: vgl. Liste EU-Rechtsakte <BR />                               G v. 4.2.2026 I Nr. 33 <BR />                            u. G v. 22.7.2026 I Nr. 223 +++)<BR />
+<BR />
+</pre>Das G wurde vom Bundestag mit Zustimmung des Bundesrates beschlossen. Es ist gem. Art. II § 23 Abs. 1 G v. 11.12.1975 I 3015 (SGBAT) am 1.1.1976 in Kraft getreten.</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260728215525" doknr="BJNR030150975BJNG000300314">
+<metadaten>
+<jurabk>SGB 1</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010</gliederungskennzahl>
+<gliederungsbez>Erster Abschnitt</gliederungsbez>
+<gliederungstitel>Aufgaben des Sozialgesetzbuchs
+und soziale Rechte</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260728215525" doknr="BJNR030150975BJNE001700314">
+<metadaten>
+<jurabk>SGB 1</jurabk>
+<enbez>§ 1</enbez>
+<titel format="parat">Aufgaben des Sozialgesetzbuchs</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Das Recht des Sozialgesetzbuchs soll zur Verwirklichung sozialer Gerechtigkeit und sozialer Sicherheit Sozialleistungen einschließlich sozialer und erzieherischer Hilfen gestalten. Es soll dazu beitragen, <DL Font="normal" Type="arabic">
+<DT />
+<DD Font="normal">
+<LA Size="normal">ein menschenwürdiges Dasein zu sichern,</LA>
+<LA Size="normal">gleiche Voraussetzungen für die freie Entfaltung der Persönlichkeit, insbesondere auch für junge Menschen, zu schaffen,</LA>
+<LA Size="normal">die Familie zu schützen und zu fördern,</LA>
+<LA Size="normal">den Erwerb des Lebensunterhalts durch eine frei gewählte Tätigkeit zu ermöglichen und</LA>
+<LA Size="normal">besondere Belastungen des Lebens, auch durch Hilfe zur Selbsthilfe, abzuwenden oder auszugleichen.</LA>
+</DD>
+</DL>
+</P>
+<P>(2) Das Recht des Sozialgesetzbuchs soll auch dazu beitragen, daß die zur Erfüllung der in Absatz 1 genannten Aufgaben erforderlichen sozialen Dienste und Einrichtungen rechtzeitig und ausreichend zur Verfügung stehen.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260728215525" doknr="BJNR030150975BJNE001800314">
+<metadaten>
+<jurabk>SGB 1</jurabk>
+<enbez>§ 2</enbez>
+<titel format="parat">Soziale Rechte</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Der Erfüllung der in § 1 genannten Aufgaben dienen die nachfolgenden sozialen Rechte. Aus ihnen können Ansprüche nur insoweit geltend gemacht oder hergeleitet werden, als deren Voraussetzungen und Inhalt durch die Vorschriften der besonderen Teile dieses Gesetzbuchs im einzelnen bestimmt sind.</P>
+<P>(2) Die nachfolgenden sozialen Rechte sind bei der Auslegung der Vorschriften dieses Gesetzbuchs und bei der Ausübung von Ermessen zu beachten; dabei ist sicherzustellen, daß die sozialen Rechte möglichst weitgehend verwirklicht werden.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260728215525" doknr="BJNR030150975BJNE001901308">
+<metadaten>
+<jurabk>SGB 1</jurabk>
+<enbez>§ 3</enbez>
+<titel format="parat">Bildungs- und Arbeitsförderung</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Wer an einer Ausbildung teilnimmt, die seiner Neigung, Eignung und Leistung entspricht, hat ein Recht auf individuelle Förderung seiner Ausbildung, wenn ihm die hierfür erforderlichen Mittel nicht anderweitig zur Verfügung stehen.</P>
+<P>(2) Wer am Arbeitsleben teilnimmt oder teilnehmen will, hat ein Recht auf <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">Beratung bei der Wahl des Bildungswegs und des Berufs,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">individuelle Förderung seiner beruflichen Weiterbildung,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">Hilfe zur Erlangung und Erhaltung eines angemessenen Arbeitsplatzes und</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">wirtschaftliche Sicherung bei Arbeitslosigkeit und bei Zahlungsunfähigkeit des Arbeitgebers.</LA>
+</DD>
+</DL>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260728215525" doknr="BJNR030150975BJNE002002308">
+<metadaten>
+<jurabk>SGB 1</jurabk>
+<enbez>§ 4</enbez>
+<titel format="parat">Sozialversicherung</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Jeder hat im Rahmen dieses Gesetzbuchs ein Recht auf Zugang zur Sozialversicherung.</P>
+<P>(2) Wer in der Sozialversicherung versichert ist, hat im Rahmen der gesetzlichen Kranken-, Pflege-, Unfall- und Rentenversicherung einschließlich der Alterssicherung der Landwirte ein Recht auf <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">die notwendigen Maßnahmen zum Schutz, zur Erhaltung, zur Besserung und zur Wiederherstellung der Gesundheit und der Leistungsfähigkeit und</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">wirtschaftliche Sicherung bei Krankheit, Mutterschaft, Minderung der Erwerbsfähigkeit und Alter.</LA>
+</DD>
+</DL>Ein Recht auf wirtschaftliche Sicherung haben auch die Hinterbliebenen eines Versicherten.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260728215525" doknr="BJNR030150975BJNG000400314">
+<metadaten>
+<jurabk>SGB 1</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>020</gliederungskennzahl>
+<gliederungsbez>Zweiter Abschnitt</gliederungsbez>
+<gliederungstitel>Einweisungsvorschriften</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260728215525" doknr="BJNR030150975BJNE003514140">
+<metadaten>
+<jurabk>SGB 1</jurabk>
+<enbez>§ 19</enbez>
+<titel format="XML">Leistungen der Arbeitsförderung</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Nach dem Recht der Arbeitsförderung können in Anspruch genommen werden: <DL Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA>Berufsberatung und Arbeitsmarktberatung,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA>Ausbildungsvermittlung und Arbeitsvermittlung,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA>Leistungen <DL Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA>zur Aktivierung und beruflichen Eingliederung,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA>zur Berufswahl und Berufsausbildung,</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA>zur beruflichen Weiterbildung,</LA>
+</DD>
+<DT>d)</DT>
+<DD Font="normal">
+<LA>zur Aufnahme einer Erwerbstätigkeit,</LA>
+</DD>
+<DT>e)</DT>
+<DD Font="normal">
+<LA>zum Verbleib in Beschäftigung,</LA>
+</DD>
+<DT>f)</DT>
+<DD Font="normal">
+<LA>der Teilhabe behinderter Menschen am Arbeitsleben,</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA>Arbeitslosengeld, Teilarbeitslosengeld, Arbeitslosengeld bei Weiterbildung und Insolvenzgeld.</LA>
+</DD>
+</DL>
+</P>
+<P>(2) Zuständig sind die Agenturen für Arbeit und die sonstigen Dienststellen der Bundesagentur für Arbeit.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260728215525" doknr="BJNR030150975BJNE007102308">
+<metadaten>
+<jurabk>SGB 1</jurabk>
+<enbez>§ 55</enbez>
+<titel format="XML">(weggefallen)</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+</dokumente>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20260630215550" doknr="BJNR137800995">
+<norm builddate="20260630215550" doknr="BJNR137800995">
+<metadaten>
+<jurabk>BKGG 1996</jurabk>
+<amtabk>BKGG</amtabk>
+<ausfertigung-datum manuell="ja">1995-10-11</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>BGBl I</periodikum>
+<zitstelle>1995, 1250, 1378 (1996 I 714)</zitstelle>
+</fundstelle>
+<langue>Bundeskindergeldgesetz</langue>
+<standangabe checked="ja">
+<standtyp>Neuf</standtyp>
+<standkommentar>Neugefasst durch Bek. v. 28.1.2009 I 142, 3177;</standkommentar>
+</standangabe>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>zuletzt geändert durch Art. 10 G v. 16.4.2026 I Nr. 107</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis ab: 1.1.1996 +++)<BR />(+++ EU-Vollzitate: vgl. Liste EU-Rechtsakte G v. 22.12.2025 I Nr. 355 +++)</pre>
+<BR />Das G wurde als Artikel 2 G 611-1-26 v. 11.10.1995 I 1250 (JStG 1996) vom Bundestag mit Zustimmung des Bundesrates beschlossen. Es ist gem. Art. 41 Abs. 7 dieses G am 1.1.1996 in Kraft getreten.</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260630215550" doknr="BJNR137800995BJNG000107308">
+<metadaten>
+<jurabk>BKGG 1996</jurabk>
+<jurabk>BKGG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010</gliederungskennzahl>
+<gliederungsbez>Erster Abschnitt</gliederungsbez>
+<gliederungstitel>Leistungen</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260630215550" doknr="BJNR137800995BJNE000530126">
+<metadaten>
+<jurabk>BKGG 1996</jurabk>
+<jurabk>BKGG</jurabk>
+<enbez>§ 1</enbez>
+<titel format="XML">Anspruchsberechtigte</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Kindergeld nach diesem Gesetz für seine Kinder erhält, wer nach § 1 Absatz 1 und 2 des Einkommensteuergesetzes nicht unbeschränkt steuerpflichtig ist und auch nicht nach § 1 Absatz 3 des Einkommensteuergesetzes als unbeschränkt steuerpflichtig behandelt wird und <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">in einem Versicherungspflichtverhältnis zur Bundesagentur für Arbeit nach dem Dritten Buch Sozialgesetzbuch steht oder versicherungsfrei nach § 28 Absatz 1 Nummer 1 des Dritten Buches Sozialgesetzbuch ist oder</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">als Entwicklungshelfer Unterhaltsleistungen im Sinne des § 4 Absatz 1 Nummer 1 des Entwicklungshelfer-Gesetzes erhält oder als Missionar der <NB>Missionswerke und -gesellschaften,</NB> die Mitglieder oder Vereinbarungspartner des Evangelischen Missionswerkes Hamburg, der Arbeitsgemeinschaft Evangelikaler Missionen e. V., des Deutschen katholischen Missionsrates oder der Arbeitsgemeinschaft pfingstlich-charismatischer Missionen sind, tätig ist oder</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">eine nach § 123a des Beamtenrechtsrahmengesetzes oder § 29 des Bundesbeamtengesetzes oder § 20 des Beamtenstatusgesetzes bei einer Einrichtung außerhalb Deutschlands zugewiesene Tätigkeit ausübt oder</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">als Ehegatte oder Lebenspartner eines Mitglieds der Truppe oder des zivilen Gefolges eines NATO-Mitgliedstaates die Staatsangehörigkeit eines EU/EWR-Mitgliedstaates besitzt und in Deutschland seinen Wohnsitz oder gewöhnlichen Aufenthalt hat.</LA>
+</DD>
+</DL>
+</P>
+<P>(2) Kindergeld für sich selbst erhält, wer <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">in Deutschland einen Wohnsitz oder seinen gewöhnlichen Aufenthalt hat,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">Vollwaise ist oder den Aufenthalt seiner Eltern nicht kennt und</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">nicht bei einer anderen Person als Kind zu berücksichtigen ist.</LA>
+</DD>
+</DL>§ 2 Absatz 2 und 3 sowie die §§ 4 und 5 sind entsprechend anzuwenden. Im Fall des § 2 Absatz 2 Satz 1 Nr. 3 wird Kindergeld längstens bis zur Vollendung des 25. Lebensjahres gewährt.</P>
+<P>(3) Ein nicht freizügigkeitsberechtigter Ausländer erhält Kindergeld nur, wenn er <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">eine Niederlassungserlaubnis oder eine Erlaubnis zum Daueraufenthalt-EU besitzt,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">eine Blaue Karte EU, eine ICT-Karte, eine Mobiler-ICT-Karte oder eine Aufenthaltserlaubnis besitzt, die für einen Zeitraum von mindestens sechs Monaten zur Ausübung einer Erwerbstätigkeit berechtigen oder berechtigt haben oder diese erlauben, es sei denn, die Aufenthaltserlaubnis wurde <DL Font="normal" Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">nach § 16e des Aufenthaltsgesetzes zu Ausbildungszwecken, nach § 19c Absatz 1 des Aufenthaltsgesetzes zum Zweck der Beschäftigung als Au-Pair oder zum Zweck der Saisonbeschäftigung, nach § 19e des Aufenthaltsgesetzes zum Zweck der Teilnahme an einem Europäischen Freiwilligendienst oder nach § 20a Absatz 5 Satz 1 des Aufenthaltsgesetzes zur Suche nach einer Erwerbstätigkeit oder nach Maßnahmen zur Anerkennung ausländischer Berufsqualifikationen erteilt,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">nach § 16b des Aufenthaltsgesetzes zum Zweck eines Studiums, nach § 16d des Aufenthaltsgesetzes für Maßnahmen zur Anerkennung ausländischer Berufsqualifikationen, nach § 20 des Aufenthaltsgesetzes zur Suche nach einer Erwerbstätigkeit oder nach § 20a Absatz 5 Satz 2 des Aufenthaltsgesetzes zur Suche nach einer Erwerbstätigkeit oder nach Maßnahmen zur Anerkennung ausländischer Berufsqualifikationen erteilt und er ist weder erwerbstätig noch nimmt er Elternzeit nach § 15 des Bundeselterngeld- und Elternzeitgesetzes oder laufende Geldleistungen nach dem Dritten Buch Sozialgesetzbuch in Anspruch,</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">nach § 23 Absatz 1 des Aufenthaltsgesetzes wegen eines Krieges in seinem Heimatland oder nach den § 23a oder § 25 Absatz 3 bis 5 des Aufenthaltsgesetzes erteilt,</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">eine in Nummer 2 Buchstabe c genannte Aufenthaltserlaubnis besitzt und im Bundesgebiet berechtigt erwerbstätig ist oder Elternzeit nach § 15 des Bundeselterngeld- und Elternzeitgesetzes oder laufende Geldleistungen nach dem Dritten Buch Sozialgesetzbuch in Anspruch nimmt,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">eine in Nummer 2 Buchstabe c genannte Aufenthaltserlaubnis besitzt und sich seit mindestens 15 Monaten erlaubt, gestattet oder geduldet im Bundesgebiet aufhält oder</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">eine Beschäftigungsduldung gemäß § 60d in Verbindung mit § 60a Absatz 2 Satz 3 des Aufenthaltsgesetzes besitzt.</LA>
+</DD>
+</DL>Abweichend von Satz 1 Nummer 3 erste Alternative erhält ein minderjähriger nicht freizügigkeitsberechtigter Ausländer unabhängig von einer Erwerbstätigkeit Kindergeld.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260630215550" doknr="BJNR137800995BJNE000631126">
+<metadaten>
+<jurabk>BKGG 1996</jurabk>
+<jurabk>BKGG</jurabk>
+<enbez>§ 2</enbez>
+<titel format="XML">Kinder</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Als Kinder werden auch berücksichtigt <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">vom Berechtigten in seinen Haushalt aufgenommene Kinder seines Ehegatten oder Lebenspartners,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">Pflegekinder (Personen, mit denen der Berechtigte durch ein familienähnliches, auf Dauer berechnetes Band verbunden ist, sofern er sie nicht zu Erwerbszwecken in seinen Haushalt aufgenommen hat und das Obhuts- und Pflegeverhältnis zu den Eltern nicht mehr besteht),</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">vom Berechtigten in seinen Haushalt aufgenommene Enkel.</LA>
+</DD>
+</DL>
+</P>
+<P>(2) Ein Kind, das das 18. Lebensjahr vollendet hat, wird berücksichtigt, wenn es <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">noch nicht das 21. Lebensjahr vollendet hat, nicht in einem Beschäftigungsverhältnis steht und bei einer Agentur für Arbeit im Inland als Arbeitssuchender gemeldet ist oder</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">noch nicht das 25. Lebensjahr vollendet hat und<DL Font="normal" Type="arabic">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">für einen Beruf ausgebildet wird oder</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">sich in einer Übergangszeit von höchstens vier Monaten befindet, die zwischen zwei Ausbildungsabschnitten oder zwischen einem Ausbildungsabschnitt und der Ableistung des gesetzlichen Wehr- oder Zivildienstes, einer vom Wehr- oder Zivildienst befreienden Tätigkeit als Entwicklungshelfer oder als Dienstleistender im Ausland nach § 14b des Zivildienstgesetzes oder der Ableistung des freiwilligen Wehrdienstes nach § 58b des Soldatengesetzes oder der Ableistung eines freiwilligen Dienstes im Sinne des Buchstaben d liegt, oder</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">eine Berufsausbildung mangels Ausbildungsplatzes nicht beginnen oder fortsetzen kann oder</LA>
+</DD>
+<DT>d)</DT>
+<DD Font="normal">
+<LA Size="normal">einen der folgenden freiwilligen Dienste leistet: <DL Font="normal" Type="a-alpha">
+<DT>aa)</DT>
+<DD Font="normal">
+<LA Size="normal">ein freiwilliges soziales Jahr im Sinne des Jugendfreiwilligendienstegesetzes,</LA>
+</DD>
+<DT>bb)</DT>
+<DD Font="normal">
+<LA Size="normal">ein freiwilliges ökologisches Jahr im Sinne des Jugendfreiwilligendienstegesetzes,</LA>
+</DD>
+<DT>cc)</DT>
+<DD Font="normal">
+<LA Size="normal">einen Bundesfreiwilligendienst im Sinne des Bundesfreiwilligendienstgesetzes,</LA>
+</DD>
+<DT>dd)</DT>
+<DD Font="normal">
+<LA Size="normal">eine Freiwilligentätigkeit im Rahmen des Europäischen Solidaritätskorps im Sinne der Verordnung (EU) 2021/888 des Europäischen Parlaments und des Rates vom 20. Mai 2021 zur Aufstellung des Programms für das Europäische Solidaritätskorps und zur Aufhebung der Verordnungen (EU) 2018/1475 und (EU) Nr. 375/2014 (ABl. L 202 vom 8.6.2021, S. 32),</LA>
+</DD>
+<DT>ee)</DT>
+<DD Font="normal">
+<LA Size="normal">einen anderen Dienst im Ausland im Sinne von § 5 des Bundesfreiwilligendienstgesetzes,</LA>
+</DD>
+<DT>ff)</DT>
+<DD Font="normal">
+<LA Size="normal">einen entwicklungspolitischen Freiwilligendienst „weltwärts“ im Sinne der Förderleitlinie des Bundesministeriums für wirtschaftliche Zusammenarbeit und Entwicklung vom 1. Januar 2016,</LA>
+</DD>
+<DT>gg)</DT>
+<DD Font="normal">
+<LA Size="normal">einen Freiwilligendienst aller Generationen im Sinne von § 2 Absatz 1a des Siebten Buches Sozialgesetzbuch oder</LA>
+</DD>
+<DT>hh)</DT>
+<DD Font="normal">
+<LA Size="normal">einen Internationalen Jugendfreiwilligendienst im Sinne der Richtlinie des Bundesministeriums für Familie, Senioren, Frauen und Jugend vom 4. Januar 2021 (GMBl S. 77) oder</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">wegen körperlicher, geistiger oder seelischer Behinderung außerstande ist, sich selbst zu unterhalten; Voraussetzung ist, dass die Behinderung vor Vollendung des 25. Lebensjahres eingetreten ist.</LA>
+</DD>
+</DL>Nach Abschluss einer erstmaligen Berufsausbildung oder eines Erststudiums wird ein Kind in den Fällen des Satzes 1 Nummer 2 nur berücksichtigt, wenn das Kind keiner Erwerbstätigkeit nachgeht. Eine Erwerbstätigkeit mit bis zu 20 Stunden regelmäßiger wöchentlicher Arbeitszeit, ein Ausbildungsdienstverhältnis oder ein geringfügiges Beschäftigungsverhältnis im Sinne der §§ 8 und 8a des Vierten Buches Sozialgesetzbuch sind unschädlich.</P>
+<P>(3) In den Fällen des Absatzes 2 Satz 1 Nummer 1 oder Nummer 2 Buchstabe a und b wird ein Kind, das <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">den gesetzlichen Grundwehrdienst oder Zivildienst geleistet hat oder</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">sich an Stelle des gesetzlichen Grundwehrdienstes freiwillig für die Dauer von nicht mehr als drei Jahren zum Wehrdienst verpflichtet hat oder</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">eine vom gesetzlichen Grundwehrdienst oder Zivildienst befreiende Tätigkeit als Entwicklungshelfer im Sinne des § 1 Absatz 1 des Entwicklungshelfer-Gesetzes ausgeübt hat,</LA>
+</DD>
+</DL>für einen der Dauer dieser Dienste oder der Tätigkeit entsprechenden Zeitraum, höchstens für die Dauer des inländischen gesetzlichen Grundwehrdienstes, bei anerkannten Kriegsdienstverweigerern für die Dauer des inländischen gesetzlichen Zivildienstes über das 21. oder 25. Lebensjahr hinaus berücksichtigt. Wird der gesetzliche Grundwehrdienst oder Zivildienst in einem Mitgliedstaat der Europäischen Union oder einem Staat, auf den das Abkommen über den Europäischen Wirtschaftsraum Anwendung findet, geleistet, so ist die Dauer dieses Dienstes maßgebend. Absatz 2 Satz 2 und 3 gilt entsprechend.</P>
+<P>(4) Kinder, für die einer anderen Person nach dem Einkommensteuergesetz Kindergeld oder ein Kinderfreibetrag zusteht, werden nicht berücksichtigt. Dies gilt nicht für Kinder, die in den Haushalt des Anspruchsberechtigten nach § 1 aufgenommen worden sind oder für die dieser die höhere Unterhaltsrente zahlt, wenn sie weder in seinen Haushalt noch in den Haushalt eines nach § 62 des Einkommensteuergesetzes Anspruchsberechtigten aufgenommen sind.</P>
+<P>(5) Kinder, die weder einen Wohnsitz noch ihren gewöhnlichen Aufenthalt in Deutschland haben, werden nicht berücksichtigt. Dies gilt nicht gegenüber Berechtigten nach § 1 Absatz 1 Nummer 2 und 3, wenn sie die Kinder in ihren Haushalt aufgenommen haben.</P>
+<P>(6) Die Bundesregierung wird ermächtigt, durch Rechtsverordnung, die nicht der Zustimmung des Bundesrates bedarf, zu bestimmen, dass einem Berechtigten, der in Deutschland erwerbstätig ist oder sonst seine hauptsächlichen Einkünfte erzielt, für seine in Absatz 5 Satz 1 bezeichneten Kinder Kindergeld ganz oder teilweise zu leisten ist, soweit dies mit Rücksicht auf die durchschnittlichen Lebenshaltungskosten für Kinder in deren Wohnland und auf die dort gewährten dem Kindergeld vergleichbaren Leistungen geboten ist.</P>
+</Content>
+</text>
+<fussnoten>
+<Content>
+<P>(+++ § 2 Abs. 2 u.3: Zur Anwendung vgl. § 20 Abs. 4 F. 2006-07-19 +++) <BR />(+++ § 2 Abs. 2 Satz 2: Zur Anwendung vgl. § 20 Abs. 5a F. 2009-07-16 +++) <BR />(+++ § 2 Abs. 3: Zur Anwendung vgl. § 20 Abs. 4 F. 2006-07-19 u. § 20 Abs. 9 F. 2013-06-26 +++) <BR />(+++ § 2 Abs. 2 Satz 1 Nr. 2 Buchst. d: Zur Anwendung vgl. § 20 Abs. 5 Satz 5 F. 2014-07-25 +++)</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260630215550" doknr="BJNR137800995BJNE000713377">
+<metadaten>
+<jurabk>BKGG 1996</jurabk>
+<jurabk>BKGG</jurabk>
+<enbez>§ 3</enbez>
+<titel format="XML">Zusammentreffen mehrerer Ansprüche</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Für jedes Kind werden nur einer Person Kindergeld, Kinderzuschlag und Leistungen für Bildung und Teilhabe gewährt.</P>
+<P>(2) Erfüllen für ein Kind mehrere Personen die Anspruchsvoraussetzungen, so werden das Kindergeld, der Kinderzuschlag und die Leistungen für Bildung und Teilhabe derjenigen Person gewährt, die das Kind in ihren Haushalt aufgenommen hat. Ist ein Kind in den gemeinsamen Haushalt von Eltern, von einem Elternteil und dessen Ehegatten oder Lebenspartner, von Pflegeeltern oder Großeltern aufgenommen worden, bestimmen diese untereinander den Berechtigten. Wird eine Bestimmung nicht getroffen, bestimmt das Familiengericht auf Antrag den Berechtigten. Antragsberechtigt ist, wer ein berechtigtes Interesse an der Leistung des Kindergeldes hat. Lebt ein Kind im gemeinsamen Haushalt von Eltern und Großeltern, werden das Kindergeld, der Kinderzuschlag und die Leistungen für Bildung und Teilhabe vorrangig einem Elternteil gewährt; sie werden an einen Großelternteil gewährt, wenn der Elternteil gegenüber der zuständigen Stelle auf seinen Vorrang schriftlich verzichtet hat.</P>
+<P>(3) Ist das Kind nicht in den Haushalt einer der Personen aufgenommen, die die Anspruchsvoraussetzungen erfüllen, wird das Kindergeld derjenigen Person gewährt, die dem Kind eine Unterhaltsrente zahlt. Zahlen mehrere anspruchsberechtigte Personen dem Kind Unterhaltsrenten, wird das Kindergeld derjenigen Person gewährt, die dem Kind laufend die höchste Unterhaltsrente zahlt. Werden gleich hohe Unterhaltsrenten gezahlt oder zahlt keiner der Berechtigten dem Kind Unterhalt, so bestimmen die Berechtigten untereinander, wer das Kindergeld erhalten soll. Wird eine Bestimmung nicht getroffen, so gilt Absatz 2 Satz 3 und 4 entsprechend.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260630215550" doknr="BJNR137800995BJNE000814126">
+<metadaten>
+<jurabk>BKGG 1996</jurabk>
+<jurabk>BKGG</jurabk>
+<enbez>§ 4</enbez>
+<titel format="XML">Andere Leistungen für Kinder</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Kindergeld wird nicht für ein Kind gezahlt, für das eine der folgenden Leistungen zu zahlen ist oder bei entsprechender Antragstellung zu zahlen wäre: <DL Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA>Leistungen für Kinder, die im Ausland gewährt werden und dem Kindergeld oder der Kinderzulage aus der gesetzlichen Unfallversicherung nach § 217 Absatz 3 des Siebten Buches Sozialgesetzbuch in der bis zum 30. Juni 2020 geltenden Fassung oder dem Kinderzuschuss aus der gesetzlichen Rentenversicherung nach § 270 des Sechsten Buches Sozialgesetzbuch in der bis zum 16. November 2016 geltenden Fassung vergleichbar sind,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA>Leistungen für Kinder, die von einer zwischen- oder überstaatlichen Einrichtung gewährt werden und dem Kindergeld vergleichbar sind.</LA>
+</DD>
+</DL>Steht ein Berechtigter in einem Versicherungspflichtverhältnis zur Bundesagentur für Arbeit nach dem Dritten Buch Sozialgesetzbuch oder ist er versicherungsfrei nach § 28 Absatz 1 Nummer 1 des Dritten Buches Sozialgesetzbuch oder steht er in Deutschland in einem öffentlich-rechtlichen Dienst- oder Amtsverhältnis, so wird sein Anspruch auf Kindergeld für ein Kind nicht nach Satz 1 Nummer 2 mit Rücksicht darauf ausgeschlossen, dass sein Ehegatte oder Lebenspartner als Beamter, Ruhestandsbeamter oder sonstiger Bediensteter der Europäischen Gemeinschaften für das Kind Anspruch auf Kinderzulage hat.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260630215550" doknr="BJNR137800995BJNE000915126">
+<metadaten>
+<jurabk>BKGG 1996</jurabk>
+<jurabk>BKGG</jurabk>
+<enbez>§ 5</enbez>
+<titel format="XML">Beginn und Ende des Anspruchs</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Das Kindergeld, der Kinderzuschlag und die Leistungen für Bildung und Teilhabe werden vom Beginn des Monats an gewährt, in dem die Anspruchsvoraussetzungen erfüllt sind; sie werden bis zum Ende des Monats gewährt, in dem die Anspruchsvoraussetzungen wegfallen.</P>
+<P>(2) Das Kindergeld wird rückwirkend nur für die letzten sechs Monate vor Beginn des Monats gezahlt, in dem der Antrag auf Kindergeld eingegangen ist.</P>
+<P>(3) Der Kinderzuschlag wird nicht für Zeiten vor der Antragstellung gewährt. § 28 des Zehnten Buches Sozialgesetzbuch gilt mit der Maßgabe, dass der Antrag unverzüglich nach Ablauf des Monats, in dem die Ablehnung oder Erstattung der anderen Leistungen bindend geworden ist, nachzuholen ist.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260630215550" doknr="BJNR137800995BJNE001028126">
+<metadaten>
+<jurabk>BKGG 1996</jurabk>
+<jurabk>BKGG</jurabk>
+<enbez>§ 6</enbez>
+<titel format="XML">Höhe des Kindergeldes</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Das Kindergeld beträgt monatlich für jedes Kind 259 Euro.</P>
+<P>(2) Werden die Freibeträge für Kinder nach § 31 Satz 1 in Verbindung mit § 32 Absatz 6 Satz 1 des Einkommensteuergesetzes angehoben, wird das Kindergeld entsprechend erhöht. Das Kindergeld ist dabei auf volle Euro kaufmännisch zu runden.</P>
+<P>(3) Darüber hinaus wird für jedes Kind, für das für den Monat Juli 2022 ein Anspruch auf Kindergeld besteht, für den Monat Juli 2022 ein Einmalbetrag in Höhe von 100 Euro gezahlt. Ein Anspruch in Höhe des Einmalbetrags von 100 Euro für das Kalenderjahr 2022 besteht auch für ein Kind, für das nicht für den Monat Juli 2022, jedoch für mindestens einen anderen Kalendermonat im Kalenderjahr 2022 ein Anspruch auf Kindergeld besteht.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260630215550" doknr="BJNR137800995BJNG000207308">
+<metadaten>
+<jurabk>BKGG 1996</jurabk>
+<jurabk>BKGG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>020</gliederungskennzahl>
+<gliederungsbez>Zweiter Abschnitt</gliederungsbez>
+<gliederungstitel>Organisation und Verfahren</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+</dokumente>

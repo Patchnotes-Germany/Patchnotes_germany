@@ -1159,6 +1159,9 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     }>,
  *     timezone?: scalar|Param|null, // Default: "Europe/Berlin"
  *     donation_url?: scalar|Param|null, // Default: null
+ *     normalization?: array{
+ *         abbreviations?: list<scalar|Param|null>,
+ *     },
  *     repositories?: array{
  *         laws?: array{
  *             url?: scalar|Param|null, // Default: ""

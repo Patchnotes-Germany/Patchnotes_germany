@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20260506174720" doknr="BJNR001750951">
+<norm builddate="20260506174720" doknr="BJNR001750951">
+<metadaten>
+<jurabk>WoEigG</jurabk>
+<amtabk>WEG</amtabk>
+<ausfertigung-datum manuell="ja">1951-03-15</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>BGBl I</periodikum>
+<zitstelle>1951, 175, 209</zitstelle>
+</fundstelle>
+<kurzue>Wohnungseigentumsgesetz</kurzue>
+<langue>Gesetz über das Wohnungseigentum und das Dauerwohnrecht</langue>
+<standangabe checked="ja">
+<standtyp>Neuf</standtyp>
+<standkommentar>Neugefasst durch Bek. v. 12.1.2021 I 34;</standkommentar>
+</standangabe>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>zuletzt geändert durch Art. 1 G v. 10.10.2024 I Nr. 306</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis Geltung ab: 1.10.1973 +++)<BR />
+<BR />
+</pre>Wegen des Umfangs der Geltung im Saarland vgl. § 3 II Nr. 1 G v. 30.6.1959 101-3; in Berlin gem. Art. III G v. 2.8.1951 GVBl. S. 547 am 10.8.1951 in Kraft getreten <BR />Überschrift: Buchstabenabkürzung eingef. durch Art. 1 Nr. 1 G v. 16.10.2020 2187 mWv 1.12.2020</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260506174720" doknr="BJNR001750951BJNG000102360">
+<metadaten>
+<jurabk>WoEigG</jurabk>
+<jurabk>WEG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010</gliederungskennzahl>
+<gliederungsbez>Teil 1</gliederungsbez>
+<gliederungstitel>Wohnungseigentum</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260506174720" doknr="BJNR001750951BJNG001201360">
+<metadaten>
+<jurabk>WoEigG</jurabk>
+<jurabk>WEG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010010</gliederungskennzahl>
+<gliederungsbez>Abschnitt 1</gliederungsbez>
+<gliederungstitel>Begriffsbestimmungen</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260506174720" doknr="BJNR001750951BJNE001202360">
+<metadaten>
+<jurabk>WoEigG</jurabk>
+<jurabk>WEG</jurabk>
+<enbez>§ 1</enbez>
+<titel format="XML">Begriffsbestimmungen</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Nach Maßgabe dieses Gesetzes kann an Wohnungen das Wohnungseigentum, an nicht zu Wohnzwecken dienenden Räumen eines Gebäudes das Teileigentum begründet werden.</P>
+<P>(2) Wohnungseigentum ist das Sondereigentum an einer Wohnung in Verbindung mit dem Miteigentumsanteil an dem gemeinschaftlichen Eigentum, zu dem es gehört.</P>
+<P>(3) Teileigentum ist das Sondereigentum an nicht zu Wohnzwecken dienenden Räumen eines Gebäudes in Verbindung mit dem Miteigentumsanteil an dem gemeinschaftlichen Eigentum, zu dem es gehört.</P>
+<P>(4) Wohnungseigentum und Teileigentum können nicht in der Weise begründet werden, dass das Sondereigentum mit Miteigentum an mehreren Grundstücken verbunden wird.</P>
+<P>(5) Gemeinschaftliches Eigentum im Sinne dieses Gesetzes sind das Grundstück und das Gebäude, soweit sie nicht im Sondereigentum oder im Eigentum eines Dritten stehen.</P>
+<P>(6) Für das Teileigentum gelten die Vorschriften über das Wohnungseigentum entsprechend.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260506174720" doknr="BJNR001750951BJNE001401360">
+<metadaten>
+<jurabk>WoEigG</jurabk>
+<jurabk>WEG</jurabk>
+<enbez>§ 2</enbez>
+<titel format="XML">Arten der Begründung</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Wohnungseigentum wird durch die vertragliche Einräumung von Sondereigentum (§ 3) oder durch Teilung (§ 8) begründet.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260506174720" doknr="BJNR001750951BJNE001504360">
+<metadaten>
+<jurabk>WoEigG</jurabk>
+<jurabk>WEG</jurabk>
+<enbez>§ 3</enbez>
+<titel format="XML">Vertragliche Einräumung von Sondereigentum</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Das Miteigentum (§ 1008 des Bürgerlichen Gesetzbuchs) an einem Grundstück kann durch Vertrag der Miteigentümer in der Weise beschränkt werden, dass jedem der Miteigentümer abweichend von § 93 des Bürgerlichen Gesetzbuchs das Eigentum an einer bestimmten Wohnung oder an nicht zu Wohnzwecken dienenden bestimmten Räumen in einem auf dem Grundstück errichteten oder zu errichtenden Gebäude (Sondereigentum) eingeräumt wird. Stellplätze gelten als Räume im Sinne des Satzes 1.</P>
+<P>(2) Das Sondereigentum kann auf einen außerhalb des Gebäudes liegenden Teil des Grundstücks erstreckt werden, es sei denn, die Wohnung oder die nicht zu Wohnzwecken dienenden Räume bleiben dadurch wirtschaftlich nicht die Hauptsache.</P>
+<P>(3) Sondereigentum soll nur eingeräumt werden, wenn die Wohnungen oder sonstigen Räume in sich abgeschlossen sind und Stellplätze sowie außerhalb des Gebäudes liegende Teile des Grundstücks durch Maßangaben im Aufteilungsplan bestimmt sind.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260506174720" doknr="BJNR001750951BJNE001602360">
+<metadaten>
+<jurabk>WoEigG</jurabk>
+<jurabk>WEG</jurabk>
+<enbez>§ 4</enbez>
+<titel format="XML">Formvorschriften</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Zur Einräumung und zur Aufhebung des Sondereigentums ist die Einigung der Beteiligten über den Eintritt der Rechtsänderung und die Eintragung in das Grundbuch erforderlich.</P>
+<P>(2) Die Einigung bedarf der für die Auflassung vorgeschriebenen Form. Sondereigentum kann nicht unter einer Bedingung oder Zeitbestimmung eingeräumt oder aufgehoben werden.</P>
+<P>(3) Für einen Vertrag, durch den sich ein Teil verpflichtet, Sondereigentum einzuräumen, zu erwerben oder aufzuheben, gilt § 311b Absatz 1 des Bürgerlichen Gesetzbuchs entsprechend.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260506174720" doknr="BJNR001750951BJNE001703360">
+<metadaten>
+<jurabk>WoEigG</jurabk>
+<jurabk>WEG</jurabk>
+<enbez>§ 5</enbez>
+<titel format="XML">Gegenstand und Inhalt des Sondereigentums</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Gegenstand des Sondereigentums sind die gemäß § 3 Absatz 1 Satz 1 bestimmten Räume sowie die zu diesen Räumen gehörenden Bestandteile des Gebäudes, die verändert, beseitigt oder eingefügt werden können, ohne dass dadurch das gemeinschaftliche Eigentum oder ein auf Sondereigentum beruhendes Recht eines anderen Wohnungseigentümers über das bei einem geordneten Zusammenleben unvermeidliche Maß hinaus beeinträchtigt oder die äußere Gestaltung des Gebäudes verändert wird. Soweit sich das Sondereigentum auf außerhalb des Gebäudes liegende Teile des Grundstücks erstreckt, gilt § 94 des Bürgerlichen Gesetzbuchs entsprechend.</P>
+<P>(2) Teile des Gebäudes, die für dessen Bestand oder Sicherheit erforderlich sind, sowie Anlagen und Einrichtungen, die dem gemeinschaftlichen Gebrauch der Wohnungseigentümer dienen, sind nicht Gegenstand des Sondereigentums, selbst wenn sie sich im Bereich der im Sondereigentum stehenden Räume oder Teile des Grundstücks befinden.</P>
+<P>(3) Die Wohnungseigentümer können vereinbaren, dass Bestandteile des Gebäudes, die Gegenstand des Sondereigentums sein können, zum gemeinschaftlichen Eigentum gehören.</P>
+<P>(4) Vereinbarungen über das Verhältnis der Wohnungseigentümer untereinander und Beschlüsse aufgrund einer solchen Vereinbarung können nach den Vorschriften des Abschnitts 4 zum Inhalt des Sondereigentums gemacht werden. Ist das Wohnungseigentum mit der Hypothek, Grund- oder Rentenschuld oder der Reallast eines Dritten belastet, so ist dessen nach anderen Rechtsvorschriften notwendige Zustimmung nur erforderlich, wenn ein Sondernutzungsrecht begründet oder ein mit dem Wohnungseigentum verbundenes Sondernutzungsrecht aufgehoben, geändert oder übertragen wird.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260506174720" doknr="BJNR001750951BJNE001904360">
+<metadaten>
+<jurabk>WoEigG</jurabk>
+<jurabk>WEG</jurabk>
+<enbez>§ 7</enbez>
+<titel format="XML">Grundbuchvorschriften</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Im Fall des § 3 Absatz 1 wird für jeden Miteigentumsanteil von Amts wegen ein besonderes Grundbuchblatt (Wohnungsgrundbuch, Teileigentumsgrundbuch) angelegt. Auf diesem ist das zu dem Miteigentumsanteil gehörende Sondereigentum und als Beschränkung des Miteigentums die Einräumung der zu den anderen Miteigentumsanteilen gehörenden Sondereigentumsrechte einzutragen. Das Grundbuchblatt des Grundstücks wird von Amts wegen geschlossen.</P>
+<P>(2) Zur Eintragung eines Beschlusses im Sinne des § 5 Absatz 4 Satz 1 bedarf es der Bewilligungen der Wohnungseigentümer nicht, wenn der Beschluss durch eine Niederschrift, bei der die Unterschriften der in § 24 Absatz 6 bezeichneten Personen öffentlich beglaubigt sind, oder durch ein Urteil in einem Verfahren nach § 44 Absatz 1 Satz 2 nachgewiesen ist. Antragsberechtigt ist auch die Gemeinschaft der Wohnungseigentümer.</P>
+<P>(3) Zur näheren Bezeichnung des Gegenstands und des Inhalts des Sondereigentums kann auf die Eintragungsbewilligung oder einen Nachweis gemäß Absatz 2 Satz 1 Bezug genommen werden. Veräußerungsbeschränkungen (§ 12) und die Haftung von Sondernachfolgern für Geldschulden sind jedoch ausdrücklich einzutragen.</P>
+<P>(4) Der Eintragungsbewilligung sind als Anlagen beizufügen: <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">eine von der Baubehörde mit Unterschrift und Siegel oder Stempel versehene Bauzeichnung, aus der die Aufteilung des Gebäudes und des Grundstücks sowie die Lage und Größe der im Sondereigentum und der im gemeinschaftlichen Eigentum stehenden Teile des Gebäudes und des Grundstücks ersichtlich ist (Aufteilungsplan); alle zu demselben Wohnungseigentum gehörenden Einzelräume und Teile des Grundstücks sind mit der jeweils gleichen Nummer zu kennzeichnen;</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">eine Bescheinigung der Baubehörde, dass die Voraussetzungen des § 3 Absatz 3 vorliegen.</LA>
+</DD>
+</DL>Wenn in der Eintragungsbewilligung für die einzelnen Sondereigentumsrechte Nummern angegeben werden, sollen sie mit denen des Aufteilungsplans übereinstimmen.</P>
+<P>(5) Für Teileigentumsgrundbücher gelten die Vorschriften über Wohnungsgrundbücher entsprechend.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+</dokumente>

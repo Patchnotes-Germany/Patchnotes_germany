@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20260910215515" doknr="BJNR195010004">
+<norm builddate="20260910215515" doknr="BJNR195010004">
+<metadaten>
+<jurabk>AufenthG 2004</jurabk>
+<amtabk>AufenthG</amtabk>
+<ausfertigung-datum manuell="ja">2004-07-30</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>BGBl I</periodikum>
+<zitstelle>2004, 1950</zitstelle>
+</fundstelle>
+<kurzue>Aufenthaltsgesetz</kurzue>
+<langue>Gesetz über den Aufenthalt, die Erwerbstätigkeit und die Integration von Ausländern im Bundesgebiet<FnR ID="f770910_01_BJNR195010004" />
+</langue>
+<standangabe checked="ja">
+<standtyp>Neuf</standtyp>
+<standkommentar>Neugefasst durch Bek. v. 25.2.2008 I 162;</standkommentar>
+</standangabe>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>zuletzt geändert durch Art. 1 G v. 21.7.2026 I Nr. 221</standkommentar>
+</standangabe>
+<standangabe checked="ja">
+<standtyp>Hinweis</standtyp>
+<standkommentar>Änderung durch Art. 3 G v. 22.7.2026 I Nr. 222 textlich nachgewiesen, dokumentarisch noch nicht abschließend bearbeitet</standkommentar>
+</standangabe>
+<standangabe checked="ja">
+<standtyp>Hinweis</standtyp>
+<standkommentar>Änderung durch Art. 13 G v. 22.7.2026 I Nr. 222 ist berücksichtigt</standkommentar>
+</standangabe>
+<standangabe checked="ja">
+<standtyp>Sonst</standtyp>
+<standkommentar>Mittelbare Änderung durch Art. 4 G v. 20.12.2023 I Nr. 390 betreffend § 104 Abs. 17 ist nicht mehr ausführbar</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Footnotes>
+<Footnote FnZ="1" Group="column" ID="f770910_01_BJNR195010004" Pos="exp" Postfix=")">
+<noindex>Dieses Gesetz dient der Umsetzung folgender Richtlinien: <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2001/40/EG des Rates vom 28. Mai 2001 über die gegenseitige Anerkennung von Entscheidungen über die Rückführung von Drittstaatsangehörigen (ABl. EG Nr. L 149 S. 34),</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2001/51/EG des Rates vom 28. Juni 2001 zur Ergänzung der Regelungen nach Artikel 26 des Übereinkommens zur Durchführung des Übereinkommens von Schengen vom 14. Juni 1985 (ABl. EG Nr. L 187 S. 45),</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2001/55/EG des Rates vom 20. Juli 2001 über Mindestnormen für die Gewährung vorübergehenden Schutzes im Falle eines Massenzustroms von Vertriebenen und Maßnahmen zur Förderung einer ausgewogenen Verteilung der Belastungen, die mit der Aufnahme dieser Personen und den Folgen dieser Aufnahme verbunden sind, auf die Mitgliedstaaten (ABl. EG Nr. L 212 S. 12),</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2002/90/EG des Rates vom 28. November 2002 zur Definition der Beihilfe zur unerlaubten Ein- und Durchreise und zum unerlaubten Aufenthalt (ABl. EG Nr. L 328 S. 17),</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2003/86/EG des Rates vom 22. September 2003 betreffend das Recht auf Familienzusammenführung (ABl. EU Nr. L 251 S. 12),</LA>
+</DD>
+<DT>6.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2003/110/EG des Rates vom 25. November 2003 über die Unterstützung bei der Durchbeförderung im Rahmen von Rückführungsmaßnahmen auf dem Luftweg (ABl. EU Nr. L 321 S. 26),</LA>
+</DD>
+<DT>7.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2003/109/EG des Rates vom 25. November 2003 betreffend die Rechtsstellung der langfristig aufenthaltsberechtigten Drittstaatsangehörigen (ABl. EU 2004 Nr. L 16 S. 44),</LA>
+</DD>
+<DT>8.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2004/81/EG vom 29. April 2004 über die Erteilung von Aufenthaltstiteln für Drittstaatsangehörige, die Opfer des Menschenhandels sind oder denen Beihilfe zur illegalen Einwanderung geleistet wurde und die mit den zuständigen Behörden kooperieren (ABl. EU Nr. L 261 S. 19),</LA>
+</DD>
+<DT>9.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2004/83/EG des Rates vom 29. April 2004 über Mindestnormen für die Anerkennung und den Status von Drittstaatsangehörigen oder Staatenlosen als Flüchtlinge oder als Personen, die anderweitig internationalen Schutz benötigen, und über den Inhalt des zu gewährenden Schutzes (ABl. EU Nr. L 304 S. 12),</LA>
+</DD>
+<DT>10.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2004/114/EG des Rates vom 13. Dezember 2004 über die Bedingungen für die Zulassung von Drittstaatsangehörigen zwecks Absolvierung eines Studiums oder Teilnahme an einem Schüleraustausch, einer unbezahlten Ausbildungsmaßnahme oder einem Freiwilligendienst (ABl. EU Nr. L 375 S. 12),</LA>
+</DD>
+<DT>11.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2005/71/EG des Rates vom 12. Oktober 2005 über ein besonderes Zulassungsverfahren für Drittstaatsangehörige zum Zwecke der wissenschaftlichen Forschung (ABl. EU Nr. L 289 S. 15).</LA>
+</DD>
+<DT>12.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2008/115/EG des Europäischen Parlaments und des Rates vom 16. Dezember 2008 über gemeinsame Normen und Verfahren in den Mitgliedstaaten zur Rückführung illegal aufhältiger Drittstaatsangehöriger (ABl. L 348 vom 24.12.2008, S. 98).</LA>
+</DD>
+</DL>
+</noindex>
+</Footnote>
+</Footnotes>
+</text>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis ab: 1.1.2005 +++)<BR />(+++ Amtlicher Hinweis des Normgebers auf EG-Recht:<BR />     Umsetzung der<BR />       EGRL 40/2001     (CELEX Nr: 32001L0040) <BR />       EGRL 51/2001     (CELEX Nr: 32001L0051)<BR />       EGRL 55/2001     (CELEX Nr: 32001L0055) <BR />       EGRL 90/2002     (CELEX Nr: 32002L0090) <BR />       EGRL 86/2003     (CELEX Nr: 32003L0086) <BR />       EGRL 110/2003    (CELEX Nr: 32003L0110) <BR />       EGRL 109/2003    (CELEX Nr: 32003L0109) <BR />       EGRL 81/2004     (CELEX Nr: 32004L0081) <BR />       EGRL 83/2004     (CELEX Nr: 32004L0083) <BR />       EGRL 114/2004    (CELEX Nr: 32004L0114) vgl. Bek. v. 25.2.2008 I 162<BR />
+<BR />
+<BR />     Umsetzung der<BR />       EURL 36/2014     (CELEX Nr: 32014L0036) <BR />       EURL 66/2014     (CELEX Nr: 32014L0066)<BR />       EURL 2016/801    (CELEX Nr: 32016L0801) vgl. G v. 12.5.2017 I 1106 <BR />                                               sowie § 16b Abs. 8 u. <BR />                                                     § 19 Abs. 7 dieses G <BR />    Unsetzung der<BR />       EGRL 115/2008    (CELEX Nr: 32008L0115) vgl. G v. 21.2.2024 I Nr. 54<BR />    Unsetzung der<BR />       EURL 2024/1226   (CELEX Nr: 32024L1226) vgl. G v. 3.2.2026 I Nr. 27 <BR />    Unsetzung der<BR />       EURL 2024/1233   (CELEX Nr: 32024L1233) vgl. G v. 22.7.2026 I Nr. 222<BR />                                                                        +++)<BR />(+++ EU-Vollzitate: vgl. Liste EU-Rechtsakte G v. 3.2.2026 I Nr. 27<BR />                                         u. G v. 23.4.2026 I Nr. 111 +++)<BR />
+<BR />
+<BR />
+<BR />
+<BR />
+<BR />
+</pre>Das G wurde als Artikel 1 d. G v. 30.7.2004 I 1950 (Zuwanderungsgesetz) vom Bundestag mit Zustimmung des Bundesrates beschlossen. Es tritt gem. Art. 15 Abs. 3 dieses G am 1.1.2005 in Kraft. §§ 42, 43 Abs. 4, § 69 Abs. 2 bis 6, § 99 treten am 6.8.2004, § 75 Nr. 2 Buchst. a tritt am 1.9.2004 in Kraft.</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260910215516" doknr="BJNR195010004BJNG000101310">
+<metadaten>
+<jurabk>AufenthG 2004</jurabk>
+<jurabk>AufenthG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010</gliederungskennzahl>
+<gliederungsbez>Kapitel 1</gliederungsbez>
+<gliederungstitel>Allgemeine Bestimmungen</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260910215516" doknr="BJNR195010004BJNE000204311">
+<metadaten>
+<jurabk>AufenthG 2004</jurabk>
+<jurabk>AufenthG</jurabk>
+<enbez>§ 1</enbez>
+<titel format="XML">Zweck des Gesetzes; Anwendungsbereich</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Das Gesetz dient der Steuerung und Begrenzung des Zuzugs von Ausländern in die Bundesrepublik Deutschland. Es ermöglicht und gestaltet Zuwanderung unter Berücksichtigung der Aufnahme- und Integrationsfähigkeit sowie der wirtschaftlichen und arbeitsmarktpolitischen Interessen der Bundesrepublik Deutschland. Das Gesetz dient zugleich der Erfüllung der humanitären Verpflichtungen der Bundesrepublik Deutschland. Es regelt hierzu die Einreise, den Aufenthalt, die Erwerbstätigkeit und die Integration von Ausländern. Die Regelungen in anderen Gesetzen bleiben unberührt.</P>
+<P>(2) Dieses Gesetz findet keine Anwendung auf Ausländer, <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">deren Rechtsstellung von dem Gesetz über die allgemeine Freizügigkeit von Unionsbürgern geregelt ist, soweit nicht durch Gesetz etwas anderes bestimmt ist,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">die nach Maßgabe der §§ 18 bis 20 des Gerichtsverfassungsgesetzes nicht der deutschen Gerichtsbarkeit unterliegen,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">soweit sie nach Maßgabe völkerrechtlicher Verträge für den diplomatischen und konsularischen Verkehr und für die Tätigkeit internationaler Organisationen und Einrichtungen von Einwanderungsbeschränkungen, von der Verpflichtung, ihren Aufenthalt der Ausländerbehörde anzuzeigen und dem Erfordernis eines Aufenthaltstitels befreit sind und wenn Gegenseitigkeit besteht, sofern die Befreiungen davon abhängig gemacht werden können.</LA>
+</DD>
+</DL>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260910215516" doknr="BJNR195010004BJNE019809311">
+<metadaten>
+<jurabk>AufenthG 2004</jurabk>
+<jurabk>AufenthG</jurabk>
+<enbez>§ 2</enbez>
+<titel format="XML">Begriffsbestimmungen</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Ausländer ist jeder, der nicht Deutscher im Sinne des Artikels 116 Abs. 1 des Grundgesetzes ist.</P>
+<P>(2) Erwerbstätigkeit ist die selbständige Tätigkeit, die Beschäftigung im Sinne von § 7 des Vierten Buches Sozialgesetzbuch und die Tätigkeit als Beamter.</P>
+<P>(3) Der Lebensunterhalt eines Ausländers ist gesichert, wenn er ihn einschließlich ausreichenden Krankenversicherungsschutzes ohne Inanspruchnahme öffentlicher Mittel bestreiten kann. Nicht als Inanspruchnahme öffentlicher Mittel gilt der Bezug von: <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">Kindergeld,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">Kinderzuschlag,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">Erziehungsgeld,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">Elterngeld,</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">Leistungen der Ausbildungsförderung nach dem Dritten Buch Sozialgesetzbuch, dem Bundesausbildungsförderungsgesetz und dem Aufstiegsfortbildungsförderungsgesetz,</LA>
+</DD>
+<DT>6.</DT>
+<DD Font="normal">
+<LA Size="normal">öffentlichen Mitteln, die auf Beitragsleistungen beruhen oder die gewährt werden, um den Aufenthalt im Bundesgebiet zu ermöglichen und</LA>
+</DD>
+<DT>7.</DT>
+<DD Font="normal">
+<LA Size="normal">Leistungen nach dem Unterhaltsvorschussgesetz.</LA>
+</DD>
+</DL>Ist der Ausländer in einer gesetzlichen Krankenversicherung krankenversichert, hat er ausreichenden Krankenversicherungsschutz. Bei der Erteilung oder Verlängerung einer Aufenthaltserlaubnis zum Familiennachzug werden Beiträge der Familienangehörigen zum Haushaltseinkommen berücksichtigt. Der Lebensunterhalt gilt für die Erteilung einer Aufenthaltserlaubnis nach den §§ 16a bis 16c, 16e sowie 16f mit Ausnahme der Teilnehmer an Sprachkursen, die nicht der Studienvorbereitung dienen, als gesichert, wenn der Ausländer über monatliche Mittel in Höhe des monatlichen Bedarfs, der nach den §§ 13 und 13a Abs. 1 des Bundesausbildungsförderungsgesetzes bestimmt wird, verfügt sowie für die Erteilung einer Aufenthaltserlaubnis nach § 16g als gesichert, wenn der Ausländer über monatliche Mittel in Höhe des monatlichen Bedarfs, der nach § 12 des Bundesausbildungsförderungsgesetzes bestimmt wird, verfügt. Der Lebensunterhalt gilt für die Erteilung einer Aufenthaltserlaubnis nach den §§ 16d, 16f Absatz 1 für Teilnehmer an Sprachkursen, die nicht der Studienvorbereitung dienen, sowie § 17 als gesichert, wenn Mittel entsprechend Satz 5 zuzüglich eines Aufschlages um 10 Prozent zur Verfügung stehen. Das Bundesministerium des Innern, für Bau und Heimat gibt die Mindestbeträge nach Satz 5 für jedes Kalenderjahr jeweils bis zum 31. August des Vorjahres im Bundesanzeiger bekannt.</P>
+<P>(4) Als ausreichender Wohnraum wird nicht mehr gefordert, als für die Unterbringung eines Wohnungssuchenden in einer öffentlich geförderten Sozialmietwohnung genügt. Der Wohnraum ist nicht ausreichend, wenn er den auch für Deutsche geltenden Rechtsvorschriften hinsichtlich Beschaffenheit und Belegung nicht genügt. Kinder bis zur Vollendung des zweiten Lebensjahres werden bei der Berechnung des für die Familienunterbringung ausreichenden Wohnraumes nicht mitgezählt.</P>
+<P>(5) Schengen-Staaten sind die Staaten, in denen folgende Rechtsakte in vollem Umfang Anwendung finden: <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">Übereinkommen zur Durchführung des Übereinkommens von Schengen vom 14. Juni 1985 zwischen den Regierungen der Staaten der Benelux-Wirtschaftsunion, der Bundesrepublik Deutschland und der Französischen Republik betreffend den schrittweisen Abbau der Kontrollen an den gemeinsamen Grenzen (ABl. L 239 vom 22.9.2000, S. 19),</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">die Verordnung (EU) 2016/399 des Europäischen Parlaments und des Rates vom 9. März 2016 über einen Gemeinschaftskodex für das Überschreiten der Grenzen durch Personen (Schengener Grenzkodex) (ABl. L 77 vom 23.3.2016, S. 1) und</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">die Verordnung (EG) Nr. 810/2009 des Europäischen Parlaments und des Rates vom 13. Juli 2009 über einen Visakodex der Gemeinschaft (ABl. L 243 vom 15.9.2009, S. 1).</LA>
+</DD>
+</DL>
+</P>
+<P>(6) Vorübergehender Schutz im Sinne dieses Gesetzes ist die Aufenthaltsgewährung in Anwendung der Richtlinie 2001/55/EG des Rates vom 20. Juli 2001 über Mindestnormen für die Gewährung vorübergehenden Schutzes im Falle eines Massenzustroms von Vertriebenen und Maßnahmen zur Förderung einer ausgewogenen Verteilung der Belastungen, die mit der Aufnahme dieser Personen und den Folgen dieser Aufnahme verbunden sind, auf die Mitgliedstaaten (ABl. EG Nr. L 212 S. 12).</P>
+<P>(7) Langfristig Aufenthaltsberechtigter ist ein Ausländer, dem in einem Mitgliedstaat der Europäischen Union die Rechtsstellung nach Artikel 2 Buchstabe b der Richtlinie 2003/109/EG des Rates vom 25. November 2003 betreffend die Rechtsstellung der langfristig aufenthaltsberechtigten Drittstaatsangehörigen (ABl. EU 2004 Nr. L 16 S. 44), die zuletzt durch die Richtlinie 2011/51/EU (ABl. L 132 vom 19.5.2011, S. 1) geändert worden ist, verliehen und nicht entzogen wurde.</P>
+<P>(8) Langfristige Aufenthaltsberechtigung – EU ist der einem langfristig Aufenthaltsberechtigten durch einen anderen Mitgliedstaat der Europäischen Union ausgestellte Aufenthaltstitel nach Artikel 8 der Richtlinie 2003/109/EG.</P>
+<P>(9) Einfache deutsche Sprachkenntnisse entsprechen dem Niveau A 1 des Gemeinsamen Europäischen Referenzrahmens für Sprachen (Empfehlungen des Ministerkomitees des Europarates an die Mitgliedstaaten Nr. R (98) 6 vom 17. März 1998 zum Gemeinsamen Europäischen Referenzrahmen für Sprachen – GER).</P>
+<P>(10) Hinreichende deutsche Sprachkenntnisse entsprechen dem Niveau A 2 des Gemeinsamen Europäischen Referenzrahmens für Sprachen.</P>
+<P>(11) Ausreichende deutsche Sprachkenntnisse entsprechen dem Niveau B 1 des Gemeinsamen Europäischen Referenzrahmens für Sprachen.</P>
+<P>(11a) Gute deutsche Sprachkenntnisse entsprechen dem Niveau B2 des Gemeinsamen Europäischen Referenzrahmens für Sprachen.</P>
+<P>(12) Die deutsche Sprache beherrscht ein Ausländer, wenn seine Sprachkenntnisse dem Niveau C 1 des Gemeinsamen Europäischen Referenzrahmens für Sprachen entsprechen.</P>
+<P>(12a) Eine qualifizierte Berufsausbildung im Sinne dieses Gesetzes liegt vor, wenn es sich um eine Berufsausbildung in einem staatlich anerkannten oder vergleichbar geregelten Ausbildungsberuf handelt, für den nach bundes- oder landesrechtlichen Vorschriften eine Ausbildungsdauer von mindestens zwei Jahren festgelegt ist.</P>
+<P>(12b) Eine qualifizierte Beschäftigung im Sinne dieses Gesetzes liegt vor, wenn zu ihrer Ausübung Fertigkeiten, Kenntnisse und Fähigkeiten erforderlich sind, die in einem Studium oder einer qualifizierten Berufsausbildung erworben werden.</P>
+<P>(12c) Bildungseinrichtungen im Sinne dieses Gesetzes sind <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">Ausbildungsbetriebe bei einer betrieblichen Berufsaus- oder Weiterbildung,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">Schulen, Hochschulen sowie Einrichtungen der Berufsbildung oder der sonstigen Aus- und Weiterbildung.</LA>
+</DD>
+</DL>
+</P>
+<P>(13) International Schutzberechtigter ist ein Ausländer, der internationalen Schutz genießt im Sinne der <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2004/83/EG des Rates vom 29. April 2004 über Mindestnormen für die Anerkennung und den Status von Drittstaatsangehörigen oder Staatenlosen als Flüchtlinge oder als Personen, die anderweitig internationalen Schutz benötigen, und über den Inhalt des zu gewährenden Schutzes (ABl. L 304 vom 30.9.2004, S. 12) oder</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">Richtlinie 2011/95/EU des Europäischen Parlaments und des Rates vom 13. Dezember 2011 über Normen für die Anerkennung von Drittstaatsangehörigen oder Staatenlosen als Personen mit Anspruch auf internationalen Schutz, für einen einheitlichen Status für Flüchtlinge oder für Personen mit Anrecht auf subsidiären Schutz und für den Inhalt des zu gewährenden Schutzes (ABl. L 337 vom 20.12.2011, S. 9).</LA>
+</DD>
+</DL>
+</P>
+<P>(14) Soweit Artikel 44 der Verordnung (EU) 2024/1351, der die Inhaftnahme zum Zwecke der Überstellung betrifft, maßgeblich ist, gelten § 62 Absatz 3 Satz 1 Nummer 4 und Absatz 3a für die widerlegliche Vermutung einer Fluchtgefahr im Sinne von Artikel 2 Absatz 18 der Verordnung (EU) 2024/1351 und § 62 Absatz 3b Nummer 1 bis 5 als objektive Anhaltspunkte für die Annahme einer Fluchtgefahr im Sinne von Artikel 2 Absatz 18 der Verordnung (EU) 2024/1351 entsprechend; im Anwendungsbereich der Verordnung (EU) 2024/1351 bleibt Artikel 44 Absatz 2 im Übrigen maßgeblich. Ferner kann ein Anhaltspunkt für Fluchtgefahr vorliegen, wenn <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">der Ausländer einen Mitgliedstaat vor Abschluss eines dort laufenden Verfahrens zur Zuständigkeitsbestimmung oder zur Prüfung eines Antrags auf internationalen Schutz verlassen hat und die Umstände der Feststellung im Bundesgebiet konkret darauf hindeuten, dass er den zuständigen Mitgliedstaat in absehbarer Zeit nicht aufsuchen will,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">der Ausländer zuvor mehrfach einen Asylantrag in anderen Mitgliedstaaten als der Bundesrepublik Deutschland im Geltungsbereich der Verordnung (EU) 2024/1351 gestellt und den jeweiligen anderen Mitgliedstaat der Asylantragstellung wieder verlassen hat, ohne den Ausgang des dort laufenden Verfahrens zur Zuständigkeitsbestimmung oder zur Prüfung eines Antrags auf internationalen Schutz abzuwarten.</LA>
+</DD>
+</DL>Die für den Antrag auf Inhaftnahme zum Zwecke der Überstellung zuständige Behörde kann einen Ausländer ohne vorherige richterliche Anordnung festhalten und vorläufig in Gewahrsam nehmen, wenn <DL Font="normal" Type="alpha">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">der dringende Verdacht für das Vorliegen der Voraussetzungen nach Satz 1 oder 2 besteht,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">die richterliche Entscheidung über die Anordnung der Überstellungshaft nicht vorher eingeholt werden kann und</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">der begründete Verdacht vorliegt, dass sich der Ausländer der Anordnung der Überstellungshaft entziehen will.</LA>
+</DD>
+</DL>Der Ausländer ist unverzüglich dem Richter zur Entscheidung über die Anordnung der Überstellungshaft vorzuführen. Auf das Verfahren zur Anordnung von Haft zur Überstellung nach der Verordnung (EU) 2024/1351 finden § 62d sowie die Vorschriften in den Büchern 1 und 7 des Gesetzes über das Verfahren in Familiensachen und in den Angelegenheiten der freiwilligen Gerichtsbarkeit entsprechend Anwendung, soweit das Verfahren in der Verordnung (EU) 2024/1351 nicht abweichend geregelt ist.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260910215516" doknr="BJNR195010004BJNG000201310">
+<metadaten>
+<jurabk>AufenthG 2004</jurabk>
+<jurabk>AufenthG</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>020</gliederungskennzahl>
+<gliederungsbez>Kapitel 2</gliederungsbez>
+<gliederungstitel>Einreise und Aufenthalt im Bundesgebiet</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260910215516" doknr="BJNR195010004BJNE000403311">
+<metadaten>
+<jurabk>AufenthG 2004</jurabk>
+<jurabk>AufenthG</jurabk>
+<enbez>§ 3</enbez>
+<titel format="XML">Passpflicht</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Ausländer dürfen nur in das Bundesgebiet einreisen oder sich darin aufhalten, wenn sie einen anerkannten und gültigen Pass oder Passersatz besitzen, sofern sie von der Passpflicht nicht durch Rechtsverordnung befreit sind. Für den Aufenthalt im Bundesgebiet erfüllen sie die Passpflicht auch durch den Besitz eines Ausweisersatzes (§ 48 Abs. 2).</P>
+<P>(2) Das Bundesministerium des Innern, für Bau und Heimat oder die von ihm bestimmte Stelle kann in begründeten Einzelfällen vor der Einreise des Ausländers für den Grenzübertritt und einen anschließenden Aufenthalt von bis zu sechs Monaten Ausnahmen von der Passpflicht zulassen.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260910215516" doknr="BJNR195010004BJNE012605311">
+<metadaten>
+<jurabk>AufenthG 2004</jurabk>
+<jurabk>AufenthG</jurabk>
+<enbez>§ 9a</enbez>
+<titel format="XML">Erlaubnis zum Daueraufenthalt – EU</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Die Erlaubnis zum Daueraufenthalt – EU ist ein unbefristeter Aufenthaltstitel. § 9 Abs. 1 Satz 2 und 3 gilt entsprechend. Soweit dieses Gesetz nichts anderes regelt, ist die Erlaubnis zum Daueraufenthalt – EU der Niederlassungserlaubnis gleichgestellt.</P>
+<P>(2) Einem Ausländer ist eine Erlaubnis zum Daueraufenthalt – EU nach Artikel 2 Buchstabe b der Richtlinie 2003/109/EG zu erteilen, wenn <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">er sich seit fünf Jahren mit Aufenthaltstitel im Bundesgebiet aufhält,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">sein Lebensunterhalt und derjenige seiner Angehörigen, denen er Unterhalt zu leisten hat, durch feste und regelmäßige Einkünfte gesichert ist,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">er über ausreichende Kenntnisse der deutschen Sprache verfügt,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">er über Grundkenntnisse der Rechts- und Gesellschaftsordnung und der Lebensverhältnisse im Bundesgebiet verfügt,</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">Gründe der öffentlichen Sicherheit oder Ordnung unter Berücksichtigung der Schwere oder der Art des Verstoßes gegen die öffentliche Sicherheit oder Ordnung oder der vom Ausländer ausgehenden Gefahr unter Berücksichtigung der Dauer des bisherigen Aufenthalts und dem Bestehen von Bindungen im Bundesgebiet nicht entgegenstehen und</LA>
+</DD>
+<DT>6.</DT>
+<DD Font="normal">
+<LA Size="normal">er über ausreichenden Wohnraum für sich und seine mit ihm in familiärer Gemeinschaft lebenden Familienangehörigen verfügt.</LA>
+</DD>
+</DL>Für Satz 1 Nr. 3 und 4 gilt § 9 Abs. 2 Satz 2 bis 5 entsprechend.</P>
+<P>(3) Absatz 2 ist nicht anzuwenden, wenn der Ausländer <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">einen Aufenthaltstitel nach Abschnitt 5 besitzt, der nicht auf Grund des § 23 Abs. 2 erteilt wurde, oder eine vergleichbare Rechtsstellung in einem anderen Mitgliedstaat der Europäischen Union innehat und weder in der Bundesrepublik Deutschland noch in einem anderen Mitgliedstaat der Europäischen Union als international Schutzberechtigter anerkannt ist; Gleiches gilt, wenn er einen solchen Titel oder eine solche Rechtsstellung beantragt hat und über den Antrag noch nicht abschließend entschieden worden ist,</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">in einem Mitgliedstaat der Europäischen Union einen Antrag auf Anerkennung als international Schutzberechtigter gestellt oder vorübergehenden Schutz im Sinne des § 24 beantragt hat und über seinen Antrag noch nicht abschließend entschieden worden ist,</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">in einem anderen Mitgliedstaat der Europäischen Union eine Rechtsstellung besitzt, die der in § 1 Abs. 2 Nr. 2 beschriebenen entspricht,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">sich mit einer Aufenthaltserlaubnis nach § 16a oder § 16b oder</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">sich zu einem sonstigen seiner Natur nach vorübergehenden Zweck im Bundesgebiet aufhält, insbesondere<DL Font="normal" Type="arabic">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">auf Grund einer Aufenthaltserlaubnis nach § 19c, wenn die Befristung der Zustimmung der Bundesagentur für Arbeit auf einer Verordnung nach § 42 Abs. 1 bestimmten Höchstbeschäftigungsdauer beruht,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">wenn die Verlängerung seiner Aufenthaltserlaubnis nach § 8 Abs. 2 ausgeschlossen wurde oder</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">wenn seine Aufenthaltserlaubnis der Herstellung oder Wahrung der familiären Lebensgemeinschaft mit einem Ausländer dient, der sich selbst nur zu einem seiner Natur nach vorübergehenden Zweck im Bundesgebiet aufhält, und bei einer Aufhebung der Lebensgemeinschaft kein eigenständiges Aufenthaltsrecht entstehen würde.</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+</DL>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260910215516" doknr="BJNR195010004BJNE023201311">
+<metadaten>
+<jurabk>AufenthG 2004</jurabk>
+<jurabk>AufenthG</jurabk>
+<enbez>§ 62d</enbez>
+<titel format="XML">(weggefallen)</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260910215516" doknr="BJNR195010004BJNE023000311">
+<metadaten>
+<jurabk>AufenthG 2004</jurabk>
+<jurabk>AufenthG</jurabk>
+<enbez>Anlage</enbez>
+<titel format="XML">(zu § 20a Absatz 3 Nummer 2, § 20b)</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>
+<noindex>
+<kommentar typ="Fundstelle">(Fundstelle: BGBl. 2023 I Nr. 217, S. 20)</kommentar>
+</noindex>
+<BR />
+<BR />
+</P>
+<Title Align="auto" Class="S5">Tabelle</Title>
+<P>
+<table colsep="1" frame="all" pgwide="1" rowsep="1" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="2">
+<colspec colname="col1" colwidth="82.5*" />
+<colspec colname="col2" colwidth="82.5*" />
+<thead valign="bottom">
+<row valign="middle">
+<entry VJ="1" align="center" colname="col1">Merkmal nach § 20b Absatz 1 Nummer</entry>
+<entry VJ="1" align="center" colname="col2">Punkte bei Erfüllung des Merkmals</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry VJ="1" colname="col1">1</entry>
+<entry VJ="1" colname="col2">4</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">2</entry>
+<entry VJ="1" colname="col2">3</entry>
+</row>
+<row>
+<entry VJ="1" colname="col1">3</entry>
+<entry VJ="1" colname="col2">2</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+</dokumente>

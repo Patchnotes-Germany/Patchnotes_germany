@@ -11,6 +11,11 @@ patchnotes:
     timezone: Europe/Berlin
     donation_url: '%env(default::DONATION_URL)%'
 
+    normalization:
+        # Extends the built-in list in App\Laws\Normalizer\SentenceSplitter. Add abbreviations here
+        # when a source turns out to use one that splits a sentence in the wrong place.
+        abbreviations: []
+
     repositories:
         laws:
             url: '%env(default::LAWS_REPO_URL)%'

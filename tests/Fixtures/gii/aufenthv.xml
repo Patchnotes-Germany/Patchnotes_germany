@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dokumente builddate="20260803220005" doknr="BJNR294510004">
+<norm builddate="20260803220005" doknr="BJNR294510004">
+<metadaten>
+<jurabk>AufenthV</jurabk>
+<amtabk>AufenthV</amtabk>
+<ausfertigung-datum manuell="ja">2004-11-25</ausfertigung-datum>
+<fundstelle typ="amtlich">
+<periodikum>BGBl I</periodikum>
+<zitstelle>2004, 2945</zitstelle>
+</fundstelle>
+<langue>Aufenthaltsverordnung</langue>
+<standangabe checked="ja">
+<standtyp>Stand</standtyp>
+<standkommentar>Zuletzt geändert durch Art. 11 G v. 22.7.2026 I Nr. 222</standkommentar>
+</standangabe>
+</metadaten>
+<textdaten>
+<fussnoten>
+<Content>
+<P>
+<BR />
+<pre xml:space="preserve">(+++ Textnachweis ab: 1.1.2005 +++)<BR />
+<BR />(+++ EU-Vollzitate: vgl. Liste EU-Rechtsakte V v. 29.10.2025 I Nr. 260  <BR />                                          u. G v. 23.4.2026 I Nr. 111 +++) <BR />
+<BR />
+</pre>Die V wurde als Artikel 1 der V v. 25.11.2004 I 2945 von der Bundesregierung und dem Bundesministerium des Innern mit Zustimmung des Bundesrates beschlossen. Sie ist gem. Art. 3 dieser V am 1.1.2005 in Kraft getreten.</P>
+</Content>
+</fussnoten>
+</textdaten>
+</norm>
+<norm builddate="20260803220005" doknr="BJNR294510004BJNG000100000">
+<metadaten>
+<jurabk>AufenthV</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>010</gliederungskennzahl>
+<gliederungsbez>Kapitel 1</gliederungsbez>
+<gliederungstitel>Allgemeine Bestimmungen</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260803220005" doknr="BJNR294510004BJNE000204311">
+<metadaten>
+<jurabk>AufenthV</jurabk>
+<enbez>§ 1</enbez>
+<titel format="XML">Begriffsbestimmungen</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Schengen-Staaten sind die Staaten im Sinne des § 2 Absatz 5 des Aufenthaltsgesetzes.</P>
+<P>(2) Ein Kurzaufenthalt ist ein Aufenthalt im gemeinsamen Gebiet der Schengen-Staaten von höchstens 90 Tagen je Zeitraum von 180 Tagen, wobei der Zeitraum von 180 Tagen, der jedem Tag des Aufenthalts vorangeht, berücksichtigt wird.</P>
+<P>(3) Reiseausweise für Flüchtlinge sind Ausweise auf Grund <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">des Abkommens vom 15. Oktober 1946 betreffend die Ausstellung eines Reiseausweises an Flüchtlinge, die unter die Zuständigkeit des zwischenstaatlichen Ausschusses für die Flüchtlinge fallen (BGBl. 1951 II S. 160) oder</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">des Artikels 28 in Verbindung mit dem Anhang des Abkommens vom 28. Juli 1951 über die Rechtsstellung der Flüchtlinge (BGBl. 1953 II S. 559).</LA>
+</DD>
+</DL>
+</P>
+<P>(4) Reiseausweise für Staatenlose sind Ausweise auf Grund des Artikels 28 in Verbindung mit dem Anhang des Übereinkommens vom 28. September 1954 über die Rechtsstellung der Staatenlosen (BGBl. 1976 II S. 473).</P>
+<P>(5) Schülersammellisten sind Listen nach Artikel 2 des Beschlusses des Rates vom 30. November 1994 über die vom Rat auf Grund von Artikel K.3 Absatz 2 Buchstabe b des Vertrages über die Europäische Union beschlossene gemeinsame Maßnahme über Reiseerleichterungen für Schüler von Drittstaaten mit Wohnsitz in einem Mitgliedstaat (ABl. EG Nr. L 327 S. 1).</P>
+<P>(6) Flugbesatzungsausweise sind "Airline Flight Crew Licenses" und "Crew Member Certificates" nach der Anlage des Anhangs 9 in der jeweils geltenden Fassung zum Abkommen vom 7. Dezember 1944 über die Internationale Zivilluftfahrt (BGBl. 1956 II S. 411).</P>
+<P>(7) Binnenschifffahrtsausweise sind in zwischenstaatlichen Vereinbarungen für den Grenzübertritt vorgesehene Ausweise für ziviles Personal, das internationale Binnenwasserstraßen befährt, sowie dessen Familienangehörige, soweit die Geltung für Familienangehörige in den jeweiligen Vereinbarungen vorgesehen ist.</P>
+<P>(8) Europäische Reisedokumente für die Rückkehr illegal aufhältiger Drittstaatsangehöriger (Europäische Reisedokumente für die Rückkehr) sind Dokumente nach der Verordnung (EU) 2016/1953 des Europäischen Parlaments und des Rates vom 26. Oktober 2016 (ABl. L 311 vom 17.11.2016, S. 13).</P>
+<P>(9) EU-Rückkehrausweise sind Reisedokumente im Sinne des Artikels 3 Absatz 1 der Richtlinie (EU) 2019/997 in der Fassung vom 6. Mai 2024.</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260803220005" doknr="BJNR294510004BJNG000200000">
+<metadaten>
+<jurabk>AufenthV</jurabk>
+<gliederungseinheit>
+<gliederungskennzahl>020</gliederungskennzahl>
+<gliederungsbez>Kapitel 2</gliederungsbez>
+<gliederungstitel>Einreise und Aufenthalt im Bundesgebiet</gliederungstitel>
+</gliederungseinheit>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P />
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260803220005" doknr="BJNR294510004BJNE000300000">
+<metadaten>
+<jurabk>AufenthV</jurabk>
+<enbez>§ 2</enbez>
+<titel format="parat">Erfüllung der Passpflicht durch Eintragung in den Pass
+eines gesetzlichen Vertreters</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>Minderjährige Ausländer, die das 16. Lebensjahr noch nicht vollendet haben, erfüllen die Passpflicht auch durch Eintragung in einem anerkannten und gültigen Pass oder Passersatz eines gesetzlichen Vertreters. Für einen minderjährigen Ausländer, der das zehnte Lebensjahr vollendet hat, gilt dies nur, wenn im Pass oder Passersatz sein eigenes Lichtbild angebracht ist.</P>
+</Content>
+</text>
+</textdaten>
+</norm>
+<norm builddate="20260803220005" doknr="BJNR294510004BJNE000402311">
+<metadaten>
+<jurabk>AufenthV</jurabk>
+<enbez>§ 3</enbez>
+<titel format="XML">Zulassung nichtdeutscher amtlicher Ausweise als Passersatz</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>(1) Von anderen Behörden als von deutschen Behörden ausgestellte amtliche Ausweise sind als Passersatz zugelassen, ohne dass es einer Anerkennung nach § 71 Abs. 6 des Aufenthaltsgesetzes bedarf, soweit die Bundesrepublik Deutschland <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">auf Grund zwischenstaatlicher Vereinbarungen oder</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">auf Grund des Rechts der Europäischen Union</LA>
+</DD>
+</DL>verpflichtet ist, dem Inhaber unter den dort festgelegten Voraussetzungen den Grenzübertritt zu gestatten. Dies gilt nicht, wenn der ausstellende Staat aus dem Geltungsbereich des Ausweises ausgenommen oder wenn der Inhaber nicht zur Rückkehr in diesen Staat berechtigt ist.</P>
+<P>(2) Die Zulassung entfällt, wenn das Bundesministerium des Innern, für Bau und Heimat in den Fällen des Absatzes 1 Satz 1 Nr. 1 feststellt, dass <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">die Gegenseitigkeit, soweit diese vereinbart wurde, nicht gewahrt ist oder</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">der amtliche Ausweis<DL Font="normal" Type="arabic">
+<DT>a)</DT>
+<DD Font="normal">
+<LA Size="normal">keine hinreichenden Angaben zur eindeutigen Identifizierung des Inhabers oder der ausstellenden Behörde enthält,</LA>
+</DD>
+<DT>b)</DT>
+<DD Font="normal">
+<LA Size="normal">keine Sicherheitsmerkmale aufweist, die in einem Mindestmaß vor Fälschung oder Verfälschung schützen, oder</LA>
+</DD>
+<DT>c)</DT>
+<DD Font="normal">
+<LA Size="normal">die Angaben nicht in einer germanischen oder romanischen Sprache enthält.</LA>
+</DD>
+</DL>
+</LA>
+</DD>
+</DL>
+</P>
+<P>(3) Zu den Ausweisen im Sinne des Absatzes 1 zählen insbesondere: <DL Font="normal" Type="arabic">
+<DT>1.</DT>
+<DD Font="normal">
+<LA Size="normal">Reiseausweise für Flüchtlinge (§ 1 Abs. 3),</LA>
+</DD>
+<DT>2.</DT>
+<DD Font="normal">
+<LA Size="normal">Reiseausweise für Staatenlose (§ 1 Abs. 4),</LA>
+</DD>
+<DT>3.</DT>
+<DD Font="normal">
+<LA Size="normal">Ausweise für Mitglieder und Bedienstete der Organe der Europäischen Gemeinschaften,</LA>
+</DD>
+<DT>4.</DT>
+<DD Font="normal">
+<LA Size="normal">Ausweise für Abgeordnete der Parlamentarischen Versammlung des Europarates,</LA>
+</DD>
+<DT>5.</DT>
+<DD Font="normal">
+<LA Size="normal">amtliche Personalausweise der Mitgliedstaaten der Europäischen Union, der anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum und der Schweiz für deren Staatsangehörige,</LA>
+</DD>
+<DT>6.</DT>
+<DD Font="normal">
+<LA Size="normal">Schülersammellisten (§ 1 Abs. 5),</LA>
+</DD>
+<DT>7.</DT>
+<DD Font="normal">
+<LA Size="normal">Flugbesatzungsausweise, soweit sie für einen Aufenthalt nach § 23 gebraucht werden,</LA>
+</DD>
+<DT>8.</DT>
+<DD Font="normal">
+<LA Size="normal">Binnenschifffahrtsausweise, soweit sie für einen Aufenthalt nach § 25 gebraucht werden, und</LA>
+</DD>
+<DT>9.</DT>
+<DD Font="normal">
+<LA Size="normal">EU-Rückkehrausweise (§ 1 Absatz 9).</LA>
+</DD>
+</DL>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260803220005" doknr="BJNR294510004BJNE004503311">
+<metadaten>
+<jurabk>AufenthV</jurabk>
+<enbez>§ 44</enbez>
+<titel format="XML">Gebühren für die Niederlassungserlaubnis</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>An Gebühren sind zu erheben <BR />
+<BR />
+<table frame="none" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="3" colsep="0" rowsep="0">
+<colspec colname="col1" colnum="1" colwidth="5*" />
+<colspec colname="col2" colnum="2" colwidth="70*" />
+<colspec colname="col3" colnum="3" colwidth="20.00*" />
+<tbody valign="top">
+<row>
+<entry VJ="1" align="left" colsep="0" valign="top">1.</entry>
+<entry VJ="1" align="left" colsep="0" valign="top">für die Erteilung einer Niederlassungserlaubnis für Hochqualifizierte (§ 18c Absatz 3 des Aufenthaltsgesetzes)</entry>
+<entry VJ="1" align="right" colsep="0" valign="bottom">147 Euro,</entry>
+</row>
+<row>
+<entry VJ="1" align="left" colsep="0" valign="top">2.</entry>
+<entry VJ="1" align="left" colsep="0" valign="top">für die Erteilung einer Niederlassungserlaubnis zur Ausübung einer selbständigen Tätigkeit (§ 21 Abs. 4 des Aufenthaltsgesetzes)</entry>
+<entry VJ="1" align="right" colsep="0" valign="bottom">124 Euro,</entry>
+</row>
+<row>
+<entry VJ="1" align="left" colsep="0" valign="top">3.</entry>
+<entry VJ="1" align="left" colsep="0" valign="top">für die Erteilung einer Niederlassungserlaubnis in allen übrigen Fällen</entry>
+<entry VJ="1" align="right" colsep="0" valign="bottom">113 Euro.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260803220006" doknr="BJNR294510004BJNE007102310">
+<metadaten>
+<jurabk>AufenthV</jurabk>
+<enbez>§ 70</enbez>
+<titel format="XML">(weggefallen)</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>-</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+<norm builddate="20260803220006" doknr="BJNR294510004BJNE008504116">
+<metadaten>
+<jurabk>AufenthV</jurabk>
+<enbez>Anlage A</enbez>
+<titel format="XML">(zu § 16)</titel>
+</metadaten>
+<textdaten>
+<text format="XML">
+<Content>
+<P>
+<table frame="none" tocentry="%yes;">
+<tgroup align="left" char="" charoff="50" cols="3" colsep="0" rowsep="0">
+<colspec colname="col1" colnum="1" colwidth="5*" />
+<colspec colname="col2" colnum="2" colwidth="50.00*" />
+<colspec colname="col3" colnum="3" colwidth="40.00*" />
+<tbody valign="top">
+<row>
+<entry VJ="1">1.</entry>
+<entry VJ="1">Inhaber von Nationalpässen und/oder Reiseausweisen für Flüchtlinge sowie sonstiger in den jeweiligen Abkommen genannten Reisedokumente von</entry>
+<entry VJ="1" />
+</row>
+<row>
+<entry VJ="1" align="left" colsep="0" valign="top"> </entry>
+<entry VJ="1" align="left" colsep="0" valign="top">
+<B>Staat</B>
+</entry>
+<entry VJ="1" align="left" colsep="0" valign="top">
+<B>Zugehörige Fundstelle</B>
+</entry>
+</row>
+<row>
+<entry VJ="1" align="left" colsep="0" valign="top"> </entry>
+<entry VJ="1" align="left" colsep="0" valign="top">Australien</entry>
+<entry VJ="1" align="left" colsep="0" valign="top">GMBl 1953 S. 575</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<DL Font="normal" Type="arabic">
+<DT />
+<DD Font="normal">
+<LA Size="normal">nach Maßgabe des Europäischen Übereinkommens über die Aufhebung des Sichtvermerkszwangs für Flüchtlinge vom 20. April 1959 (BGBl. 1961 II S. 1097, 1098) sowie hinsichtlich der Inhaber von Reiseausweisen für Flüchtlinge der Schweiz auch nach Maßgabe des Abkommens zwischen der Regierung der Bundesrepublik Deutschland und dem Schweizerischen Bundesrat über die Abschaffung des Sichtvermerkszwangs für Flüchtlinge vom 4. Mai 1962 (BGBl.1962 II S. 2331, 2332).</LA>
+</DD>
+</DL>
+</P>
+</Content>
+</text>
+<fussnoten />
+</textdaten>
+</norm>
+</dokumente>

@@ -49,6 +49,7 @@ final class PatchnotesBundle extends AbstractBundle
                 ->scalarNode('timezone')->defaultValue('Europe/Berlin')->end()
                 ->scalarNode('donation_url')->defaultNull()->end()
 
+                ->append($this->normalizationNode())
                 ->append($this->repositoriesNode())
                 ->append($this->gitNode())
                 ->append($this->sourcesNode())
@@ -88,6 +89,26 @@ final class PatchnotesBundle extends AbstractBundle
 
         $key = $this->container?->getParameter('patchnotes.encryption_key');
         EncryptedJsonType::setEncryptionKey(\is_string($key) && '' !== $key ? $key : null);
+    }
+
+    /**
+     * Rules of the deterministic source-to-Markdown conversion (SPEC.md § 4.2).
+     */
+    private function normalizationNode(): \Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition
+    {
+        $node = new \Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition('normalization');
+        $node
+            ->addDefaultsIfNotSet()
+            ->children()
+                ->arrayNode('abbreviations')
+                    ->info('German abbreviations after which a full stop never ends a sentence; extends the built-in list.')
+                    ->scalarPrototype()->end()
+                    ->defaultValue([])
+                ->end()
+            ->end()
+        ;
+
+        return $node;
     }
 
     private function repositoriesNode(): \Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition
