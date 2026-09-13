@@ -150,10 +150,18 @@ bot identity; a synchronisation of an empty repository crashed on the unborn def
 comparison "repository vs. conversion" was order-sensitive, so unchanged laws looked changed; a
 rerun on the same day tried to open a second pull request for the same branch.
 
+- [x] **`LawImporter`**: reads `_law.yml` and the norm files from the **mirror** and upserts
+      `Law`/`Norm`/`NormVersion`. A law whose directory commit has not moved is skipped entirely, and
+      a norm version is written only when the text really changed, so the database history mirrors
+      the git history instead of growing on every run. Norms that vanish from `_law.yml` are marked
+      repealed, never deleted. Wired to `RepositoryUpdated`, so a merged pull request lands in the
+      database by itself
+- [x] `JurisdictionSeeder`: the federation and the 16 states, seeded by `patchnotes:bootstrap`
+
 **Remaining**
 
-- [ ] Import of `Law`/`Norm`/`NormVersion` into the database on `RepositoryUpdated`
-- [ ] Baseline import in `patchnotes:bootstrap` (§ 4.7): all current laws in one commit, no cards
+- [ ] Baseline import in `patchnotes:bootstrap` (§ 4.7): all current laws in one commit per
+      jurisdiction, marked as baseline so it produces no change cards and no notifications
 
 ## Known issues / open points
 

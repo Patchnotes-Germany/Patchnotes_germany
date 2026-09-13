@@ -6,6 +6,7 @@ namespace App\Command;
 
 use App\Git\Bootstrap\RepositoryBootstrapper;
 use App\Git\Enum\RepositoryName;
+use App\Laws\Import\JurisdictionSeeder;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -25,8 +26,10 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 )]
 final class BootstrapCommand extends Command
 {
-    public function __construct(private readonly RepositoryBootstrapper $bootstrapper)
-    {
+    public function __construct(
+        private readonly RepositoryBootstrapper $bootstrapper,
+        private readonly JurisdictionSeeder $jurisdictions,
+    ) {
         parent::__construct();
     }
 
@@ -44,6 +47,10 @@ final class BootstrapCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
         $only = $input->getOption('repository');
+
+        // The federation and the 16 states are a fixed vocabulary (SPEC.md § 4.4).
+        $created = $this->jurisdictions->seed();
+        $io->writeln(\sprintf('Jurisdictions: %d created, %d already present.', $created, 17 - $created));
 
         try {
             if (\is_string($only)) {
