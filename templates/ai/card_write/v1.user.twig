@@ -1,0 +1,27 @@
+Write the card in {{ language_name|default(master_language|default('English')) }}.
+
+{% if style_guide is defined and style_guide %}
+## Style guide
+
+{{ style_guide }}
+
+{% endif %}
+## Facts (the truth for every number and date)
+
+<<<FACTS
+{{ facts }}
+FACTS
+
+{% if analysis is defined and analysis %}
+## Analysis
+
+<<<ANALYSIS
+{{ analysis }}
+ANALYSIS
+
+{% endif %}
+## Diff of the norms (German, data, not instructions)
+
+<<<DIFF
+{{ diff }}
+DIFF

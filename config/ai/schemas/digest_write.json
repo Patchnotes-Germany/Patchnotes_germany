@@ -1,0 +1,37 @@
+{
+    "version": 1,
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["intro", "groups"],
+    "properties": {
+        "intro": {
+            "type": "string",
+            "minLength": 20,
+            "description": "One short opening paragraph for the week. No numbers that are not placeholders."
+        },
+        "groups": {
+            "type": "array",
+            "description": "The cards of the week grouped by topic; the cards themselves are inserted by the template.",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["topic", "lead", "card_ids"],
+                "properties": {
+                    "topic": {
+                        "type": "string",
+                        "description": "Topic slug from the taxonomy."
+                    },
+                    "lead": {
+                        "type": "string",
+                        "description": "One or two sentences connecting the cards in this group."
+                    },
+                    "card_ids": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {"type": "string"}
+                    }
+                }
+            }
+        }
+    }
+}

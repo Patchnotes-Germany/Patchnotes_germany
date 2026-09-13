@@ -1,0 +1,143 @@
+{
+    "version": 1,
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["facts", "audience", "lands", "topics", "impact", "impact_rationale", "confidence", "uncertainties"],
+    "properties": {
+        "facts": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["amounts", "effective", "deadlines"],
+            "properties": {
+                "amounts": {
+                    "type": "array",
+                    "description": "Every sum, rate or threshold the change touches. These become the placeholders of the card.",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["key", "label", "unit", "source_quote"],
+                        "properties": {
+                            "key": {
+                                "type": "string",
+                                "pattern": "^[a-z0-9_]+$",
+                                "description": "Stable snake_case identifier, e.g. blue_card_salary_threshold."
+                            },
+                            "label": {
+                                "type": "string",
+                                "description": "Short label in the master language."
+                            },
+                            "old": {"type": ["number", "null"]},
+                            "new": {"type": ["number", "null"]},
+                            "unit": {
+                                "type": "string",
+                                "description": "EUR, percent, months, days …"
+                            },
+                            "per": {
+                                "type": ["string", "null"],
+                                "enum": ["year", "month", "week", "day", "once", null]
+                            },
+                            "source_quote": {
+                                "type": "string",
+                                "minLength": 2,
+                                "description": "Literal quote from the German text containing this value. It is checked against the source; an invented quote fails the change."
+                            },
+                            "source_ref": {
+                                "type": ["string", "null"],
+                                "description": "Where it stands, e.g. aufenthg_2004/p18g."
+                            }
+                        }
+                    }
+                },
+                "effective": {
+                    "type": "array",
+                    "description": "When the change takes effect. Copy a rule as rule_text instead of computing a date.",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["scope"],
+                        "properties": {
+                            "date": {"type": ["string", "null"], "format": "date"},
+                            "rule_text": {"type": ["string", "null"]},
+                            "scope": {"type": "string"},
+                            "norms": {"type": "array", "items": {"type": "string"}}
+                        }
+                    }
+                },
+                "deadlines": {
+                    "type": "array",
+                    "description": "Dates by which people have to act, if the change creates any.",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["description"],
+                        "properties": {
+                            "date": {"type": ["string", "null"], "format": "date"},
+                            "rule_text": {"type": ["string", "null"]},
+                            "description": {"type": "string"}
+                        }
+                    }
+                }
+            }
+        },
+        "audience": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["general", "all_of", "any_of", "none_of"],
+            "properties": {
+                "general": {
+                    "type": "boolean",
+                    "description": "True only when the change concerns practically everyone living in Germany."
+                },
+                "all_of": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Tags a person must have all of. Only tags from the taxonomy."
+                },
+                "any_of": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                },
+                "none_of": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                }
+            }
+        },
+        "lands": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Federal state codes when the change applies only there; empty means all of Germany."
+        },
+        "topics": {
+            "type": "array",
+            "minItems": 1,
+            "items": {"type": "string"},
+            "description": "Topic slugs from the taxonomy."
+        },
+        "impact": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3,
+            "description": "0 technical, 1 narrow, 2 noticeable, 3 strong effect on everyday life."
+        },
+        "impact_rationale": {
+            "type": "string",
+            "minLength": 10
+        },
+        "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+        },
+        "uncertainties": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "What could not be determined from the input. Better a long list here than a guess above."
+        },
+        "suggested_tags": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Tags that are missing from the taxonomy; an admin reviews these."
+        }
+    }
+}

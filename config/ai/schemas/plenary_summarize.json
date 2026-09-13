@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["topics", "decisions"],
+    "properties": {
+        "topics": {
+            "type": "array",
+            "description": "What was debated, neutrally described.",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["title", "summary"],
+                "properties": {
+                    "title": {"type": "string"},
+                    "summary": {"type": "string"}
+                }
+            }
+        },
+        "decisions": {
+            "type": "array",
+            "description": "Decisions actually taken, as recorded in the transcript.",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["subject", "outcome"],
+                "properties": {
+                    "subject": {"type": "string"},
+                    "outcome": {"type": "string"}
+                }
+            }
+        },
+        "positions": {
+            "type": "array",
+            "description": "Positions of the parliamentary groups, reported without evaluation.",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["faction", "summary"],
+                "properties": {
+                    "faction": {"type": "string"},
+                    "summary": {"type": "string"}
+                }
+            }
+        }
+    }
+}

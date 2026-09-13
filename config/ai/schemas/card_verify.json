@@ -1,0 +1,42 @@
+{
+    "version": 1,
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["score", "issues"],
+    "properties": {
+        "score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "How well the card matches the facts and the source. Below the configured threshold the card waits for a human."
+        },
+        "issues": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["severity", "section", "description"],
+                "properties": {
+                    "severity": {
+                        "type": "string",
+                        "enum": ["info", "warning", "error"],
+                        "description": "error: the card says something the source does not support."
+                    },
+                    "section": {
+                        "type": "string",
+                        "enum": ["title", "summary", "what_changes", "who_is_affected", "from_when", "what_to_do", "details", "whole_card"]
+                    },
+                    "description": {"type": "string", "minLength": 5},
+                    "quote": {
+                        "type": ["string", "null"],
+                        "description": "The passage of the card the issue is about."
+                    }
+                }
+            }
+        },
+        "verdict": {
+            "type": ["string", "null"],
+            "enum": ["publish", "review", "reject", null]
+        }
+    }
+}

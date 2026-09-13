@@ -1,0 +1,33 @@
+{
+    "version": 1,
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["title", "what_is_proposed", "who_is_affected", "status", "what_happens_next"],
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "Short, plain-language title of the bill."
+        },
+        "what_is_proposed": {
+            "type": "string",
+            "minLength": 20,
+            "description": "What the bill would change, in plain language."
+        },
+        "who_is_affected": {
+            "type": "string",
+            "description": "Which groups of people the bill concerns."
+        },
+        "status": {
+            "type": "string",
+            "description": "Where the bill stands in the legislative process, as stated in the input."
+        },
+        "what_happens_next": {
+            "type": "string",
+            "description": "The next step in the process, without predicting the outcome."
+        },
+        "uncertainties": {
+            "type": "array",
+            "items": {"type": "string"}
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["entries"],
+    "properties": {
+        "entries": {
+            "type": "array",
+            "description": "German terms worth adding to the glossary, with a plain-language explanation.",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["term", "explanation"],
+                "properties": {
+                    "term": {
+                        "type": "string",
+                        "description": "The German term exactly as it appears in the text."
+                    },
+                    "explanation": {
+                        "type": "string",
+                        "minLength": 10,
+                        "description": "One or two sentences at CEFR level B1."
+                    },
+                    "seen_in": {
+                        "type": ["string", "null"],
+                        "description": "Which card or norm the term was found in."
+                    }
+                }
+            }
+        }
+    }
+}

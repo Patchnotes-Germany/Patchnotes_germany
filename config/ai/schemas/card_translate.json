@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["title", "sections"],
+    "properties": {
+        "title": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 160
+        },
+        "sections": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["summary", "what_changes", "who_is_affected", "from_when", "what_to_do", "details"],
+            "properties": {
+                "summary": {
+                    "type": "string",
+                    "minLength": 5,
+                    "maxLength": 400,
+                    "description": "Translation of the master summary. Some languages need more characters than the master's 280."
+                },
+                "what_changes": {"type": "string"},
+                "who_is_affected": {"type": "string"},
+                "from_when": {"type": "string"},
+                "what_to_do": {"type": "string"},
+                "details": {"type": "string"}
+            }
+        },
+        "uncertainties": {
+            "type": "array",
+            "items": {"type": "string"}
+        }
+    }
+}

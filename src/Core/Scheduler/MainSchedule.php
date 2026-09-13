@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Core\Scheduler;
 
+use App\Ai\Message\FallbackStaleAiJobs;
 use App\Core\Scheduler\Message\SchedulerHeartbeat;
 use App\Git\Message\SynchroniseAllRepositories;
 use App\Source\Message\SynchroniseBundLaws;
@@ -47,6 +48,9 @@ final readonly class MainSchedule implements ScheduleProviderInterface
                 RecurringMessage::every('15 minutes', new RedispatchMessage(new SchedulerHeartbeat(), 'default')),
                 // Fallback for missed forge webhooks (SPEC.md § 3.2).
                 RecurringMessage::every('10 minutes', new RedispatchMessage(new SynchroniseAllRepositories(), 'git')),
+                // Jobs whose worker lease expired, and local jobs nobody picked up: after the
+                // configured grace period they run on a cloud provider instead (SPEC.md § 8.3).
+                RecurringMessage::every('5 minutes', new RedispatchMessage(new FallbackStaleAiJobs(), 'ai')),
                 // Federal consolidated laws: nightly, with a second pass in the afternoon
                 // (SPEC.md § 11.1). Never inside 02:00-03:00, which does not exist twice a year.
                 RecurringMessage::cron('0 3 * * *', new RedispatchMessage(new SynchroniseBundLaws(), 'sources'), self::TIMEZONE),

@@ -57,6 +57,8 @@ framework:
             'App\Git\Message\RepositoryUpdated': pipeline
             # Source synchronisations run on their own workers (SPEC.md § 11.2).
             'App\Source\Message\SynchroniseBundLaws': sources
+            # Expired worker leases and the cloud fallback for an offline local model (SPEC.md § 8.3).
+            'App\Ai\Message\FallbackStaleAiJobs': ai
 
 when@test:
     framework:

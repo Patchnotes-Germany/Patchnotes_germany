@@ -1243,6 +1243,8 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *             api_key?: scalar|Param|null, // Default: null
  *             base_url?: scalar|Param|null, // Default: null
  *             execution?: scalar|Param|null, // Default: "direct"
+ *             supports_json_schema?: scalar|Param|null, // Whether the server enforces a JSON schema itself; otherwise answers are validated and repaired here. // Default: false
+ *             timeout?: scalar|Param|null, // Seconds to wait for an answer. A local model on a laptop may think for minutes. // Default: 300
  *         }>,
  *         models?: array<string, scalar|Param|null>,
  *         tasks?: array<string, array{ // Default: []

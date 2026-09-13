@@ -13,4 +13,6 @@ enum AiProviderType: string
     case Anthropic = 'anthropic';
     /** Ollama, LM Studio, vLLM, llama.cpp server, LocalAI — anything speaking the OpenAI API. */
     case OpenAiCompatible = 'openai_compatible';
+    /** Scripted answers for the test suite and `make demo`: no network, no key, no GPU. */
+    case Fake = 'fake';
 }

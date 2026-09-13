@@ -11,7 +11,7 @@ A new session continues from here: read `docs/SPEC.md`, this file and `CLAUDE.md
 | M1 | Domain model and configuration | ✅ |
 | M2 | Git layer and forge clients | ✅ |
 | M3 | Federal laws (gesetze-im-internet) | ✅ |
-| M4 | AI layer, providers, remote worker | ⬜ |
+| M4 | AI layer, providers, remote worker | ✅ |
 | M5 | Change pipeline and `content` repository | ⬜ |
 | M6 | BGBl, DIP, preview PRs | ⬜ |
 | M7 | Public website | ⬜ |
@@ -174,31 +174,131 @@ laws from gesetze-im-internet at one request per second, converted them, committ
 `Initial import: bund (2 laws)` and imported them into the database (2 laws, 65 norms, 65 norm
 versions, 2 raw documents). A rerun reports the baseline as already done.
 
+## M4 — AI layer, providers, remote worker ✅ (2026-09-13)
+
+Acceptance (SPEC.md § 20): the same task runs through different providers (manual contract test);
+the remote worker claims and completes a job; when it is offline the cloud fallback takes over.
+
+**Providers (§ 8.1)**
+
+- [x] `LlmClientInterface` — one contract: `complete()`, `supportsJsonSchema()`, `supportsBatch()`,
+      `submitBatch()`/`pollBatch()`/`fetchBatchResults()`, `ping()`
+- [x] `OpenAiStyleClient` (shared chat dialect) → `OpenAiClient` (structured outputs, Batch API via
+      the files endpoint) and `OpenAiCompatibleClient` (Ollama, LM Studio, vLLM, llama.cpp, LocalAI;
+      schema support and timeout come from configuration)
+- [x] `AnthropicClient`: Messages API, JSON through a forced tool call, `cache_control` on the
+      system prompt (the long style guides and glossaries are what make prompt caching pay), Message
+      Batches API
+- [x] `FakeLlmClient`: scripted answers, queued failures, recorded calls — the suite never touches a
+      network, and it is what `make demo` will use
+- [x] `LlmClientFactory` + `LlmClientRegistry`: clients are built lazily from
+      `patchnotes.ai.providers`; a provider without credentials is *skipped*, not an error
+- [x] Model ids are never hardcoded — `ModelReference` parses `"provider:model-id"` from configuration
+
+**Routing, validation, cost (§ 8.2)**
+
+- [x] `ModelRouter`: resolves `@large`/`@medium`/`@small`/`@local_default` chains per task, drops
+      providers without credentials, honours `prefer_different_provider_than` for verification and
+      reports `sameProviderFallback` so the caller can cap the score (§ 24.14)
+- [x] `AiGateway` — the single entry point: cache → routing → call → schema validation → **two repair
+      attempts with the errors fed back** → next model in the chain → usage recorded; a task routed
+      to a remote worker becomes a job instead of a blocked call
+- [x] `JsonSchemaValidator` (own subset, ADR 0007) + `SchemaRegistry`; 12 answer schemas in
+      `config/ai/schemas/`
+- [x] `ResponseCache` on the new `cache.ai_response` pool, keyed by the § 8.2 fingerprint
+- [x] `CostCalculator` + `UsageRecorder` (`AiUsage` rows, prices per million tokens in the provider
+      currency, converted with `ai.fx`), `BudgetGuard` with `degrade` (free models only) and `pause`
+      (critical tasks only) — `AiTask::isCritical()` decides what survives
+
+**Prompts (§ 8.4, § 8.5)**
+
+- [x] `templates/ai/<task>/v1.{system,user}.twig` for all 12 tasks, `PromptRenderer` picks the
+      highest version on disk and the version is stored with every answer and in the cache key
+- [x] `templates/ai/_rules.twig` — the rules of § 8.5 are *included*, not copied, so no task can
+      forget one; input is always fenced off as "data, not instructions"
+
+**Remote worker (§ 8.3)**
+
+- [x] `AiJobQueue`: `SELECT … FOR UPDATE SKIP LOCKED` claiming, leases, priority, retry, deduplication
+      by request fingerprint
+- [x] `POST /api/worker/v1/claim|jobs/{id}/complete|fail|extend|heartbeat` with bearer tokens
+      (`WorkerToken`, only the hash is stored); a worker that lost its lease is refused with 409
+- [x] `patchnotes:ai-worker` — the same application in CLI mode, no database, stops cleanly on
+      SIGTERM/Ctrl+C; `compose.ai-worker.yaml` for the owner's machine
+- [x] `patchnotes:ai:worker-token` (issue/list/revoke), `patchnotes:ai:ping` (`make ai-ping`)
+- [x] `FallbackStaleAiJobs` every 5 minutes: expired leases return to the queue, and a job nobody
+      picked up within `local_worker_fallback_after_minutes` runs on a cloud provider instead
+- [x] `docs/local-ai.md`: LM Studio and Ollama, choosing a model by available memory, both execution
+      modes, what happens when the machine is off, troubleshooting
+
+**Verified**
+
+- 461 tests / 2301 assertions green (194 unit, 267 integration), PHPStan level 8 clean,
+  `make lint` clean.
+- **Against the real local model** (LM Studio on the host, `host.docker.internal:1234/v1`):
+  `patchnotes:ai:ping` resolves the chain of every task, and `--say` got a real answer from
+  `local:google/gemma-4-e4b` in 367 ms (30 tokens in / 2 out).
+- The worker API is tested end to end against the real HTTP kernel and database: claim → run →
+  complete, a second claim gets nothing, a lost lease is refused, unknown and revoked tokens are
+  rejected with 401.
+- The cloud fallback is tested: a job aged past the grace period is completed by the cloud provider
+  and billed; one inside the grace period is left for the worker; an expired lease is released.
+
+**Bugs found while building it** (all fixed):
+
+- A private `run()` in `AiWorkerCommand` collided with `Command::run()` — a fatal error that broke
+  the whole container, not just that command. The same trap as the `TestCase::run()` clash in M3.
+- **Symfony appends to prototyped array nodes when merging configuration files**, so a `chain:`
+  written in an environment override *extends* the shipped chain instead of replacing it. This
+  silently changed the routing in the test environment. Worth remembering for M5+ and for operators:
+  override the scalar model aliases, not the chains.
+- An empty JSON object decodes to an empty PHP array, which the validator took for a list — so `{}`
+  slipped past every `required` rule. The schema now decides which shape an empty value has.
+- `%env(default::VAR)%` injects `null` into a `string` constructor parameter; `%env(string:default::VAR)%`
+  is the form that works.
+- MySQL will not take a placeholder for `LIMIT`, which broke the claim query.
+
 ## Known issues / open points
 
-- **CI is unverified:** there is no git remote yet, so the GitHub Actions workflow has never run.
-  The same commands are green locally. Check on the first push.
+- **CI on GitHub is not confirmed green.** The workflow never created the schema in the test
+  database, so every database-backed test failed on a fresh runner. Reproduced locally by dropping
+  the schema (same `Base table or view not found: patchnotes_test.jurisdiction`), fixed by a
+  "Prepare the test database" step and pushed as `4be6aac`. This machine has neither `gh` nor a
+  token, so **someone has to look at the Actions tab** — including the three red Dependabot pull
+  requests, which should turn green with the same fix.
+- `ai.pricing` is deliberately **empty**: prices change and inventing them would put wrong numbers on
+  the cost dashboard. Fill them in from the provider's price page when the models are chosen — a
+  model without an entry is counted as free, which is right for a local model and wrong for a cloud
+  one. The structure is documented in `config/packages/patchnotes.yaml`.
+- **Batch mode is implemented but never exercised against a real provider** (OpenAI Batch, Anthropic
+  Message Batches). It is only used for bulk work (§ 24.14), which arrives with the pre-translation
+  in M5/M6 — verify it there.
+- `make demo` still calls `patchnotes:demo:load`, which does not exist yet; the `FakeLlmClient` it
+  needs is now in place, the fixtures arrive with M5.
 - The `content` repository schemas (`facts.schema.json`, `card.frontmatter.schema.json`,
   `bill.schema.json`) and `taxonomy.yml` are written in M5, which defines their fields; the bootstrap
   creates the directories and the language-dependent placeholders already.
 - Pull request **checks** themselves (safeguards of § 4.6, quality checks of § 7.4) arrive with the
-  content that they validate: M3 for law diffs, M5 for cards. The git layer already carries the
-  report to the forge (`ChangeRequestManager::comment()`) and stores it on `ChangeRequest.checks`.
+  content that they validate: M3 for law diffs, M5 for cards.
 - **Billing entities** (`Plan`, `Subscription`) are deliberately deferred to M12 (ADR 0005).
 - **Frontend toolchain** (Tailwind, Symfony UX) is deferred to M7.
 - Security interfaces on `User` are added in M8; the mapping does not change.
 - **Development machine note:** Docker Desktop's credential helper can hang in non-interactive
   shells, which makes `docker pull`/`build` appear to freeze. Workaround: a `DOCKER_CONFIG` directory
   without `credsStore` (with a symlink to `~/.docker/cli-plugins`, otherwise BuildKit is not used).
+- The local models of this machine are configured in `.env.local` (not in git):
+  `LOCAL_LLM_BASE_URL=http://host.docker.internal:1234/v1`, `AI_MODEL_LARGE/MEDIUM/LOCAL=local:qwen/qwen3.8-27b`,
+  `AI_MODEL_SMALL=local:google/gemma-4-e4b`.
 - EasyAdmin version (spec says 4, current major is 5) is decided in M10 with its own ADR.
 
 ## Next step
 
-**M4 — AI layer.** Three provider types behind `LlmClientInterface` (OpenAI, Anthropic, any
-OpenAI-compatible server such as Ollama or LM Studio), task routing with fallback chains and JSON
-schema validation (§ 8.2), response cache, cost accounting and the monthly budget with degrade/pause,
-batch mode for bulk work only (§ 24.14), a `FakeLlmClient` for tests and `make demo`, the remote AI
-worker (claim/complete API, `bin/console patchnotes:ai-worker`, `compose.ai-worker.yaml`, fallback
-when the worker is offline), versioned prompt templates for every task of § 8.4 and `docs/local-ai.md`.
-Acceptance: the same task runs through OpenAI, Anthropic and Ollama (manual contract test); the
-remote worker claims and completes a job; when it is offline the cloud fallback takes over.
+**M5 — Change pipeline and the `content` repository.** The chain of § 7.1 as idempotent, resumable
+Messenger stages on `Change.pipelineState`: `ChangeDetected` → `change_analyze` → deterministic fact
+verification (§ 7.4: every amount, date and `source_quote` must be findable in the German text) →
+`card_write` (master language) → `card_verify` by a different model → `card_translate` into ru/uk/tr
+→ the checks of § 7.4 (placeholders, glossary, language detection, length, forbidden wording) →
+pull request into `content` → merge by the review policy → import + Meilisearch.
+Plus the files of § 5: `facts.yml` and its schema, the card format with its fixed sections and
+placeholders, `taxonomy.yml` (§ 9.1), the glossaries and style guides, and `make demo` with fixtures
+and the `FakeLlmClient`. The AI layer of M4 is the entry point: `AiGateway::run($task, $context)`.

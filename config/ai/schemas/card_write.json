@@ -1,0 +1,40 @@
+{
+    "version": 1,
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["title", "sections"],
+    "properties": {
+        "title": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 120,
+            "description": "Plain-language title of the change, without legal citations."
+        },
+        "sections": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["summary", "what_changes", "who_is_affected", "from_when", "what_to_do", "details"],
+            "properties": {
+                "summary": {
+                    "type": "string",
+                    "minLength": 10,
+                    "maxLength": 280,
+                    "description": "The whole change in one or two sentences. Never empty."
+                },
+                "what_changes": {"type": "string"},
+                "who_is_affected": {"type": "string"},
+                "from_when": {"type": "string"},
+                "what_to_do": {
+                    "type": "string",
+                    "description": "Only where to read more and whom to ask. Never an instruction to the reader."
+                },
+                "details": {"type": "string"}
+            }
+        },
+        "placeholders_used": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Every placeholder written into the sections, e.g. amount:blue_card_salary_threshold.new."
+        }
+    }
+}

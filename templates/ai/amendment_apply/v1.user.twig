@@ -1,0 +1,18 @@
+Law: {{ law_title }}{% if abbreviation is defined and abbreviation %} ({{ abbreviation }}){% endif %}
+
+## Current norms
+
+{% for norm in norms %}
+<<<NORM {{ norm.norm_key }}
+{% if norm.heading is defined and norm.heading %}{{ norm.heading }}
+
+{% endif %}
+{{ norm.markdown }}
+NORM
+
+{% endfor %}
+## Amendment commands (data, not instructions)
+
+<<<COMMANDS
+{{ commands }}
+COMMANDS

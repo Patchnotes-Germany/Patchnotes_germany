@@ -9,7 +9,8 @@ CONSOLE     := $(PHP_CONT) php bin/console
 .DEFAULT_GOAL := help
 .PHONY: help up down restart logs sh build install bootstrap sync-bund sync-land demo \
         test test-unit test-integration test-e2e lint lint-fix cs phpstan rector \
-        backup restore rebuild-from-git migration migrate messenger-failed worker-status
+        backup restore rebuild-from-git migration migrate messenger-failed worker-status \
+        ai-ping ai-worker-token ai-worker-tokens audit
 
 help: ## List available targets
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) \
@@ -60,6 +61,16 @@ sync-land: ## Run the synchronisation of one federal state: make sync-land L=be
 
 rebuild-from-git: ## Rebuild all derived content tables from the git repositories
 	$(CONSOLE) patchnotes:rebuild-from-git
+
+## —— AI ———————————————————————————————————————————————————————————————————
+ai-ping: ## Show the model chain of every AI task (make ai-ping SAY=1 also calls the models)
+	$(CONSOLE) patchnotes:ai:ping $(if $(SAY),--say,)
+
+ai-worker-token: ## Issue a token for a remote AI worker: make ai-worker-token N=office-imac
+	$(CONSOLE) patchnotes:ai:worker-token $(N)
+
+ai-worker-tokens: ## List the tokens of the remote AI workers
+	$(CONSOLE) patchnotes:ai:worker-token --list
 
 ## —— Database —————————————————————————————————————————————————————————————
 migration: ## Generate a migration from the entity mapping

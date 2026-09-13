@@ -22,4 +22,18 @@ enum AiTask: string
     case PlenarySummarize = 'plenary_summarize';
     case LawTopics = 'law_topics';
     case GlossarySuggest = 'glossary_suggest';
+
+    /**
+     * Tasks without which nothing can be published at all. When the monthly budget is exhausted and
+     * the policy is "pause", everything else stops and these keep running (SPEC.md § 8.2) — a
+     * missed translation is an inconvenience, a missed change is the whole point of the project.
+     */
+    public function isCritical(): bool
+    {
+        return match ($this) {
+            self::PromulgationExtract, self::AmendmentApply, self::ChangeAnalyze,
+            self::CardWrite, self::CardVerify => true,
+            default => false,
+        };
+    }
 }

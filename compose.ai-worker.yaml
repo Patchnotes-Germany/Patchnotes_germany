@@ -1,0 +1,43 @@
+# Patchnotes — the AI worker for the owner's own computer (SPEC.md § 8.3, docs/local-ai.md).
+#
+# This file is standalone: it does NOT belong to the server stack. Run it on the machine that has
+# the model, which may be somewhere else entirely than the server:
+#
+#   docker compose -f compose.ai-worker.yaml up -d
+#
+# It needs three things in .env.worker next to this file:
+#   AI_WORKER_SERVER_URL=https://patchnotes.example   (the server)
+#   AI_WORKER_TOKEN=pnw_…                             (bin/console patchnotes:ai:worker-token <name>)
+#   LOCAL_LLM_BASE_URL=http://host.docker.internal:1234/v1   (LM Studio; Ollama uses :11434/v1)
+#
+# There is no database and no queue here: the worker claims jobs over HTTPS and posts results back.
+
+services:
+  ai-worker:
+    image: ${AI_WORKER_IMAGE:-ghcr.io/patchnotes-germany/patchnotes:latest}
+    restart: unless-stopped
+    env_file:
+      - .env.worker
+    environment:
+      APP_ENV: prod
+      # Nothing in this container talks to MySQL, but the kernel wants a syntactically valid DSN.
+      DATABASE_URL: "mysql://worker:worker@127.0.0.1:3306/unused?serverVersion=8.4.11&charset=utf8mb4"
+      MESSENGER_TRANSPORT_DSN: "in-memory://"
+    extra_hosts:
+      # The model server usually runs on the host, outside Docker.
+      - host.docker.internal:host-gateway
+    command:
+      - php
+      - bin/console
+      - patchnotes:ai-worker
+      - --max=${AI_WORKER_BATCH:-2}
+      - --lease=${AI_WORKER_LEASE_SECONDS:-600}
+      - --poll=${AI_WORKER_POLL_SECONDS:-10}
+    healthcheck:
+      # The worker is healthy as long as its process is alive; real liveness is the heartbeat the
+      # server sees (visible in the admin dashboard).
+      test: ["CMD-SHELL", "pgrep -f patchnotes:ai-worker > /dev/null || exit 1"]
+      interval: 60s
+      timeout: 5s
+      retries: 3
+      start_period: 30s

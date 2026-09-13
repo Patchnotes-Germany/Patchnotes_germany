@@ -1,0 +1,29 @@
+# AI configuration for the test suite (SPEC.md § 19: tests never touch a network).
+#
+# Only the model aliases are overridden, never the task chains: Symfony *appends* to prototyped
+# array nodes when it merges configuration files, so a "chain" written here would extend the
+# shipped one instead of replacing it. Pointing the aliases at scripted providers changes every
+# chain at once and keeps the tests honest about the real routing.
+#
+#   @large  → fake            @medium → fake_second     (two providers, so a fallback really moves)
+#   @small  → not configured  (law_topics therefore falls through to the local model)
+#   @local_default → local, in remote-worker mode: such a task must become a job, not a blocked call
+patchnotes:
+    ai:
+        providers:
+            fake:
+                type: fake
+            fake_second:
+                type: fake
+            local:
+                # Never called: everything routed here is queued for a remote worker.
+                type: openai_compatible
+                base_url: 'http://localhost:1/v1'
+                execution: remote_worker
+        models:
+            large: 'fake:large-model'
+            medium: 'fake_second:medium-model'
+            small: ''
+            local_default: 'local:local-model'
+        budget:
+            monthly_limit_eur: 0

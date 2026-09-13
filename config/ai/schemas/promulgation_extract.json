@@ -1,0 +1,81 @@
+{
+    "version": 1,
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["title", "citation", "date", "act_type", "articles", "entry_into_force", "summary_de"],
+    "properties": {
+        "title": {
+            "type": "string",
+            "minLength": 3,
+            "description": "Official title of the act as printed."
+        },
+        "citation": {
+            "type": "string",
+            "description": "Citation of the publication, e.g. \"BGBl. 2026 I Nr. 221\"."
+        },
+        "date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date of the act (Ausfertigungsdatum), YYYY-MM-DD."
+        },
+        "act_type": {
+            "type": "string",
+            "enum": ["gesetz", "verordnung", "bekanntmachung", "andere"]
+        },
+        "articles": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["no", "kind"],
+                "properties": {
+                    "no": {
+                        "type": "string",
+                        "description": "Article number as printed, e.g. \"Artikel 3\"."
+                    },
+                    "target_law_title": {
+                        "type": ["string", "null"],
+                        "description": "Full title of the law this article changes, if any."
+                    },
+                    "target_abbreviation": {
+                        "type": ["string", "null"],
+                        "description": "Abbreviation of the target law, e.g. \"AufenthG\"."
+                    },
+                    "kind": {
+                        "type": "string",
+                        "enum": ["amend", "new", "repeal"]
+                    }
+                }
+            }
+        },
+        "entry_into_force": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["articles"],
+                "properties": {
+                    "articles": {
+                        "type": "array",
+                        "items": {"type": "string"},
+                        "description": "Which articles this rule applies to."
+                    },
+                    "date": {
+                        "type": ["string", "null"],
+                        "format": "date",
+                        "description": "Fixed date, when the act names one."
+                    },
+                    "rule_text": {
+                        "type": ["string", "null"],
+                        "description": "The rule as printed when it is not a fixed date, e.g. \"am Tag nach der Verkündung\"."
+                    }
+                }
+            }
+        },
+        "summary_de": {
+            "type": "string",
+            "minLength": 20,
+            "description": "Two or three neutral sentences in German describing what the act does."
+        }
+    }
+}

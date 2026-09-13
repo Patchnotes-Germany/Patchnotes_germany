@@ -16,6 +16,13 @@ framework:
                 adapter: cache.app
                 default_lifetime: 86400
 
+            # Model answers, keyed by the request fingerprint (SPEC.md § 8.2). Worth keeping for a
+            # long time: the key already contains the prompt version, the schema and the model, so a
+            # changed prompt never reuses an old answer — but a re-run pipeline stage pays nothing.
+            cache.ai_response:
+                adapter: cache.app
+                default_lifetime: 7776000
+
 when@test:
     framework:
         cache:

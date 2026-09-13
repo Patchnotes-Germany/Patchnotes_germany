@@ -88,7 +88,12 @@ patchnotes:
                 type: openai_compatible
                 base_url: '%env(default::LOCAL_LLM_BASE_URL)%'
                 api_key: '%env(default::LOCAL_LLM_API_KEY)%'
+                # remote_worker: the model runs on the owner's computer and pulls jobs over HTTPS.
+                # Set to "direct" when the server itself can reach the model (docs/local-ai.md).
                 execution: remote_worker
+                supports_json_schema: '%env(default::LOCAL_LLM_SUPPORTS_JSON_SCHEMA)%'
+                # A model on a laptop may think for minutes; that is not a failure.
+                timeout: 900
         models:
             large: '%env(default::AI_MODEL_LARGE)%'
             medium: '%env(default::AI_MODEL_MEDIUM)%'
@@ -111,7 +116,14 @@ patchnotes:
             monthly_limit_eur: '%env(float:AI_MONTHLY_BUDGET_EUR)%'
             on_exceed: degrade
             alert_thresholds: [0.8, 1.0]
-        # Prices per million tokens in the provider currency; filled in with the models in M4.
+        # Prices per million tokens, keyed exactly as the model is written in AI_MODEL_*, in the
+        # provider's own currency (converted with ai.fx). Look them up on the provider's price page
+        # when you choose the models — a model without an entry is counted as free, which is right
+        # for a local one and wrong for a cloud one, so do fill these in.
+        #
+        #   pricing:
+        #       'openai:<model-id>':    { input_per_mtok: 0.00, output_per_mtok: 0.00, cached_input_per_mtok: 0.00, currency: USD }
+        #       'anthropic:<model-id>': { input_per_mtok: 0.00, output_per_mtok: 0.00, currency: USD }
         pricing: {}
         fx:
             usd_eur: '%env(float:AI_FX_USD_EUR)%'

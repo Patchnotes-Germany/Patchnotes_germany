@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["text"],
+    "properties": {
+        "text": {
+            "type": "string",
+            "minLength": 1,
+            "description": "The translated norm, keeping the original structure exactly: paragraph numbering, list markers, line breaks and references to §§ unchanged."
+        },
+        "terms": {
+            "type": "array",
+            "description": "German legal terms kept in the translation and how they were rendered.",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["german", "translation"],
+                "properties": {
+                    "german": {"type": "string"},
+                    "translation": {"type": "string"}
+                }
+            }
+        },
+        "uncertainties": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Passages whose meaning was not clear enough to translate confidently."
+        }
+    }
+}

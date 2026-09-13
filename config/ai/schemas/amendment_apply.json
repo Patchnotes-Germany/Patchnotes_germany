@@ -1,0 +1,64 @@
+{
+    "version": 1,
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["norms", "applied", "unapplied"],
+    "properties": {
+        "norms": {
+            "type": "array",
+            "description": "The full new text of every norm that changed, in the project's Markdown format.",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["norm_key", "markdown"],
+                "properties": {
+                    "norm_key": {
+                        "type": "string",
+                        "description": "Norm key as used in the repository, e.g. \"p18g\" or \"art3\"."
+                    },
+                    "heading": {
+                        "type": ["string", "null"],
+                        "description": "New heading when the amendment changes it."
+                    },
+                    "markdown": {
+                        "type": "string",
+                        "description": "Complete new body of the norm: one sentence per line, no timestamps."
+                    },
+                    "repealed": {
+                        "type": "boolean",
+                        "description": "True when the amendment repeals this norm."
+                    }
+                }
+            }
+        },
+        "applied": {
+            "type": "array",
+            "description": "The Änderungsbefehle that were carried out.",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["command", "norm_key"],
+                "properties": {
+                    "command": {"type": "string"},
+                    "norm_key": {"type": "string"}
+                }
+            }
+        },
+        "unapplied": {
+            "type": "array",
+            "description": "Commands that could not be carried out; these force human review.",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["command", "reason"],
+                "properties": {
+                    "command": {"type": "string"},
+                    "reason": {
+                        "type": "string",
+                        "description": "Why it could not be applied, e.g. the target text was not found."
+                    }
+                }
+            }
+        }
+    }
+}

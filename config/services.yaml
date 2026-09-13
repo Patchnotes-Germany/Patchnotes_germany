@@ -45,12 +45,30 @@ services:
             - '../src/Git/RepositoryReader.php'
             - '../src/Git/RepositoryConfig.php'
             - '../src/Git/Worktree.php'
+            # Built per provider by the LlmClientFactory from patchnotes.ai.providers (SPEC.md § 8.1);
+            # the factory and the registry next to them are ordinary services.
+            - '../src/Ai/Client/OpenAiStyleClient.php'
+            - '../src/Ai/Client/OpenAiClient.php'
+            - '../src/Ai/Client/OpenAiCompatibleClient.php'
+            - '../src/Ai/Client/AnthropicClient.php'
+            - '../src/Ai/Client/FakeLlmClient.php'
+            - '../src/Ai/Prompt/RenderedPrompt.php'
+            - '../src/Ai/Routing/TaskRoute.php'
 
     # Typed access to the whole "patchnotes" configuration tree. Public, because commands, tests and
     # the admin read it directly from the container (SPEC.md § 24.19).
     App\Core\Config\PatchnotesConfig:
         arguments:
             $config: '%patchnotes.config%'
+        public: true
+
+    # Entry points of the AI layer. Public because the tests and `make demo` replace a provider with
+    # the scripted one (LlmClientRegistry::override) and because nothing depends on the gateway until
+    # the pipeline of M5 does — an unused private service would be removed from the container.
+    App\Ai\AiGateway:
+        public: true
+
+    App\Ai\Client\LlmClientRegistry:
         public: true
 
     # The federal synchronisation is wired to the gesetze-im-internet adapter; the service itself
