@@ -113,7 +113,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Lint code base
-        uses: super-linter/super-linter/slim@v8
+        uses: super-linter/super-linter/slim@v9
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # An allow-list, not a deny-list: setting any VALIDATE_* to true makes super-linter run
